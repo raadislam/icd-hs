@@ -1,0 +1,5 @@
+.eff-menu:not(.active):hover {
+    background-color: #5A32c7 !important;
+    border-radius: 0.2em;
+    color: #fff !important;
+}

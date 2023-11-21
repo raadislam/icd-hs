@@ -6,8 +6,8 @@
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-logo">
-                            <a href="demo-law-firm.html">
-                                <img alt="Porto" width="125" height="47"
+                            <a href="/">
+                                <img alt="Porto" width="auto" height="125px" style="object-fit: contain"
                                     src="{{ asset('file') }}/img/demos/law-firm/logo.png">
                             </a>
                         </div>
@@ -28,7 +28,7 @@
                                         </div>
                                         <div class="feature-box-info ps-1">
                                             <label>SEND US AN EMAIL</label>
-                                            <strong><a href="mailto:mail@example.com">MAIL@EXAMPLE.COM</a></strong>
+                                            <strong><a href="mailto:mail@example.com">icd-hs@gmail.com</a></strong>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="align-items-center d-none d-sm-block h-100 py-4">
+                            {{-- <li class="align-items-center d-none d-sm-block h-100 py-4">
                                 <div class="header-extra-info-text h-100 py-2">
                                     <div class="feature-box feature-box-style-2 align-items-center">
                                         <div class="feature-box-icon">
@@ -70,7 +70,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -90,11 +90,11 @@
                                         <nav class="collapse">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li class="dropdown">
-                                                    <a class="dropdown-item active" href="demo-law-firm.html">
+                                                    <a class="dropdown-item active" href="/">
                                                         Home
                                                     </a>
                                                 </li>
-                                                <li class="dropdown">
+                                                {{-- <li class="dropdown">
                                                     <a class="dropdown-item" href="demo-law-firm-about-us.html">
                                                         About Us
                                                     </a>
@@ -118,13 +118,13 @@
                                                     <a class="dropdown-item" href="demo-law-firm-contact-us.html">
                                                         Contact Us
                                                     </a>
-                                                </li>
+                                                </li> --}}
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
                             </div>
-                            <div class="header-column">
+                            {{-- <div class="header-column">
                                 <div class="header-row justify-content-end py-2">
                                     <div class="header-nav-features header-nav-features-no-border ms-0 ps-0 w-100">
                                         <form role="search" class="d-flex w-100">
@@ -141,7 +141,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
                                 data-bs-target=".header-nav-main nav">
                                 <i class="fas fa-bars"></i>

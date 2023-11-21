@@ -106,20 +106,23 @@
                         <div class="row h-100">
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column justify-content-center h-100">
-                                    <p class="custom-font-slider-2 text-dark" data-plugin-animated-letters
+                                    {{-- <p class="custom-font-slider-2 text-dark" data-plugin-animated-letters
                                         data-plugin-options="{'startDelay': 750, 'minWindowWidth': 0, 'animationSpeed': 30}">
-                                        SERVING LOS ANGELES / CALIFORNIA</p>
-                                    <h2 class="custom-font-slider-1 mb-0 font-weight-bold appear-animation"
+                                        ICD-HS
+                                    </p> --}}
+                                    <h5 class="custom-font-slider-1 mb-0 font-weight-bold appear-animation"
                                         data-appear-animation="blurIn" data-appear-animation-delay="500"
-                                        data-plugin-options="{'minWindowWidth': 0}">Porto Law Firm</h2>
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        ICD-HS
+                                    </h5>
                                     <div class="divider divider-primary divider-small text-start mt-2 mb-4 mx-0 appear-animation"
                                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
                                         <hr class="my-0">
                                     </div>
                                     <p class="text-3-5 line-height-9 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ultricies nunc, eu
-                                        interdum enim.</p>
+                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                                        Muktijoddha Farida Akter Institute of Communication Disorders & Health Services
+                                    </p>
 
                                     <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                         data-appear-animation-delay="1250">
@@ -151,22 +154,21 @@
                         <div class="row h-100">
                             <div class="col text-center">
                                 <div class="d-flex flex-column justify-content-center h-100">
-                                    <p class="custom-font-slider-2 text-light" data-plugin-animated-letters
+                                    {{-- <p class="custom-font-slider-2 text-light" data-plugin-animated-letters
                                         data-plugin-options="{'startDelay': 750, 'minWindowWidth': 0, 'animationSpeed': 30}">
-                                        PORTO LAW FIRM IN LOS ANGELES</p>
+                                        ICD-HS</p> --}}
                                     <h2 class="custom-font-slider-1 mb-0 font-weight-bold text-light appear-animation"
                                         data-appear-animation="blurIn" data-appear-animation-delay="500"
-                                        data-plugin-options="{'minWindowWidth': 0}">Porto Law Firm</h2>
+                                        data-plugin-options="{'minWindowWidth': 0}">ICD-HS</h2>
                                     <div class="divider divider-primary divider-small mt-2 mb-4 appear-animation"
                                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
                                         <hr class="my-0 me-auto">
                                     </div>
                                     <p class="text-3-5 line-height-9 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit.<br>Proin bibendum ultricies nunc,
-                                        eu interdum enim.</p>
+                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                                        Muktijoddha Farida Akter Institute of Communication Disorders & Health Services</p>
 
-                                    <div class="text-center appear-animation" data-appear-animation="fadeInUpShorter"
+                                    {{-- <div class="text-center appear-animation" data-appear-animation="fadeInUpShorter"
                                         data-appear-animation-delay="1250">
                                         <a href="#"
                                             class="btn btn-light text-dark btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4">Learn
@@ -174,7 +176,7 @@
                                         <a href="#"
                                             class="btn btn-primary btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4 ms-4">Request
                                             Consultation</a>
-                                    </div>
+                                    </div> --}}
 
                                 </div>
                             </div>
@@ -216,8 +218,7 @@
 
                         <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-about-us.html">Learn More<img
                                 width="27" height="27"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                data-icon
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt="" data-icon
                                 data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
                     </div>
                 </div>
@@ -517,7 +518,7 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Attorneys</h2>
+                        <h2 class="mb-0 font-weight-bold">Directors</h2>
                         <div class="divider divider-primary divider-small mt-2 mb-4 text-center">
                             <hr class="my-0 mx-auto">
                         </div>
@@ -531,27 +532,28 @@
                                 <div class="row">
                                     <div class="col">
                                         <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-6.jpg"
+                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-6.png"
                                                 class="img-fluid" alt="Image of the team member" />
                                         </a>
                                     </div>
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">John Doe</p>
+                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Mohammad Salim Miah</p>
                                         <p
                                             class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            CEO & FOUNDER</p>
-                                        <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p>
-                                        <p class="text-2 mb-3">
+                                            Adviser
+                                        </p>
+                                        {{-- <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            nunc viverra erat orci.</p> --}}
+                                        {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"
                                                     height="27"
                                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
                                                     alt="" data-icon
                                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p>
+                                        </p> --}}
                                         <ul
                                             class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
                                             <li class="social-icons-facebook">
@@ -581,20 +583,21 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Bob Doe</p>
+                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Mutkijoddha Farida Akter
+                                        </p>
                                         <p
                                             class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            LEAD ATTORNEY</p>
-                                        <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p>
-                                        <p class="text-2 mb-3">
+                                            রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
+                                        </p>
+                                        {{-- <p class="text-2 mb-3-5">রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971</p> --}}
+                                        {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"
                                                     height="27"
                                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
                                                     alt="" data-icon
                                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p>
+                                        </p> --}}
                                         <ul
                                             class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
                                             <li class="social-icons-facebook">
@@ -624,20 +627,20 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Janice Doe</p>
+                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Monzur Ali</p>
                                         <p
                                             class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Criminal Law</p>
-                                        <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p>
-                                        <p class="text-2 mb-3">
+                                            Consultant
+                                        </p>
+                                        <p class="text-2 mb-3-5">Toronto,Canada</p>
+                                        {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"
                                                     height="27"
                                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
                                                     alt="" data-icon
                                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p>
+                                        </p> --}}
                                         <ul
                                             class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
                                             <li class="social-icons-facebook">
@@ -667,20 +670,20 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Josh Doe</p>
+                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">MD. Najmul Hassan</p>
                                         <p
                                             class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Business Law</p>
-                                        <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p>
-                                        <p class="text-2 mb-3">
+                                            Business Adviser
+                                        </p>
+                                        <p class="text-2 mb-3-5">London, UK </p>
+                                        {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"
                                                     height="27"
                                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
                                                     alt="" data-icon
                                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p>
+                                        </p> --}}
                                         <ul
                                             class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
                                             <li class="social-icons-facebook">
@@ -710,20 +713,19 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Alice Doe</p>
+                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Pratik Tarafdar</p>
                                         <p
                                             class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Capital Law</p>
-                                        <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p>
-                                        <p class="text-2 mb-3">
+                                            Adviser</p>
+                                        <p class="text-2 mb-3-5">kolkata, India</p>
+                                        {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"
                                                     height="27"
                                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
                                                     alt="" data-icon
                                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p>
+                                        </p> --}}
                                         <ul
                                             class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
                                             <li class="social-icons-facebook">
@@ -742,7 +744,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            {{-- <div>
                                 <div class="row">
                                     <div class="col">
                                         <a href="demo-law-firm-attorneys-detail.html">
@@ -784,7 +786,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
@@ -792,7 +794,7 @@
             </div>
         </div>
     </section>
-
+    {{--
     <section class="parallax section section-text-light section-parallax section-center my-0" data-plugin-parallax
         data-plugin-options="{'speed': 1.5, 'parallaxHeight': '200%'}"
         data-image-src="{{ asset('file') }}/img/demos/law-firm/backgrounds/background-3.jpg">
@@ -844,8 +846,8 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> --}}
+    {{--
     <section class="section bg-transparent section-no-border my-0">
         <div class="container pt-3 pb-4">
             <div class="row">
@@ -945,9 +947,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    <section class="section border-0 lazyload my-0"
+    {{-- <section class="section border-0 lazyload my-0"
         data-bg-src="{{ asset('file') }}/img/demos/law-firm/backgrounds/background-4.jpg"
         style="background-position: 50% 100%;">
         <div class="container">
@@ -1012,7 +1014,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     </section>
 @endsection
 @section('script')

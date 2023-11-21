@@ -1,0 +1,2 @@
+./..
+/home/butechltd/public_html/inventory.heritagebd.net/packages/PHPJasper/bin/jasperstarter/bin

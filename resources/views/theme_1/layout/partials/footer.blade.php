@@ -3,17 +3,17 @@
         <div class="row py-5">
             <div class="col-md-6 mb-4 mb-lg-0">
                 <a href="index.html" class="logo pe-0 pe-lg-3 pb-4">
-                    <img alt="Porto" width="125" height="47"
+                    <img alt="icd-hs" width="auto" height="140"
                         src="{{ asset('file') }}/img/demos/law-firm/logo-footer.png">
                 </a>
-                <p class="pt-3 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna.
+                {{-- <p class="pt-3 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna.
                     Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae
                     purus semper...</p>
                 <p class="mb-0"><a class="mt-3 text-primary font-weight-semi-bold"
                         href="demo-law-firm-about-us.html">Learn More<img width="27" height="27"
                             src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt="" data-icon
                             data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                </p>
+                </p> --}}
             </div>
             <div class="col-md-3 mb-4 mb-lg-0">
                 <h5 class="text-4-5 text-transform-none custom-font-primary mb-3">Contact Us</h5>

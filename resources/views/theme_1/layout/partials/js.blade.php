@@ -19,7 +19,7 @@
 <script src="{{ asset('file') }}/js/theme.js"></script>
 
 <!-- Demo -->
-<script src="{{ asset('file') }}/js/demos/demo-law-firm.js"></script>
+<script src="{{ asset('file') }}/js/demos/demo-medical.js"></script>
 
 <!-- Theme Custom -->
 <script src="{{ asset('file') }}/js/custom.js"></script>
@@ -27,7 +27,7 @@
 <!-- Theme Initialization Files -->
 <script src="{{ asset('file') }}/js/theme.init.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcl-u8ABDp00NpCG16G05_RA-A5CXhefk"></script>
+{{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcl-u8ABDp00NpCG16G05_RA-A5CXhefk"></script> --}}
 
 <!--(bake-start _if="contact-map")-->
 {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcl-u8ABDp00NpCG16G05_RA-A5CXhefk"></script> --}}

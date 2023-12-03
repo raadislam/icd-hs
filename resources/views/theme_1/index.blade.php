@@ -5,180 +5,64 @@
 @section('meta')
 @endsection
 @section('style')
-    <style>
-        .marcontainer {
-            --space: 2rem;
-
-            display: grid;
-            align-content: center;
-            overflow: hidden;
-            gap: var(--space);
-            width: 100%;
-            font-family: "Corben", system-ui, sans-serif;
-            font-size: 1.5rem;
-            line-height: 1.5;
-        }
-
-        .marquee {
-            width: 1260px;
-            margin: auto;
-            --duration: 60s;
-            --gap: var(--space);
-
-            display: flex;
-            overflow: hidden;
-            user-select: none;
-            gap: var(--gap);
-            /* transform: skewY(-3deg); */
-        }
-
-        .marquee__group {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            gap: var(--gap);
-            min-width: 100%;
-            animation: scroll var(--duration) linear infinite;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .marquee__group {
-                animation-play-state: paused;
-            }
-        }
-
-        .marquee__group img {
-            max-width: clamp(10rem, 1rem + 28vmin, 20rem);
-            aspect-ratio: 2/1;
-            object-fit: contain;
-            border-radius: 1rem;
-        }
-
-        .marquee__group p {
-            background-image: linear-gradient(75deg,
-                    hsl(240deg 70% 49%) 0%,
-                    hsl(253deg 70% 49%) 11%,
-                    hsl(267deg 70% 49%) 22%,
-                    hsl(280deg 71% 48%) 33%,
-                    hsl(293deg 71% 48%) 44%,
-                    hsl(307deg 71% 48%) 56%,
-                    hsl(320deg 71% 48%) 67%,
-                    hsl(333deg 72% 48%) 78%,
-                    hsl(347deg 72% 48%) 89%,
-                    hsl(0deg 73% 47%) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .marquee--borders {
-            border-block: 3px solid dodgerblue;
-            padding-block: 0.75rem;
-        }
-
-        .marquee--reverse .marquee__group {
-            animation-direction: reverse;
-            animation-delay: calc(var(--duration) / -2);
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-100% - var(--gap)));
-            }
-        }
-    </style>
 @endsection
 @section('content')
-    <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-modern dots-modern-lg dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
-        data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['700px','700px','700px','550px','500px']"
-        style="height: 700px;">
-        <div class="owl-stage-outer">
-            <div class="owl-stage">
+    <section class="section section-funnel border-0 m-0 p-0">
+        <div class="owl-carousel-wrapper" style="height: 991px;">
+            <div class="owl-carousel dots-inside dots-horizontal-center custom-dots-style-1 show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
+                data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true, 'nav': false}, '479': {'items': 1, 'dots': true}, '768': {'items': 1, 'dots': true}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': true, 'dotsVerticalOffset': '-250px', 'nav': false, 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 7000, 'autoplayHoverPause': true, 'rewind': true}">
 
                 <!-- Carousel Slide 1 -->
-                <div class="owl-item position-relative"
-                    style="background-image: url({{ asset('file') }}/img/demos/law-firm/slides/slide-1-bg.jpg); background-size: cover; background-position: center;">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-lg-6">
-                                <div class="d-flex flex-column justify-content-center h-100">
-                                    {{-- <p class="custom-font-slider-2 text-dark" data-plugin-animated-letters
-                                        data-plugin-options="{'startDelay': 750, 'minWindowWidth': 0, 'animationSpeed': 30}">
-                                        ICD-HS
-                                    </p> --}}
-                                    <h5 class="custom-font-slider-1 mb-0 font-weight-bold appear-animation"
-                                        data-appear-animation="blurIn" data-appear-animation-delay="500"
-                                        data-plugin-options="{'minWindowWidth': 0}">
-                                        ICD-HS
-                                    </h5>
-                                    <div class="divider divider-primary divider-small text-start mt-2 mb-4 mx-0 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-                                        <hr class="my-0">
-                                    </div>
-                                    <p class="text-3-5 line-height-9 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-                                        Muktijoddha Farida Akter Institute of Communication Disorders & Health Services
-                                    </p>
-
-                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-                                        data-appear-animation-delay="1250">
-                                        <div class="d-flex align-items-center mt-2">
-                                            <a href="#"
-                                                class="btn btn-dark btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4">Learn
-                                                More</a>
-                                            <a href="#"
-                                                class="btn btn-primary btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4 ms-4">Request
-                                                Consultation</a>
-                                        </div>
-                                    </div>
-
-                                </div>
+                <div class="position-relative overflow-hidden pb-5"
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
+                        data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
+                        data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-1.jpg); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="container position-relative z-index-3 pb-5 h-100">
+                        <div class="row align-items-center pb-5 h-100">
+                            <div class="col-md-10 col-lg-6 text-center text-md-end pb-5 ms-auto">
+                                <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
+                                    data-plugin-options="{'minWindowWidth': 0}">Urgent Care + Multi-Specialty Medical Clinic
+                                    Group</h1>
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE MEDICAL SERVICES LOCATED IN LOS
+                                    ANGELES, CA</h2>
+                                <a href="#"
+                                    class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
+                                    data-plugin-options="{'minWindowWidth': 0}">GEST STARTED</a>
                             </div>
-                        </div>
-                        <div class="position-absolute left-100pct bottom-0 transform3dx-n50 w-75 ms-5">
-                            <img src="{{ asset('file') }}/img/demos/law-firm/slides/slide-1-1.png"
-                                class="img-fluid mw-100 w-auto appear-animation" alt=""
-                                data-appear-animation="fadeIn" data-appear-animation-delay="100" />
                         </div>
                     </div>
                 </div>
 
                 <!-- Carousel Slide 2 -->
-                <div class="owl-item position-relative"
-                    style="background-image: url({{ asset('file') }}/img/demos/law-firm/slides/slide-2-bg.jpg); background-size: cover; background-position: center;">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col text-center">
-                                <div class="d-flex flex-column justify-content-center h-100">
-                                    {{-- <p class="custom-font-slider-2 text-light" data-plugin-animated-letters
-                                        data-plugin-options="{'startDelay': 750, 'minWindowWidth': 0, 'animationSpeed': 30}">
-                                        ICD-HS</p> --}}
-                                    <h2 class="custom-font-slider-1 mb-0 font-weight-bold text-light appear-animation"
-                                        data-appear-animation="blurIn" data-appear-animation-delay="500"
-                                        data-plugin-options="{'minWindowWidth': 0}">ICD-HS</h2>
-                                    <div class="divider divider-primary divider-small mt-2 mb-4 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-                                        <hr class="my-0 me-auto">
-                                    </div>
-                                    <p class="text-3-5 line-height-9 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-                                        Muktijoddha Farida Akter Institute of Communication Disorders & Health Services</p>
-
-                                    {{-- <div class="text-center appear-animation" data-appear-animation="fadeInUpShorter"
-                                        data-appear-animation-delay="1250">
-                                        <a href="#"
-                                            class="btn btn-light text-dark btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4">Learn
-                                            More</a>
-                                        <a href="#"
-                                            class="btn btn-primary btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4 ms-4">Request
-                                            Consultation</a>
-                                    </div> --}}
-
-                                </div>
+                <div class="position-relative overflow-hidden pb-5"
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
+                        data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
+                        data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-2.jpg); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="container position-relative z-index-3 pb-5 h-100">
+                        <div class="row align-items-center pb-5 h-100">
+                            <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
+                                <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
+                                    data-plugin-options="{'minWindowWidth': 0}">Cardiology, Gastroenterology, Pulmonology
+                                    and Dental Care</h1>
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE MEDICAL SERVICES LOCATED IN LOS
+                                    ANGELES, CA</h2>
+                                <a href="#"
+                                    class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
+                                    data-plugin-options="{'minWindowWidth': 0}">GEST STARTED</a>
                             </div>
                         </div>
                     </div>
@@ -186,15 +70,153 @@
 
             </div>
         </div>
-        <div class="owl-nav">
-            <button type="button" role="presentation" class="owl-prev"></button>
-            <button type="button" role="presentation" class="owl-next"></button>
+        <div class="section-funnel-layer-bottom d-none d-xl-block z-index-1">
+            <div class="section-funnel-layer bg-light"></div>
+            <div class="section-funnel-layer bg-light"></div>
         </div>
-        <div class="owl-dots mb-5">
-            <button role="button" class="owl-dot active"><span></span></button>
-            <button role="button" class="owl-dot"><span></span></button>
+    </section>
+
+    <div class="cards custom-cards container z-index-2">
+        <div class="cards-container row justify-content-center justify-content-xl-between w-100 my-5 mt-xl-0 mx-0">
+            <div class="col-xs-12 col-lg-6 col-xl-4 mb-4 mb-xl-0 pb-2 pb-xl-0">
+                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 appear-animation"
+                    data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
+                    <div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
+                        <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-healthcare-center.png"
+                            alt="Healthcare Center">
+                        <h4 class="card-title mb-1 font-weight-bold">Healthcare Center</h4>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                            viverra erat orci, ac auctor lacus tincidunt ut...</p>
+                        <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6 col-xl-4 mb-4 mb-xl-0 pb-2 pb-xl-0">
+                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 appear-animation"
+                    data-appear-animation="zoomIn" data-appear-animation-delay="100">
+                    <div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
+                        <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-immediate-center.png"
+                            alt="Immediate Center">
+                        <h4 class="card-title mb-1 font-weight-bold">Immediate Center</h4>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                            viverra erat orci, ac auctor lacus tincidunt ut...</p>
+                        <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6 col-xl-4 mb-4 mb-xl-0 pb-2 pb-xl-0">
+                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 appear-animation"
+                    data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+                    <div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
+                        <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-diagnostic-center.png"
+                            alt="Diagnostic Center">
+                        <h4 class="card-title mb-1 font-weight-bold">Diagnostic Center</h4>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                            viverra erat orci, ac auctor lacus tincidunt ut...</p>
+                        <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <section class="about-me mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter"
+                    data-appear-animation-delay="100">
+                    <h3 class="text-color-quaternary mb-3 font-weight-semibold text-capitalize pe-5">The Highest Standard Of
+                        Health Care Medical Clinic</h3>
+                    <p class="text-uppercase mb-3">John Doe - Main Doctor</p>
+                    <img src="{{ asset('file') }}/img/demos/medical-2/others/signature.png" alt="Signature">
+                </div>
+                <div class="col-xs-12 col-lg-8 appear-animation" data-appear-animation="fadeInUpShorter"
+                    data-appear-animation-delay="200">
+                    <p class="p-relative bottom-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet
+                        libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper
+                        vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh
+                        ipsum, blandit id faucibus ac, finibus vitae dui.</p>
+                    <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="more-about lazyload" data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/medical2-bg-1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6 p-relative overflow-hidden col-cuttin-more-about"></div>
+                <div class="col-xs-12 col-lg-6 p-relative py-5 bg-color-light z-index-1 ps-lg-5 ps-xl-0">
+                    <h3 class="text-color-quaternary font-weight-bold text-capitalize mb-2 appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">More About Porto Medical
+                    </h3>
+                    <p class="font-weight-semibold appear-animation" data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut
+                        tellus ante. Nam suscipit urna risus, fermentum commodo ipsum porta id.</p>
+                    <p class="mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci
+                        semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc.</p>
+                    <div class="row counters mb-4 flex-nowrap flex-sm-wrap">
+                        <div class="col-xs-4 col-sm-4 col-lg-4 mb-0 d-flex">
+                            <div class="counter counter-primary appear-animation"
+                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500">
+                                <strong class="number-counter text-10" data-to="35" data-append="+">0</strong>
+                                <label
+                                    class="number-counter-text text-4 text-color-primary font-weight-semibold negative-ls-1">Business
+                                    Year</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-lg-4 mb-0 d-flex">
+                            <div class="counter counter-primary appear-animation"
+                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750">
+                                <strong class="number-counter text-10" data-to="50" data-append="+">0</strong>
+                                <label
+                                    class="number-counter-text text-4 text-color-primary font-weight-semibold negative-ls-1">Specialist
+                                    Doctors</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-lg-4 mb-0 d-flex justify-content-center">
+                            <div class="counter counter-primary appear-animation"
+                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
+                                <strong class="number-counter text-10" data-to="200" data-append="+">0</strong>
+                                <label
+                                    class="number-counter-text text-4 text-color-primary font-weight-semibold negative-ls-1">Modern
+                                    Rooms</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="100">Pellentesque ultricies nibh gravida, accumsan libero luctus,
+                        molestie nunc. In nibh ipsum, blandit id faucibus ac.</p>
+                    <div class="d-flex justify-content-start flex-column flex-xl-row">
+                        <ul class="list list-icons list-icons-style-2 list-icons-sm custom-list-icons mb-1 mb-xl-3">
+                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
+                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100"><i
+                                    class="fas fa-check text-color-quaternary"></i>Pellentesque ultricies nibh</li>
+                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
+                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"><i
+                                    class="fas fa-check text-color-quaternary"></i>Ultricies nibh pellen</li>
+                            <li class="text-color-quaternary font-weight-bold appear-animation"
+                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300"><i
+                                    class="fas fa-check text-color-quaternary"></i>Pellentesque ultricies nibh</li>
+                        </ul>
+                        <ul class="list list-icons list-icons-style-2 list-icons-sm custom-list-icons">
+                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
+                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400"><i
+                                    class="fas fa-check text-color-quaternary"></i>Ultricies nibh pellen</li>
+                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
+                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"><i
+                                    class="fas fa-check text-color-quaternary"></i>Pellentesque ultricies nibh</li>
+                            <li class="text-color-quaternary font-weight-bold appear-animation"
+                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"><i
+                                    class="fas fa-check text-color-quaternary"></i>Ultricies nibh pellen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="section section-default section-no-border my-0">
         <div class="container pt-3 pb-4">
@@ -218,7 +240,8 @@
 
                         <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-about-us.html">Learn More<img
                                 width="27" height="27"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt="" data-icon
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
+                                data-icon
                                 data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
                     </div>
                 </div>
@@ -298,8 +321,8 @@
                         data-appear-animation-delay="0">
                         <div class="feature-box-icon mt-3">
                             <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/health-law.svg" alt="" data-icon
-                                data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/health-law.svg" alt=""
+                                data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
                         </div>
                         <div class="feature-box-info ms-3">
                             <h4 class="mb-2">Health Law</h4>
@@ -794,227 +817,53 @@
             </div>
         </div>
     </section>
-    {{--
-    <section class="parallax section section-text-light section-parallax section-center my-0" data-plugin-parallax
-        data-plugin-options="{'speed': 1.5, 'parallaxHeight': '200%'}"
-        data-image-src="{{ asset('file') }}/img/demos/law-firm/backgrounds/background-3.jpg">
-        <div class="container position-relative">
-            <div class="row py-5 counters counters-text-light">
-                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="counter">
-                        <img width="44" height="50"
-                            src="{{ asset('file') }}/img/demos/law-firm/icons/business-years.svg" alt=""
-                            data-icon
-                            data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light d-inline-block ms-2 p-relative bottom-1'}" />
-                        <strong class="pt-3 custom-font-secondary font-weight-bold" data-to="50"
-                            data-append="+">0</strong>
-                        <label class="pt-2 text-4 opacity-7">Business Years</label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="counter">
-                        <img width="60" height="50"
-                            src="{{ asset('file') }}/img/demos/law-firm/icons/satisfied-clients.svg" alt=""
-                            data-icon
-                            data-plugin-options="{'onlySVG': true, 'extraClass': 'd-inline-block ms-2 p-relative bottom-1'}" />
-                        <strong class="pt-3 custom-font-secondary font-weight-bold" data-to="240"
-                            data-append="+">0</strong>
-                        <label class="pt-2 text-4 opacity-7">Satisfied Clients</label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
-                    <div class="counter">
-                        <img width="46" height="50"
-                            src="{{ asset('file') }}/img/demos/law-firm/icons/successfull-cases.svg" alt=""
-                            data-icon
-                            data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light d-inline-block ms-2 p-relative bottom-1'}" />
-                        <strong class="pt-3 custom-font-secondary font-weight-bold" data-to="2000"
-                            data-append="+">0</strong>
-                        <label class="pt-2 text-4 opacity-7">Successfull Cases</label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="counter">
-                        <img width="41" height="50"
-                            src="{{ asset('file') }}/img/demos/law-firm/icons/professional-attorneys.svg" alt=""
-                            data-icon
-                            data-plugin-options="{'onlySVG': true, 'extraClass': 'd-inline-block ms-2 p-relative bottom-1'}" />
-                        <strong class="pt-3 custom-font-secondary font-weight-bold" data-to="20"
-                            data-append="+">0</strong>
-                        <label class="pt-2 text-4 opacity-7">Professional Attorneys</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    {{--
-    <section class="section bg-transparent section-no-border my-0">
-        <div class="container pt-3 pb-4">
+
+    <section class="insurance-providers pt-5 pb-lg-5 bg-color-grey">
+        <div class="container my-lg-3 py-lg-2">
             <div class="row">
-                <div class="col text-center">
-                    <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Latest News</h2>
-                        <div class="divider divider-primary divider-small mt-2 mb-4 text-center">
-                            <hr class="my-0 mx-auto">
-                        </div>
-                    </div>
+                <div class="col">
+                    <p class="text-uppercase mb-0 d-block text-center text-uppercase appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">MAJOR BRANDS</p>
+                    <h3 class="text-color-quaternary mb-2 d-block text-center font-weight-bold text-capitalize appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Insurance Providers</h3>
+                    <p class="mb-5 d-block text-center appear-animation" data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        imperdiet libero id nisi euismod.</p>
                 </div>
             </div>
-            <div class="row pt-3 mt-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 p-relative">
-                            <a href="demo-law-firm-news-post.html" class="text-decoration-none text-light">
-                                <span
-                                    class="position-absolute bottom-10 right-0 d-flex justify-content-end w-100 py-3 px-4 z-index-3">
-                                    <span
-                                        class="text-center bg-primary border-radius text-color-light font-weight-semibold line-height-2 px-3 py-2">
-                                        <span class="position-relative z-index-2">
-                                            <span class="text-8">18</span>
-                                            <span
-                                                class="custom-font-secondary d-block text-1 positive-ls-2 px-1">FEB</span>
-                                        </span>
-                                    </span>
-                                </span>
-                                <img src="{{ asset('file') }}/img/demos/law-firm/blog/blog-thumb-1.jpg" class="img-fluid"
-                                    alt="Lorem Ipsum Dolor" />
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <span class="d-block text-color-grey font-weight-semibold positive-ls-2 text-2">BY ADMIN</span>
-                            <h3 class="custom-font-primary mb-2">
-                                <a href="demo-law-firm-news-post.html"
-                                    class="text-dark text-transform-none font-weight-bold text-1 line-height-3 text-color-hover-primary text-decoration-none">
-                                    Lorem ipsum dolor sit amet, consectetur
-                            </h3>
-                            </a>
-                            </h3>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque rutrum
-                                pellentesqu...</p>
-                            <a href="demo-law-firm-news-post.html"
-                                class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
-                                View More
-                                <img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}"
-                                    style="width: 27px;" />
-                            </a>
-                        </div>
-                    </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-1.png"
+                        alt="Provider">
                 </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 p-relative">
-                            <a href="demo-law-firm-news-post.html" class="text-decoration-none text-light">
-                                <span
-                                    class="position-absolute bottom-10 right-0 d-flex justify-content-end w-100 py-3 px-4 z-index-3">
-                                    <span
-                                        class="text-center bg-primary border-radius text-color-light font-weight-semibold line-height-2 px-3 py-2">
-                                        <span class="position-relative z-index-2">
-                                            <span class="text-8">18</span>
-                                            <span
-                                                class="custom-font-secondary d-block text-1 positive-ls-2 px-1">FEB</span>
-                                        </span>
-                                    </span>
-                                </span>
-                                <img src="{{ asset('file') }}/img/demos/law-firm/blog/blog-thumb-2.jpg" class="img-fluid"
-                                    alt="Lorem Ipsum Dolor" />
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <span class="d-block text-color-grey font-weight-semibold positive-ls-2 text-2">BY ADMIN</span>
-                            <h3 class="custom-font-primary mb-2">
-                                <a href="demo-law-firm-news-post.html"
-                                    class="text-dark text-transform-none font-weight-bold text-1 line-height-3 text-color-hover-primary text-decoration-none">
-                                    Lorem ipsum dolor sit amet, consectetur
-                            </h3>
-                            </a>
-                            </h3>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque rutrum
-                                pellentesqu...</p>
-                            <a href="demo-law-firm-news-post.html"
-                                class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
-                                View More
-                                <img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}"
-                                    style="width: 27px;" />
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-2.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-3.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-4.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-5.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-6.png"
+                        alt="Provider">
                 </div>
             </div>
         </div>
-    </section> --}}
-
-    {{-- <section class="section border-0 lazyload my-0"
-        data-bg-src="{{ asset('file') }}/img/demos/law-firm/backgrounds/background-4.jpg"
-        style="background-position: 50% 100%;">
-        <div class="container">
-            <div class="row justify-content-md-end py-3">
-                <div class="col-md-6">
-                    <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Request a Free Consultation</h2>
-                        <div class="divider divider-primary divider-small mt-2 mb-4">
-                            <hr class="my-0 me-auto">
-                        </div>
-                    </div>
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-                        <p class="font-weight-medium text-4">Consult right now with our experienced team for complete
-                            solutions to your legal issues.</p>
-                    </div>
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
-                        <form class="contact-form form-style-2" action="php/contact-form.php" method="POST">
-                            <div class="contact-form-success alert alert-success d-none mt-4">
-                                <strong>Success!</strong> Your message has been sent to us.
-                            </div>
-
-                            <div class="contact-form-error alert alert-danger d-none mt-4">
-                                <strong>Error!</strong> There was an error sending your message.
-                                <span class="mail-error-message text-1 d-block"></span>
-                            </div>
-
-                            <div class="row pb-2 mb-1">
-                                <div class="form-group col-lg-6">
-                                    <input type="text" value="" placeholder="Full Name"
-                                        data-msg-required="Please enter your name." maxlength="100"
-                                        class="form-control text-3 h-auto py-2" name="name" required>
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <input type="email" value="" placeholder="Email Address"
-                                        data-msg-required="Please enter your email address."
-                                        data-msg-email="Please enter a valid email address." maxlength="100"
-                                        class="form-control text-3 h-auto py-2" name="email" required>
-                                </div>
-                            </div>
-                            <div class="row pb-2 mb-1">
-                                <div class="form-group col">
-                                    <input type="text" value="" placeholder="Subject"
-                                        data-msg-required="Please enter the subject." maxlength="100"
-                                        class="form-control text-3 h-auto py-2" name="subject" required>
-                                </div>
-                            </div>
-                            <div class="row pb-2 mb-1">
-                                <div class="form-group col">
-                                    <textarea maxlength="5000" placeholder="Message" data-msg-required="Please enter your message." rows="8"
-                                        class="form-control text-3 h-auto py-2" name="message" required></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <input type="submit" value="Submit Form"
-                                        class="btn btn-primary btn-modern text-uppercase font-weight-bold text-2 py-3 btn-px-4"
-                                        data-loading-text="Loading...">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
     </section>
 @endsection
 @section('script')

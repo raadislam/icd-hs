@@ -25,12 +25,12 @@
                             <div class="col-md-10 col-lg-6 text-center text-md-end pb-5 ms-auto">
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                                    data-plugin-options="{'minWindowWidth': 0}">Urgent Care + Multi-Specialty Medical Clinic
-                                    Group</h1>
+                                    data-plugin-options="{'minWindowWidth': 0}">Improving support for people with
+                                    disabilities through better documentation</h1>
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE MEDICAL SERVICES LOCATED IN LOS
-                                    ANGELES, CA</h2>
+                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE MEDICAL SERVICES LOCATED
+                                    NARAYANGANJ, BD</h2>
                                 <a href="#"
                                     class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
@@ -53,16 +53,15 @@
                             <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                                    data-plugin-options="{'minWindowWidth': 0}">Cardiology, Gastroenterology, Pulmonology
-                                    and Dental Care</h1>
+                                    data-plugin-options="{'minWindowWidth': 0}">Supporting people with intellectual and
+                                    developmental disabilities around the world</h1>
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE MEDICAL SERVICES LOCATED IN LOS
-                                    ANGELES, CA</h2>
+                                    data-plugin-options="{'minWindowWidth': 0}">CONTACT ANYTIME FROM ANYWHERE</h2>
                                 <a href="#"
                                     class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
-                                    data-plugin-options="{'minWindowWidth': 0}">GEST STARTED</a>
+                                    data-plugin-options="{'minWindowWidth': 0}">CONTACT US</a>
                             </div>
                         </div>
                     </div>
@@ -268,7 +267,7 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Practice Areas</h2>
+                        <h2 class="mb-0 font-weight-bold">Our Products</h2>
                         <div class="divider divider-primary divider-small mt-2 mb-4 text-center">
                             <hr class="my-0 mx-auto">
                         </div>
@@ -281,13 +280,15 @@
                         data-appear-animation-delay="0">
                         <div class="feature-box-icon mt-3">
                             <img width="50" height="50"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/criminal-law.svg" alt=""
-                                data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark'}" />
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/special-education.svg" alt="" />
                         </div>
                         <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Criminal Law</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque
-                                imperdiet. Nulla lacinia iaculis nulla.</p>
+                            <h4 class="mb-2">Special & Inclusive Education</h4>
+                            <p style="text-align: justify">Provide better learning opportunities. Children with different
+                                abilities are often more
+                                motivated to learn together with other
+                                children.Expectations are even higher for all children.Successful inclusion requires
+                                developing individual strengths and talents.</p>
                             <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
@@ -301,13 +302,15 @@
                         data-appear-animation-delay="0">
                         <div class="feature-box-icon mt-3">
                             <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/business-law.svg" alt=""
-                                data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/speech-therapy.svg" alt="" />
                         </div>
                         <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Business Law</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque
-                                imperdiet. Nulla lacinia iaculis nulla.</p>
+                            <h4 class="mb-2">Speech Therapy</h4>
+                            <p style="text-align: justify">The goals of speech therapy include improving pronunciation,
+                                strengthening the muscles used
+                                in speech, and learning to speak correctly. Speech therapy can be used for a lot of
+                                different speech problems and disorders, from smaller problems like a hoarse voice up to
+                                partial loss of speech due to brain damage.</p>
                             <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
@@ -325,9 +328,11 @@
                                 data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
                         </div>
                         <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Health Law</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque
-                                imperdiet. Nulla lacinia iaculis nulla.</p>
+                            <h4 class="mb-2">Care Giving</h4>
+                            <p style="text-align: justify">Caregiving is essential to safeguard the well-being of those
+                                incapable of independently managing their daily activities and health requirements; this
+                                proves particularly vital for aging populations, individuals enduring chronic illnesses or
+                                disabilities, those recovering from medical.</p>
                             <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
@@ -347,9 +352,11 @@
                                 data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
                         </div>
                         <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Divorce Law</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque
-                                imperdiet. Nulla lacinia iaculis nulla.</p>
+                            <h4 class="mb-2">Occupational Therapy</h4>
+                            <p style="text-align: justify">OT helps kids play, improves their school performance, and aids
+                                their daily activities. It also boosts their self-esteem and sense of accomplishment. With
+                                OT, kids can: Develop fine motor skills so they can grasp and release toys and develop good
+                                handwriting or computer skills..</p>
                             <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
@@ -363,13 +370,14 @@
                         data-appear-animation-delay="300">
                         <div class="feature-box-icon mt-3">
                             <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/capital-law.svg" alt=""
-                                data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/physiotherapy.svg" alt="" />
                         </div>
                         <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Capital Law</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque
-                                imperdiet. Nulla lacinia iaculis nulla.</p>
+                            <h4 class="mb-2">Physiotherapy</h4>
+                            <p>Physiotherapy is a hugely beneficial specialist treatment of injury, disease and disorders.
+                                Through physical methods, it helps them to restore function and movement in the area that
+                                has been affected. Physiotherapy also helps with preventing further damage or injury on the
+                                previously affected body part..</p>
                             <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
@@ -378,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                {{-- <div class="col-lg-4">
                     <div class="feature-box feature-box-style-2 mb-2 appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="300">
                         <div class="feature-box-icon mt-3">
@@ -398,7 +406,7 @@
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -541,7 +549,7 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Directors</h2>
+                        <h2 class="mb-0 font-weight-bold">Our Coordinator</h2>
                         <div class="divider divider-primary divider-small mt-2 mb-4 text-center">
                             <hr class="my-0 mx-auto">
                         </div>
@@ -563,12 +571,20 @@
                                 <div class="row pb-3">
                                     <div class="col pt-3">
                                         <p class="text-color-dark text-4-5 font-weight-bold mb-1">Mohammad Salim Miah</p>
-                                        <p
-                                            class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Adviser
+                                        <p class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase"
+                                            style="padding: 0px !important; margin: 0px !important">
+                                            Founder and Director
                                         </p>
-                                        {{-- <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p> --}}
+                                        <img width="50" height="50"
+                                            src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg"
+                                            alt="" />
+                                        <p class="text-2"
+                                            style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                            Dhaka, Bangladesh
+                                        </p>
+                                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                            smiah_bd@yahoo.com
+                                        </p>
                                         {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"
@@ -653,7 +669,7 @@
                                         <p class="text-color-dark text-4-5 font-weight-bold mb-1">Monzur Ali</p>
                                         <p
                                             class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Consultant
+                                            Founder and Director
                                         </p>
                                         <p class="text-2 mb-3-5">Toronto,Canada</p>
                                         {{-- <p class="text-2 mb-3">
@@ -693,12 +709,24 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">MD. Najmul Hassan</p>
-                                        <p
-                                            class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Business Adviser
+                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">MD. Najmul Hasan</p>
+                                        <p class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase"
+                                            style="padding: 0px !important; margin: 0px !important">
+                                            International Co-Ordinator
                                         </p>
-                                        <p class="text-2 mb-3-5">London, UK </p>
+                                        <img width="50" height="50"
+                                            src="{{ asset('file') }}/img/demos/law-firm/icons/united-kingdom.svg"
+                                            alt="" />
+                                        <p class="text-2"
+                                            style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                            Tottenham, United Kingdom
+                                        </p>
+                                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                            najmulh@eccollege.org.uk
+                                        </p>
+                                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                            najmulh@olceurope.com
+                                        </p>
                                         {{-- <p class="text-2 mb-3">
                                             <a class="mt-3 font-weight-semi-bold"
                                                 href="demo-law-firm-attorneys-detail.html">View More<img width="27"

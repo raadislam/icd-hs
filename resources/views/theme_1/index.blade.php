@@ -544,305 +544,346 @@
         </div>
     </div>
 
-    <section class="section bg-transparent section-no-border my-0">
-        <div class="container pt-3 pb-4">
+    <section class="meet-doctors mb-5">
+        <div class="container">
             <div class="row">
-                <div class="col text-center">
-                    <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Our Coordinator</h2>
-                        <div class="divider divider-primary divider-small mt-2 mb-4 text-center">
-                            <hr class="my-0 mx-auto">
+                <div class="col">
+                    <p class="text-uppercase mb-0 mt-5">Profile</p>
+                    <h3 class="font-weight-bold  mb-3 text-capitalize">Meet Our Co-ordinators</h3>
+                    <div class="owl-carousel owl-theme custom-owl-carousel stage-margin nav-style-1"
+                        data-plugin-options="{'items': 5, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-6.png">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">Mohammad Salim
+                                    Miah</strong>
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Founder and Director
+                                </p>
+                                <span
+                                    class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
+                                    Dhaka, Bangladesh
+                                </span>
+
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    smiah_bd@yahoo.com
+                                </p>
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-3.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    MD. Najmul Hasan
+                                </strong>
 
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-
-                        <div class="owl-carousel owl-theme dots-modern dots-modern-lg pt-3 pb-0 mb-0"
-                            data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 3}, '1199': {'items': 4}}, 'loop': false, 'autoHeight': true, 'margin': 20}">
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-6.png"
-                                                class="img-fluid" alt="Image of the team member" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row pb-3">
-                                    <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Mohammad Salim Miah</p>
-                                        <p class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase"
-                                            style="padding: 0px !important; margin: 0px !important">
-                                            Founder and Director
-                                        </p>
-                                        <img width="50" height="50"
-                                            src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg"
-                                            alt="" />
-                                        <p class="text-2"
-                                            style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                            Dhaka, Bangladesh
-                                        </p>
-                                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                                            smiah_bd@yahoo.com
-                                        </p>
-                                        {{-- <p class="text-2 mb-3">
-                                            <a class="mt-3 font-weight-semi-bold"
-                                                href="demo-law-firm-attorneys-detail.html">View More<img width="27"
-                                                    height="27"
-                                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
-                                                    alt="" data-icon
-                                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p> --}}
-                                        <ul
-                                            class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                            <li class="social-icons-facebook">
-                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li class="social-icons-twitter">
-                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                                        class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="social-icons-linkedin">
-                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-1.jpg"
-                                                class="img-fluid" alt="Image of the team member" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row pb-3">
-                                    <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Mutkijoddha Farida Akter
-                                        </p>
-                                        <p
-                                            class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
-                                        </p>
-                                        {{-- <p class="text-2 mb-3-5">রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971</p> --}}
-                                        {{-- <p class="text-2 mb-3">
-                                            <a class="mt-3 font-weight-semi-bold"
-                                                href="demo-law-firm-attorneys-detail.html">View More<img width="27"
-                                                    height="27"
-                                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
-                                                    alt="" data-icon
-                                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p> --}}
-                                        <ul
-                                            class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                            <li class="social-icons-facebook">
-                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li class="social-icons-twitter">
-                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                                        class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="social-icons-linkedin">
-                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-2.jpg"
-                                                class="img-fluid" alt="Image of the team member" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row pb-3">
-                                    <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Monzur Ali</p>
-                                        <p
-                                            class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Founder and Director
-                                        </p>
-                                        <p class="text-2 mb-3-5">Toronto,Canada</p>
-                                        {{-- <p class="text-2 mb-3">
-                                            <a class="mt-3 font-weight-semi-bold"
-                                                href="demo-law-firm-attorneys-detail.html">View More<img width="27"
-                                                    height="27"
-                                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
-                                                    alt="" data-icon
-                                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p> --}}
-                                        <ul
-                                            class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                            <li class="social-icons-facebook">
-                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li class="social-icons-twitter">
-                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                                        class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="social-icons-linkedin">
-                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-3.jpg"
-                                                class="img-fluid" alt="Image of the team member" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row pb-3">
-                                    <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">MD. Najmul Hasan</p>
-                                        <p class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase"
-                                            style="padding: 0px !important; margin: 0px !important">
-                                            International Co-Ordinator
-                                        </p>
-                                        <img width="50" height="50"
-                                            src="{{ asset('file') }}/img/demos/law-firm/icons/united-kingdom.svg"
-                                            alt="" />
-                                        <p class="text-2"
-                                            style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                            Tottenham, United Kingdom
-                                        </p>
-                                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                                            najmulh@eccollege.org.uk
-                                        </p>
-                                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                                            najmulh@olceurope.com
-                                        </p>
-                                        {{-- <p class="text-2 mb-3">
-                                            <a class="mt-3 font-weight-semi-bold"
-                                                href="demo-law-firm-attorneys-detail.html">View More<img width="27"
-                                                    height="27"
-                                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
-                                                    alt="" data-icon
-                                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p> --}}
-                                        <ul
-                                            class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                            <li class="social-icons-facebook">
-                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li class="social-icons-twitter">
-                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                                        class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="social-icons-linkedin">
-                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-4.jpg"
-                                                class="img-fluid" alt="Image of the team member" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row pb-3">
-                                    <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Pratik Tarafdar</p>
-                                        <p
-                                            class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Adviser</p>
-                                        <p class="text-2 mb-3-5">kolkata, India</p>
-                                        {{-- <p class="text-2 mb-3">
-                                            <a class="mt-3 font-weight-semi-bold"
-                                                href="demo-law-firm-attorneys-detail.html">View More<img width="27"
-                                                    height="27"
-                                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
-                                                    alt="" data-icon
-                                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p> --}}
-                                        <ul
-                                            class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                            <li class="social-icons-facebook">
-                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li class="social-icons-twitter">
-                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                                        class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="social-icons-linkedin">
-                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {{-- <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="demo-law-firm-attorneys-detail.html">
-                                            <img src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg"
-                                                class="img-fluid" alt="Image of the team member" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row pb-3">
-                                    <div class="col pt-3">
-                                        <p class="text-color-dark text-4-5 font-weight-bold mb-1">Chuck Doe</p>
-                                        <p
-                                            class="d-block text-color-default font-weight-semibold line-height-1 positive-ls-2 text-2 text-uppercase mb-3">
-                                            Divorce Law</p>
-                                        <p class="text-2 mb-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            nunc viverra erat orci.</p>
-                                        <p class="text-2 mb-3">
-                                            <a class="mt-3 font-weight-semi-bold"
-                                                href="demo-law-firm-attorneys-detail.html">View More<img width="27"
-                                                    height="27"
-                                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg"
-                                                    alt="" data-icon
-                                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                                        </p>
-                                        <ul
-                                            class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                            <li class="social-icons-facebook">
-                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li class="social-icons-twitter">
-                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                                        class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="social-icons-linkedin">
-                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> --}}
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/united-kingdom.svg"
+                                    alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    International Co-Ordinator
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Tottenham, United Kingdom
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    najmulh@eccollege.org.uk
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    najmulh@olceurope.com
+                                </p>
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Mutkijoddha Farida Akter
+                                </strong>
 
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Founder and Director
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Dhaka, Bangladesh
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
+                                </p>
+
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Monzur Ali
+                                </strong>
+
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/canada.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Founder and Director
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Dhaka, Bangladesh
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
+                                </p>
+
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Pratik Tarafdar
+                                </strong>
+
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/india.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Adviser
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Kalkata, India
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+
+                                </p>
+
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="medical-services py-5 p-relative overflow-hidden lazyload"
+        data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/medical2-bg-3.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4">
+                    <p class="text-uppercase mb-0 text-color-light appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Departments</p>
+                    <h3 class="text-color-quaternary mb-2 text-color-light font-weight-bold text-capitalize appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Medical Services
+                    </h3>
+                    <p class="mb-5 text-color-light appear-animation" data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci
+                        semper.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="cards-medical-services row flex-wrap justify-content-center">
+                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                            <div
+                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
+                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-cardiology.png"
+                                    class="img-fluid mb-5" alt="Cardiology">
+                                <h4 style="text-align: center"
+                                    class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Research
+                                    Consultation Service</h4>
+                                <p class="card-text mb-2 text-center">We provide consultation support to the new
+                                    researchers in the field of social science for doing their research work. You may seek
+                                    proper guidance from our researchers' panel at any stage of your research project.
+                                    University faculty and experienced research scholars will guide you individually both
+                                    online and offline.
+                                </p>
+                                <a href="demo-medical-2-departments-detail.html"
+                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
+                            </div>
+                        </div>
+                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+                            <div
+                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
+                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-gastroenterology.png"
+                                    class="img-fluid mb-5" alt="Gastroenterology">
+                                <h4 style="text-align: center"
+                                    class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">
+                                    Counseling and Psychotherapy
+                                </h4>
+                                <p class="card-text mb-2 text-center">Six month long part-time course with two months
+                                    practical. Appropriate for, parents, teachers and medical professionals.
+                                    Classes will be conducted by competent university faculty and practicing counselors.
+                                </p>
+                                <a href="demo-medical-2-departments-detail.html"
+                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
+                            </div>
+                        </div>
+                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+                            <div
+                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
+                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-pulmonology.png"
+                                    class="img-fluid mb-5" alt="Pulmonology">
+                                <h4 style="text-align: center"
+                                    class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Special and
+                                    Inclusive Education</h4>
+                                <p class="card-text mb-2 text-center">Most suitable course for parents and teachers of
+                                    children with special needs. It covers the understanding of all types of disability
+                                    their etiology, treatment, and education. No matter whether you are a teacher of a
+                                    regular or special school equip yourself with knowledge and skills of dealing with such
+                                    children in school or at home. It is an easy-going course, no time needed for study or
+                                    exam.</p>
+                                <a href="demo-medical-2-departments-detail.html"
+                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
+                            </div>
+                        </div>
+                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">
+                            <div
+                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
+                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-dental.png"
+                                    class="img-fluid mb-5" alt="Dental Care">
+                                <h4 class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">
+                                    Special and Inclusive Education</h4>
+                                <p class="card-text mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
+                                <a href="demo-medical-2-departments-detail.html"
+                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
+                            </div>
+                        </div>
+                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+                            <div
+                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
+                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-gynecology.png"
+                                    class="img-fluid mb-5" alt="Gynecology">
+                                <h4 class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Gynecology</h4>
+                                <p class="card-text mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
+                                <a href="demo-medical-2-departments-detail.html"
+                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
+                            </div>
+                        </div>
+                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+                            <div
+                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
+                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-hepatology.png"
+                                    class="img-fluid mb-5" alt="Hepatology">
+                                <h4 class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Hepatology</h4>
+                                <p class="card-text mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
+                                <a href="demo-medical-2-departments-detail.html"
+                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-center pb-lg-5 mb-lg-5">
+                    <p class="text-uppercase text-color-light d-block text-center mb-2 appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">Need a Speciallist?</p>
+                    <h3 class="text-color-quaternary mb-4 text-color-light d-block text-center font-weight-semibold text-capitalize appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Get Better Now! Just
+                        Make An Appointment</h3>
+                    <a href="demo-medical-2-contact-us.html"
+                        class="btn btn-outline btn-light bg-hover-light text-hover-dark text-color-light border-color-light text-uppercase rounded-0 px-5 py-3 mb-2 appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">make an appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-funnel-layer-bottom">
+            <div class="section-funnel-layer bg-color-light"></div>
+            <div class="section-funnel-layer bg-color-light"></div>
         </div>
     </section>
 

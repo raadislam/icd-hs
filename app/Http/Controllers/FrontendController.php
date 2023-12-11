@@ -4,37 +4,39 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactUsmail;
 use App\Models\Event;
-use App\Models\EventImage;
-use App\Models\SubcribersEmail;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         return view('theme_1.index');
     }
-    public function aboutus(Request $request)
+    public function shortCourse()
+    {
+        return view('theme_1.shortCourses');
+    }
+    public function aboutus()
     {
         return view('theme_1.aboutus');
     }
-    public function contactus(Request $request)
+    public function contactus()
     {
         return view('theme_1.contactus');
     }
-    public function training(Request $request)
+    public function training()
     {
         return view('theme_1.training');
     }
-    public function certification(Request $request)
+    public function certification()
     {
         return view('theme_1.certification');
     }
-    public function afterSchoolProgram(Request $request)
+    public function afterSchoolProgram()
     {
         return view('theme_1.program');
     }
-    public function studentServices(Request $request)
+    public function studentServices()
     {
         return view('theme_1.studentService');
     }

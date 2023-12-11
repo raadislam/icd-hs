@@ -74,8 +74,28 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link active" href="demo-medical-2.html">
+                                            <a class="nav-link active" href="/">
                                                 Home
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link" href="{{route('aboutus')}}">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link" href="demo-medical-2.html">
+                                                Program of Study
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link" href="{{route('shortCourse')}}">
+                                                Short Courses
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link" href="demo-medical-2.html">
+                                                Our Team
                                             </a>
                                         </li>
                                     </ul>

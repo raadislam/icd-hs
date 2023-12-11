@@ -34,7 +34,9 @@
                                 <a href="#"
                                     class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
-                                    data-plugin-options="{'minWindowWidth': 0}">GEST STARTED</a>
+                                    data-plugin-options="{'minWindowWidth': 0}">
+                                    GET STARTED
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -141,6 +143,146 @@
         </div>
     </section>
 
+    <section class="section section-default section-no-border my-0">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <h2 class="font-weight-bold text-color-dark">- Program of Study</h2>
+                    <div class="owl-carousel owl-theme nav-bottom rounded-nav numbered-dots ps-1 pe-1" data-plugin-options="{'items': 1, 'loop': false, 'dots': true, 'nav': false, 'autoplay': true, 'autoplayTimeout': 4000, 'autoplayHoverPause': true}">
+                        <div>
+                            <div class="custom-step-item">
+                                <span class="step text-uppercase">
+                                    
+                                    <span style="font-size: 2em !important" class="step-number text-color-primary">
+                                        01
+                                    </span>
+                                </span>
+                                <div class="step-content">
+                                    <h4 class="mb-3"><br> <strong>Care Giving</strong></h4>
+                                    <p> caregiving courses and equip yourself with the skills necessary to provide effective health and safety care to your clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="custom-step-item">
+                                <span class="step text-uppercase">
+                                    <span style="font-size: 2em !important" class="step-number text-color-primary">
+                                        02
+                                    </span>
+                                </span>>
+                                <div class="step-content">
+                                    <h4 class="mb-3"><br> <strong>Nursing</strong></h4>
+                                    <p>Nurses make a real difference in people's lives Nurses' expertise, innovation, and compassion enable nurses to make a meaningful impact in the communities they serve by providing essential healthcare, advocacy, and leadership where and when it is needed most.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="custom-step-item">
+                                <span class="step text-uppercase">
+                                    <span style="font-size: 2em !important" class="step-number text-color-primary">
+                                        03
+                                    </span>
+                                </span>
+                                <div class="step-content">
+                                    <h4 class="mb-3"><br> <strong>Speech Pathology</strong></h4>
+                                    <p>Speech pathologists play an essential role in improving quality of life for others. SLPs show clients how to make positive changes that have a lasting impact on their lives. That's why it's important to have enthusiasm for helping people if you aspire to be a speech therapist.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="custom-step-item">
+                                <span class="step text-uppercase">
+                                    <span style="font-size: 2em !important" class="step-number text-color-primary">
+                                        04
+                                    </span>
+                                </span>
+                                <div class="step-content">
+                                    <h4 class="mb-3"><br> <strong>Audiology</strong></h4>
+                                    <p>Audiologists have the ability to positively impact people's lives by helping them improve their hearing and communication abilities. As an audiologist, you would have the opportunity to work with patients of all ages, from infants to seniors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="font-weight-bold text-color-dark">- Short Courses</h2>
+                    <div class="accordion without-bg custom-accordion-style-1" id="accordion7">
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7One" aria-expanded="true">
+                                        Research Consultation Service.
+                                        <span class="custom-accordion-plus"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse7One" class="collapse show" aria-expanded="true">
+                                <div class="card-body">
+                                    <p>We provide consultation support to the new researchers in the field of social science for doing their research work. You may seek proper guidance from our researchers' panel at any stage of your research project. University faculty and experienced research scholars will guide you individually both online and offline.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7Two" aria-expanded="false">
+                                        Counseling and Psychotherapy
+                                        <span class="custom-accordion-plus"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse7Two" class="collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="card-body">
+                                    <p>Six month long part-time course with two months practical. Appropriate for, parents, teachers and medical professionals. Classes will be conducted by competent university faculty and practicing counselors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7Three" aria-expanded="false">
+                                        Special and Inclusive Education.
+                                        <span class="custom-accordion-plus"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse7Three" class="collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="card-body">
+                                    <p>Most suitable course for parents and teachers of children with special needs. It covers the understanding of all types of disability their etiology, treatment, and education. No matter whether you are a teacher of a regular or special school equip yourself with knowledge and skills of dealing with such children in school or at home. It is an easy-going course, no time needed for study or exam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7Four" aria-expanded="false">
+                                        Daycare Support and Management.
+                                        <span class="custom-accordion-plus"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse7Four" class="collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="card-body">
+                                    <p>If you are unemployed and looking for a job then try this opportunity of setting up a day care center. This training will provide some basic knowledge and skills of child rearing and their management.
+                                        Join a professional training and get a certificate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2em">
+                        <a href="#"
+                                        class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-2 px-5 appear-animation"
+                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        See all
+                 </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
     <section class="more-about lazyload" data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/medical2-bg-1.jpg">
         <div class="container">
             <div class="row">
@@ -184,33 +326,6 @@
                                     Rooms</label>
                             </div>
                         </div>
-                    </div>
-                    <p class="mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="100">Pellentesque ultricies nibh gravida, accumsan libero luctus,
-                        molestie nunc. In nibh ipsum, blandit id faucibus ac.</p>
-                    <div class="d-flex justify-content-start flex-column flex-xl-row">
-                        <ul class="list list-icons list-icons-style-2 list-icons-sm custom-list-icons mb-1 mb-xl-3">
-                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100"><i
-                                    class="fas fa-check text-color-quaternary"></i>Pellentesque ultricies nibh</li>
-                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"><i
-                                    class="fas fa-check text-color-quaternary"></i>Ultricies nibh pellen</li>
-                            <li class="text-color-quaternary font-weight-bold appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300"><i
-                                    class="fas fa-check text-color-quaternary"></i>Pellentesque ultricies nibh</li>
-                        </ul>
-                        <ul class="list list-icons list-icons-style-2 list-icons-sm custom-list-icons">
-                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400"><i
-                                    class="fas fa-check text-color-quaternary"></i>Ultricies nibh pellen</li>
-                            <li class="text-color-quaternary font-weight-bold mb-2 appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"><i
-                                    class="fas fa-check text-color-quaternary"></i>Pellentesque ultricies nibh</li>
-                            <li class="text-color-quaternary font-weight-bold appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"><i
-                                    class="fas fa-check text-color-quaternary"></i>Ultricies nibh pellen</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -746,146 +861,7 @@
         </div>
     </section>
 
-    <section class="medical-services py-5 p-relative overflow-hidden lazyload"
-        data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/medical2-bg-3.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col pt-4">
-                    <p class="text-uppercase mb-0 text-color-light appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Departments</p>
-                    <h3 class="text-color-quaternary mb-2 text-color-light font-weight-bold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Medical Services
-                    </h3>
-                    <p class="mb-5 text-color-light appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci
-                        semper.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="cards-medical-services row flex-wrap justify-content-center">
-                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-                            <div
-                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
-                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-cardiology.png"
-                                    class="img-fluid mb-5" alt="Cardiology">
-                                <h4 style="text-align: center"
-                                    class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Research
-                                    Consultation Service</h4>
-                                <p class="card-text mb-2 text-center">We provide consultation support to the new
-                                    researchers in the field of social science for doing their research work. You may seek
-                                    proper guidance from our researchers' panel at any stage of your research project.
-                                    University faculty and experienced research scholars will guide you individually both
-                                    online and offline.
-                                </p>
-                                <a href="demo-medical-2-departments-detail.html"
-                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
-                            </div>
-                        </div>
-                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                            <div
-                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
-                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-gastroenterology.png"
-                                    class="img-fluid mb-5" alt="Gastroenterology">
-                                <h4 style="text-align: center"
-                                    class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">
-                                    Counseling and Psychotherapy
-                                </h4>
-                                <p class="card-text mb-2 text-center">Six month long part-time course with two months
-                                    practical. Appropriate for, parents, teachers and medical professionals.
-                                    Classes will be conducted by competent university faculty and practicing counselors.
-                                </p>
-                                <a href="demo-medical-2-departments-detail.html"
-                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
-                            </div>
-                        </div>
-                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
-                            <div
-                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
-                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-pulmonology.png"
-                                    class="img-fluid mb-5" alt="Pulmonology">
-                                <h4 style="text-align: center"
-                                    class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Special and
-                                    Inclusive Education</h4>
-                                <p class="card-text mb-2 text-center">Most suitable course for parents and teachers of
-                                    children with special needs. It covers the understanding of all types of disability
-                                    their etiology, treatment, and education. No matter whether you are a teacher of a
-                                    regular or special school equip yourself with knowledge and skills of dealing with such
-                                    children in school or at home. It is an easy-going course, no time needed for study or
-                                    exam.</p>
-                                <a href="demo-medical-2-departments-detail.html"
-                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
-                            </div>
-                        </div>
-                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">
-                            <div
-                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
-                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-dental.png"
-                                    class="img-fluid mb-5" alt="Dental Care">
-                                <h4 class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">
-                                    Special and Inclusive Education</h4>
-                                <p class="card-text mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-                                <a href="demo-medical-2-departments-detail.html"
-                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
-                            </div>
-                        </div>
-                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-                            <div
-                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
-                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-gynecology.png"
-                                    class="img-fluid mb-5" alt="Gynecology">
-                                <h4 class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Gynecology</h4>
-                                <p class="card-text mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-                                <a href="demo-medical-2-departments-detail.html"
-                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
-                            </div>
-                        </div>
-                        <div class="card border-0 border-radius-0 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 bg-transparent appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
-                            <div
-                                class="card-body py-5 d-flex flex-column justify-content-center align-items-center bg-color-light hover-effect-1">
-                                <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-hepatology.png"
-                                    class="img-fluid mb-5" alt="Hepatology">
-                                <h4 class="card-title mb-2 text-5 font-weight-bold text-color-quaternary">Hepatology</h4>
-                                <p class="card-text mb-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-                                <a href="demo-medical-2-departments-detail.html"
-                                    class="font-weight-semibold text-uppercase text-decoration-none">read more +</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col text-center pb-lg-5 mb-lg-5">
-                    <p class="text-uppercase text-color-light d-block text-center mb-2 appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">Need a Speciallist?</p>
-                    <h3 class="text-color-quaternary mb-4 text-color-light d-block text-center font-weight-semibold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Get Better Now! Just
-                        Make An Appointment</h3>
-                    <a href="demo-medical-2-contact-us.html"
-                        class="btn btn-outline btn-light bg-hover-light text-hover-dark text-color-light border-color-light text-uppercase rounded-0 px-5 py-3 mb-2 appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">make an appointment</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-funnel-layer-bottom">
-            <div class="section-funnel-layer bg-color-light"></div>
-            <div class="section-funnel-layer bg-color-light"></div>
-        </div>
-    </section>
+    
 
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-grey">
         <div class="container my-lg-3 py-lg-2">

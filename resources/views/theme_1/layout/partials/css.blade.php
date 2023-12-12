@@ -1,9 +1,10 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
+
   <!-- Web Fonts  -->
   <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
-  rel="stylesheet" type="text/css">
+      rel="stylesheet" type="text/css">
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="{{ asset('file') }}/vendor/bootstrap/css/bootstrap.min.css">
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="{{ asset('file') }}/css/theme-blog.css">
   <link rel="stylesheet" href="{{ asset('file') }}/css/theme-shop.css">
 
+
   <!-- Demo CSS -->
   <link rel="stylesheet" href="{{ asset('file') }}/css/demos/demo-medical-2.css">
 
@@ -28,6 +30,7 @@
 
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="{{ asset('file') }}/css/custom.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery-datepicker@1.12.3/jquery-datepicker.min.js"></script>
 
   <!-- Head Libs -->
   <script src="{{ asset('file') }}/vendor/modernizr/modernizr.min.js"></script>

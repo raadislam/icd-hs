@@ -32,7 +32,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/about-us', [FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/short-course', [FrontendController::class, 'shortCourse'])->name('shortCourse');
-Route::get('/short-course-registration', [FrontendController::class, 'shortCourseRegistration'])->name('shortCourseRegistration');
+Route::get('/apply/short-course/{shortCourses}', [FrontendController::class, 'shortCourseRegistration'])->name('shortCourseRegistration');
 Route::get('/contact-us', [FrontendController::class, 'contactus'])->name('contactus');
 Route::get('/training', [FrontendController::class, 'training'])->name('training');
 Route::get('/certification', [FrontendController::class, 'certification'])->name('certification');

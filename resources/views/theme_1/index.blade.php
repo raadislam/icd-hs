@@ -25,12 +25,12 @@
                             <div class="col-md-10 col-lg-6 text-center text-md-end pb-5 ms-auto">
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                                    data-plugin-options="{'minWindowWidth': 0}">Improving support for people with
-                                    disabilities through better documentation</h1>
+                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    Improving support for people with
+                                    disabilities.</h1>
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE MEDICAL SERVICES LOCATED
-                                    NARAYANGANJ, BD</h2>
+                                    data-plugin-options="{'minWindowWidth': 0}">RELIABLE THERAPY SERVICES</h2>
                                 <a href="#"
                                     class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
@@ -55,7 +55,8 @@
                             <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                                    data-plugin-options="{'minWindowWidth': 0}">Supporting people with intellectual and
+                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    Supporting people with intellectual and
                                     developmental disabilities around the world</h1>
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
@@ -71,73 +72,48 @@
 
             </div>
         </div>
-        <div class="section-funnel-layer-bottom d-none d-xl-block z-index-1">
+        {{-- <div class="section-funnel-layer-bottom d-none d-xl-block z-index-1">
             <div class="section-funnel-layer bg-light"></div>
             <div class="section-funnel-layer bg-light"></div>
-        </div>
+        </div> --}}
     </section>
 
-    <div class="cards custom-cards container z-index-2">
-        <div class="cards-container row justify-content-center justify-content-xl-between w-100 my-5 mt-xl-0 mx-0">
-            <div class="col-xs-12 col-lg-6 col-xl-4 mb-4 mb-xl-0 pb-2 pb-xl-0">
-                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 appear-animation"
-                    data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
-                    <div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-                        <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-healthcare-center.png"
-                            alt="Healthcare Center">
-                        <h4 class="card-title mb-1 font-weight-bold">Healthcare Center</h4>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            viverra erat orci, ac auctor lacus tincidunt ut...</p>
-                        <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-6 col-xl-4 mb-4 mb-xl-0 pb-2 pb-xl-0">
-                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 appear-animation"
-                    data-appear-animation="zoomIn" data-appear-animation-delay="100">
-                    <div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-                        <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-immediate-center.png"
-                            alt="Immediate Center">
-                        <h4 class="card-title mb-1 font-weight-bold">Immediate Center</h4>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            viverra erat orci, ac auctor lacus tincidunt ut...</p>
-                        <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-6 col-xl-4 mb-4 mb-xl-0 pb-2 pb-xl-0">
-                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 appear-animation"
-                    data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                    <div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-                        <img src="{{ asset('file') }}/img/demos/medical-2/icons/icon-diagnostic-center.png"
-                            alt="Diagnostic Center">
-                        <h4 class="card-title mb-1 font-weight-bold">Diagnostic Center</h4>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            viverra erat orci, ac auctor lacus tincidunt ut...</p>
-                        <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="about-me mb-5">
-        <div class="container">
+    <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
+        <div class="container my-lg-3 py-lg-2">
             <div class="row">
-                <div class="col-xs-12 col-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="100">
-                    <h3 class="text-color-quaternary mb-3 font-weight-semibold text-capitalize pe-5">The Highest Standard Of
-                        Health Care Medical Clinic</h3>
-                    <p class="text-uppercase mb-3">John Doe - Main Doctor</p>
-                    <img src="{{ asset('file') }}/img/demos/medical-2/others/signature.png" alt="Signature">
+                <div class="col">
+                    <p class="text-uppercase mb-0 d-block text-center text-uppercase appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300"> SERVICES</p>
+                    <h3 class="text-color-quaternary mb-5 d-block text-center font-weight-bold text-capitalize appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Our Special Services</h3>
+
                 </div>
-                <div class="col-xs-12 col-lg-8 appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="200">
-                    <p class="p-relative bottom-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet
-                        libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper
-                        vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh
-                        ipsum, blandit id faucibus ac, finibus vitae dui.</p>
-                    <a href="#" class="font-weight-bold text-uppercase text-decoration-none">read more +</a>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-1.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-3.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-4.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-5.png"
+                        alt="Provider">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-6.png"
+                        alt="Provider">
                 </div>
             </div>
         </div>
@@ -217,18 +193,19 @@
                 <div class="col-lg-6">
                     <h2 class="font-weight-bold text-color-dark">- Short Courses</h2>
                     <div class="accordion without-bg custom-accordion-style-1" id="accordion7">
-                        @foreach ($shortCourses as $shortCourse)
+                        @foreach ($shortCourses as $key => $shortCourse)
                             <div class="card card-default">
                                 <div class="card-header">
                                     <h4 class="card-title m-0">
                                         <a class="accordion-toggle" data-bs-toggle="collapse"
-                                            data-bs-parent="#accordion7" href="#collapse7One" aria-expanded="true">
+                                            data-bs-parent="#accordion7" href={{ '#collapseOne' . $key }}
+                                            aria-expanded="true">
                                             {{ $shortCourse->title }}
                                             <span class="custom-accordion-plus"></span>
                                         </a>
                                     </h4>
                                 </div>
-                                <div id="collapse7One" class="collapse" aria-expanded="true">
+                                <div id={{ 'collapseOne' . $key }} class="collapse" aria-expanded="true">
                                     <div class="card-body">
                                         <p>{{ $shortCourse->description }}</p>
                                         <ul
@@ -243,7 +220,7 @@
                                             </li>
                                         </ul>
                                         <div style="margin-top: 2em">
-                                            <a href="#"
+                                            <a href={{ route('shortCourseRegistration', $shortCourse->id) }}
                                                 class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
                                                 Apply Now
                                             </a>
@@ -367,7 +344,7 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="0">
-                        <h2 class="mb-0 font-weight-bold">Our Products</h2>
+                        <h2 class="mb-0 font-weight-bold">Services</h2>
                         <div class="divider divider-primary divider-small mt-2 mb-4 text-center">
                             <hr class="my-0 mx-auto">
                         </div>
@@ -842,54 +819,6 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="insurance-providers pt-5 pb-lg-5 bg-color-grey">
-        <div class="container my-lg-3 py-lg-2">
-            <div class="row">
-                <div class="col">
-                    <p class="text-uppercase mb-0 d-block text-center text-uppercase appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">MAJOR BRANDS</p>
-                    <h3 class="text-color-quaternary mb-2 d-block text-center font-weight-bold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Insurance Providers</h3>
-                    <p class="mb-5 d-block text-center appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        imperdiet libero id nisi euismod.</p>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
-                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-1.png"
-                        alt="Provider">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-2.png"
-                        alt="Provider">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-3.png"
-                        alt="Provider">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-4.png"
-                        alt="Provider">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-5.png"
-                        alt="Provider">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-                    <img class="img-fluid" src="{{ asset('file') }}/img/demos/medical-2/logos/provider-6.png"
-                        alt="Provider">
                 </div>
             </div>
         </div>

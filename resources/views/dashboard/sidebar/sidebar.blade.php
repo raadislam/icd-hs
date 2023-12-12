@@ -24,7 +24,7 @@
 
                 <li
                     class="nav-item
-                        @if (request()->is('users/*')) menu-open
+                        @if (request()->is('dashboard-short-course/*')) menu-open
                         @elseif (request()->is('users')) menu-open
                         @elseif (request()->is('invitations')) menu-open @endif
                     ">
@@ -41,7 +41,7 @@
                         <li class="nav-item" style="position: relative">
                             <a href="#"
                                 class="nav-link
-                                        @if (request()->is('users')) custom-active-class @endif"
+                                        @if (request()->is('dashboard-short-course/create')) custom-active-class @endif"
                                 style="color: #21263c; border-radius: 0.2em">
 
                                 <p style="margin-left: 1.7em">

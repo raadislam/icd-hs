@@ -76,12 +76,12 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link active" href="/">
+                                            <a class="nav-link  @if (request()->is('/')) active @endif" href="/">
                                                 Home
                                             </a>
                                         </li>
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link" href="{{ route('aboutus') }}">
+                                            <a class="nav-link  @if (request()->is('about-us')) active @endif" href="{{ route('aboutus') }}">
                                                 About Us
                                             </a>
                                         </li>
@@ -91,7 +91,7 @@
                                             </a>
                                         </li>
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link" href="{{ route('shortCourse') }}">
+                                            <a class="nav-link  @if (request()->is('short-course')) active @endif" href="{{ route('shortCourse') }}">
                                                 Short Courses
                                             </a>
                                         </li>

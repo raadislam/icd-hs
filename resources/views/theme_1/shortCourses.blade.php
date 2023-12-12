@@ -1,6 +1,5 @@
 @extends('theme_1.layout.layout')
 @section('title')
-    Short Courses
 @endsection
 @section('meta')
 @endsection

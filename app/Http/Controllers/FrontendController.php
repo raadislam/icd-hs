@@ -19,6 +19,11 @@ class FrontendController extends Controller
         $shortCourses = ShortCourse::get();
         return view('theme_1.shortCourses', compact('shortCourses'));
     }
+    public function shortCourseRegistration()
+    {
+        $shortCourses = ShortCourse::get();
+        return view('theme_1.applyShortCourse', compact('shortCourses'));
+    }
     public function aboutus()
     {
         return view('theme_1.aboutus');

@@ -148,18 +148,20 @@
             <div class="row mb-3">
                 <div class="col-lg-6">
                     <h2 class="font-weight-bold text-color-dark">- Program of Study</h2>
-                    <div class="owl-carousel owl-theme nav-bottom rounded-nav numbered-dots ps-1 pe-1" data-plugin-options="{'items': 1, 'loop': false, 'dots': true, 'nav': false, 'autoplay': true, 'autoplayTimeout': 4000, 'autoplayHoverPause': true}">
+                    <div class="owl-carousel owl-theme nav-bottom rounded-nav numbered-dots ps-1 pe-1"
+                        data-plugin-options="{'items': 1, 'loop': false, 'dots': true, 'nav': false, 'autoplay': true, 'autoplayTimeout': 4000, 'autoplayHoverPause': true}">
                         <div>
                             <div class="custom-step-item">
                                 <span class="step text-uppercase">
-                                    
+
                                     <span style="font-size: 2em !important" class="step-number text-color-primary">
                                         01
                                     </span>
                                 </span>
                                 <div class="step-content">
                                     <h4 class="mb-3"><br> <strong>Care Giving</strong></h4>
-                                    <p> caregiving courses and equip yourself with the skills necessary to provide effective health and safety care to your clients.</p>
+                                    <p> caregiving courses and equip yourself with the skills necessary to provide effective
+                                        health and safety care to your clients.</p>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +174,10 @@
                                 </span>>
                                 <div class="step-content">
                                     <h4 class="mb-3"><br> <strong>Nursing</strong></h4>
-                                    <p>Nurses make a real difference in people's lives Nurses' expertise, innovation, and compassion enable nurses to make a meaningful impact in the communities they serve by providing essential healthcare, advocacy, and leadership where and when it is needed most.</p>
+                                    <p>Nurses make a real difference in people's lives Nurses' expertise, innovation, and
+                                        compassion enable nurses to make a meaningful impact in the communities they serve
+                                        by providing essential healthcare, advocacy, and leadership where and when it is
+                                        needed most.</p>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +190,10 @@
                                 </span>
                                 <div class="step-content">
                                     <h4 class="mb-3"><br> <strong>Speech Pathology</strong></h4>
-                                    <p>Speech pathologists play an essential role in improving quality of life for others. SLPs show clients how to make positive changes that have a lasting impact on their lives. That's why it's important to have enthusiasm for helping people if you aspire to be a speech therapist.</p>
+                                    <p>Speech pathologists play an essential role in improving quality of life for others.
+                                        SLPs show clients how to make positive changes that have a lasting impact on their
+                                        lives. That's why it's important to have enthusiasm for helping people if you aspire
+                                        to be a speech therapist.</p>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +206,9 @@
                                 </span>
                                 <div class="step-content">
                                     <h4 class="mb-3"><br> <strong>Audiology</strong></h4>
-                                    <p>Audiologists have the ability to positively impact people's lives by helping them improve their hearing and communication abilities. As an audiologist, you would have the opportunity to work with patients of all ages, from infants to seniors.</p>
+                                    <p>Audiologists have the ability to positively impact people's lives by helping them
+                                        improve their hearing and communication abilities. As an audiologist, you would have
+                                        the opportunity to work with patients of all ages, from infants to seniors.</p>
                                 </div>
                             </div>
                         </div>
@@ -207,78 +217,53 @@
                 <div class="col-lg-6">
                     <h2 class="font-weight-bold text-color-dark">- Short Courses</h2>
                     <div class="accordion without-bg custom-accordion-style-1" id="accordion7">
-                        <div class="card card-default">
-                            <div class="card-header">
-                                <h4 class="card-title m-0">
-                                    <a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7One" aria-expanded="true">
-                                        Research Consultation Service.
-                                        <span class="custom-accordion-plus"></span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse7One" class="collapse show" aria-expanded="true">
-                                <div class="card-body">
-                                    <p>We provide consultation support to the new researchers in the field of social science for doing their research work. You may seek proper guidance from our researchers' panel at any stage of your research project. University faculty and experienced research scholars will guide you individually both online and offline.</p>
+                        @foreach ($shortCourses as $shortCourse)
+                            <div class="card card-default">
+                                <div class="card-header">
+                                    <h4 class="card-title m-0">
+                                        <a class="accordion-toggle" data-bs-toggle="collapse"
+                                            data-bs-parent="#accordion7" href="#collapse7One" aria-expanded="true">
+                                            {{ $shortCourse->title }}
+                                            <span class="custom-accordion-plus"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse7One" class="collapse" aria-expanded="true">
+                                    <div class="card-body">
+                                        <p>{{ $shortCourse->description }}</p>
+                                        <ul
+                                            class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
+                                            <li style="font-size: 1.1em">
+                                                <i class="fas fa-clock"></i>&nbsp;
+                                                Duration:&nbsp;{{ $shortCourse->duration }}
+                                            </li>
+                                            <li style="font-size: 1.1em">
+                                                <i class="fas fa-coins"></i>&nbsp;
+                                                Course Fee:&nbsp; {{ number_format($shortCourse->price) }} TK
+                                            </li>
+                                        </ul>
+                                        <div style="margin-top: 2em">
+                                            <a href="#"
+                                                class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
+                                                Apply Now
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card card-default">
-                            <div class="card-header">
-                                <h4 class="card-title m-0">
-                                    <a class="accordion-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7Two" aria-expanded="false">
-                                        Counseling and Psychotherapy
-                                        <span class="custom-accordion-plus"></span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse7Two" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="card-body">
-                                    <p>Six month long part-time course with two months practical. Appropriate for, parents, teachers and medical professionals. Classes will be conducted by competent university faculty and practicing counselors.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-default">
-                            <div class="card-header">
-                                <h4 class="card-title m-0">
-                                    <a class="accordion-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7Three" aria-expanded="false">
-                                        Special and Inclusive Education.
-                                        <span class="custom-accordion-plus"></span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse7Three" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="card-body">
-                                    <p>Most suitable course for parents and teachers of children with special needs. It covers the understanding of all types of disability their etiology, treatment, and education. No matter whether you are a teacher of a regular or special school equip yourself with knowledge and skills of dealing with such children in school or at home. It is an easy-going course, no time needed for study or exam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-default">
-                            <div class="card-header">
-                                <h4 class="card-title m-0">
-                                    <a class="accordion-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#accordion7" href="#collapse7Four" aria-expanded="false">
-                                        Daycare Support and Management.
-                                        <span class="custom-accordion-plus"></span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse7Four" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="card-body">
-                                    <p>If you are unemployed and looking for a job then try this opportunity of setting up a day care center. This training will provide some basic knowledge and skills of child rearing and their management.
-                                        Join a professional training and get a certificate.</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                     <div style="margin-top: 2em">
-                        <a href="#"
-                                        class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-2 px-5 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
-                                        data-plugin-options="{'minWindowWidth': 0}">
-                                        See all
-                 </a>
+                        <a href="{{ route('shortCourse') }}"
+                            class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-2 px-5 appear-animation"
+                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
+                            data-plugin-options="{'minWindowWidth': 0}">
+                            See all
+                        </a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -395,7 +380,8 @@
                         data-appear-animation-delay="0">
                         <div class="feature-box-icon mt-3">
                             <img width="50" height="50"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/special-education.svg" alt="" />
+                                src="{{ asset('file') }}/img/demos/law-firm/icons/special-education.svg"
+                                alt="" />
                         </div>
                         <div class="feature-box-info ms-3">
                             <h4 class="mb-2">Special & Inclusive Education</h4>
@@ -860,8 +846,6 @@
             </div>
         </div>
     </section>
-
-    
 
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-grey">
         <div class="container my-lg-3 py-lg-2">

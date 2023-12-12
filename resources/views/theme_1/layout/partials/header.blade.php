@@ -21,7 +21,8 @@
                                         <span
                                             class="header-top-opening-hours px-0 font-weight-normal d-flex align-items-center"><i
                                                 class="far fa-clock text-4"></i>Mon - Sat 9:00am - 6:00pm / Sunday -
-                                            CLOSED</span>
+                                            CLOSED
+                                        </span>
                                     </li>
                                     <li class="nav-item nav-item-header-top-socials d-flex justify-content-between">
                                         <span class="header-top-socials p-0 h-100">
@@ -43,8 +44,9 @@
                                         <span
                                             class="header-top-button-make-as-appoitment d-inline-flex align-items-center justify-content-center h-100 p-0 align-top">
                                             <a href="demo-medical-2-contact-us.html"
-                                                class="d-flex align-items-center justify-content-center h-100 w-100 btn-primary font-weight-normal text-decoration-none">MAKE
-                                                AN APPOINTMENT</a>
+                                                class="d-flex align-items-center justify-content-center h-100 w-100 btn-primary font-weight-normal text-decoration-none">
+                                                Contact Us
+                                            </a>
                                         </span>
                                     </li>
                                 </ul>
@@ -79,7 +81,7 @@
                                             </a>
                                         </li>
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link" href="{{route('aboutus')}}">
+                                            <a class="nav-link" href="{{ route('aboutus') }}">
                                                 About Us
                                             </a>
                                         </li>
@@ -89,7 +91,7 @@
                                             </a>
                                         </li>
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link" href="{{route('shortCourse')}}">
+                                            <a class="nav-link" href="{{ route('shortCourse') }}">
                                                 Short Courses
                                             </a>
                                         </li>

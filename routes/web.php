@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ShortCourseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,9 +37,10 @@ Route::get('/training', [FrontendController::class, 'training'])->name('training
 Route::get('/certification', [FrontendController::class, 'certification'])->name('certification');
 Route::get('/after-school-program', [FrontendController::class, 'afterSchoolProgram'])->name('afterSchoolProgram');
 Route::get('/student-services', [FrontendController::class, 'studentServices'])->name('studentServices');
-Route::get('/event', [FrontendController::class, 'event'])->name('event');
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
 Route::resource('events', EventController::class);
+
+Route::resource('dashboard-short-course', ShortCourseController::class);
 
 
 require __DIR__ . '/auth.php';

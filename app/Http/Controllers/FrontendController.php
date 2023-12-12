@@ -4,17 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactUsmail;
 use App\Models\Event;
+use App\Models\ShortCourse;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function index()
     {
-        return view('theme_1.index');
+        $shortCourses = ShortCourse::limit(4)->get();
+        return view('theme_1.index', compact('shortCourses'));
     }
     public function shortCourse()
     {
-        return view('theme_1.shortCourses');
+        $shortCourses = ShortCourse::get();
+        return view('theme_1.shortCourses', compact('shortCourses'));
     }
     public function aboutus()
     {

@@ -9,18 +9,13 @@ use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
-use App\Http\Controllers\InvitationController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
-    Route::get('register/request', [RegisteredUserController::class, 'requestInvitation'])->name('requestInvitation');
-    Route::post('/invitation', [InvitationController::class, 'store'])->middleware('guest')->name('storeInvitation');
+    Route::get('register', [RegisteredUserController::class, 'create'])
+        ->name('register');
 
-    Route::get('register', [RegisteredUserController::class, 'showRegistrationForm'])
-        ->name('register')
-        ->middleware('hasInvitation');
-
-    Route::post('register', [RegisteredUserController::class, 'store'])->name('registerThisUser');
+    Route::post('register', [RegisteredUserController::class, 'store']);
 
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
         ->name('login');

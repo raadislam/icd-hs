@@ -61,37 +61,23 @@
                     <div class="nav-footer d-flex">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="{{ route('aboutus') }}">About Us</a>
                             </li>
                             <li>
-                                <a href="#">Our Doctors</a>
+                                <a href="{{ route('aboutus') }}">Program of Study</a>
                             </li>
                             <li>
-                                <a href="#">Departments</a>
+                                <a href="{{ route('aboutus') }}">Short Courses</a>
                             </li>
                             <li>
-                                <a href="#">Overview</a>
+                                <a href="{{ route('aboutus') }}">Our Team</a>
                             </li>
-                            <li>
-                                <a href="#">Cardiology</a>
-                            </li>
-                            <li>
-                                <a href="#">Gastroenterology</a>
-                            </li>
-                            <li>
-                                <a href="#">Pulmonology</a>
-                            </li>
-                            <li>
-                                <a href="#">Dental Care</a>
-                            </li>
-                            <li>
-                                <a href="#">Gynecology</a>
-                            </li>
+
                         </ul>
-                        <ul class="ps-4">
+                        {{-- <ul class="ps-4">
                             <li>
                                 <a href="#">Hepatology</a>
                             </li>
@@ -107,11 +93,11 @@
                             <li>
                                 <a href="#">Contact Us</a>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
             </div>
-            <div
+            {{-- <div
                 class="col-sm-12 pt-4 pt-lg-0 col-lg-3 text-start ms-lg-auto footer-column footer-column-opening-hours">
                 <h4 class="mb-4 text-uppercase">Opening Hours</h4>
                 <div class="info custom-info pt-0">
@@ -126,7 +112,7 @@
                     <span>Sunday</span>
                     <span>Closed</span>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="footer-copyright pt-3 pb-3 container bg-color-quaternary">

@@ -7,40 +7,42 @@
 @section('style')
 @endsection
 @section('content')
-<section class="section section-no-background section-no-border m-0">
-    <div class="container">
-        <div class="row mb-2">
-                <h3 class="mt-4 pt-1 mb-0 pb-0">Hotel Overview</h3>
-                <div class="divider divider-primary divider-small my-3">
-                    <hr class="mt-2 me-auto">
-                </div>
+    <section class="section section-no-background section-no-border m-0">
+        <div class="container">
+            @foreach ($shortCourses as $key => $shortCourse)
+                <div class="row mb-2 appear-animation" data-appear-animation="fadeInUpShorter"
+                    data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">
+                    <h3 class="mt-4 pt-1 mb-0 pb-0"><span
+                            class="text-primary">{{ $key + 1 }} &nbsp;&nbsp;</span>{{ $shortCourse->title }}</h3>
+                    <div class="divider divider-primary divider-small my-3">
+                        <hr class="mt-2 me-auto">
+                    </div>
 
-                <p class="mt-4 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut.</p>
+                    <p class="mt-4 mb-2">{{ $shortCourse->description }}</p>
 
-                <div class="row mt-4 pt-2">
-                    <div class="col-lg-4">
-                        <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
-                            <li><i class="fas fa-check"></i> 24 Rooms, 4 Luxury suites</li>
-                            <li><i class="fas fa-check"></i> Fitness center</li>
-                            <li><i class="fas fa-check"></i> Airport transporation</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
-                            <li><i class="fas fa-check"></i> 24-Hour In-Room Dining</li>
-                            <li><i class="fas fa-check"></i> Cocktail Bar</li>
-                            <li><i class="fas fa-check"></i> Dog Friendly - Pets Stay Free</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
-                            <li><i class="fas fa-check"></i> Valet car service</li>
-                            <li><i class="fas fa-check"></i> Pool</li>
-                            <li><i class="fas fa-check"></i> Free Wi-Fi</li>
-                        </ul>
+                    <div class="row mt-4 pt-2">
+                        <div class="col-lg-4">
+                            <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
+                                <li style="font-size: 1.1em">
+                                    <i class="fas fa-clock"></i>&nbsp;
+                                    Duration:&nbsp;{{ $shortCourse->duration }}
+                                </li>
+                                <li style="font-size: 1.1em">
+                                    <i class="fas fa-coins"></i>&nbsp;
+                                    Course Fee:&nbsp; {{ number_format($shortCourse->price) }} TK
+                                </li>
+                            </ul>
+
+                            <div style="margin-top: 2em">
+                                <a href="#"
+                                    class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            @endforeach
         </div>
-    </div>
-</section>
+    </section>
 @endsection

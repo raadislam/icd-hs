@@ -54,6 +54,25 @@
                                     name="name" required>
                             </div>
                         </div>
+                        <div class="col-sm-6" bis_skin_checked="1">
+                            <label>
+                                Slot
+                            </label>
+                            <div class="form-group clearfix" bis_skin_checked="1">
+                                <div class="icheck-success d-inline" bis_skin_checked="1">
+                                    <input type="radio" name="issuable" checked="" id="radioSuccess1" value="1">
+                                    <label for="radioSuccess1">
+                                        10:00 AM
+                                    </label>
+                                </div>
+                                <div class="icheck-success d-inline" bis_skin_checked="1">
+                                    <input type="radio" name="issuable" id="radioSuccess2" value="0">
+                                    <label for="radioSuccess2">
+                                        3:00 PM
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="form-group col">
                                 <input type="text" placeholder="Slot" value=""
@@ -93,7 +112,7 @@
                                     rows="5" class="form-control" name="description" required></textarea>
                             </div>
                         </div>
-<h4>Pay Now</h4>
+                        <h4>Pay Now</h4>
                         <div class="row">
                             <div class="form-group col">
                                 <input type="submit" value="Apply" class="btn btn-primary btn-lg mb-5"
@@ -110,17 +129,15 @@
 
 @section('script')
     <script>
-
         var datesForDisable = ["12-12-2023", "09-12-2023", "15-12-2023", "08-12-2023"]
 
-$('#appointmentDate').datepicker({
-   format: 'dd-mm-yyyy',
-   autoclose: true,
-   todayHighlight: true,
-   multidate: true,
-   daysOfWeekDisabled: [1,2,4]
-//    datesDisabled: datesForDisable
-});
-
+        $('#appointmentDate').datepicker({
+            format: 'dd-mm-yyyy',
+            autoclose: true,
+            todayHighlight: true,
+            multidate: true,
+            daysOfWeekDisabled: [1, 2, 4]
+            //    datesDisabled: datesForDisable
+        });
     </script>
 @endsection

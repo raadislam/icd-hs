@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CourseScheduleController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ShortCourseController;
 use Illuminate\Support\Facades\Route;
 
@@ -41,7 +43,10 @@ Route::get('/student-services', [FrontendController::class, 'studentServices'])-
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
 Route::resource('events', EventController::class);
 
+
 Route::resource('dashboard-short-course', ShortCourseController::class);
+Route::resource('dashboard-instructors', InstructorController::class);
+Route::resource('dashboard-course-schedule', CourseScheduleController::class);
 
 
 require __DIR__ . '/auth.php';

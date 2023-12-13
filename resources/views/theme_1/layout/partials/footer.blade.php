@@ -57,7 +57,7 @@
             </div>
             <div class="col-sm-6 pt-5 pt-md-0 col-lg-4">
                 <div class="nav-footer-container">
-                    <h4 class="mb-4 text-uppercase">Medical Services</h4>
+                    <h4 class="mb-4 text-uppercase">Quick Links</h4>
                     <div class="nav-footer d-flex">
                         <ul>
                             <li>
@@ -76,24 +76,16 @@
                                 <a href="{{ route('aboutus') }}">Our Team</a>
                             </li>
 
+
                         </ul>
-                        {{-- <ul class="ps-4">
+                        <ul class="ps-4">
                             <li>
-                                <a href="#">Hepatology</a>
+                                <a href="#">School of Minds</a>
                             </li>
                             <li>
-                                <a href="#">Gastroenterology</a>
+                                <a href="#">Speech Therapy</a>
                             </li>
-                            <li>
-                                <a href="#">Pulmonology</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul> --}}
+                        </ul>
                     </div>
                 </div>
             </div>

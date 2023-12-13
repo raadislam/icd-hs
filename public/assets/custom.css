@@ -1,0 +1,15 @@
+.custom-active-class {
+    background-color: #408dfb !important;
+    color: white !important;
+}
+
+.nav-item-custom {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5em !important;
+}
+.text-custom {
+    text-decoration: none !important;
+    color: #21263c;
+    font-weight: 500;
+}

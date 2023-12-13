@@ -7,7 +7,7 @@
             </div>
 
             <div class="card-body" bis_skin_checked="1">
-
+                {{--
                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4" bis_skin_checked="1">
                     <div class="row" bis_skin_checked="1">
                         <div class="col-sm-12" bis_skin_checked="1">
@@ -40,24 +40,22 @@
                                             colspan="1" aria-label="Type: activate to sort column ascending">
                                             Description
                                         </th>
-                                        {{--
+
                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                             colspan="1" aria-label="Actions: activate to sort column ascending"
-                                            style="">Actions</th> --}}
+                                            style="">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($shortCourses as $key => $shortCourse)
-                                        <tr
-                                            class="
-                                        {{-- @if ($loop->index % 2 == 0) odd @else even @endif  --}}
+                                        <tr class="
                                         ">
                                             <td class="dtr-control sorting_1" tabindex="0">{{ $key + 1 }}</td>
                                             <td class="dtr-control sorting_1" tabindex="0">{{ $shortCourse->title }}</td>
                                             <td>{{ $shortCourse->fee }}</td>
                                             <td>{{ $shortCourse->type }}</td>
                                             <td>{{ $shortCourse->description }}</td>
-                                            {{-- <td style="">
+                                            <td style="">
                                                 <div class="btn-group align-self-center" bis_skin_checked="1">
                                                     <a href="javascript:void(0)" id="show-book"
                                                         onclick="showBookInformation(this);"
@@ -80,14 +78,14 @@
                                                         </button>
                                                     </a>
                                                 </div>
-                                            </td> --}}
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
         </div>

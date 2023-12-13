@@ -2,19 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ShortCourse;
+use App\Models\CourseSchedule;
 use App\Http\Controllers\Controller;
+use App\Models\Instructor;
+use App\Models\ShortCourse;
 use Illuminate\Http\Request;
 
-class ShortCourseController extends Controller
+class CourseScheduleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $shortCourses = ShortCourse::get();
-        return view('dashboard.shortCourses.index', compact('shortCourses'));
+        return view('dashboard.courseSchedule.index');
     }
 
     /**
@@ -22,7 +23,9 @@ class ShortCourseController extends Controller
      */
     public function create()
     {
-        return view('dashboard.shortCourses.create');
+        $courses = ShortCourse::get();
+        $instructors = Instructor::get();
+        return view('dashboard.courseSchedule.create', compact('instructors', 'courses'));
     }
 
     /**
@@ -30,20 +33,13 @@ class ShortCourseController extends Controller
      */
     public function store(Request $request)
     {
-        ShortCourse::create([
-            "title" => $request['title'],
-            "fee" => $request['fee'],
-            "description" => $request['description'],
-            "type" => $request['type'],
-        ]);
-
-        return back()->with('short_course', 'Course Added To Short Course');
+        dd($request->toArray());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(ShortCourse $shortCourse)
+    public function show(CourseSchedule $courseSchedule)
     {
         //
     }
@@ -51,7 +47,7 @@ class ShortCourseController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ShortCourse $shortCourse)
+    public function edit(CourseSchedule $courseSchedule)
     {
         //
     }
@@ -59,7 +55,7 @@ class ShortCourseController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ShortCourse $shortCourse)
+    public function update(Request $request, CourseSchedule $courseSchedule)
     {
         //
     }
@@ -67,7 +63,7 @@ class ShortCourseController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ShortCourse $shortCourse)
+    public function destroy(CourseSchedule $courseSchedule)
     {
         //
     }

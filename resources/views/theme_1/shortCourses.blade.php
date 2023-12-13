@@ -33,7 +33,7 @@
                             </ul>
 
                             <div style="margin-top: 2em">
-                                <a href="#"
+                                <a href={{ route('shortCourseRegistration', $shortCourse->id) }}
                                     class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
                                     Apply Now
                                 </a>

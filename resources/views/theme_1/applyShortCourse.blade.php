@@ -38,6 +38,30 @@
                                     name="name" required>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <input type="text" placeholder="Address" value=""
+                                    data-msg-required="Please enter your name." maxlength="100" class="form-control"
+                                    name="name" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <input type="text" placeholder="Last Academic Background Dropdown" value=""
+                                    data-msg-required="Please enter your name." maxlength="100" class="form-control"
+                                    name="name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <input type="text" placeholder="Slot" value=""
+                                    data-msg-required="Please enter your name." maxlength="100" class="form-control"
+                                    name="name" required>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="form-group col">
                                 <input type="email" placeholder="Your E-mail" value=""
@@ -46,6 +70,7 @@
                                     class="form-control" name="email" required>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="form-group col">
                                 <input type="number" placeholder="Phone Number" value=""
@@ -53,22 +78,25 @@
                                     name="phoneNumber" required>
                             </div>
                         </div>
-                        <div class="row">
+
+                        {{-- <div class="row">
                             <div class="form-group col">
-                                <input id="appointmentDate" type="date" placeholder="Phone Number" value=""
-                                    data-msg-required="Please enter the phone number." maxlength="100" class="form-control"
-                                    name="phoneNumber" required>
+                                <input id="appointmentDate" type="text" placeholder="Date" value=""
+                                    data-msg-required="Please enter the appointment." maxlength="100" class="form-control"
+                                    name="appointmentDate" required>
                             </div>
-                        </div>
+                        </div> --}}
+
                         <div class="row">
                             <div class="form-group col">
                                 <textarea maxlength="5000" placeholder="Say something about yourself" data-msg-required="Say something about yourself"
                                     rows="5" class="form-control" name="description" required></textarea>
                             </div>
                         </div>
+<h4>Pay Now</h4>
                         <div class="row">
                             <div class="form-group col">
-                                <input type="submit" value="Send Message" class="btn btn-primary btn-lg mb-5"
+                                <input type="submit" value="Apply" class="btn btn-primary btn-lg mb-5"
                                     data-loading-text="Loading...">
                             </div>
                         </div>
@@ -82,14 +110,17 @@
 
 @section('script')
     <script>
-        var disabledDates = ["2023-12-16", "2023-12-12"];
-        for (var i = 0; i < disabledDates.length; i++) {
-            var date = disabledDates[i];
-            var dateInput = document.getElementById("#appointmentDate");
-            dateInput.type = "hidden";
-            dateInput.name = "disabledDate";
-            dateInput.value = date;
-            document.body.appendChild(dateInput);
-        }
+
+        var datesForDisable = ["12-12-2023", "09-12-2023", "15-12-2023", "08-12-2023"]
+
+$('#appointmentDate').datepicker({
+   format: 'dd-mm-yyyy',
+   autoclose: true,
+   todayHighlight: true,
+   multidate: true,
+   daysOfWeekDisabled: [1,2,4]
+//    datesDisabled: datesForDisable
+});
+
     </script>
 @endsection

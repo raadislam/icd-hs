@@ -3,6 +3,8 @@
     <div class="content-wrapper p-4 container-fluid" style="min-height: 1113.69px; margin: 0 !important" bis_skin_checked="1">
         <section class="content">
             <div class="container-fluid" bis_skin_checked="1">
+
+
                 <div class="row" bis_skin_checked="1">
                     <div class="col-md-7" bis_skin_checked="1">
                         <div class="card card-warning" bis_skin_checked="1">

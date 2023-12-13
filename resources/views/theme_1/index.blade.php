@@ -26,8 +26,9 @@
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
                                     data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
-                                    Improving support for people with
-                                    disabilities.</h1>
+                                    Improving support for people with disabilities.
+                                </h1>
+                                
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
                                     data-plugin-options="{'minWindowWidth': 0}">RELIABLE THERAPY SERVICES</h2>
@@ -182,6 +183,21 @@
                                 </span>
                                 <div class="step-content">
                                     <h4 class="mb-3"><br> <strong>Audiology</strong></h4>
+                                    <p>Audiologists have the ability to positively impact people's lives by helping them
+                                        improve their hearing and communication abilities. As an audiologist, you would have
+                                        the opportunity to work with patients of all ages, from infants to seniors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="custom-step-item">
+                                <span class="step text-uppercase">
+                                    <span style="font-size: 2em !important" class="step-number text-color-primary">
+                                        05
+                                    </span>
+                                </span>
+                                <div class="step-content">
+                                    <h4 class="mb-3"><br> <strong>Occupational English Test (OET)</strong></h4>
                                     <p>Audiologists have the ability to positively impact people's lives by helping them
                                         improve their hearing and communication abilities. As an audiologist, you would have
                                         the opportunity to work with patients of all ages, from infants to seniors.</p>

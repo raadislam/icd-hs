@@ -100,6 +100,16 @@
                                                 Our Team
                                             </a>
                                         </li>
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link" href="demo-medical-2.html">
+                                                School of Minds
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link" href="demo-medical-2.html">
+                                                Speech Therapy
+                                            </a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>

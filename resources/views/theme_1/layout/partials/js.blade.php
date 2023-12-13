@@ -1,6 +1,5 @@
 <!-- Vendor -->
 <script src="{{ asset('file') }}/vendor/jquery/jquery.min.js"></script>
-<script src="{{ asset('file') }}/vendor/jquery.appear/jquery.appear.min.js"></script>
 <script src="{{ asset('file') }}/vendor/jquery.easing/jquery.easing.min.js"></script>
 <script src="{{ asset('file') }}/vendor/jquery.cookie/jquery.cookie.min.js"></script>
 <script src="{{ asset('file') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -13,6 +12,8 @@
 <script src="{{ asset('file') }}/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="{{ asset('file') }}/vendor/vide/jquery.vide.min.js"></script>
 <script src="{{ asset('file') }}/vendor/vivus/vivus.min.js"></script>
+<script src="{{ asset('file') }}/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
 {{-- <script src="{{ asset('file') }}/vendor/particles/particles.min.js"></script> --}}
 
 <!-- Theme Base, Components and Settings -->

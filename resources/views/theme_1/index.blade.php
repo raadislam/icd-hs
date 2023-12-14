@@ -383,11 +383,17 @@
                                 motivated to learn together with other
                                 children.Expectations are even higher for all children.Successful inclusion requires
                                 developing individual strengths and talents.</p>
-                            <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
+                            {{-- <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
                                     data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
+                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a> --}}
+                          <div style="margin-top: 2em">
+                                <a href={{ route('shortCourseRegistration', $shortCourse->id) }}
+                                    class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
+                                    Enroll Now
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

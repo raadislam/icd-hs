@@ -21,7 +21,6 @@
                     </a>
                 </li>
 
-
                 <li
                     class="nav-item
                         @if (request()->is('dashboard-short-course/*')) menu-open
@@ -34,7 +33,7 @@
                     ">
                     <a href="#" class="nav-link nav-item-custom"
                         style="display: flex; align-items: center; gap: 1em">
-                        <ion-icon class="text-custom" style="font-size: 1.45em" name="people-outline"></ion-icon>
+                        <ion-icon class="text-custom" style="font-size: 1.45em" name="school"></ion-icon>
                         <p class="text-custom">
                             Courses / Instructors
                             <i class="right fas fa-angle-left"></i>
@@ -112,9 +111,96 @@
                     </ul>
                 </li>
 
+                <li
+                    class="nav-item
+                        @if (request()->is('dashboard-therapy/*')) menu-open
+                        @elseif (request()->is('dashboard-therapy')) menu-open
+                        @elseif (request()->is('dashboard-therapist/*')) menu-open
+                        @elseif (request()->is('dashboard-therapist')) menu-open
+                        @elseif (request()->is('dashboard-therapy-schedule')) menu-open
+                        @elseif (request()->is('dashboard-therapy-schedule/*')) menu-open
+                        @elseif (request()->is('invitations')) menu-open @endif
+                    ">
+                    <a href="#" class="nav-link nav-item-custom"
+                        style="display: flex; align-items: center; gap: 1em">
 
+                        <ion-icon class="text-custom" style="font-size: 1.45em" name="settings"></ion-icon>
 
+                        <p class="text-custom">
+                            Services
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
 
+                    <ul class="nav nav-treeview" style="background-color: #eaecf3 !important; border-radius: 0.2em">
+                        <li class="nav-item" style="position: relative">
+                            <a href="{{ route('dashboard-therapy.index') }}"
+                                class="nav-link
+                                        @if (request()->is('dashboard-therapy')) custom-active-class
+                                        @elseif(request()->is('dashboard-therapy/*')) custom-active-class @endif"
+                                style="color: #21263c; border-radius: 0.2em">
+
+                                <p style="margin-left: 1.7em">
+                                    Therapy
+                                </p>
+
+                            </a>
+                            <a href="{{ route('dashboard-therapy.create') }}"
+                                class="
+                                        @if (request()->is('dashboard-therapy/create')) custom-active-class
+                                        @elseif (request()->is('dashboard-therapy')) custom-active-class @endif
+                                    "
+                                style="position: absolute; top: 25%; right: 5%;">
+
+                                <i class="fas fa-plus-circle"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="position: relative">
+                            <a href="{{ route('dashboard-therapy-schedule.index') }}"
+                                class="nav-link
+                                        @if (request()->is('dashboard-therapy-schedule')) custom-active-class
+                                        @elseif(request()->is('dashboard-therapy-schedule/*')) custom-active-class @endif"
+                                style="color: #21263c; border-radius: 0.2em">
+
+                                <p style="margin-left: 1.7em">
+                                    Therapy Schedule                               
+                                </p>
+                            </a>
+                            <a href="{{ route('dashboard-therapy-schedule.create') }}"
+                                class="
+                                        @if (request()->is('dashboard-therapy-schedule/create')) custom-active-class
+                                        @elseif (request()->is('dashboard-therapy-schedule')) custom-active-class @endif
+                                    "
+                                style="position: absolute; top: 25%; right: 5%;">
+
+                                <i class="fas fa-plus-circle"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="position: relative">
+                            <a href="{{ route('dashboard-therapist.index') }}"
+                                class="nav-link
+                                        @if (request()->is('dashboard-therapist')) custom-active-class
+                                        @elseif(request()->is('dashboard-therapist/*')) custom-active-class @endif"
+                                style="color: #21263c; border-radius: 0.2em">
+
+                                <p style="margin-left: 1.7em">
+                                    Therapists
+                                </p>
+
+                            </a>
+                            <a href="{{ route('dashboard-therapist.create') }}"
+                                class="
+                                        @if (request()->is('dashboard-therapist/create')) custom-active-class
+                                        @elseif (request()->is('dashboard-therapist')) custom-active-class @endif
+                                    "
+                                style="position: absolute; top: 25%; right: 5%;">
+
+                                <i class="fas fa-plus-circle"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

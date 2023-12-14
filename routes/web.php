@@ -5,6 +5,9 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ShortCourseController;
+use App\Http\Controllers\TherapistController;
+use App\Http\Controllers\TherapyController;
+use App\Http\Controllers\TherapyScheduleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,12 +44,16 @@ Route::get('/certification', [FrontendController::class, 'certification'])->name
 Route::get('/after-school-program', [FrontendController::class, 'afterSchoolProgram'])->name('afterSchoolProgram');
 Route::get('/student-services', [FrontendController::class, 'studentServices'])->name('studentServices');
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
+Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->name('ourTherapists');
 Route::resource('events', EventController::class);
 
 
 Route::resource('dashboard-short-course', ShortCourseController::class);
 Route::resource('dashboard-instructors', InstructorController::class);
 Route::resource('dashboard-course-schedule', CourseScheduleController::class);
+Route::resource('dashboard-therapy', TherapyController::class);
+Route::resource('dashboard-therapist', TherapistController::class);
+Route::resource('dashboard-therapy-schedule', TherapyScheduleController::class);
 
 
 require __DIR__ . '/auth.php';

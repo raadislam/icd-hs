@@ -95,16 +95,25 @@
                                                 Short Courses
                                             </a>
                                         </li>
+                                        
+                                        <li class="dropdown-secondary">
+                                            <a class="nav-link @if (request()->is('our-therapists')) active @endif" href="{{ route('ourTherapists') }}">
+                                               Our Therapists
+                                            </a>
+                                        </li>
+
                                         <li class="dropdown-secondary">
                                             <a class="nav-link" href="demo-medical-2.html">
                                                 Our Team
                                             </a>
                                         </li>
+
                                         <li class="dropdown-secondary">
                                             <a class="nav-link" href="demo-medical-2.html">
                                                 School of Minds
                                             </a>
                                         </li>
+
                                         <li class="dropdown-secondary">
                                             <a class="nav-link" href="demo-medical-2.html">
                                                 Speech Therapy

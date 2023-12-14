@@ -49,11 +49,29 @@
 
                         <div class="row">
                             <div class="form-group col">
+                                <input type="email" placeholder="Your E-mail" value=""
+                                    data-msg-required="Please enter your email address."
+                                    data-msg-email="Please enter a valid email address." maxlength="100"
+                                    class="form-control" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <input type="number" placeholder="Phone Number" value=""
+                                    data-msg-required="Please enter the phone number." maxlength="100" class="form-control"
+                                    name="phoneNumber" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
                                 <input type="text" placeholder="Last Academic Background Dropdown" value=""
                                     data-msg-required="Please enter your name." maxlength="100" class="form-control"
                                     name="name" required>
                             </div>
                         </div>
+
                         <div class="col-sm-6" bis_skin_checked="1">
                             <label>
                                 Slot
@@ -73,30 +91,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <input type="text" placeholder="Slot" value=""
-                                    data-msg-required="Please enter your name." maxlength="100" class="form-control"
-                                    name="name" required>
-                            </div>
-                        </div>
+                        
 
-                        <div class="row">
-                            <div class="form-group col">
-                                <input type="email" placeholder="Your E-mail" value=""
-                                    data-msg-required="Please enter your email address."
-                                    data-msg-email="Please enter a valid email address." maxlength="100"
-                                    class="form-control" name="email" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col">
-                                <input type="number" placeholder="Phone Number" value=""
-                                    data-msg-required="Please enter the phone number." maxlength="100" class="form-control"
-                                    name="phoneNumber" required>
-                            </div>
-                        </div>
 
                         {{-- <div class="row">
                             <div class="form-group col">

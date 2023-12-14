@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Mail\ContactUsmail;
 use App\Models\Event;
 use App\Models\ShortCourse;
+use App\Models\Therapist;
+use App\Models\Therapy;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -18,6 +20,11 @@ class FrontendController extends Controller
     {
         $shortCourses = ShortCourse::get();
         return view('theme_1.shortCourses', compact('shortCourses'));
+    }
+    public function ourTherapists()
+    {
+        $therapists = Therapist::get();
+        return view('theme_1.therapists', compact('therapists'));
     }
     public function shortCourseRegistration(ShortCourse $shortCourses)
     {

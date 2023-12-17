@@ -9,5 +9,5 @@ class Therapy extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'fee', 'description'];
+    protected $fillable = ['title', 'fee', 'description', 'icon'];
 }

@@ -30,9 +30,20 @@ class TherapyController extends Controller
      */
     public function store(Request $request)
     {
+        $path_string = "therapy";
+
+        if ($request->icon) {
+            $image_path = $this->uploadImage($request->icon, $path_string);
+            $image_name = $image_path;
+        } else {
+            $image_name = null;
+        }
+
+
         Therapy::create([
             "title" => $request['title'],
             "fee" => $request['fee'],
+            "icon" => $image_name,
             "description" => $request['description'],
         ]);
 

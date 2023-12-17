@@ -28,7 +28,7 @@
                                     data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
                                     Improving support for people with disabilities.
                                 </h1>
-                                
+
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
                                     data-plugin-options="{'minWindowWidth': 0}">RELIABLE THERAPY SERVICES</h2>
@@ -368,145 +368,44 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-4">
-                    <div class="feature-box feature-box-style-2 mb-4 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0">
-                        <div class="feature-box-icon mt-3">
-                            <img width="50" height="50"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/special-education.svg"
-                                alt="" />
-                        </div>
-                        <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Special & Inclusive Education</h4>
-                            <p style="text-align: justify">Provide better learning opportunities. Children with different
-                                abilities are often more
-                                motivated to learn together with other
-                                children.Expectations are even higher for all children.Successful inclusion requires
-                                developing individual strengths and talents.</p>
-                            {{-- <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
+                @foreach ($services as $service)
+                    <div class="col-lg-4">
+                        <div class="feature-box feature-box-style-2 mb-5 appear-animation"
+                            data-appear-animation="fadeInUp" data-appear-animation-delay="0">
+                            <div class="feature-box-icon mt-3">
+                                <img width="50" height="50"
+                                    src="{{ asset('images') }}/therapy/{{ $service->icon }}" alt="" />
+                            </div>
+                            <div class="feature-box-info ms-3">
+                                <h4 class="mb-2">{{ $service->title }}</h4>
+                                <p style="text-align: justify">{{ $service->description }}</p>
+                                {{-- <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
                                     data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a> --}}
-                          <div style="margin-top: 2em">
-                                <a href={{ route('shortCourseRegistration', $shortCourse->id) }}
-                                    class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
-                                    Enroll Now
-                                </a>
+
+
+                                <div style="margin-top: 2em">
+                                    <a href="{{ route('viewTherapy', $service->id) }}"
+                                        class="btn btn-dark btn-outline ms-2 font-weight-extra-bold text-3 px-5 py-2 border-width-2 appear-animation"
+                                        data-appear-animation="fadeInUpShorter">
+                                        Enroll Now
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature-box feature-box-style-2 mb-4 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0">
-                        <div class="feature-box-icon mt-3">
-                            <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/speech-therapy.svg" alt="" />
-                        </div>
-                        <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Speech Therapy</h4>
-                            <p style="text-align: justify">The goals of speech therapy include improving pronunciation,
-                                strengthening the muscles used
-                                in speech, and learning to speak correctly. Speech therapy can be used for a lot of
-                                different speech problems and disorders, from smaller problems like a hoarse voice up to
-                                partial loss of speech due to brain damage.</p>
-                            <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
-                                More<img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature-box feature-box-style-2 mb-4 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0">
-                        <div class="feature-box-icon mt-3">
-                            <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/health-law.svg" alt=""
-                                data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
-                        </div>
-                        <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Care Giving</h4>
-                            <p style="text-align: justify">Caregiving is essential to safeguard the well-being of those
-                                incapable of independently managing their daily activities and health requirements; this
-                                proves particularly vital for aging populations, individuals enduring chronic illnesses or
-                                disabilities, those recovering from medical.</p>
-                            <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
-                                More<img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
-            <div class="row mt-lg-3">
-                <div class="col-lg-4">
-                    <div class="feature-box feature-box-style-2 mb-2 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="300">
-                        <div class="feature-box-icon mt-3">
-                            <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/divorce-law.svg" alt=""
-                                data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-                        </div>
-                        <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Occupational Therapy</h4>
-                            <p style="text-align: justify">OT helps kids play, improves their school performance, and aids
-                                their daily activities. It also boosts their self-esteem and sense of accomplishment. With
-                                OT, kids can: Develop fine motor skills so they can grasp and release toys and develop good
-                                handwriting or computer skills..</p>
-                            <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
-                                More<img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature-box feature-box-style-2 mb-2 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="300">
-                        <div class="feature-box-icon mt-3">
-                            <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/physiotherapy.svg" alt="" />
-                        </div>
-                        <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Physiotherapy</h4>
-                            <p>Physiotherapy is a hugely beneficial specialist treatment of injury, disease and disorders.
-                                Through physical methods, it helps them to restore function and movement in the area that
-                                has been affected. Physiotherapy also helps with preventing further damage or injury on the
-                                previously affected body part..</p>
-                            <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
-                                More<img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                        </div>
-                    </div>
-                </div>
-                {{-- <div class="col-lg-4">
-                    <div class="feature-box feature-box-style-2 mb-2 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="300">
-                        <div class="feature-box-icon mt-3">
-                            <img width="48" height="48"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/accident-law.svg" alt=""
-                                data-icon
-                                data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark d-inline-block ms-2 p-relative bottom-1'}" />
-                        </div>
-                        <div class="feature-box-info ms-3">
-                            <h4 class="mb-2">Accident Law</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque
-                                imperdiet. Nulla lacinia iaculis nulla.</p>
-                            <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
-                                More<img width="27" height="27"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
-                        </div>
-                    </div>
-                </div> --}}
+            <div style="margin-top: 2em; width: 100%; display: flex; justify-content: center">
+                <a href="{{ route('shortCourse') }}"
+                    class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-2 px-5 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0"
+                    data-plugin-options="{'minWindowWidth': 0}">
+                    See all
+                </a>
             </div>
         </div>
     </section>
@@ -768,7 +667,7 @@
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
-                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-4.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
                                     Monzur Ali
                                 </strong>
@@ -805,7 +704,7 @@
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
-                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-6.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
                                     Pratik Tarafdar
                                 </strong>

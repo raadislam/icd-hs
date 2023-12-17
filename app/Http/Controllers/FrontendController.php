@@ -14,51 +14,52 @@ class FrontendController extends Controller
     public function index()
     {
         $shortCourses = ShortCourse::limit(4)->get();
-        return view('theme_1.index', compact('shortCourses'));
+        $services = Therapy::limit(6)->get();
+        return view('theme_1.index', compact('shortCourses', 'services'));
     }
+
     public function shortCourse()
     {
         $shortCourses = ShortCourse::get();
         return view('theme_1.shortCourses', compact('shortCourses'));
     }
+
     public function ourTherapists()
     {
         $therapists = Therapist::get();
         return view('theme_1.therapists', compact('therapists'));
     }
+
+    public function viewTherapy(Therapy $therapy)
+    {
+        $therapists = Therapist::get();
+        return view('theme_1.viewTherapy', compact('therapy', 'therapists'));
+    }
     public function shortCourseRegistration(ShortCourse $shortCourses)
     {
         return view('theme_1.applyShortCourse', compact('shortCourses'));
     }
+
+    public function therapyRegistration(Therapy $therapy)
+    {
+        return view('theme_1.applyShortCourse', compact('therapy'));
+    }
+
     public function aboutus()
     {
         return view('theme_1.aboutus');
     }
+
     public function contactus()
     {
         return view('theme_1.contactus');
     }
-    public function training()
+
+    public function makeAppointment()
     {
-        return view('theme_1.training');
+        return view('theme_1.makeAppointement');
     }
-    public function certification()
-    {
-        return view('theme_1.certification');
-    }
-    public function afterSchoolProgram()
-    {
-        return view('theme_1.program');
-    }
-    public function studentServices()
-    {
-        return view('theme_1.studentService');
-    }
-    public function event(Request $request)
-    {
-        $events = Event::all();
-        return view('theme_1.event', compact('events'));
-    }
+
     public function contactusSend(Request $request)
     {
 

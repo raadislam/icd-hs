@@ -62,7 +62,7 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="demo-medical-2.html">
-                                <img alt="Porto" height="83"
+                                <img alt="Porto" height="72"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
                             </a>
                         </div>
@@ -76,37 +76,31 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown-secondary">
-                                            <a class="nav-link  @if (request()->is('/')) active @endif" href="/">
+                                            <a class="nav-link  @if (request()->is('/')) active @endif"
+                                                href="/">
                                                 Home
                                             </a>
                                         </li>
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link  @if (request()->is('about-us')) active @endif" href="{{ route('aboutus') }}">
-                                                About Us
+
+                                        <li class="dropdown dropdown-secondary">
+                                            <a class="nav-link dropdown-toggle" class="dropdown-toggle">
+                                                Services
                                             </a>
-                                        </li>
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link" href="demo-medical-2.html">
-                                                Program of Study
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link  @if (request()->is('short-course')) active @endif" href="{{ route('shortCourse') }}">
-                                                Short Courses
-                                            </a>
-                                        </li>
-                                        
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link @if (request()->is('our-therapists')) active @endif" href="{{ route('ourTherapists') }}">
-                                               Our Therapists
-                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item font-weight-normal" href="#">
+                                                        Program of Study
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item font-weight-normal"
+                                                        href="{{ route('shortCourse') }}">
+                                                        Short Courses
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
 
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link" href="demo-medical-2.html">
-                                                Our Team
-                                            </a>
-                                        </li>
 
                                         <li class="dropdown-secondary">
                                             <a class="nav-link" href="demo-medical-2.html">
@@ -118,6 +112,33 @@
                                             <a class="nav-link" href="demo-medical-2.html">
                                                 Speech Therapy
                                             </a>
+                                        </li>
+
+
+                                        <li class="dropdown dropdown-secondary">
+                                            <a class="nav-link dropdown-toggle" class="dropdown-toggle">
+                                                About
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item font-weight-normal"
+                                                        href="{{ route('aboutus') }}">
+                                                        Who We Are ?
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item font-weight-normal"
+                                                        href="{{ route('ourTherapists') }}">
+                                                        Our Therapists
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item font-weight-normal" href="#">
+                                                        Our Team
+                                                    </a>
+                                                </li>
+
+                                            </ul>
                                         </li>
                                     </ul>
                                 </nav>

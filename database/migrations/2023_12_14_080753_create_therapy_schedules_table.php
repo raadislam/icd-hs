@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('therapy_schedules', function (Blueprint $table) {
             $table->id();
+            $table->string('instructor_id');
+            $table->string('therapy_id');
+            $table->string('weekday');
+            $table->string('slot');
             $table->timestamps();
         });
     }

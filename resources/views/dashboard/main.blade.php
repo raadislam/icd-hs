@@ -15,6 +15,7 @@
 
     <title>ICD HS</title>
 
+    @stack('styles')
 
 </head>
 
@@ -68,6 +69,8 @@
     @endif
 
     @yield('script')
+
+    @stack('scripts')
 
 </body>
 

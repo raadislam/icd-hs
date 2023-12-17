@@ -30,72 +30,13 @@
                                     name="fee" required>
                             </div>
 
-                            {{-- <div class="form-group">
-                                <label>Instructor</label>
-                                <select class="select2" multiple="multiple" name="donors" data-placeholder="Select a State"
-                                    style="width: 100%;">
-                                    <option value="1">Mr X</option>
-                                    <option value="1">Mr Y</option>
-
-                                </select>
+                            <div class="form-group" bis_skin_checked="1">
+                                <label for="icon" class="form-label">
+                                    Feature Icon (Only SVG)
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <input class="custom-file" type="file" id="icon" name="iconinde" />
                             </div>
-
-                            <div class="form-group">
-                                <label>Select Days of Course</label>
-                                <select class="select2" multiple="multiple" name="donors" data-placeholder="Select a State"
-                                    style="width: 100%;">
-                                    <option value="0">Sunday</option>
-                                    <option value="1">Monday</option>
-                                    <option value="2">Tuesday</option>
-                                    <option value="3">Wednesday</option>
-                                    <option value="4">Thursday</option>
-                                    <option value="5">Friday</option>
-                                    <option value="6">Saturday</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-6">
-
-                                <div class="row-md-6 row">
-
-                                    <div class="bootstrap-timepicker" bis_skin_checked="1">
-                                        <div class="form-group" bis_skin_checked="1">
-                                            <label>Slot One:</label>
-                                            <label>Start Time</label>
-                                            <div class="input-group date" id="timepicker" data-target-input="nearest"
-                                                bis_skin_checked="1">
-                                                <input type="text" class="form-control datetimepicker-input"
-                                                    data-target="#timepicker">
-                                                <div class="input-group-append" data-target="#timepicker"
-                                                    data-toggle="datetimepicker" bis_skin_checked="1">
-                                                    <div class="input-group-text" bis_skin_checked="1"><i
-                                                            class="far fa-clock"></i></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="bootstrap-timepicker" bis_skin_checked="1">
-                                        <div class="form-group" bis_skin_checked="1">
-                                            <label>Slot One:</label>
-                                            <label>End Time</label>
-                                            <div class="input-group date" id="timepicker" data-target-input="nearest"
-                                                bis_skin_checked="1">
-                                                <input type="text" class="form-control datetimepicker-input"
-                                                    data-target="#timepicker">
-                                                <div class="input-group-append" data-target="#timepicker"
-                                                    data-toggle="datetimepicker" bis_skin_checked="1">
-                                                    <div class="input-group-text" bis_skin_checked="1"><i
-                                                            class="far fa-clock"></i></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div> --}}
 
                             <div class="form-group" bis_skin_checked="1">
                                 <label for="description">Description

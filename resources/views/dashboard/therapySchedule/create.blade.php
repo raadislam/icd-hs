@@ -1,153 +1,151 @@
 @extends('dashboard.main')
 @section('content')
+    @php
+        $weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+    @endphp
+    <style>
+        .grid-table {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            width: 100%;
+            border: 1px solid lightgrey;
+            padding: 15px;
+        }
+
+        .timeslot {
+            display: inline;
+            background-color: #ed2939;
+            color: #fff;
+            padding: 0.5em 0.7em 0.5em 0.7em;
+            margin-right: 0.5em;
+            cursor: pointer;
+        }
+
+        .self-deletable {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+
     <div class="p-4 container-fluid" bis_skin_checked="1">
         <div class="card card-primary" bis_skin_checked="1">
             <div class="card-header" bis_skin_checked="1">
-                <h3 class="card-title">Add Instructor</h3>
+                <h3 class="card-title">Therapy Schedule</h3>
             </div>
 
             <div class="card-body" bis_skin_checked="1" style="display: block;">
-                <form action="{{ route('dashboard-therapy-schedule.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
+
+                <div bis_skin_checked="1">
                     <div bis_skin_checked="1">
-                        <div bis_skin_checked="1">
-                            <h6 style=" color: red;">* marks are required field</h6>
+                        <h6 style=" color: red;">* marks are required field</h6>
 
-                            <div class="form-group">
-                                <label>
-                                    Therapy Title
-                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                                </label>
-                                <select class="form-control select2" id="course" name="course" required>
-                                    @foreach ($therapies as $therapy)
-                                        <option value="{{ $therapy->id }}">{{ $therapy->title }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label>
+                                Therapy Title
+                                <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                            </label>
+                            <select class="form-control select2" id="therapy" name="therapy" required>
+                                @foreach ($therapies as $therapy)
+                                    <option value="{{ $therapy->id }}">{{ $therapy->title }}</option>
+                                @endforeach
+                            </select>
+                        </div>
 
-                            <div class="form-group">
-                                <label>
-                                    Instructor
-                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                                </label>
-                                <select class="form-control select2" id="instructor" name="instructor" required>
-                                    @foreach ($therapists as $therapist)
-                                        <option value="{{ $therapist->id }}">{{ $therapist->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label>
+                                Therapist
+                                <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                            </label>
+                            <select class="form-control select2" id="therapist" name="therapist" required>
+                                @foreach ($therapists as $therapist)
+                                    <option value="{{ $therapist->id }}">{{ $therapist->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
 
-
-
-                            <div class="form-group">
-                                <div style="display: flex; gap: 2em" class="row-md-6 row">
-                                    <div class="bootstrap-timepicker" bis_skin_checked="1">
-                                        <div class="form-group" bis_skin_checked="1">
-                                            <label>Slot One:</label>
-                                            <label>Start Time</label>
-                                            <div class="input-group date" id="slotOneStartTime" data-target-input="nearest"
-                                                bis_skin_checked="1">
-                                                <input name="slotOneStartTime" type="text"
-                                                    class="form-control datetimepicker-input"
-                                                    data-target="#slotOneStartTime">
-                                                <div class="input-group-append" data-target="#slotOneStartTime"
-                                                    data-toggle="datetimepicker" bis_skin_checked="1">
-                                                    <div class="input-group-text" bis_skin_checked="1"><i
-                                                            class="far fa-clock"></i></div>
+                        <div>
+                            <div id="slot-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header" bis_skin_checked="1">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" bis_skin_checked="1">
+                                            <div class="bootstrap-timepicker" bis_skin_checked="1">
+                                                <div class="form-group" bis_skin_checked="1">
+                                                    <div class="input-group date" id="slot" data-target-input="nearest"
+                                                        bis_skin_checked="1">
+                                                        <input name="slot" type="text"
+                                                            class="form-control datetimepicker-input" data-target="#slot">
+                                                        <div class="input-group-append" data-target="#slot"
+                                                            data-toggle="datetimepicker" bis_skin_checked="1">
+                                                            <div class="input-group-text" bis_skin_checked="1">
+                                                                <i class="far fa-clock"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Select Days of Course</label>
-                                        <select class="select2" multiple="multiple" name="weekdaysSlotOne"
-                                            data-placeholder="Select a State" style="width: 100%;">
-                                            <option value="0">Sunday</option>
-                                            <option value="1">Monday</option>
-                                            <option value="2">Tuesday</option>
-                                            <option value="3">Wednesday</option>
-                                            <option value="4">Thursday</option>
-                                            <option value="5">Friday</option>
-                                            <option value="6">Saturday</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div style="display: flex; gap: 2em" class="row-md-6 row">
-                                    <div class="bootstrap-timepicker" bis_skin_checked="1">
-                                        <div class="form-group" bis_skin_checked="1">
-                                            <label>Slot Two:</label>
-                                            <label>Start Time</label>
-                                            <div class="input-group date" id="slotTwoStartTime" data-target-input="nearest"
-                                                bis_skin_checked="1">
-                                                <input name="slotTwoStartTime" type="text"
-                                                    class="form-control datetimepicker-input"
-                                                    data-target="#slotTwoStartTime">
-                                                <div class="input-group-append" data-target="#slotTwoStartTime"
-                                                    data-toggle="datetimepicker" bis_skin_checked="1">
-                                                    <div class="input-group-text" bis_skin_checked="1"><i
-                                                            class="far fa-clock"></i></div>
-                                                </div>
-                                            </div>
-
+                                        <div class="modal-footer justify-content-between" bis_skin_checked="1">
+                                            <button id="slot-add" type="button" class="btn btn-default">ADD</button>
                                         </div>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Select Days of Course</label>
-                                        <select class="select2" multiple="multiple" name="weekdaysSlotTwo"
-                                            data-placeholder="Select a State" style="width: 100%;">
-                                            <option value="0">Sunday</option>
-                                            <option value="1">Monday</option>
-                                            <option value="2">Tuesday</option>
-                                            <option value="3">Wednesday</option>
-                                            <option value="4">Thursday</option>
-                                            <option value="5">Friday</option>
-                                            <option value="6">Saturday</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div style="display: flex; gap: 2em" class="row-md-6 row">
-                                    <div class="bootstrap-timepicker" bis_skin_checked="1">
-                                        <div class="form-group" bis_skin_checked="1">
-                                            <label>Slot Three:</label>
-                                            <label>Start Time</label>
-                                            <div class="input-group date" id="slotThreeStartTime"
-                                                data-target-input="nearest" bis_skin_checked="1">
-                                                <input name="slotThreeStartTime" type="text"
-                                                    class="form-control datetimepicker-input"
-                                                    data-target="#slotThreeStartTime">
-                                                <div class="input-group-append" data-target="#slotThreeStartTime"
-                                                    data-toggle="datetimepicker" bis_skin_checked="1">
-                                                    <div class="input-group-text" bis_skin_checked="1"><i
-                                                            class="far fa-clock"></i></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Select Days of Course</label>
-                                        <select class="select2" multiple="multiple" name="weekdaysSlotThree"
-                                            data-placeholder="Select a State" style="width: 100%;">
-                                            <option value="0">Sunday</option>
-                                            <option value="1">Monday</option>
-                                            <option value="2">Tuesday</option>
-                                            <option value="3">Wednesday</option>
-                                            <option value="4">Thursday</option>
-                                            <option value="5">Friday</option>
-                                            <option value="6">Saturday</option>
-                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                </form>
+                </div>
+                <div>
+                    <div id="schedule-modal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header" bis_skin_checked="1">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" bis_skin_checked="1">
+                                    <div data- class="border border-secondary grid-table">
+                                        @foreach ($weekdays as $key => $weekday)
+                                            <div class="py-3">
+                                                <span class="text-capitalize">
+                                                    {{ $weekday }}
+                                                </span>
+                                            </div>
+                                            <div style="display: flex; align-items: center">
+                                                <div id='slots'>
+                                                    Time Slot:
+                                                    @foreach ($schedules as $schedule)
+                                                        @if ($key == $schedule->weekday)
+                                                            <span class='timeslot' data-id="{{ $schedule->id }}">
+                                                                {{ $schedule->slot }} &nbsp;&#9747;
+                                                            </span>
+                                                        @endif
+                                                    @endforeach
+                                                </div>
+                                                <button type="button" data-id="{{ $key }}"
+                                                    class="mx-1 btn btn-primary add-slot"
+                                                    data-target=".bd-example-modal-lg">
+                                                    +
+                                                </button>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="schedule-table-modal-btn" type="button" class="btn btn-primary mt-3">
+                        Make Schedule
+                    </button>
+                </div>
             </div>
 
             <div class="card-footer" bis_skin_checked="1" style="display: block;">
@@ -185,6 +183,14 @@
     </script>
 
     <script>
+        function ScheduleCalender($element) {
+
+        }
+
+        var weekdays = [];
+    </script>
+
+    <script>
         $(function() {
             $(document).ready(function() {
                 $('.js-example-basic-multiple').select2();
@@ -203,6 +209,8 @@
     <script>
         $('#slotOneStartTime').datetimepicker({
             format: 'LT'
+            // multitime: true,
+
         });
         $('#slotOneEndTime').datetimepicker({
             format: 'LT'
@@ -221,3 +229,140 @@
         });
     </script>
 @endsection
+
+
+@push('scripts')
+    <script>
+        $(document).ready(function() {
+            
+            var slotTarget = null;
+            var $slotModal = $('#slot-modal').modal({
+                show: false
+            }).on('show.bs.modal', function(event) {
+                slotTarget = $(event.relatedTarget);
+
+                $('#slot-add').on('click', function(e) {
+
+                    let route = "{{ route('dashboard-therapy-schedule.store') }}";
+                    let token = "{{ csrf_token() }}";
+
+                    var value = $('input.datetimepicker-input').val();
+                    var therapist = $('#therapist').val();
+                    var therapyId = $('#therapy').val();
+                    var weekday = $(slotTarget).attr('data-id');
+
+
+                    $.ajax({
+                        url: route,
+                        type: 'POST',
+                        data: {
+                            _token: token,
+                            therapist_id: therapist,
+                            therapy_id: therapyId,
+                            weekday: weekday,
+                            slot: value,
+                        },
+                        success: function(response) {
+                            console.log(response)
+                        },
+                        error: function(xhr) {
+                            console.log(xhr)
+                        }
+                    });
+
+
+                    var slotElement = `<span class='timeslot'> ${value} &nbsp;&#9747;</span>`;
+                    var slotsElement = slotTarget.siblings('#slots')[0];
+
+                    $(slotsElement).append(slotElement);
+                    $slotModal.modal('hide');
+                });
+            }).on('hide.bs.modal', function(event) {
+                $('#slot-add').off('click');
+            });
+
+            $('.add-slot').click(function(e) {
+                $slotModal.modal('show', $(e.target));
+
+                $('#schedule-modal').modal({
+                    show: false
+                })
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).on("click", '.timeslot', function(e) {
+            var id = $(e.target).attr("data-id");
+            let route = "{{ route('dashboard-therapy-schedule.destroy', ':dashboard_therapy_schedule') }}";
+            route = route.replace(':dashboard_therapy_schedule', id)
+
+            $.ajax({
+                url: route,
+                method: 'DELETE',
+                data: {
+                    _token: "{{ csrf_token() }}",
+                },
+                success: function(response) {
+                    console.log(response)
+
+                },
+                error: function(xhr) {
+                    //Do Something to handle error
+                }
+            });
+
+            $(e.target).remove();
+        });
+    </script>
+
+    {{-- <script>
+        $(document).on('change', '#therapist', function() {
+            var id = $(this).val();
+            let route = "{{ route('dashboard-therapy-schedule.show', ':therapySchedule') }}";
+            route = route.replace(':therapySchedule', id)
+
+            $.ajax({
+                url: route,
+                method: 'GET',
+                data: {
+                    _token: "{{ csrf_token() }}",
+                },
+                success: function(response) {
+                    $.each(response.therapist, function(k, v) {
+                        // var slotElement =
+                        //     `<span class='timeslot'>
+                    // ${value} &nbsp;&#9747;
+                    // </span>`;
+
+                        $('#slots').append(
+                            `<span class='timeslot'> ${v.slot} &nbsp;&#9747;</span>`);
+                        console.log(slotsElement)
+
+                        // $(slotsElement).append(slotElement);
+                    });
+
+                },
+                error: function(xhr) {
+                    //Do Something to handle error
+                }
+            });
+        });
+    </script> --}}
+
+    <script>
+        $(document).on('click', '#schedule-table-modal-btn', function(e) {
+            $('#schedule-modal').modal({
+                show: true
+            })
+        });
+    </script>
+
+
+    <script>
+        $('#slot').datetimepicker({
+            format: 'LT'
+        });
+    </script>
+@endpush

@@ -1,4 +1,5 @@
 <!-- Vendor -->
+<script src="//unpkg.com/alpinejs" defer></script>
 <script src="{{ asset('file') }}/vendor/jquery/jquery.min.js"></script>
 <script src="{{ asset('file') }}/vendor/jquery.easing/jquery.easing.min.js"></script>
 <script src="{{ asset('file') }}/vendor/jquery.cookie/jquery.cookie.min.js"></script>

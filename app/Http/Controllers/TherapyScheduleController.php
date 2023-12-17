@@ -25,7 +25,8 @@ class TherapyScheduleController extends Controller
     {
         $therapies = Therapy::get();
         $therapists = Therapist::get();
-        return view('dashboard.therapySchedule.create', compact('therapists', 'therapies'));
+        $schedules = TherapySchedule::get();
+        return view('dashboard.therapySchedule.create', compact('therapists', 'therapies', 'schedules'));
     }
 
     /**
@@ -33,15 +34,23 @@ class TherapyScheduleController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->toArray());
+        $schedule = TherapySchedule::create([
+            'therapist_id' => $request->therapist_id,
+            'therapy_id' => $request->therapy_id,
+            'weekday' => $request->weekday,
+            'slot' => $request->slot,
+        ]);
+
+        return response(compact('schedule'));
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(TherapySchedule $therapySchedule)
+    public function show($therapists)
     {
-        //
+        $therapist = TherapySchedule::where('therapist_id', $therapists)->get();
+        return response(compact('therapist'));
     }
 
     /**
@@ -63,8 +72,9 @@ class TherapyScheduleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(TherapySchedule $therapySchedule)
+    public function destroy($dashboard_therapy_schedule)
     {
-        //
+        TherapySchedule::find($dashboard_therapy_schedule)->delete();
+        return true;
     }
 }

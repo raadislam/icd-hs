@@ -38,16 +38,15 @@ Route::get('/', [FrontendController::class, 'index']);
 Route::get('/about-us', [FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/short-course', [FrontendController::class, 'shortCourse'])->name('shortCourse');
 Route::get('/apply/short-course/{shortCourses}', [FrontendController::class, 'shortCourseRegistration'])->name('shortCourseRegistration');
+Route::get('/apply/short-course/{therapy}', [FrontendController::class, 'therapyRegistration'])->name('therapyRegistration');
 Route::get('/contact-us', [FrontendController::class, 'contactus'])->name('contactus');
-Route::get('/training', [FrontendController::class, 'training'])->name('training');
-Route::get('/certification', [FrontendController::class, 'certification'])->name('certification');
-Route::get('/after-school-program', [FrontendController::class, 'afterSchoolProgram'])->name('afterSchoolProgram');
-Route::get('/student-services', [FrontendController::class, 'studentServices'])->name('studentServices');
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
 Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->name('ourTherapists');
-Route::resource('events', EventController::class);
+Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
+Route::get('/make-appointment/{therapist}', [FrontendController::class, 'makeAppointment'])->name('makeAppointment');
 
 
+require __DIR__ . '/auth.php';
 Route::resource('dashboard-short-course', ShortCourseController::class);
 Route::resource('dashboard-instructors', InstructorController::class);
 Route::resource('dashboard-course-schedule', CourseScheduleController::class);
@@ -56,4 +55,4 @@ Route::resource('dashboard-therapist', TherapistController::class);
 Route::resource('dashboard-therapy-schedule', TherapyScheduleController::class);
 
 
-require __DIR__ . '/auth.php';
+Route::view('planner', 'dashboard.schedule.planner');

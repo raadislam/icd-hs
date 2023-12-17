@@ -2,7 +2,6 @@
 @section('content')
     @php
         $weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-
     @endphp
     <style>
         .grid-table {
@@ -182,13 +181,6 @@
         disabledResults.select2();
     </script>
 
-    <script>
-        function ScheduleCalender($element) {
-
-        }
-
-        var weekdays = [];
-    </script>
 
     <script>
         $(function() {
@@ -243,6 +235,8 @@
 
                 $('#slot-add').on('click', function(e) {
 
+                    $('#schedule-modal').modal('hide')
+
                     let route = "{{ route('dashboard-therapy-schedule.store') }}";
                     let token = "{{ csrf_token() }}";
 
@@ -276,17 +270,26 @@
 
                     $(slotsElement).append(slotElement);
                     $slotModal.modal('hide');
+                    $('#schedule-modal').modal('show')
                 });
+
             }).on('hide.bs.modal', function(event) {
                 $('#slot-add').off('click');
             });
 
             $('.add-slot').click(function(e) {
                 $slotModal.modal('show', $(e.target));
+                $('#schedule-modal').modal('hide')
+            });
 
-                $('#schedule-modal').modal({
-                    show: false
-                })
+            $(document).on('click', '#schedule-table-modal-btn', function(e) {
+
+            $(".modal-body #value").val($('#therapist').val()); 
+
+            var $scheduleModal =  $('#schedule-modal').modal({
+                show: true
+            })
+            
             });
 
         });
@@ -352,11 +355,7 @@
     </script> --}}
 
     <script>
-        $(document).on('click', '#schedule-table-modal-btn', function(e) {
-            $('#schedule-modal').modal({
-                show: true
-            })
-        });
+
     </script>
 
 

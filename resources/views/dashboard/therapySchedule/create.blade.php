@@ -11,7 +11,6 @@
                 <div bis_skin_checked="1">
                     <div bis_skin_checked="1">
                         <h6 style=" color: red;">* marks are required field</h6>
-
                         <div class="form-group">
                             <label>
                                 Therapy Title
@@ -127,121 +126,7 @@
 
 
 @push('scripts')
-    <script>
-        $(document).ready(function() {
-            var slotTarget = null;
-            var $slotModal = $('#slot-modal').modal({
-                show: false
-            }).on('show.bs.modal', function(event) {
-                slotTarget = $(event.relatedTarget);
 
-                $('#slot-add').on('click', function(e) {
-
-                    $('#schedule-modal').modal('hide')
-
-                    let route = "{{ route('dashboard-therapy-schedule.store') }}";
-                    let token = "{{ csrf_token() }}";
-
-                    var value = $('input.datetimepicker-input').val();
-                    var therapist = $('#therapist').val();
-                    var therapyId = $('#therapy').val();
-                    var weekday = $(slotTarget).attr('data-id');
-
-
-                    $.ajax({
-                        url: route,
-                        type: 'POST',
-                        data: {
-                            _token: token,
-                            therapist_id: therapist,
-                            therapy_id: therapyId,
-                            weekday: weekday,
-                            slot: value,
-                        },
-                        success: function(response) {
-                            console.log(response)
-                        },
-                        error: function(xhr) {
-                            console.log(xhr)
-                        }
-                    });
-
-
-                    var slotElement = `<span class='timeslot'> ${value} &nbsp;&#9747;</span>`;
-                    var slotsElement = slotTarget.siblings('#slots')[0];
-
-                    $(slotsElement).append(slotElement);
-                    $slotModal.modal('hide');
-                    $('#schedule-modal').modal('show')
-                });
-
-            }).on('hide.bs.modal', function(event) {
-                $('#slot-add').off('click');
-            });
-
-            $('.add-slot').click(function(e) {
-                $slotModal.modal('show', $(e.target));
-                $('#schedule-modal').modal('hide')
-            });
-
-            $(document).on('click', '#schedule-table-modal-btn', function(e) {
-                var $scheduleModal = $('#schedule-modal').modal({
-                    show: true
-                })
-
-                let route = "{{ route('getschedule') }}";
-                let token = "{{ csrf_token() }}";
-
-                var therapist = $('#therapist').val();
-                var therapyId = $('#therapy').val();
-                console.log(therapist)
-
-                $.ajax({
-                    url: route,
-                    type: 'GET',
-                    data: {
-                        _token: token,
-                        therapist_id: therapist,
-                        therapy_id: therapyId,
-                    },
-                    success: function(response) {
-                        $('.modal-body').val(response)
-                        console.log(response)
-                    },
-                    error: function(xhr) {
-                        console.log(xhr)
-                    }
-                });
-
-            })
-        });
-    </script>
-
-
-
-    <script>
-        $(document).on("click", '.timeslot', function(e) {
-            var id = $(e.target).attr("data-id");
-            let route = "{{ route('dashboard-therapy-schedule.destroy', ':dashboard_therapy_schedule') }}";
-            route = route.replace(':dashboard_therapy_schedule', id)
-
-            $.ajax({
-                url: route,
-                method: 'DELETE',
-                data: {
-                    _token: "{{ csrf_token() }}",
-                },
-                success: function(response) {
-                    console.log(response)
-                },
-                error: function(xhr) {
-                    //Do Something to handle error
-                }
-            });
-
-            $(e.target).remove();
-        });
-    </script>
 
     <script>
         $('#slot').datetimepicker({

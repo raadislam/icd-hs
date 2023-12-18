@@ -7,6 +7,7 @@ use App\Models\Event;
 use App\Models\ShortCourse;
 use App\Models\Therapist;
 use App\Models\Therapy;
+use App\Models\TherapySchedule;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -43,6 +44,14 @@ class FrontendController extends Controller
     public function therapyRegistration(Therapy $therapy)
     {
         return view('theme_1.applyShortCourse', compact('therapy'));
+    }
+
+    public function getschedule(Request $request)
+
+    {
+        // dd($request);
+        $schedule = TherapySchedule::where([['therapist_id', $request->therapist_id], ['therapy_id', $request->therapy_id]])->get();
+        return response(compact('schedule'));
     }
 
     public function aboutus()

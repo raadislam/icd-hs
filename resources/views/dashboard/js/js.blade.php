@@ -33,6 +33,7 @@
 <script src="{{ asset('file') }}/vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
 {{-- <script src="{{ asset('assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script> --}}
 
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 
 <!-- AdminLTE for demo purposes -->

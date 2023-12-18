@@ -10,4 +10,10 @@ class TherapySchedule extends Model
     use HasFactory;
 
     protected $fillable = ['therapist_id', 'therapy_id', 'weekday', 'slot'];
+
+
+    public function therapist()
+    {
+        return $this->belongsTo(Therapist::class, 'therapist_id');
+    }
 }

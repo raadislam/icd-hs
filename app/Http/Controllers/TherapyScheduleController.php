@@ -25,7 +25,7 @@ class TherapyScheduleController extends Controller
     {
         $therapies = Therapy::get();
         $therapists = Therapist::get();
-        $schedules = TherapySchedule::get();
+        $schedules = TherapySchedule::orderBy('weekday', "ASC")->get()->groupBy('weekday');
         return view('dashboard.therapySchedule.create', compact('therapists', 'therapies', 'schedules'));
     }
 

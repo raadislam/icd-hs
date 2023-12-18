@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\CourseScheduleController;
-use App\Http\Controllers\EventController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ShortCourseController;
@@ -45,6 +44,7 @@ Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->nam
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
 Route::get('/make-appointment/{therapist}', [FrontendController::class, 'makeAppointment'])->name('makeAppointment');
 
+Route::get('/get-schedule', [FrontendController::class, 'getschedule'])->name('getschedule');
 
 require __DIR__ . '/auth.php';
 Route::resource('dashboard-short-course', ShortCourseController::class);

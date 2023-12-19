@@ -1,86 +1,44 @@
-{{-- <div x-data>
-    <template x-if="$store.slotModal.show">
-        <div>
-            <div class="bootstrap-timepicker" bis_skin_checked="1">
-                <div class="form-group" bis_skin_checked="1">
-                    <div class="input-group date" id="slot" data-target-input="nearest" bis_skin_checked="1">
-                        <input name="slot" type="text" class="form-control datetimepicker-input"
-                            data-target="#slot">
-                        <div class="input-group-append" data-target="#slot" data-toggle="datetimepicker"
-                            bis_skin_checked="1">
-                            <div class="input-group-text" bis_skin_checked="1">
-                                <i class="far fa-clock"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button @click="$store.slotModal.toggle()" type="button" class="mx-1 btn btn-primary add-slot"
-                data-target=".bd-example-modal-lg">
-                X
-            </button>
-        </div>
-    </template>
-</div> --}}
-
-<div xdata>
-        <div id="slot-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header" bis_skin_checked="1">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" bis_skin_checked="1">
-                        <div class="bootstrap-timepicker" bis_skin_checked="1">
-                            <div class="form-group" bis_skin_checked="1">
-                                <div class="input-group date" id="slot" data-target-input="nearest"
-                                    bis_skin_checked="1">
-                                    <input name="slot" type="text"
-                                        class="form-control datetimepicker-input" data-target="#slot">
-                                    <div class="input-group-append" data-target="#slot"
-                                        data-toggle="datetimepicker" bis_skin_checked="1">
-                                        <div class="input-group-text" bis_skin_checked="1">
-                                            <i class="far fa-clock"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between" bis_skin_checked="1">
-                        <button id="slot-add" type="button" class="btn btn-default">ADD</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-
-
-<div x-data ="schedules">
+<div id="schedules-table" x-data ="schedules">
+    <span x-init="$nextTick(() => { $dispatch('notice', { text: '🔥 Wait I am Fetching!' }) })"></span>
     <div class="border border-secondary grid-table" x-data="{ weekdays: { 0: 'sunday', 1: 'monday', 2: 'tuesday', 3: 'wednesday', 4: 'thursday', 5: 'friday', 6: 'saturday' } }">
-
         <template x-for="[key, value] of Object.entries(weekdays)">
             <div style="display: flex; gap: 1em">
                 <div class="py-3">
                     <span style="font-weight: bold" x-text="value" class="text-capitalize" /> :
                 </div>
-                <div style="display: flex; align-items: center">
+                <div style="display: flex; align-items: center;flex-wrap: wrap; gap:1em">
                     <div id='slots'>
                         Time Slot:
                         <template x-if="schedules[key] !== undefined">
                             <template x-for="schedule in schedules[key]" x-init="console.log(schedules[key].slot)">
-                                <span x-text="schedule.slot" class='timeslot'>
+                                <span @click="$store.slotModal.delete(schedule.id)" x-text="schedule.slot +'&nbsp;X'"
+                                    class='timeslot'>
                                 </span>
                             </template>
                         </template>
                     </div>
-                    <button @click="$store.slotModal.display(key)" type="button" class="mx-1 btn btn-primary add-slot"
-                        data-target=".bd-example-modal-lg">
-                        +
-                    </button>
+                    <div>
+                        <template x-if="$store.slotModal.target !== key">
+                            <button @click="$store.slotModal.display(key)" type="button"
+                                class="mx-1 btn btn-primary add-slot" data-target=".bd-example-modal-lg">
+                                +
+                            </button>
+                        </template>
+                    </div>
+
+                    <div>
+                        <template x-if="$store.slotModal.target">
+                            <template x-if="$store.slotModal.target === key" x-transition>
+                                <div style="display: flex; align-items: center">
+                                    <input class="form-control" name="time" id="time" type="time" />
+                                    <button @click="save(key)" type="button" class="mx-1 btn btn-primary add-slot"
+                                        data-target=".bd-example-modal-lg">
+                                        Add
+                                    </button>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
                 </div>
             </div>
         </template>
@@ -92,13 +50,9 @@
 
 @push('scripts')
     <script>
-         var $slotModal = $('#slot-modal').modal({
-                show: true
-            })
-
         document.addEventListener('alpine:init', () => {
             Alpine.store('slotModal', {
-                show: true,
+                show: false,
                 target: null,
                 display: false,
 
@@ -109,9 +63,31 @@
                     this.target = target
                 },
                 display(display) {
-                    this.show = !this.show
-                    $slotModal.modal('show');                 
+                    this.target = display;
+                },
+
+                delete(key) {
+                    let route =
+                        "{{ route('dashboard-therapy-schedule.destroy', ':dashboard_therapy_schedule') }}";
+                    route = route.replace(':dashboard_therapy_schedule', key)
+
+                    $.ajax({
+                        url: route,
+                        method: 'DELETE',
+                        data: {
+                            _token: "{{ csrf_token() }}",
+                        },
+                        success: function(response) {
+                            console.log(response)
+                        },
+                        error: function(xhr) {
+                            //Do Something to handle error
+                        }
+                    });
+
+                    $(key).remove();
                 }
+
             });
 
             Alpine.data('schedules', () => ({
@@ -119,12 +95,44 @@
 
                 init() {
                     this.schedules = {!! $schedules !!};
-                }
+                },
+
+                delete() {
+                    console.log("first delete")
+                },
+
+                save(key) {
+                    let route = "{{ route('dashboard-therapy-schedule.store') }}";
+                    let token = "{{ csrf_token() }}";
+
+                    var time = $('#time').val();
+                    var therapist = $('#therapist').val();
+                    var therapyId = $('#therapy').val();
+
+                    $.ajax({
+                        url: route,
+                        type: 'POST',
+                        data: {
+                            _token: token,
+                            therapist_id: therapist,
+                            therapy_id: therapyId,
+                            weekday: this.key,
+                            slot: time,
+                        },
+                        success: function(response) {
+                            $("#schedules-table").load(" #schedules-table");
+
+                        },
+                        error: function(xhr) {
+                            console.log(xhr)
+                        }
+                    });
+                },
             }));
 
         })
     </script>
-    
+
     {{-- <script>
         $(document).ready(function() {
             var slotTarget = null;
@@ -217,7 +225,7 @@
 
 
 
-    <script>
+    {{-- <script>
         $(document).on("click", '.timeslot', function(e) {
             var id = $(e.target).attr("data-id");
             let route = "{{ route('dashboard-therapy-schedule.destroy', ':dashboard_therapy_schedule') }}";
@@ -239,16 +247,16 @@
 
             $(e.target).remove();
         });
+    </script> --}}
+
+
+
+
+    <script>
+        $('#slot').datetimepicker({
+            format: 'LT'
+        });
     </script>
-
-
-
-
-<script>
-    $('#slot').datetimepicker({
-        format: 'LT'
-    });
-</script>
 
 
 

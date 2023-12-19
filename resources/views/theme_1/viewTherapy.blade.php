@@ -44,8 +44,12 @@
                 </div>
             </div>
 
+            @for ($therapists in $key->$schedules)
 
-            @foreach ($therapists as $therapist)
+            @endfor
+            {{ $therapists }}
+
+            {{-- @foreach ($therapists as $therapist)
                 <div class="row" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
                     <div class="col-lg-4 pb-4 pb-lg-0">
                         <div class="card border-0 border-radius-0 box-shadow-1 mb-4">
@@ -81,7 +85,6 @@
                         <p class="mb-4">{{ $therapist->about }}</p>
 
                         <h3 class="text-color-quaternary font-weight-bold text-capitalize mt-2 mb-2">Contact Info</h3>
-                        {{-- <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing.</p> --}}
 
                         <div class="feature-box feature-box-style-2 mb-4">
                             <div class="feature-box-icon">
@@ -116,7 +119,7 @@
                         <hr class="mt-0 mb-5">
                     </div>
                 </div>
-            @endforeach
+            @endforeach --}}
         </div>
     </section>
 @endsection

@@ -38,7 +38,7 @@ class TherapyScheduleController extends Controller
             'therapist_id' => $request->therapist_id,
             'therapy_id' => $request->therapy_id,
             'weekday' => $request->weekday,
-            'slot' => $request->slot,
+            'slot' => date('h:i A', strtotime($request->slot)),
         ]);
 
         return response(compact('schedule'));

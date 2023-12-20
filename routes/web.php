@@ -7,6 +7,8 @@ use App\Http\Controllers\ShortCourseController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\TherapyController;
 use App\Http\Controllers\TherapyScheduleController;
+use App\Models\TherapySchedule;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,6 +55,13 @@ Route::resource('dashboard-course-schedule', CourseScheduleController::class);
 Route::resource('dashboard-therapy', TherapyController::class);
 Route::resource('dashboard-therapist', TherapistController::class);
 Route::resource('dashboard-therapy-schedule', TherapyScheduleController::class);
+
+Route::get('get-schedule/{therapy}/{therapist}', function (Request $request, $therapy, $therapist) {
+    $schedules = TherapySchedule::where([['therapy_id', $therapy], ['therapist_id', $therapist]])->orderBy('weekday', "ASC")->get()->groupBy('weekday');
+    return response()->json([
+        "schedules" => $schedules,
+    ]);
+});
 
 
 Route::view('planner', 'dashboard.schedule.planner');

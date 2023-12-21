@@ -33,13 +33,9 @@ class FrontendController extends Controller
 
     public function viewTherapy(Therapy $therapy)
     {
-        // $therapists = TherapySchedule::where('therapy_id', $therapy->id)->orderBy('therapist_id', "ASC")->get()->groupBy('therapist_id');
         $therapists = Therapist::whereRelation('therapies', function ($query) use ($therapy) {
             $query->where('therapies.id', $therapy->id);
         })->get();
-
-
-        // dd($therapists->first()->therapies->pivot->slot);
 
         return view('theme_1.viewTherapy', compact('therapy', 'therapists'));
     }
@@ -56,7 +52,6 @@ class FrontendController extends Controller
     public function getschedule(Request $request)
 
     {
-        // dd($request);
         $schedule = TherapySchedule::where([['therapist_id', $request->therapist_id], ['therapy_id', $request->therapy_id]])->get();
         return response(compact('schedule'));
     }
@@ -73,7 +68,7 @@ class FrontendController extends Controller
 
     public function makeAppointment($therapist, $therapy)
     {
-        dd($therapist, $therapy);
+        
         return view('theme_1.makeAppointement');
     }
 

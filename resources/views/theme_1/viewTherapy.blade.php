@@ -43,11 +43,8 @@
                     </p>
                 </div>
             </div>
-            @foreach ($therapists as $therapist)
-{{$therapist->name}}    
-            @endforeach
 
-           @foreach ($therapists as $therapist)
+            @foreach ($therapists as $therapist)
                 <div class="row" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
                     <div class="col-lg-4 pb-4 pb-lg-0">
                         <div class="card border-0 border-radius-0 box-shadow-1 mb-4">
@@ -68,10 +65,10 @@
                                     Therapists
                                 </span>
 
-                                {{-- <a href="{{ route('makeAppointment', [$therapist->id, $therapy->id]) }}"
+                                <a href="{{ route('makeAppointment', [$therapist->id, $therapy->id]) }}"
                                     class="btn btn-outline btn-light bg-hover-light text-dark text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 mt-3 text-2">
                                     Make An Appointment
-                                </a> --}}
+                                </a>
                             </div>
                         </div>
                         <hr class="mt-4 mb-5">
@@ -99,8 +96,7 @@
                             </div>
                             <div class="feature-box-info">
                                 <h5 class="m-0 font-weight-bold">E-mail Address</h5>
-                                <p class="m-0"><a
-                                        href="mailto:{{ $therapist->email }}">{{ $therapist->email }}</a>
+                                <p class="m-0"><a href="mailto:{{ $therapist->email }}">{{ $therapist->email }}</a>
                                 </p>
                             </div>
                         </div>
@@ -114,13 +110,21 @@
                                 <div class=" pt-4 pt-lg-0  text-start footer-column footer-column-opening-hours">
                                     <h4 class="mb-4 text-uppercase">Opening Hours</h4>
                                     {{-- @dd($therapist->therapies->groupBy('pivot.weekday')) --}}
-                                    @foreach($therapist->therapies->groupBy('pivot.weekday') as $weekday => $therapies)
-                                    {{jddayofweek($weekday,1)}} -
-                                    @foreach($therapies as $therapy)
-                                    {{$therapy->pivot->slot}},  
-                                    @endforeach  <br/>
+                                    @foreach ($therapist->therapies->groupBy('pivot.weekday') as $weekday => $therapies)
+                                        <div class="info custom-info pt-0">
+                                            <span>{{ jddayofweek($weekday, 1) }} :</span>
+                                            @foreach ($therapies as $therapy)
+                                                <span>{{ $therapy->pivot->slot }}
+                                                    @if (!$loop->last)
+                                                        ,
+                                                    @endif &nbsp;
+                                                </span>
+                                            @endforeach
+                                        </div>
+
+                                        <br />
                                     @endforeach
-                                   
+
                                     {{-- <div class="info custom-info pt-0">
                                         <span>Mon-Fri</span>
                                         <span>8:30 am to 5:00 pm php date object</span>
@@ -140,7 +144,7 @@
                         <hr class="mt-0 mb-5">
                     </div>
                 </div>
-            @endforeach 
+            @endforeach
         </div>
     </section>
 @endsection

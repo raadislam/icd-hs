@@ -11,8 +11,8 @@ class Therapy extends Model
 
     protected $fillable = ['title', 'fee', 'description', 'icon'];
 
-    public function therapist()
+    public function therapists()
     {
-        return $this->belongsToMany(Therapist::class);
+        return $this->belongsToMany(Therapist::class, 'therapy_schedules');
     }
 }

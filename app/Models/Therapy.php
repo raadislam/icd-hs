@@ -10,4 +10,9 @@ class Therapy extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'fee', 'description', 'icon'];
+
+    public function therapist()
+    {
+        return $this->belongsToMany(Therapist::class);
+    }
 }

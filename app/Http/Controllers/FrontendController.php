@@ -33,7 +33,14 @@ class FrontendController extends Controller
 
     public function viewTherapy(Therapy $therapy)
     {
-        $therapists = TherapySchedule::where('therapy_id', $therapy->id)->orderBy('therapist_id', "ASC")->get()->groupBy('therapist_id')->toArray();
+        // $therapists = TherapySchedule::where('therapy_id', $therapy->id)->orderBy('therapist_id', "ASC")->get()->groupBy('therapist_id');
+        $therapists = Therapist::whereRelation('therapies', function ($query) use ($therapy) {
+            $query->where('therapies.id', $therapy->id);
+        })->get();
+
+
+        // dd($therapists->first()->therapies->pivot->slot);
+
         return view('theme_1.viewTherapy', compact('therapy', 'therapists'));
     }
     public function shortCourseRegistration(ShortCourse $shortCourses)

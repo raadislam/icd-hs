@@ -11,9 +11,13 @@ class TherapySchedule extends Model
 
     protected $fillable = ['therapist_id', 'therapy_id', 'weekday', 'slot'];
 
-
     public function therapist()
     {
         return $this->belongsTo(Therapist::class, 'therapist_id');
+    }
+
+    public function therapy()
+    {
+        return $this->belongsTo(Therapy::class, 'therapy_id');
     }
 }

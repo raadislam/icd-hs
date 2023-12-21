@@ -10,4 +10,8 @@ class Therapist extends Model
     use HasFactory;
     protected $fillable = ["name", "address", "phone_number", "dob", "nid", "img", "email", "about"];
 
+    public function therapies()
+    {
+        return $this->belongsToMany(Therapy::class, 'therapy_schedules')->withPivot(['slot', "weekday"]);
+    }
 }

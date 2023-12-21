@@ -43,13 +43,11 @@
                     </p>
                 </div>
             </div>
-            @foreach ($therapists as $key => $therapist)
-                {{ json_encode($key) }}
-                @foreach ($therapist as $key => $value)
-                @endforeach
+            @foreach ($therapists as $therapist)
+{{$therapist->name}}    
             @endforeach
 
-            {{-- @foreach ($therapists as $therapist)
+           @foreach ($therapists as $therapist)
                 <div class="row" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
                     <div class="col-lg-4 pb-4 pb-lg-0">
                         <div class="card border-0 border-radius-0 box-shadow-1 mb-4">
@@ -57,11 +55,11 @@
 
                                 <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
                                     <img alt="Doctor" class="img-fluid rounded"
-                                        src="{{ asset('images') }}/therapist/{{ $therapist->therapist->img }}"> </a>
+                                        src="{{ asset('images') }}/therapist/{{ $therapist->img }}"> </a>
 
                                 <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
                                     <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
-                                        {{ $therapist->therapist->name }}
+                                        {{ $therapist->name }}
                                     </a>
                                 </strong>
 
@@ -70,10 +68,10 @@
                                     Therapists
                                 </span>
 
-                                <a href="{{ route('makeAppointment', [$therapist->therapist->id, $therapy->id]) }}"
+                                {{-- <a href="{{ route('makeAppointment', [$therapist->id, $therapy->id]) }}"
                                     class="btn btn-outline btn-light bg-hover-light text-dark text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 mt-3 text-2">
                                     Make An Appointment
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
                         <hr class="mt-4 mb-5">
@@ -81,7 +79,7 @@
                     <div class="col-lg-8">
 
                         <h3 class="text-color-quaternary font-weight-bold text-capitalize mb-2">About Me</h3>
-                        <p class="mb-4">{{ $therapist->therapist->about }}</p>
+                        <p class="mb-4">{{ $therapist->about }}</p>
 
                         <h3 class="text-color-quaternary font-weight-bold text-capitalize mt-2 mb-2">Contact Info</h3>
 
@@ -102,7 +100,7 @@
                             <div class="feature-box-info">
                                 <h5 class="m-0 font-weight-bold">E-mail Address</h5>
                                 <p class="m-0"><a
-                                        href="mailto:{{ $therapist->therapist->email }}">{{ $therapist->therapist->email }}</a>
+                                        href="mailto:{{ $therapist->email }}">{{ $therapist->email }}</a>
                                 </p>
                             </div>
                         </div>
@@ -112,11 +110,20 @@
                                 <i class="far fa-clock"></i>
                             </div>
                             <div class="feature-box-info">
+
                                 <div class=" pt-4 pt-lg-0  text-start footer-column footer-column-opening-hours">
                                     <h4 class="mb-4 text-uppercase">Opening Hours</h4>
-                                    <div class="info custom-info pt-0">
+                                    {{-- @dd($therapist->therapies->groupBy('pivot.weekday')) --}}
+                                    @foreach($therapist->therapies->groupBy('pivot.weekday') as $weekday => $therapies)
+                                    {{jddayofweek($weekday,1)}} -
+                                    @foreach($therapies as $therapy)
+                                    {{$therapy->pivot->slot}},  
+                                    @endforeach  <br/>
+                                    @endforeach
+                                   
+                                    {{-- <div class="info custom-info pt-0">
                                         <span>Mon-Fri</span>
-                                        <span>8:30 am to 5:00 pm</span>
+                                        <span>8:30 am to 5:00 pm php date object</span>
                                     </div>
                                     <div class="info custom-info">
                                         <span>Saturday</span>
@@ -125,7 +132,7 @@
                                     <div class="info custom-info pb-0 border-bottom-0">
                                         <span>Sunday</span>
                                         <span>Closed</span>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -133,7 +140,7 @@
                         <hr class="mt-0 mb-5">
                     </div>
                 </div>
-            @endforeach --}}
+            @endforeach 
         </div>
     </section>
 @endsection

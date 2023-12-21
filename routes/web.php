@@ -7,6 +7,7 @@ use App\Http\Controllers\ShortCourseController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\TherapyController;
 use App\Http\Controllers\TherapyScheduleController;
+use App\Models\Therapist;
 use App\Models\TherapySchedule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -65,3 +66,10 @@ Route::get('get-schedule/{therapy}/{therapist}', function (Request $request, $th
 
 
 Route::view('planner', 'dashboard.schedule.planner');
+
+
+Route::any('test', function () {
+    $therapist = Therapist::find(1)->therapies()->where('therapy_id', '1')->get();
+
+    dd($therapist->toArray());
+});

@@ -33,8 +33,7 @@ class FrontendController extends Controller
 
     public function viewTherapy(Therapy $therapy)
     {
-        $therapists = TherapySchedule::where('therapy_id', $therapy->id)->with('therapist')->orderBy('therapist_id', "ASC")->get()->keyBy('therapist_id');
-        // return response(compact('therapists', 'therapy'));
+        $therapists = TherapySchedule::where('therapy_id', $therapy->id)->orderBy('therapist_id', "ASC")->get()->groupBy('therapist_id')->toArray();
         return view('theme_1.viewTherapy', compact('therapy', 'therapists'));
     }
     public function shortCourseRegistration(ShortCourse $shortCourses)
@@ -65,8 +64,9 @@ class FrontendController extends Controller
         return view('theme_1.contactus');
     }
 
-    public function makeAppointment()
+    public function makeAppointment($therapist, $therapy)
     {
+        dd($therapist, $therapy);
         return view('theme_1.makeAppointement');
     }
 

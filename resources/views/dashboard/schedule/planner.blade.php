@@ -30,7 +30,7 @@
                             <template x-if="$store.slotModal.target === key" x-transition>
                                 <div style="display: flex; align-items: center">
                                     <input class="form-control" name="time" id="time" type="time" />
-                                    <button @click="$store.schedules.save($event.target)"
+                                    <button @click="$store.schedules.save($event.target, key)"
                                         class="mx-1 btn btn-primary add-slot" data-target=".bd-example-modal-lg">
                                         Add
                                     </button>
@@ -108,7 +108,7 @@
 
                 },
 
-                save(slotTarget) {
+                save(slotTarget, weekday) {
                     let route = "{{ route('dashboard-therapy-schedule.store') }}";
                     let token = "{{ csrf_token() }}";
 
@@ -123,7 +123,7 @@
                             _token: token,
                             therapist_id: therapist,
                             therapy_id: therapyId,
-                            weekday: this.key,
+                            weekday,
                             slot: time,
                         },
                         success: function(response) {

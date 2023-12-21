@@ -46,7 +46,7 @@
                 @include('dashboard.schedule.planner')
 
             </div>
-            <div class="card-footer" style="display: block;" />
+            {{-- <div class="card-footer" style="display: block;" /> --}}
         </div>
 
 

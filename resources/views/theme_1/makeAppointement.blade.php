@@ -65,9 +65,17 @@
 
                         <div class="row">
                             <div class="form-group col">
-                                <input type="text" placeholder="Last Academic Background Dropdown" value=""
+                                <input type="text" placeholder="Last Academic Background" value=""
                                     data-msg-required="Please enter your name." maxlength="100" class="form-control"
                                     name="name" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <input id="appointmentDate" type="text" placeholder="Date" value=""
+                                    data-msg-required="Please enter the appointment." maxlength="100" class="form-control"
+                                    name="appointmentDate" required>
                             </div>
                         </div>
 
@@ -93,13 +101,6 @@
 
 
 
-                        {{-- <div class="row">
-                            <div class="form-group col">
-                                <input id="appointmentDate" type="text" placeholder="Date" value=""
-                                    data-msg-required="Please enter the appointment." maxlength="100" class="form-control"
-                                    name="appointmentDate" required>
-                            </div>
-                        </div> --}}
 
                         <div class="row">
                             <div class="form-group col">
@@ -124,6 +125,7 @@
 
 @section('script')
     <script>
+    
         var datesForDisable = ["12-12-2023", "09-12-2023", "15-12-2023", "08-12-2023"]
 
         $('#appointmentDate').datepicker({

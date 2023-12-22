@@ -24,7 +24,7 @@
                             </strong>
                             <span
                                 class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">Therapists</span>
-                            <a href="{{ route('makeAppointment'), $therapist->id }}"
+                            <a href="{{ route('appointment.create', $therapist->id) }}"
                                 class="btn btn-outline btn-light bg-hover-light text-dark text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 mt-3 text-2">
                                 Make An Appointment
                             </a>

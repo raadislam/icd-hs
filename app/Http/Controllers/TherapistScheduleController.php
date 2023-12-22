@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TherapySchedule;
+use App\Models\TherapistSchedule;
 use App\Http\Controllers\Controller;
 use App\Models\Therapist;
 use App\Models\Therapy;
 use Illuminate\Http\Request;
 
-class TherapyScheduleController extends Controller
+class TherapistScheduleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('dashboard.therapySchedule.index');
+        return view('dashboard.TherapistSchedule.index');
     }
 
     /**
@@ -25,8 +25,8 @@ class TherapyScheduleController extends Controller
     {
         $therapies = Therapy::get();
         $therapists = Therapist::get();
-        $schedules = TherapySchedule::orderBy('weekday', "ASC")->get()->groupBy('weekday');
-        return view('dashboard.therapySchedule.create', compact('therapists', 'therapies', 'schedules'));
+        $schedules = TherapistSchedule::orderBy('weekday', "ASC")->get()->groupBy('weekday');
+        return view('dashboard.therapistSchedule.create', compact('therapists', 'therapies', 'schedules'));
     }
 
     /**
@@ -34,9 +34,8 @@ class TherapyScheduleController extends Controller
      */
     public function store(Request $request)
     {
-        $schedule = TherapySchedule::create([
+        $schedule = TherapistSchedule::create([
             'therapist_id' => $request->therapist_id,
-            'therapy_id' => $request->therapy_id,
             'weekday' => $request->weekday,
             // 'slot' => date('h:i A', strtotime($request->slot)),
             'slot' => $request->slot,
@@ -50,14 +49,14 @@ class TherapyScheduleController extends Controller
      */
     public function show($therapists)
     {
-        $therapist = TherapySchedule::where('therapist_id', $therapists)->get();
+        $therapist = TherapistSchedule::where('therapist_id', $therapists)->get();
         return response(compact('therapist'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(TherapySchedule $therapySchedule)
+    public function edit(TherapistSchedule $TherapistSchedule)
     {
         //
     }
@@ -65,7 +64,7 @@ class TherapyScheduleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, TherapySchedule $therapySchedule)
+    public function update(Request $request, TherapistSchedule $TherapistSchedule)
     {
         //
     }
@@ -75,7 +74,7 @@ class TherapyScheduleController extends Controller
      */
     public function destroy($dashboard_therapy_schedule)
     {
-        TherapySchedule::find($dashboard_therapy_schedule)->delete();
+        TherapistSchedule::find($dashboard_therapy_schedule)->delete();
         return true;
     }
 }

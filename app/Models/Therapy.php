@@ -13,6 +13,6 @@ class Therapy extends Model
 
     public function therapists()
     {
-        return $this->belongsToMany(Therapist::class, 'therapy_schedules');
+        return $this->belongsToMany(Therapist::class);
     }
 }

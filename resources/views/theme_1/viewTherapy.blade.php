@@ -65,7 +65,7 @@
                                     Therapists
                                 </span>
 
-                                <a href="{{ route('makeAppointment', [$therapist->id, $therapy->id]) }}"
+                                <a href="{{ route('appointment.create', $therapist->id) }}"
                                     class="btn btn-outline btn-light bg-hover-light text-dark text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 mt-3 text-2">
                                     Make An Appointment
                                 </a>
@@ -106,15 +106,13 @@
                                 <i class="far fa-clock"></i>
                             </div>
                             <div class="feature-box-info">
-
                                 <div class=" pt-4 pt-lg-0  text-start footer-column footer-column-opening-hours">
                                     <h4 class="mb-4 text-uppercase">Opening Hours</h4>
-                                    {{-- @dd($therapist->therapies->groupBy('pivot.weekday')) --}}
-                                    @foreach ($therapist->therapies->groupBy('pivot.weekday') as $weekday => $therapies)
+                                    @foreach ($therapist->schedules->groupBy('weekday') as $weekday => $schedules)
                                         <div class="info custom-info pt-0">
                                             <span>{{ jddayofweek($weekday, 1) }} :</span>
-                                            @foreach ($therapies as $therapy)
-                                                <span>{{ $therapy->pivot->slot }}
+                                            @foreach ($schedules as $schedule)
+                                                <span>{{ $schedule->slot }}
                                                     @if (!$loop->last)
                                                         ,
                                                     @endif &nbsp;
@@ -124,19 +122,6 @@
 
                                         <br />
                                     @endforeach
-
-                                    {{-- <div class="info custom-info pt-0">
-                                        <span>Mon-Fri</span>
-                                        <span>8:30 am to 5:00 pm php date object</span>
-                                    </div>
-                                    <div class="info custom-info">
-                                        <span>Saturday</span>
-                                        <span>9:30 am to 1:00 pm</span>
-                                    </div>
-                                    <div class="info custom-info pb-0 border-bottom-0">
-                                        <span>Sunday</span>
-                                        <span>Closed</span>
-                                    </div> --}}
                                 </div>
                             </div>
                         </div>

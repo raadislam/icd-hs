@@ -7,7 +7,7 @@
 @section('style')
 @endsection
 @section('content')
-    <section class="section section-default section-no-border my-0">
+    <section class="section section-default section-no-border my-0" data-therapist="{{ $therapist->id }}">
         <div class="container">
             <div class="row pt-4 mb-4">
                 <div class="col-lg-6">
@@ -79,28 +79,29 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6" bis_skin_checked="1">
+                        {{-- <div class="col-sm-6" bis_skin_checked="1">
                             <label>
                                 Slot
                             </label>
                             <div class="form-group clearfix" bis_skin_checked="1">
-                                <div class="icheck-success d-inline" bis_skin_checked="1">
-                                    <input type="radio" name="issuable" checked="" id="radioSuccess1" value="1">
-                                    <label for="radioSuccess1">
-                                        10:00 AM
-                                    </label>
-                                </div>
-                                <div class="icheck-success d-inline" bis_skin_checked="1">
-                                    <input type="radio" name="issuable" id="radioSuccess2" value="0">
-                                    <label for="radioSuccess2">
-                                        3:00 PM
-                                    </label>
-                                </div>
+                                @foreach ($therapist->schedules->groupBy('weekday') as $weekday => $schedules)
+                                    <div class="icheck-success d-inline" bis_skin_checked="1">
+                                        <input type="radio" name="issuable" checked="" id="radioSuccess1"
+                                            value="1">
+
+                                        <span for="radioSuccess1">{{ jddayofweek($weekday, 1) }} :</span>
+                                        @foreach ($schedules as $schedule)
+                                            <span>{{ $schedule->slot }}
+                                                @if (!$loop->last)
+                                                    ,
+                                                @endif &nbsp;
+                                            </span>
+                                        @endforeach
+                                    </div>
+                                    <br />
+                                @endforeach
                             </div>
-                        </div>
-
-
-
+                        </div> --}}
 
                         <div class="row">
                             <div class="form-group col">
@@ -125,16 +126,35 @@
 
 @section('script')
     <script>
-    
-        var datesForDisable = ["12-12-2023", "09-12-2023", "15-12-2023", "08-12-2023"]
+        $(document).ready(function() {
+            let route = "/get-schedule/" + $("[data-therapist]").data('therapist');
+            let token = "{{ csrf_token() }}";
 
-        $('#appointmentDate').datepicker({
-            format: 'dd-mm-yyyy',
-            autoclose: true,
-            todayHighlight: true,
-            multidate: true,
-            daysOfWeekDisabled: [1, 2, 4]
-            //    datesDisabled: datesForDisable
+            $.ajax({
+                url: route,
+                type: 'GET',
+
+                success: (response) => {
+                    var daysOfWeekDisabled = [...Array(7).keys()].filter(x => !Object.keys(response
+                            .schedules)
+                        .includes(
+                            '' + x))
+
+                    console.log(daysOfWeekDisabled);
+
+                    $('#appointmentDate').datepicker({
+                        format: 'dd-mm-yyyy',
+                        autoclose: true,
+                        todayHighlight: true,
+                        multidate: true,
+                        daysOfWeekDisabled: daysOfWeekDisabled
+                        //    datesDisabled: datesForDisable
+                    });
+                },
+                error: function(xhr) {
+                    console.log(xhr)
+                }
+            });
         });
     </script>
 @endsection

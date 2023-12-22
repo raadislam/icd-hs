@@ -1,14 +1,15 @@
 <?php
 
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CourseScheduleController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\ShortCourseController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\TherapyController;
-use App\Http\Controllers\TherapyScheduleController;
+use App\Http\Controllers\TherapistScheduleController;
 use App\Models\Therapist;
-use App\Models\TherapySchedule;
+use App\Models\TherapistSchedule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,15 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin', function () {
         return view('dashboard/main');
     });
+
+    Route::resource('dashboard-short-course', ShortCourseController::class);
+    Route::resource('dashboard-instructors', InstructorController::class);
+    Route::resource('dashboard-course-schedule', CourseScheduleController::class);
+    Route::resource('dashboard-therapy', TherapyController::class);
+    Route::resource('dashboard-therapist', TherapistController::class);
+    Route::resource('dashboard-therapy-schedule', TherapistScheduleController::class);
+
+    Route::view('planner', 'dashboard.schedule.planner');
 });
 
 
@@ -45,31 +55,15 @@ Route::get('/contact-us', [FrontendController::class, 'contactus'])->name('conta
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
 Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->name('ourTherapists');
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
-Route::get('/make-appointment/{therapist}/therapy/{therapy}', [FrontendController::class, 'makeAppointment'])->name('makeAppointment');
 
-Route::get('/get-schedule', [FrontendController::class, 'getschedule'])->name('getschedule');
+Route::get('/make-appointment/{therapist}', [AppointmentController::class, 'create'])->name('appointment.create');
 
-require __DIR__ . '/auth.php';
-Route::resource('dashboard-short-course', ShortCourseController::class);
-Route::resource('dashboard-instructors', InstructorController::class);
-Route::resource('dashboard-course-schedule', CourseScheduleController::class);
-Route::resource('dashboard-therapy', TherapyController::class);
-Route::resource('dashboard-therapist', TherapistController::class);
-Route::resource('dashboard-therapy-schedule', TherapyScheduleController::class);
 
-Route::get('get-schedule/{therapy}/{therapist}', function (Request $request, $therapy, $therapist) {
-    $schedules = TherapySchedule::where([['therapy_id', $therapy], ['therapist_id', $therapist]])->orderBy('weekday', "ASC")->get()->groupBy('weekday');
+Route::get('get-schedule/{therapist}', function ($therapist) {
+    $schedules = TherapistSchedule::where('therapist_id', $therapist)->orderBy('weekday', "ASC")->get()->groupBy('weekday');
     return response()->json([
         "schedules" => $schedules,
     ]);
 });
 
-
-Route::view('planner', 'dashboard.schedule.planner');
-
-
-Route::any('test', function () {
-    $therapist = Therapist::find(1)->therapies()->where('therapy_id', '1')->get();
-
-    dd($therapist->toArray());
-});
+require __DIR__ . '/auth.php';

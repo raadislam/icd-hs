@@ -10,20 +10,6 @@
                 <div>
                     <div>
                         <h6 style=" color: red;">* marks are required field</h6>
-                        <div class="form-group">
-
-                            <label>
-                                Therapy Title
-                                <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                            </label>
-                            <select @dependency-change="()=>{$store.schedules.therapyId = $event.detail.therapy_id}"
-                                class="form-control select2 slot-dependency" id="therapy-selector" name="therapy" required>
-                                @foreach ($therapies as $therapy)
-                                    <option value="{{ $therapy->id }}">{{ $therapy->title }}</option>
-                                @endforeach
-                            </select>
-
-                        </div>
 
                         <div class="form-group">
 
@@ -123,16 +109,6 @@
                 );
             });
 
-            // Initialize therapy Elements
-            $('#therapy-selector').select2().on('select2:select', function(e) {
-                e.target.dispatchEvent(
-                    new CustomEvent('dependency-change', {
-                        "detail": {
-                            therapy_id: e.params.data.id
-                        }
-                    })
-                );
-            })
         })
     </script>
 
@@ -157,30 +133,17 @@
 
             Alpine.store('schedules', {
                 data: {},
-                therapy_id: null,
                 therapist_id: null,
 
                 set therapistId(id) {
                     this.therapist_id = id;
 
-                    if (this.therapy_id !== null && this.therapist_id !== null) {
-                        this.update(this.therapy_id, this.therapist_id)
-                    }
-                },
-                set therapyId(id) {
-                    this.therapy_id = id;
-
-                    if (this.therapy_id !== null && this.therapist_id !== null) {
-                        this.update(this.therapy_id, this.therapist_id)
-                    }
+                    this.update()
 
                 },
 
                 get therapistId() {
                     return this.therapist_id
-                },
-                get therapyId() {
-                    return this.therapy_id
                 },
 
                 init() {
@@ -241,10 +204,9 @@
                     });
                 },
 
-                update(therapyId, therapistId) {
-                    console.log('update called');
+                update() {
 
-                    let route = "/get-schedule/" + therapyId + "/" + therapistId;
+                    let route = "/get-schedule/" + this.therapist_id;
                     let token = "{{ csrf_token() }}";
 
                     $.ajax({

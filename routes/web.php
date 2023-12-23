@@ -55,6 +55,7 @@ Route::get('/contact-us', [FrontendController::class, 'contactus'])->name('conta
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
 Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->name('ourTherapists');
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
+Route::get('/services', [FrontendController::class, 'services'])->name('services');
 
 Route::get('/make-appointment/{therapist}', [AppointmentController::class, 'create'])->name('appointment.create');
 

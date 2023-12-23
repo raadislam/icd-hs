@@ -12,44 +12,37 @@
             <div class="owl-carousel dots-inside dots-horizontal-center custom-dots-style-1 show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
                 data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true, 'nav': false}, '479': {'items': 1, 'dots': true}, '768': {'items': 1, 'dots': true}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': true, 'dotsVerticalOffset': '-250px', 'nav': false, 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 7000, 'autoplayHoverPause': true, 'rewind': true}">
 
+
                 <!-- Carousel Slide 1 -->
                 <div class="position-relative overflow-hidden pb-5"
                     data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
-                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-1.jpg); background-size: cover; background-position: center;">
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-3.jpg); background-size: cover; background-position: center;">
                     </div>
                     <div class="container position-relative z-index-3 pb-5 h-100">
                         <div class="row align-items-center pb-5 h-100">
-                            <div class="col-md-10 col-lg-6 text-center text-md-end pb-5 ms-auto">
+                            <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
                                     data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
-                                    Improving support for people with disabilities.
-                                </h1>
-
+                                    Improving support for people with disabilities.</h1>
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
                                     data-plugin-options="{'minWindowWidth': 0}">RELIABLE THERAPY SERVICES</h2>
-                                <a href="#"
-                                    class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
-                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
-                                    data-plugin-options="{'minWindowWidth': 0}">
-                                    GET STARTED
-                                </a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Carousel Slide 2 -->
                 <div class="position-relative overflow-hidden pb-5"
                     data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
-                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-2.jpg); background-size: cover; background-position: center;">
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-4.jpg); background-size: cover; background-position: center;">
                     </div>
                     <div class="container position-relative z-index-3 pb-5 h-100">
                         <div class="row align-items-center pb-5 h-100">
@@ -71,12 +64,122 @@
                     </div>
                 </div>
 
+                <div class="position-relative overflow-hidden pb-5"
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
+                        data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
+                        data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-1.jpg); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="container position-relative z-index-3 pb-5 h-100">
+                        <div class="row align-items-center pb-5 h-100">
+                            <div class="col-md-10 col-lg-6 text-center text-md-end pb-5 ms-auto">
+                                <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
+                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    Educations for Health Professionals.
+                                </h1>
+
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">
+                                    PROVIDING QUALITY EDUCATION / TRAINING FOR
+                                    HEALTH PROFESSIONALS
+                                </h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative overflow-hidden pb-5"
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
+                        data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
+                        data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-5.jpg); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="container position-relative z-index-3 pb-5 h-100">
+                        <div class="row align-items-center pb-5 h-100">
+                            <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
+                                <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
+                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    Care Giving</h1>
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">
+                                    HOME CARE SERVICES FOR ELDERLY PEOPLE.
+                                </h2>
+                                <a href="#"
+                                    class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-3 px-5 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
+                                    data-plugin-options="{'minWindowWidth': 0}">CONTACT US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative overflow-hidden pb-5"
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
+                        data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
+                        data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-1.jpg); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="container position-relative z-index-3 pb-5 h-100">
+                        <div class="row align-items-center pb-5 h-100">
+                            <div class="col-md-10 col-lg-6 text-center text-md-end pb-5 ms-auto">
+                                <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
+                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    School of Minds.
+                                </h1>
+
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">EVERYONE HAS PLACE IN THIS WORLD.
+                                </h2>
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">
+                                    AN INCLUSIVE SCHOOL FOCUSING CHILDREN WITH SPECIAL NEEDS.
+                                </h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative overflow-hidden pb-5"
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
+                    <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
+                        data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
+                        data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
+                        style="background-image: url({{ asset('file') }}/img/demos/medical-2/slides/slide-medical-2-6.jpg); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="container position-relative z-index-3 pb-5 h-100">
+                        <div class="row align-items-center pb-5 h-100">
+                            <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
+                                <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
+                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    eDoctor / eTherapist
+                                </h1>
+                                <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"
+                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+                                    data-plugin-options="{'minWindowWidth': 0}">
+                                    PROVIDING TELEMEDICINE AND TELETHERAPY.
+                                </h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        {{-- <div class="section-funnel-layer-bottom d-none d-xl-block z-index-1">
-            <div class="section-funnel-layer bg-light"></div>
-            <div class="section-funnel-layer bg-light"></div>
-        </div> --}}
+
     </section>
 
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
@@ -86,7 +189,8 @@
                     <p class="text-uppercase mb-0 d-block text-center text-uppercase appear-animation"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300"> SERVICES</p>
                     <h3 class="text-color-quaternary mb-5 d-block text-center font-weight-bold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Our Special Services</h3>
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Our Special Services
+                    </h3>
 
                 </div>
             </div>
@@ -400,7 +504,7 @@
                 @endforeach
             </div>
             <div style="margin-top: 2em; width: 100%; display: flex; justify-content: center">
-                <a href="{{ route('shortCourse') }}"
+                <a href="{{ route('services') }}"
                     class="btn btn-primary btn-modern font-weight-semibold text-3 btn-py-2 px-5 appear-animation"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0"
                     data-plugin-options="{'minWindowWidth': 0}">

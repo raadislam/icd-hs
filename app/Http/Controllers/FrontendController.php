@@ -19,6 +19,11 @@ class FrontendController extends Controller
         return view('theme_1.index', compact('shortCourses', 'services'));
     }
 
+    public function services()
+    {
+        $services = Therapy::get();
+        return view('theme_1.services', compact('services'));
+    }
     public function shortCourse()
     {
         $shortCourses = ShortCourse::get();
@@ -70,7 +75,7 @@ class FrontendController extends Controller
 
     public function appointment($therapist)
     {
-// $schedules = TherapistSchedule::where('th')
+        // $schedules = TherapistSchedule::where('th')
         return view('theme_1.makeAppointement');
     }
 

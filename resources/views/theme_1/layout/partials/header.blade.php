@@ -1,5 +1,5 @@
 <header id="header" class="header-effect-shrink"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+    data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 85}">
     <div class="header-body border-top-0">
         <div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light">
             <div class="container h-100">
@@ -17,10 +17,10 @@
                                         <span
                                             class="header-top-email px-0 font-weight-normal d-flex align-items-center"><i
                                                 class="far fa-envelope text-4"></i> <a class="text-color-default"
-                                                href="mailto:mail@example.com">mail@example.com</a></span>
+                                                href="mailto:info@icd-hs.com">info@icd-hs.com</a></span>
                                         <span
                                             class="header-top-opening-hours px-0 font-weight-normal d-flex align-items-center"><i
-                                                class="far fa-clock text-4"></i>Mon - Sat 9:00am - 6:00pm / Sunday -
+                                                class="far fa-clock text-4"></i>Sat - Thu 8:00am - 5:00pm / Friday -
                                             CLOSED
                                         </span>
                                     </li>
@@ -56,101 +56,144 @@
                 </div>
             </div>
         </div>
-        <div class="header-container container bg-color-light">
-            <div class="header-row">
-                <div class="header-column header-column-logo">
-                    <div class="header-row">
-                        <div class="header-logo">
-                            <a href="demo-medical-2.html">
-                                <img alt="Porto" height="72"
-                                    src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
-                            </a>
-                        </div>
-                    </div>
+        <div class="header-container container bg-color-light" style="width: 100%">
+
+            <div class="header-column header-column-logo">
+
+                <div class="header-logo">
+                    <a href="/">
+                        <img alt="Porto" height="72" src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
+                    </a>
                 </div>
-                <div class="header-column header-column-nav-menu justify-content-end">
-                    <div class="header-row">
-                        <div class="header-nav header-nav-links order-2 order-lg-1">
-                            <div
-                                class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
-                                <nav class="collapse">
-                                    <ul class="nav nav-pills" id="mainNav">
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link  @if (request()->is('/')) active @endif"
-                                                href="/">
-                                                Home
+            </div>
+        </div>
+        <div class="header-container container bg-color-light">
+
+            <div class="header-column header-column-nav-menu justify-content-center">
+
+                <div class="header-nav header-nav-links order-2 order-lg-1" style="justify-content: center !important;">
+                    <div
+                        class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                        <nav class="collapse">
+                            <ul class="nav nav-pills" id="mainNav">
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link  @if (request()->is('/')) active @endif" href="/">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="dropdown dropdown-secondary">
+                                    <a class="nav-link dropdown-toggle" class="dropdown-toggle">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal" href="{{ route('aboutus') }}">
+                                                Who We Are ?
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal"
+                                                href="{{ route('ourTherapists') }}">
+                                                Our Therapists
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal" href="#">
+                                                Our Team
                                             </a>
                                         </li>
 
-                                        <li class="dropdown dropdown-secondary">
-                                            <a class="nav-link dropdown-toggle" class="dropdown-toggle">
-                                                Services
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item font-weight-normal" href="#">
-                                                        Program of Study
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item font-weight-normal"
-                                                        href="{{ route('shortCourse') }}">
-                                                        Short Courses
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                    </ul>
+                                </li>
 
-
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link" href="demo-medical-2.html">
-                                                School of Minds
+                                <li class="dropdown dropdown-secondary">
+                                    <a class="nav-link dropdown-toggle" class="dropdown-toggle">
+                                        Study Center
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal" href="#">
+                                                Program of Study
                                             </a>
                                         </li>
-
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link" href="demo-medical-2.html">
-                                                Speech Therapy
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal"
+                                                href="{{ route('shortCourse') }}">
+                                                Short Courses
                                             </a>
                                         </li>
-
-
-                                        <li class="dropdown dropdown-secondary">
-                                            <a class="nav-link dropdown-toggle" class="dropdown-toggle">
-                                                About
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal"
+                                                href="{{ route('shortCourse') }}">
+                                                PSW
                                             </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item font-weight-normal"
-                                                        href="{{ route('aboutus') }}">
-                                                        Who We Are ?
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item font-weight-normal"
-                                                        href="{{ route('ourTherapists') }}">
-                                                        Our Therapists
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item font-weight-normal" href="#">
-                                                        Our Team
-                                                    </a>
-                                                </li>
-
-                                            </ul>
                                         </li>
                                     </ul>
-                                </nav>
-                            </div>
-                            <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
-                                data-bs-target=".header-nav-main nav">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                                </li>
 
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
+                                        Services
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
+                                        School of Minds
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
+                                        Speech Therapy
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
+                                        Care Giving
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
+                                        MMI ENT Center
+                                    </a>
+                                </li>
+
+                                <li class="dropdown dropdown-secondary">
+                                    <a class="nav-link dropdown-toggle" class="dropdown-toggle">
+                                        Our Activities
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal" href="{{ route('aboutus') }}">
+                                                eTherapists
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal"
+                                                href="{{ route('ourTherapists') }}">
+                                                eDoctor
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
+                                        Earn & Live
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+                        data-bs-target=".header-nav-main nav">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

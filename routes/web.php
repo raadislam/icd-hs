@@ -54,6 +54,7 @@ Route::get('/apply/short-course/{therapy}', [FrontendController::class, 'therapy
 Route::get('/contact-us', [FrontendController::class, 'contactus'])->name('contactus');
 Route::post('/contact-us-send', [FrontendController::class, 'contactusSend'])->name('contactusSend');
 Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->name('ourTherapists');
+Route::get('/our-team', [FrontendController::class, 'ourTeam'])->name('ourTeam');
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 

@@ -11,8 +11,8 @@
                                     <li class="nav-item py-2 d-none d-xl-inline-flex">
                                         <span
                                             class="header-top-phone py-2 d-flex align-items-center text-color-primary font-weight-semibold text-uppercase">
-                                            <i class="icon-phone icons text-5 me-2"></i> <a href="tel:+1234567890">(800)
-                                                123-4567</a>
+                                            <i class="icon-phone icons text-5 me-2"></i> <a href="tel:+1234567890">+880
+                                                1972524253</a>
                                         </span>
                                         <span
                                             class="header-top-email px-0 font-weight-normal d-flex align-items-center"><i
@@ -41,13 +41,43 @@
                                                 </li>
                                             </ul>
                                         </span>
-                                        <span
-                                            class="header-top-button-make-as-appoitment d-inline-flex align-items-center justify-content-center h-100 p-0 align-top">
-                                            <a href="demo-medical-2-contact-us.html"
+
+
+                                        <div class="header-nav header-nav-links  "
+                                            style="justify-content: center !important;">
+                                            <div
+                                                class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                                                <nav class="collapse">
+                                                    <ul class="nav nav-pills" id="mainNav"
+                                                        style="display: flex; justify-content: center; align-items: center">
+                                                        <li class="dropdown dropdown-secondary">
+                                                            <a class="nav-link dropdown-toggle" class="dropdown-toggle"
+                                                                style="display: flex; justify-content: center; align-items: center; background-color: #3568ef !important; color:white;">
+                                                                Make Appointment
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a class="dropdown-item font-weight-normal"
+                                                                        href="{{ route('ourTherapists') }}">
+                                                                        For Doctors
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item font-weight-normal"
+                                                                        href="{{ route('services') }}">
+                                                                        For Therapies
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        {{-- <a href="demo-medical-2-contact-us.html"
                                                 class="d-flex align-items-center justify-content-center h-100 w-100 btn-primary font-weight-normal text-decoration-none">
-                                                Contact Us
-                                            </a>
-                                        </span>
+                                                Make Appointment
+                                            </a> --}}
                                     </li>
                                 </ul>
                             </nav>
@@ -99,7 +129,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item font-weight-normal" href="#">
+                                            <a class="dropdown-item font-weight-normal" href="{{ route('ourTeam') }}">
                                                 Our Team
                                             </a>
                                         </li>
@@ -133,9 +163,28 @@
                                 </li>
 
                                 <li class="dropdown-secondary">
-                                    <a class="nav-link" href="demo-medical-2.html">
+                                    <a class="nav-link" href="#">
+                                        Day Care
+                                    </a>
+                                </li>
+
+                                <li class="dropdown dropdown-secondary">
+                                    <a class="nav-link dropdown-toggle" class="dropdown-toggle">
                                         Services
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal" href="{{ route('aboutus') }}">
+                                                eTherapists
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item font-weight-normal"
+                                                href="{{ route('ourTherapists') }}">
+                                                eDoctor
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li class="dropdown-secondary">
@@ -158,28 +207,17 @@
 
                                 <li class="dropdown-secondary">
                                     <a class="nav-link" href="demo-medical-2.html">
+                                        Our Activities
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-secondary">
+                                    <a class="nav-link" href="demo-medical-2.html">
                                         MMI ENT Center
                                     </a>
                                 </li>
 
-                                <li class="dropdown dropdown-secondary">
-                                    <a class="nav-link dropdown-toggle" class="dropdown-toggle">
-                                        Our Activities
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item font-weight-normal" href="{{ route('aboutus') }}">
-                                                eTherapists
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item font-weight-normal"
-                                                href="{{ route('ourTherapists') }}">
-                                                eDoctor
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
+
 
                                 <li class="dropdown-secondary">
                                     <a class="nav-link" href="demo-medical-2.html">

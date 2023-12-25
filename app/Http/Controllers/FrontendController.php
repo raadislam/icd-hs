@@ -19,6 +19,10 @@ class FrontendController extends Controller
         return view('theme_1.index', compact('shortCourses', 'services'));
     }
 
+    public function ourTeam()
+    {
+        return view('theme_1.ourTeam');
+    }
     public function services()
     {
         $services = Therapy::get();

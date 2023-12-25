@@ -163,7 +163,7 @@
                             <div class="col-md-10 col-lg-6 text-center text-md-start pb-5">
                                 <h1 class="text-color-dark font-weight-extra-bold text-10 line-height-2 mb-3 appear-animation"
                                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                                    data-plugin-options="{'minWindowWidth': 0}" style="text-transform: uppercase;">
+                                    data-plugin-options="{'minWindowWidth': 0}" style="">
                                     eDoctor / eTherapist
                                 </h1>
                                 <h2 class="text-color-default font-weight-normal text-4-5 line-height-2 mb-4 appear-animation"

@@ -48,6 +48,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/about-us', [FrontendController::class, 'aboutus'])->name('aboutus');
+Route::get('/earn-leave', [FrontendController::class, 'earnLeave'])->name('earnLeave');
 Route::get('/short-course', [FrontendController::class, 'shortCourse'])->name('shortCourse');
 Route::get('/apply/short-course/{shortCourses}', [FrontendController::class, 'shortCourseRegistration'])->name('shortCourseRegistration');
 Route::get('/apply/short-course/{therapy}', [FrontendController::class, 'therapyRegistration'])->name('therapyRegistration');

@@ -365,101 +365,96 @@
         </div>
     </section>
 
-    <section class="more-about lazyload" data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/medical2-bg-1.jpg">
+    {{-- <section class="more-about lazyload" data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/about.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-lg-6 p-relative overflow-hidden col-cuttin-more-about"></div>
                 <div class="col-xs-12 col-lg-6 p-relative py-5 bg-color-light z-index-1 ps-lg-5 ps-xl-0">
+                    <p class="text-uppercase mb-0 appear-animation" data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="100">About Us</p>
                     <h3 class="text-color-quaternary font-weight-bold text-capitalize mb-2 appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">More About Porto Medical
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">More&nbsp;About &nbsp;
+                        ICD-HS
                     </h3>
-                    <p class="font-weight-semibold appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut
-                        tellus ante. Nam suscipit urna risus, fermentum commodo ipsum porta id.</p>
+
                     <p class="mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci
-                        semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc.</p>
-                    <div class="row counters mb-4 flex-nowrap flex-sm-wrap">
-                        <div class="col-xs-4 col-sm-4 col-lg-4 mb-0 d-flex">
-                            <div class="counter counter-primary appear-animation"
-                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500">
-                                <strong class="number-counter text-10" data-to="35" data-append="+">0</strong>
-                                <label
-                                    class="number-counter-text text-4 text-color-primary font-weight-semibold negative-ls-1">Business
-                                    Year</label>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-lg-4 mb-0 d-flex">
-                            <div class="counter counter-primary appear-animation"
-                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750">
-                                <strong class="number-counter text-10" data-to="50" data-append="+">0</strong>
-                                <label
-                                    class="number-counter-text text-4 text-color-primary font-weight-semibold negative-ls-1">Specialist
-                                    Doctors</label>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-lg-4 mb-0 d-flex justify-content-center">
-                            <div class="counter counter-primary appear-animation"
-                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-                                <strong class="number-counter text-10" data-to="200" data-append="+">0</strong>
-                                <label
-                                    class="number-counter-text text-4 text-color-primary font-weight-semibold negative-ls-1">Modern
-                                    Rooms</label>
-                            </div>
-                        </div>
-                    </div>
+                        data-appear-animation-delay="400">
+                        Mukijoddha Farida Akter Institute of Communication Disorders and Health Sciences(ICD-HS) is an
+                        organization providing education and health services in the field of health sciences which includes
+                        care giving, nursing, therapeutic services, speech therapy, day care, telemedicine, inclusive
+                        school, ENT consultation and clinical services , most importantly creating employment opportunities
+                        for the people with disabilities. We have experienced team and international consultant to exchange
+                        contemporary practices, ideas and knowledge.
+                        <br />
+                        <br />
+                        Our aim is to provide quality education to create skilled health professionals thus providing health
+                        & clinical services to the people and to create employment opportunity (Non-Profit) to the person
+                        with disabilities is the core area of our activities.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    <section class="section section-default section-no-border my-0">
+    <section class="section section-default bg-color-white section-no-border my-0">
         <div class="container pt-3 pb-4">
             <div class="row">
                 <div class="col-lg-8 mb-4 mb-lg-0">
                     <h2 class="mb-0 font-weight-bold appear-animation" data-appear-animation="blurIn"
-                        data-appear-animation-delay="100">Who We Are</h2>
+                        data-appear-animation-delay="100">About Us</h2>
                     <div class="divider divider-primary divider-small mt-2 mb-4 appear-animation"
                         data-appear-animation="fadeIn" data-appear-animation-delay="200">
                         <hr class="my-0 me-auto">
                     </div>
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-                        <p class="font-weight-medium text-4">Founded in 2001 by John Doe, gravida nibh vel. Aenean
-                            sollicitudin, lorem quis, <span
-                                class="highlight highlight-primary highlight-bg-opacity highlight-animated px-0"
-                                data-appear-animation="highlight-animated-start" data-appear-animation-delay="200"
-                                data-plugin-options="{'flagClassOnly': true}">nisi elit consequat ipsum</span> nec sagittis
-                            sem nibh id elit. </p>
-                        <p class="text-3-5 line-height-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                            bibendum ultricies nunc, eu interdum enim convallis pretium.</p>
+                        <p class="text-3-5"> Mukijoddha Farida Akter Institute of Communication Disorders and Health
+                            Sciences(ICD-HS) is an
+                            organization providing education and health services in the field of health sciences which
+                            includes
+                            care giving, nursing, therapeutic services, speech therapy, day care, telemedicine, inclusive
+                            school, ENT consultation and clinical services , most importantly creating employment
+                            opportunities
+                            for the people with disabilities. We have experienced team and international consultant to
+                            exchange
+                            contemporary practices, ideas and knowledge.
+                            <br />
+                            <br />
+                            Our aim is to provide quality education to create skilled health professionals thus providing
+                            health
+                            & clinical services to the people and to create employment opportunity (Non-Profit) to the
+                            person
+                            with disabilities is the core area of our activities.
+                        </p>
 
-                        <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-about-us.html">Learn More<img
-                                width="27" height="27"
-                                src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
-                                data-icon
-                                data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary d-inline-block ms-2 p-relative bottom-1'}" /></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <h4 class="mb-0 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="400">
-                        Our Commitment</h4>
+                        Earn & Live
+                    </h4>
                     <div class="divider divider-primary divider-small mt-2 mb-4 appear-animation"
                         data-appear-animation="fadeIn" data-appear-animation-delay="500">
                         <hr class="my-0 me-auto">
                     </div>
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                        <p class="mt-4 mb-0">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                            bibendum auctor, nisi elit consequat ipsum.</p>
-                        <p class="mt-4 mb-0">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
-                            odio. Sed non mauris vitae erat consequat.</p>
+                        <p class="text-3-5 text-justify">Our Project <span
+                                class="highlight highlight-primary highlight-bg-opacity highlight-animated px-0"
+                                data-appear-animation="highlight-animated-start" data-appear-animation-delay="200"
+                                data-plugin-options="{'flagClassOnly': true}">“I Owe You” (IOU) </span>is a non-profit
+                            project which is specially designed to create employment opportunity for the people with
+                            different disabilities, we organize training, provide jobs around the world. We are open to
+                            get supports, suggestions, ideas, collaboration from any organizations and persons to create
+                            more job opportunities. This is our signature project to ensure a peaceful, secured life for
+                            the persons with disabilities. For More information contact us
+                        </p>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-transparent section-no-border my-0">
+    <section class="section bg-transparent bg-color-grey section-no-border my-0">
         <div class="container pt-3 pb-4">
             <div class="row">
                 <div class="col text-center">
@@ -743,7 +738,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Founder and Director
+                                    Adviser
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Dhaka, Bangladesh

@@ -46,8 +46,6 @@
 </div>
 
 
-
-
 @push('scripts')
     <script>
         function tConvert(time) {

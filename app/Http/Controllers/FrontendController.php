@@ -19,6 +19,10 @@ class FrontendController extends Controller
         return view('theme_1.index', compact('shortCourses', 'services'));
     }
 
+    public function daycare()
+    {
+        return view('theme_1.daycare');
+    }
     public function earnLeave()
     {
         return view('theme_1.earnAndLive');
@@ -40,7 +44,7 @@ class FrontendController extends Controller
 
     public function ourTherapists()
     {
-        $therapists = Therapist::get();
+        $therapists = Therapist::with('schedules')->get();
         return view('theme_1.therapists', compact('therapists'));
     }
 

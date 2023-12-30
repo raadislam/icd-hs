@@ -12,13 +12,13 @@
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
                     <h1 class="text-dark font-weight-bold text-9 appear-animation" data-appear-animation="fadeIn"
-                        data-appear-animation-delay="100">Earn & Leave</h1>
+                        data-appear-animation-delay="100">Earn & Live</h1>
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb d-block text-md-end appear-animation" data-appear-animation="fadeIn"
                         data-appear-animation-delay="300">
                         <li><a href="#">Home</a></li>
-                        <li class="active">Earn & Leave</li>
+                        <li class="active">Earn & Live</li>
                     </ul>
                 </div>
             </div>

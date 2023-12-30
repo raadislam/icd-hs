@@ -13,6 +13,32 @@
         <div class="row pt-5">
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                    <div class="card-body p-3 z-index-1 text-center">
+                        <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
+                            <img alt="Doctor" class="img-fluid rounded"
+                                src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                        </a>
+                        <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
+                                Mutkijoddha Farida Akter
+                            </a>
+                        </strong>
+                        <span
+                            class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
+                            Adviser
+                        </span>
+                        <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                            Dhaka, Bangladesh
+                        </p>
+                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                            রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-2">
+                <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                     <div class="card-body p-3 z-index-1 text-center">
                         <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
@@ -38,6 +64,34 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6 pb-2">
+                <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                    <div class="card-body p-3 z-index-1 text-center">
+                        <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
+                            <img alt="Doctor" class="img-fluid rounded"
+                                src="{{ asset('file') }}/img/demos/law-firm/team/manjur_ali.jpg">
+                        </a>
+                        <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
+                                Monzur Ali
+                            </a>
+                        </strong>
+                        <span
+                            class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
+                            Founder and Director
+                        </span>
+
+                        <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                            Toronto, Canada
+                        </p>
+                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                            m.ali@ccgp.ca
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
@@ -67,53 +121,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 pb-2">
-                <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                    <div class="card-body p-3 z-index-1 text-center">
-                        <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
-                            <img alt="Doctor" class="img-fluid rounded"
-                                src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
-                        </a>
-                        <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
-                                Mutkijoddha Farida Akter
-                            </a>
-                        </strong>
-                        <span
-                            class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                            Founder and Director
-                        </span>
-                        <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                            Dhaka, Bangladesh
-                        </p>
-                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                            রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pb-2">
-                <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                    <div class="card-body p-3 z-index-1 text-center">
-                        <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
-                            <img alt="Doctor" class="img-fluid rounded"
-                                src="{{ asset('file') }}/img/demos/law-firm/team/team-4.jpg">
-                        </a>
-                        <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
-                                Monzur Ali
-                            </a>
-                        </strong>
-                        <span
-                            class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                            Founder and Director
-                        </span>
 
-                    </div>
-                </div>
-            </div>
+
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
@@ -131,6 +140,12 @@
                             class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
                             Adviser
                         </span>
+                        <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                            Kolkata, India
+                        </p>
+                        <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                            pratik@indiaeducates.com
+                        </p>
 
                     </div>
                 </div>

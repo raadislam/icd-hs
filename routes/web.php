@@ -58,6 +58,7 @@ Route::get('/our-therapists', [FrontendController::class, 'ourTherapists'])->nam
 Route::get('/our-team', [FrontendController::class, 'ourTeam'])->name('ourTeam');
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
+Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
 
 Route::get('/make-appointment/{therapist}', [AppointmentController::class, 'create'])->name('appointment.create');
 

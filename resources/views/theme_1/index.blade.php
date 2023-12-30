@@ -509,7 +509,7 @@
         </div>
     </section>
 
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 bg-primary order-2 order-lg-1 p-0"
                 style="background: url({{ asset('file') }}/img/demos/law-firm/backgrounds/background-1.jpg); background-size: cover; background-position: center;">
@@ -640,7 +640,7 @@
                 </section>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <section class="meet-doctors mb-5">
         <div class="container">
@@ -650,6 +650,44 @@
                     <h3 class="font-weight-bold  mb-3 text-capitalize">Meet Our Co-ordinators</h3>
                     <div class="owl-carousel owl-theme custom-owl-carousel stage-margin nav-style-1"
                         data-plugin-options="{'items': 5, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
+
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Mutkijoddha Farida Akter
+                                </strong>
+
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Adviser
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Dhaka, Bangladesh
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
+                                </p>
+
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
@@ -670,6 +708,44 @@
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important">
                                     smiah_bd@yahoo.com
                                 </p>
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/manjur_ali.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Monzur Ali
+                                </strong>
+
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/canada.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Founder and Director
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Toronto, Canada
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    m.ali@ccgp.ca
+                                </p>
+
                             </a>
                             <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
                                 <li class="social-icons-facebook">
@@ -726,80 +802,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
-                                <img alt="Doctor" class="img-fluid rounded"
-                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
-                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    Mutkijoddha Farida Akter
-                                </strong>
 
-                                <img width="50" height="50"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
-                                <p class="text-2 text-primary"
-                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser
-                                </p>
-                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Dhaka, Bangladesh
-                                </p>
-                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
-                                </p>
-
-                            </a>
-                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                <li class="social-icons-facebook">
-                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="social-icons-twitter">
-                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                            class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="social-icons-linkedin">
-                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
-                                <img alt="Doctor" class="img-fluid rounded"
-                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-4.jpg">
-                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    Monzur Ali
-                                </strong>
-
-                                <img width="50" height="50"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/canada.svg" alt="" />
-                                <p class="text-2 text-primary"
-                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Founder and Director
-                                </p>
-                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Dhaka, Bangladesh
-                                </p>
-                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
-                                </p>
-
-                            </a>
-                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                <li class="social-icons-facebook">
-                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="social-icons-twitter">
-                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                            class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="social-icons-linkedin">
-                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"

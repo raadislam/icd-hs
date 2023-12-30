@@ -48,6 +48,7 @@ class TherapistController extends Controller
             'phone_number' => $request->phone_number,
             'dob' => $request->dob,
             'nid' => $request->nid,
+            'designation' => $request->designation,
             'about' => $request->about,
         ]);
 

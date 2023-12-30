@@ -762,6 +762,7 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
@@ -806,7 +807,7 @@
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
-                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-6.jpg">
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/pratik.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
                                     Pratik Tarafdar
                                 </strong>
@@ -821,7 +822,7 @@
                                     Kalkata, India
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-
+                                    pratik@indiaeducates.com
                                 </p>
 
                             </a>

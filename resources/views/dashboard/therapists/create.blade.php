@@ -29,11 +29,19 @@
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
+                                <label for="designation">Designation
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="designation" placeholder="Your Designation"
+                                    name="designation">
+                            </div>
+
+                            <div class="form-group" bis_skin_checked="1">
                                 <label for="address">Address
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
                                 <input type="text" class="form-control" id="address" placeholder="Address"
-                                    name="address" required>
+                                    name="address">
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
@@ -41,7 +49,7 @@
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
                                 <input type="number" class="form-control" id="phone_number" placeholder="Phone Number"
-                                    name="phone_number" required>
+                                    name="phone_number">
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
@@ -54,8 +62,7 @@
                                 <label for="price">NID
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <input type="number" class="form-control" id="nid" placeholder="NID" name="nid"
-                                    required>
+                                <input type="number" class="form-control" id="nid" placeholder="NID" name="nid">
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
@@ -71,7 +78,7 @@
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
                                 <textarea class="form-control" id="about" rows="5"
-                                    placeholder="Say Something About You and Your Qualifications" name="about" required></textarea>
+                                    placeholder="Say Something About You and Your Qualifications" name="about"></textarea>
                             </div>
 
                         </div>

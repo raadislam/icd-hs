@@ -62,7 +62,7 @@
 
                                 <span
                                     class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                                    Therapists
+                                    {{ $therapist->designtaionccc }}
                                 </span>
 
                                 <a href="{{ route('appointment.create', $therapist->id) }}"
@@ -132,5 +132,4 @@
             @endforeach
         </div>
     </section>
-
 @endsection

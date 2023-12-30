@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Therapist extends Model
 {
     use HasFactory;
-    protected $fillable = ["name", "address", "phone_number", "dob", "nid", "img", "email", "about"];
+    protected $fillable = ["name", "address", "phone_number", "dob", "nid", "img", "email", "about", "designation"];
 
     public function schedules()
     {

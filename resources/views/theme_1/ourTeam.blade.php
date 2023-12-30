@@ -129,7 +129,7 @@
                     <div class="card-body p-3 z-index-1 text-center">
                         <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
                             <img alt="Doctor" class="img-fluid rounded"
-                                src="{{ asset('file') }}/img/demos/law-firm/team/team-4.jpg">
+                                src="{{ asset('file') }}/img/demos/law-firm/team/pratik.jpg">
                         </a>
                         <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">

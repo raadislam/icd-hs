@@ -19,6 +19,16 @@ class FrontendController extends Controller
         return view('theme_1.index', compact('shortCourses', 'services'));
     }
 
+    public function pranicTherapy()
+    {
+        $therapy = Therapy::query()->where('id', 13)->first();
+        $therapists = Therapist::whereRelation('therapies', function ($query) {
+            $query->where('therapies.id', 13);
+        })->with('schedules')->get();
+
+        return view('theme_1.pranicTherapy', compact('therapy', 'therapists'));
+    }
+
     public function daycare()
     {
         return view('theme_1.daycare');
@@ -50,7 +60,7 @@ class FrontendController extends Controller
 
     public function entDoctors()
     {
-        $therapists = Therapist::with('schedules')->where('sub_category_id', 2)->get();
+        $therapists = Therapist::with('schedules')->where('sub_category_id', 2)->orderBy('id', 'DESC')->get();
         return view('theme_1.therapists', compact('therapists'));
     }
 

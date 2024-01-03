@@ -20,12 +20,17 @@
 
                 <h3 class="font-weight-bold mt-3 mb-2 text-6 text-capitalize">Fees & Charges</h3>
 
-                <div class="row mt-4 pt-2">
+                <div class="row pt-2">
                     <div class="col-lg-4">
-                        <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
+                        <ul class="list list-icons list-primary text-uppercase text-color-dark text-2">
                             <li style="font-size: 1.1em">
-                                <i class="fas fa-coins"></i>&nbsp;
-                                Fee:&nbsp; {{ number_format($therapy->fee) }} TK
+                                Counseling:&nbsp; {{ number_format(2500) }} TK
+                            </li>
+                            <li style="font-size: 1.1em">
+                                Pranic Healing:&nbsp; {{ number_format(2500) }} TK
+                            </li>
+                            <li style="font-size: 1.1em">
+                                Counseling & Pranic Healing:&nbsp; {{ number_format($therapy->fee) }} TK
                             </li>
                         </ul>
                     </div>

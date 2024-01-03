@@ -4,8 +4,7 @@
 @endsection
 @section('meta')
 @endsection
-@section('style')
-@endsection
+
 @section('content')
     <section class="section section-funnel border-0 m-0 p-0">
         <div class="owl-carousel-wrapper" style="height: 991px;">
@@ -477,7 +476,7 @@
                             </div>
                             <div class="feature-box-info ms-3">
                                 <h4 class="mb-2">{{ $service->title }}</h4>
-                                <p style="text-align: justify">{{ $service->description }}</p>
+                                <p class="quote-read-short" style="text-align: justify">{!! $service->description !!}</p>
                                 {{-- <a class="mt-3 font-weight-semi-bold" href="demo-law-firm-practice-areas-detail.html">Learn
                                 More<img width="27" height="27"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/arrow-right.svg" alt=""
@@ -489,7 +488,7 @@
                                     <a href="{{ route('viewTherapy', $service->id) }}"
                                         class="btn btn-dark btn-outline ms-2 font-weight-extra-bold text-3 px-5 py-2 border-width-2 appear-animation"
                                         data-appear-animation="fadeInUpShorter">
-                                        Enroll Now
+                                        READ MORE
                                     </a>
 
                                 </div>
@@ -848,5 +847,14 @@
         </div>
     </section>
 @endsection
-@section('script')
-@endsection
+@push('styles')
+    <style>
+        .quote-read-short {
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+@endpush

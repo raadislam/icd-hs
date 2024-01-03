@@ -7,7 +7,7 @@
                 <div class="header-column">
                     <div class="header-row justify-content-between w-100 h-100">
 
-                        <ul class="nav nav-pills ">
+                        <ul class="nav nav-pills mobile-display-hide">
                             <li class="nav-item py-2 d-none d-xl-inline-flex">
                                 <span
                                     class="header-top-phone py-2 d-flex align-items-center text-color-primary font-weight-semibold text-uppercase">
@@ -18,14 +18,20 @@
                             </li>
                         </ul>
 
-                        <div class="header-logo mb-0" style="height: 46px;">
+                        <div class="header-logo mb-0 mobile-display-show" style="height: 46px;">
                             <a href="index.html">
-                                <img alt="Porto" height="46"
+                                <img alt="ICD-HS" height="46"
+                                    src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png">
+                            </a>
+                        </div>
+                        <div class="mb-0 mobile-display-hide">
+                            <a href="index.html">
+                                <img alt="ICD-HS" height="70"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
                             </a>
                         </div>
 
-                        <div class="header-nav-main">
+                        <div class="header-nav-main mobile-display-hide">
                             <nav class="collapse ">
                                 <ul class="nav nav-pills" id="mainNav"
                                     style="display: flex; justify-content: center; align-items: center">
@@ -45,7 +51,7 @@
                                                 <a class="dropdown-item font-weight-normal"
                                                     href="{{ route('services') }}">
                                                     For Therapies
-                                                </a>
+                                                </a>k
                                             </li>
                                         </ul>
                                     </li>
@@ -58,7 +64,7 @@
             </div>
         </div>
         <div class="header-nav-bar z-index-0">
-            <div class="container">
+            <div class="container" style="max-width: 1300px !important;">
                 <div class="header-row">
                     <div class="header-column">
                         <div class="header-row align-items-center justify-content-end">
@@ -153,6 +159,26 @@
                                                 </a>
                                             </li>
 
+                                            <li class="dropdown dropdown-secondary mobile-display-show">
+                                                <a class="nav-link dropdown-toggle" class="dropdown-toggle">
+                                                    Make Appointment
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item font-weight-normal"
+                                                            href="{{ route('ourDoctors') }}">
+                                                            For Doctors
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item font-weight-normal"
+                                                            href="{{ route('services') }}">
+                                                            For Therapies
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
                                             <li class="dropdown dropdown-secondary">
                                                 <a class="nav-link dropdown-toggle" class="dropdown-toggle">
                                                     Services
@@ -168,6 +194,11 @@
                                                         <a class="dropdown-item font-weight-normal"
                                                             href="{{ route('ourTherapists') }}">
                                                             eTherapists
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item font-weight-normal" href="#">
+                                                            Research Support
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -208,6 +239,12 @@
                                                     Earn & Live
                                                 </a>
                                             </li>
+                                            <li class="dropdown-secondary">
+                                                <a class="nav-link" href="{{ route('pranicTherapy') }}">
+                                                    Pranic Therapy
+                                                </a>
+                                            </li>
+
                                         </ul>
                                     </nav>
                                 </div>

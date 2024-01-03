@@ -60,6 +60,7 @@ Route::get('/speech-therapy', [FrontendController::class, 'speechTherapist'])->n
 Route::get('/mmi-ent', [FrontendController::class, 'entDoctors'])->name('entDoctors');
 Route::get('/our-team', [FrontendController::class, 'ourTeam'])->name('ourTeam');
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
+Route::get('/pranic-therapy', [FrontendController::class, 'pranicTherapy'])->name('pranicTherapy');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
 

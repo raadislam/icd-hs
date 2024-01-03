@@ -35,7 +35,7 @@
                                     Feature Icon (Only SVG)
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <input class="custom-file" type="file" id="icon" name="iconinde" />
+                                <input class="custom-file" type="file" id="icon" name="icon" />
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">

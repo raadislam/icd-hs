@@ -38,9 +38,8 @@
                     <hr class="mt-4 mb-5">
                 </div>
                 <div class="col-lg-8">
-
                     <h3 class="text-color-quaternary font-weight-bold text-capitalize mb-2">About Me</h3>
-                    <p class="mb-4">{{ $therapist->about }}</p>
+                    <p class="mb-4">{!! $therapist->about !!}</p>
 
                     <h3 class="text-color-quaternary font-weight-bold text-capitalize mt-2 mb-2">Contact Info
                     </h3>

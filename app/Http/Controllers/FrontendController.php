@@ -42,9 +42,26 @@ class FrontendController extends Controller
         return view('theme_1.shortCourses', compact('shortCourses'));
     }
 
+    public function speechTherapist()
+    {
+        $therapists = Therapist::with('schedules')->where('sub_category_id', 1)->get();
+        return view('theme_1.therapists', compact('therapists'));
+    }
+
+    public function entDoctors()
+    {
+        $therapists = Therapist::with('schedules')->where('sub_category_id', 2)->get();
+        return view('theme_1.therapists', compact('therapists'));
+    }
+
+    public function ourDoctors()
+    {
+        $therapists = Therapist::with('schedules')->where('category_id', 2)->get();
+        return view('theme_1.therapists', compact('therapists'));
+    }
     public function ourTherapists()
     {
-        $therapists = Therapist::with('schedules')->get();
+        $therapists = Therapist::with('schedules')->where('category_id', 1)->get();
         return view('theme_1.therapists', compact('therapists'));
     }
 

@@ -7,13 +7,15 @@
             <div class="col-sm-6 col-lg-3 footer-column footer-column-get-in-touch">
                 <h4 class="mb-4 text-uppercase">Get in Touch</h4>
                 <div class="info custom-info mb-4">
-                    {{-- <div class="custom-info-block custom-info-block-address">
+                    <div class="custom-info-block custom-info-block-address">
                         <span
                             class="text-color-default font-weight-bold text-uppercase title-custom-info-block title-custom-info-block-address">Address</span>
                         <span
                             class="font-weight-normal text-color-light text-custom-info-block p-relative bottom-6 text-custom-info-block-address">123
-                            Street Name, City, England</span>
-                    </div> --}}
+                            89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed
+                            N.ganj DOHS) Narayanganj-1400, Bangladrsh.
+                        </span>
+                    </div>
                     <div class="custom-info-block custom-info-block-phone">
                         <span
                             class="text-color-default font-weight-bold text-uppercase title-custom-info-block title-custom-info-block-phone">Phone</span>

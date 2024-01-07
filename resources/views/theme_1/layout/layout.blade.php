@@ -41,6 +41,7 @@
         @include('theme_1.layout.partials.footer')
     </div>
     @include('theme_1.layout.partials.js')
+    @stack('scripts')
     @yield('script')
 </body>
 

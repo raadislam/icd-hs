@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Therapist;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class TherapistController extends Controller
@@ -13,7 +15,8 @@ class TherapistController extends Controller
      */
     public function index()
     {
-        return view('dashboard.therapists.index');
+        $therapists = Therapist::get();
+        return view('dashboard.therapists.index', compact('therapists'));
     }
 
     /**
@@ -21,7 +24,8 @@ class TherapistController extends Controller
      */
     public function create()
     {
-        return view('dashboard.therapists.create');
+        $categories = Category::get();
+        return view('dashboard.therapists.create', compact('categories'));
     }
 
     /**
@@ -49,7 +53,10 @@ class TherapistController extends Controller
             'dob' => $request->dob,
             'nid' => $request->nid,
             'designation' => $request->designation,
+            'qualification' => $request->qualification,
             'about' => $request->about,
+            'category_id' => $request->category,
+            'sub_category_id' => $request->subCategory,
         ]);
 
         return back()->with('therapist_added', 'Therapist Added Successfully');
@@ -68,7 +75,7 @@ class TherapistController extends Controller
      */
     public function edit(Therapist $therapist)
     {
-        //
+        dd($therapist);
     }
 
     /**

@@ -9,7 +9,7 @@
             <div class="card-body" bis_skin_checked="1" style="display: block;">
                 <form action="{{ route('dashboard-therapist.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div bis_skin_checked="1">
+                    <div x-data bis_skin_checked="1">
                         <div bis_skin_checked="1">
                             <h6 style=" color: red;">* marks are required field</h6>
 
@@ -37,6 +37,45 @@
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
+                                <label for="qualification">Qualifications
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="qualification"
+                                    placeholder="Your qualification" name="qualification">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select @category-change="()=>{ $store.categoryBox.categoryId = $event.detail.category_id}"
+                                    class="select2" name="category" id="category" data-placeholder="Select a State"
+                                    style="width: 100%;">
+
+                                    <option value="null" disabled selected>Select Category</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}">
+                                            {{ $category->name }}
+                                        </option>
+                                    @endforeach
+
+                                </select>
+                            </div>
+
+                            <div>
+                                <template x-if="$store.categoryBox.category_id">
+                                    <div class="form-group">
+                                        <label>Sub Category</label>
+                                        <select class="select2" name="subCategory" data-placeholder="Select a State"
+                                            style="width: 100%;">
+                                            <template x-for="subcategory in $store.categoryBox.subCategories">
+                                                <option x-text="subcategory.name" x-model="subcategory.id"></option>
+                                            </template>
+                                        </select>
+                                    </div>
+                                </template>
+                            </div>
+
+
+                            <div class="form-group" bis_skin_checked="1">
                                 <label for="address">Address
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
@@ -62,7 +101,8 @@
                                 <label for="price">NID
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <input type="number" class="form-control" id="nid" placeholder="NID" name="nid">
+                                <input type="number" class="form-control" id="nid" placeholder="NID"
+                                    name="nid">
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
@@ -77,8 +117,9 @@
                                 <label for="about">About
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <textarea class="form-control" id="about" rows="5"
-                                    placeholder="Say Something About You and Your Qualifications" name="about"></textarea>
+                                <textarea placeholder="Write Course about" id="mytinymceeditor" name="about" required>
+                                    Write about
+                                </textarea>
                             </div>
 
                         </div>
@@ -96,6 +137,62 @@
 
 @section('script')
     <script>
+        $(function() {
+            // Initialize Sub Category Elements Change
+            $('#category').select2().on('select2:select', function(e) {
+                e.target.dispatchEvent(
+                    new CustomEvent('category-change', {
+                        "detail": {
+                            category_id: e.params.data.id
+                        }
+                    })
+                );
+            });
+
+        })
+
+        document.addEventListener('alpine:init', () => {
+
+            Alpine.store('categoryBox', {
+                subCategories: {},
+                category_id: null,
+
+                set categoryId(id) {
+                    this.category_id = id;
+                    this.update()
+
+                },
+
+                get categoryId() {
+                    return this.category_id
+                },
+
+                update() {
+
+                    let route = "/admin/sub-category/" + this.category_id;
+                    let token = "{{ csrf_token() }}";
+
+                    $.ajax({
+                        url: route,
+                        type: 'GET',
+
+                        success: (response) => {
+                            console.log(response.subCategories);
+                            $('.select2').select2()
+                            this.subCategories = response.subCategories
+                        },
+                        error: function(xhr) {
+                            console.log(xhr)
+                        }
+                    });
+
+                }
+            });
+        })
+    </script>
+
+
+    <script>
         var disabledResults = $(".select2-us");
         disabledResults.select2();
     </script>
@@ -111,11 +208,6 @@
         </script>
     @endif
 
-
-    <script>
-        var disabledResults = $(".select2-us");
-        disabledResults.select2();
-    </script>
 
     <script>
         $(function() {

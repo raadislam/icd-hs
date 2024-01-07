@@ -4,7 +4,9 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CourseScheduleController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\InstructorController;
+use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ShortCourseController;
+use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\TherapyController;
 use App\Http\Controllers\TherapistScheduleController;
@@ -36,6 +38,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('dashboard-therapist', TherapistController::class);
     Route::resource('dashboard-therapy-schedule', TherapistScheduleController::class);
 
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/sub-category/{category}', [SubCategoryController::class, 'show'])->name('showSubCategory');
+    });
+
     Route::view('planner', 'dashboard.schedule.planner');
 });
 
@@ -50,6 +56,7 @@ Route::get('/', [FrontendController::class, 'index']);
 Route::get('/about-us', [FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/earn-leave', [FrontendController::class, 'earnLeave'])->name('earnLeave');
 Route::get('/short-course', [FrontendController::class, 'shortCourse'])->name('shortCourse');
+Route::get('/program-of-study', [FrontendController::class, 'programofStudy'])->name('programofStudy');
 Route::get('/apply/short-course/{shortCourses}', [FrontendController::class, 'shortCourseRegistration'])->name('shortCourseRegistration');
 Route::get('/apply/short-course/{therapy}', [FrontendController::class, 'therapyRegistration'])->name('therapyRegistration');
 Route::get('/contact-us', [FrontendController::class, 'contactus'])->name('contactus');
@@ -60,11 +67,16 @@ Route::get('/speech-therapy', [FrontendController::class, 'speechTherapist'])->n
 Route::get('/mmi-ent', [FrontendController::class, 'entDoctors'])->name('entDoctors');
 Route::get('/our-team', [FrontendController::class, 'ourTeam'])->name('ourTeam');
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
+Route::get('/therapist/{therapist}', [FrontendController::class, 'viewTherapist'])->name('viewTherapist');
 Route::get('/pranic-therapy', [FrontendController::class, 'pranicTherapy'])->name('pranicTherapy');
+Route::get('/school-of-minds', [FrontendController::class, 'som'])->name('som');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
+Route::get('/reasearch-support', [FrontendController::class, 'researchSupport'])->name('researchSupport');
+
 
 Route::get('/make-appointment/{therapist}', [AppointmentController::class, 'create'])->name('appointment.create');
+Route::post('/confirm-appointment', [PatientController::class, 'store'])->name('appointment.store');
 
 
 Route::get('get-schedule/{therapist}', function ($therapist) {

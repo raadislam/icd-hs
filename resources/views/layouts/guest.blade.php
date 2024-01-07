@@ -20,8 +20,7 @@
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
         <div>
             <a href="/">
-                <img alt="Bright Hill Academy" width="123"
-                    src="{{ asset('file') }}/img/demos/business-consulting-4/logo.png">
+                <img alt="ICD-HS" width="450" src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
             </a>
         </div>
 

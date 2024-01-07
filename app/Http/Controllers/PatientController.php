@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SubCategory;
+use App\Models\Patient;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class SubCategoryController extends Controller
+class PatientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,27 +27,37 @@ class SubCategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+    
     public function store(Request $request)
     {
-        //
+        $dates = explode(",", $request->appointmentDate);
+
+        foreach ($dates as $date) {
+            Patient::create([
+                'therapist_id' => $request->therapistId,
+                'name' => $request->name,
+                'email' => $request->email,
+                'phone' => $request->phoneNumber,
+                'date' => $date,
+                'slot' => $request->slot,
+            ]);
+        }
+
+        return back()->with('appointment', "Appointment Created Successfully");
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($category)
+    public function show(Patient $patient)
     {
-        $subCategories = SubCategory::where('category_id', $category)->get();
-
-        return response()->json([
-            "subCategories" => $subCategories,
-        ]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(SubCategory $subCategory)
+    public function edit(Patient $patient)
     {
         //
     }
@@ -55,7 +65,7 @@ class SubCategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, SubCategory $subCategory)
+    public function update(Request $request, Patient $patient)
     {
         //
     }
@@ -63,7 +73,7 @@ class SubCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(SubCategory $subCategory)
+    public function destroy(Patient $patient)
     {
         //
     }

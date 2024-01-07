@@ -51,7 +51,7 @@
                                                 <a class="dropdown-item font-weight-normal"
                                                     href="{{ route('services') }}">
                                                     For Therapies
-                                                </a>k
+                                                </a>
                                             </li>
                                         </ul>
                                     </li>
@@ -134,7 +134,8 @@
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                     <li>
-                                                        <a class="dropdown-item font-weight-normal" href="#">
+                                                        <a class="dropdown-item font-weight-normal"
+                                                            href="{{ route('programofStudy') }}">
                                                             Program of Study
                                                         </a>
                                                     </li>
@@ -197,7 +198,8 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item font-weight-normal" href="#">
+                                                        <a class="dropdown-item font-weight-normal"
+                                                            href="{{ route('researchSupport') }}">
                                                             Research Support
                                                         </a>
                                                     </li>
@@ -205,7 +207,7 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link" href="#">
+                                                <a class="nav-link" href="{{ route('som') }}">
                                                     School of Minds
                                                 </a>
                                             </li>

@@ -7,7 +7,7 @@
             </div>
 
             <div class="card-body" bis_skin_checked="1">
-                {{--
+
                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4" bis_skin_checked="1">
                     <div class="row" bis_skin_checked="1">
                         <div class="col-sm-12" bis_skin_checked="1">
@@ -47,32 +47,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($shortCourses as $key => $shortCourse)
+                                    @foreach ($therapists as $key => $therapist)
                                         <tr class="
                                         ">
                                             <td class="dtr-control sorting_1" tabindex="0">{{ $key + 1 }}</td>
-                                            <td class="dtr-control sorting_1" tabindex="0">{{ $shortCourse->title }}</td>
-                                            <td>{{ $shortCourse->fee }}</td>
-                                            <td>{{ $shortCourse->type }}</td>
-                                            <td>{{ $shortCourse->description }}</td>
+                                            <td class="dtr-control sorting_1" tabindex="0">{{ $therapist->name }}</td>
+                                            <td>{{ $therapist->designation }}</td>
+                                            <td>{{ $therapist->phone }}</td>
+                                            <td>{{ $therapist->email }}</td>
                                             <td style="">
                                                 <div class="btn-group align-self-center" bis_skin_checked="1">
-                                                    <a href="javascript:void(0)" id="show-book"
-                                                        onclick="showBookInformation(this);"
-                                                        data-url="{{ route('showBookDetails', $book->id) }}">
-                                                        <button type="button" class="mx-1 btn btn-info " id="show-book"
-                                                            data-toggle="modal" data-target=".bd-example-modal-lg">
-                                                            <i class="fas fa-eye"></i>
-                                                        </button>
-                                                    </a>
-                                                    <a
-                                                        href="@if ($book->issuable === 0) # @else {{ route('placeOrder', $book->id) }} @endif ">
-                                                        <button type="submit"
-                                                            class="mx-1 btn btn-success @if ($book->issuable === 0) disabled @endif">
-                                                            <i class="fas fa-cart-plus"></i>
-                                                        </button>
-                                                    </a>
-                                                    <a href="{{ route('editBook', $book->id) }}">
+
+
+                                                    <a href="{{ route('dashboard-therapist.edit', $therapist->id) }}">
                                                         <button type="submit" class="mx-1 btn btn-warning">
                                                             <i class="fas fa-edit"></i>
                                                         </button>
@@ -85,7 +72,7 @@
                             </table>
                         </div>
                     </div>
-                </div> --}}
+                </div>
             </div>
 
         </div>

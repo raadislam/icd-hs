@@ -19,6 +19,22 @@ class FrontendController extends Controller
         return view('theme_1.index', compact('shortCourses', 'services'));
     }
 
+    public function researchSupport()
+    {
+        return view('theme_1.reasearchSupport');
+    }
+
+    public function som()
+    {
+        return view('theme_1.schoolofMinds');
+    }
+
+    public function programofStudy()
+    {
+        return view('theme_1.programofStudy');
+    }
+
+
     public function pranicTherapy()
     {
         $therapy = Therapy::query()->where('id', 13)->first();
@@ -79,9 +95,15 @@ class FrontendController extends Controller
     {
         $therapists = Therapist::whereRelation('therapies', function ($query) use ($therapy) {
             $query->where('therapies.id', $therapy->id);
-        })->with('schedules')->get();
+        })->get();
 
         return view('theme_1.viewTherapy', compact('therapy', 'therapists'));
+    }
+    public function viewTherapist($therapist)
+    {
+        $therapist = Therapist::where('id', $therapist)->with('schedules')->first();
+
+        return view('theme_1.personalView', compact('therapist'));
     }
 
 

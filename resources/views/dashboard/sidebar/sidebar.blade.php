@@ -2,8 +2,8 @@
     <!-- Brand Logo -->
     <a href="/"
         style="width: 100% !important;color: #000 !important;display: flex;justify-content: center; padding: 1em; background-color: white">
-        <img width="70%" src="{{ asset('images') }}/heritage_school_logo.png" alt="heritage School" class="brand-image"
-            style="opacity: .8">
+        <img width="100%" src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png" alt="ICD-HS"
+            class="brand-image" style="opacity: .8">
     </a>
 
     <!-- Sidebar -->
@@ -33,7 +33,7 @@
                     ">
                     <a href="#" class="nav-link nav-item-custom"
                         style="display: flex; align-items: center; gap: 1em">
-                        <ion-icon class="text-custom" style="font-size: 1.45em" name="school"></ion-icon>
+                        <ion-icon class="text-custom" style="font-size: 1.45em" name="school-outline"></ion-icon>
                         <p class="text-custom">
                             Courses / Instructors
                             <i class="right fas fa-angle-left"></i>
@@ -124,7 +124,7 @@
                     <a href="#" class="nav-link nav-item-custom"
                         style="display: flex; align-items: center; gap: 1em">
 
-                        <ion-icon class="text-custom" style="font-size: 1.45em" name="settings"></ion-icon>
+                        <ion-icon class="text-custom" style="font-size: 1.45em" name="settings-outline"></ion-icon>
 
                         <p class="text-custom">
                             Services
@@ -163,7 +163,7 @@
                                 style="color: #21263c; border-radius: 0.2em">
 
                                 <p style="margin-left: 1.7em">
-                                    Therapy Schedule                               
+                                    Therapy Schedule
                                 </p>
                             </a>
                             <a href="{{ route('dashboard-therapy-schedule.create') }}"

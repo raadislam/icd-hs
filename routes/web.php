@@ -39,6 +39,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('dashboard-therapy-schedule', TherapistScheduleController::class);
 
     Route::group(['prefix' => 'admin'], function () {
+
         Route::get('/sub-category/{category}', [SubCategoryController::class, 'show'])->name('showSubCategory');
     });
 

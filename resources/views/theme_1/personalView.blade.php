@@ -6,7 +6,6 @@
     <div id="examples" class="container" style="padding: 5em 0 5em 0 !important">
 
         <div class="row">
-
             <div class="col-lg-9">
                 <div class="container">
                     <div class="row">
@@ -28,10 +27,11 @@
                                     <a href="mailto:{{ $therapist->email }}">{{ $therapist->email }}</a>
                                 </p>
                                 <br>
-                                <p class="text-dark font-weight-semi-bold">Schedule</p>
+                                <p class="text-dark font-weight-semi-bold" style="margin: 0">Schedule</p>
 
                                 @foreach ($therapist->schedules->groupBy('weekday') as $weekday => $schedules)
                                     <div class="info custom-info pt-0">
+                                        <span>{{ $weekday }} :</span>
                                         <span>{{ jddayofweek($weekday, 1) }} :</span>
                                         @foreach ($schedules as $schedule)
                                             <span>{{ $schedule->slot }}
@@ -42,6 +42,9 @@
                                         @endforeach
                                     </div>
                                 @endforeach
+
+
+
                                 <a href="{{ route('appointment.create', $therapist->id) }}"
                                     class="btn btn-primary bg-hover-light  text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 mt-3 text-2">
                                     Make An Appointment

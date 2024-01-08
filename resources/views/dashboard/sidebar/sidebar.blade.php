@@ -191,6 +191,7 @@
                             <a href="{{ route('dashboard-therapist.create') }}"
                                 class="
                                         @if (request()->is('dashboard-therapist/create')) custom-active-class
+                                        @elseif (request()->is('dashboard-therapist/*')) custom-active-class
                                         @elseif (request()->is('dashboard-therapist')) custom-active-class @endif
                                     "
                                 style="position: absolute; top: 25%; right: 5%;">

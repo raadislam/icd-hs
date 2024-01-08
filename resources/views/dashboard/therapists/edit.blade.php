@@ -3,143 +3,137 @@
     <div class="p-4 container-fluid" bis_skin_checked="1">
         <div class="card card-primary" bis_skin_checked="1">
             <div class="card-header" bis_skin_checked="1">
-                <h3 class="card-title">Add Book To Library</h3>
-                <div class="card-tools" bis_skin_checked="1">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                        <i class="fas fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
+                <h3 class="card-title">Edit Therapist</h3>
             </div>
 
             <div class="card-body" bis_skin_checked="1" style="display: block;">
-                <form action="{{ route('updateBook', $book->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('dashboard-therapist.update', $therapist->id) }}" method="POST"
+                    enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
-                    <div bis_skin_checked="1">
+                    <div x-data bis_skin_checked="1">
                         <div bis_skin_checked="1">
                             <h6 style=" color: red;">* marks are required field</h6>
-                            <div class="form-group" bis_skin_checked="1">
-                                <label for="shelfNo">Shelf No.</label>
-                                <input type="text" class="form-control" id="shelfNo" placeholder="Shelf No."
-                                    name="shelf_no" value="{{ $book->shelf_no }}">
-                            </div>
 
                             <div class="form-group" bis_skin_checked="1">
-                                <label for="publicationDate">Publication Date</label>
-                                <input type="date" class="form-control" id="publicationDate"
-                                    placeholder="Publication Date" name="publication_date"
-                                    value="{{ $book->publication_date }}">
-                            </div>
-
-                            <div class="form-group" bis_skin_checked="1">
-                                <label for="coverImage" class="form-label">Cover Image</label>
-                                <input class="custom-file" type="file" id="cover_image" name="cover_image" />
-                            </div>
-
-                            <div class="form-group" bis_skin_checked="1">
-                                <label for="title">Book's Title
+                                <label for="name">Name
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <input type="text" class="form-control" id="title" placeholder="Book's Title"
-                                    name="books_title" value="{{ $book->title }}" required disabled>
+                                <input type="text" value="{{ $therapist->name }}" class="form-control" id="name"
+                                    placeholder="Name" name="name" required>
                             </div>
                             <div class="form-group" bis_skin_checked="1">
-                                <label for="authorsName">Author's Name
+                                <label for="email">Email
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <input type="text" class="form-control" id="authorsName" placeholder="Author's Name"
-                                    name="authors_name" value="{{ $book->author_name }}" required disabled>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Donated By
-                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                                </label>
-                                <select class="form-control select2-us" name="donated_by" required disabled>
-                                    @foreach ($donors as $donor)
-                                        <!-- <option selected value="1">Hello</option> -->
-                                        <option value="{{ $donor->id }}"
-                                            @if ($donor->id === $book->donors_id) selected @endif>{{ $donor->name }}</option>
-                                    @endforeach
-                                </select>
+                                <input type="email" value="{{ $therapist->email }}" class="form-control" id="email"
+                                    placeholder="email" name="email" required>
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
-                                <label for="isbn">ISBN No.</label>
-                                <input type="text" class="form-control" id="isbn" placeholder="ISBN No"
-                                    name="isbn" value="{{ $book->isbn }}">
-                            </div>
-                            <div class="form-group" bis_skin_checked="1">
-                                <label for="quantity">Quantity
+                                <label for="designation">Designation
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <input type="number" class="form-control" id="qty" placeholder="Quantity"
-                                    name="qty" value="{{ $book->qty }}" required>
+                                <input type="text" value="{{ $therapist->designation }}" class="form-control"
+                                    id="designation" placeholder="Your Designation" name="designation">
                             </div>
 
                             <div class="form-group" bis_skin_checked="1">
-                                <label for="preface">Preface
+                                <label for="qualification">Qualifications
                                     <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                 </label>
-                                <textarea class="form-control" id="preface" rows="5" placeholder="Write Book Preface" name="preface"
-                                    required>{{ $book->preface }}</textarea>
+                                <input type="text" class="form-control" value="{{ $therapist->qualification }}"
+                                    id="qualification" placeholder="Your qualification" name="qualification">
                             </div>
 
-                            <div class="form-group">
-                                <label>Category
-                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                                </label>
-                                <select class="form-control select2-us" name="category_id" required>
+                            {{-- <div class="form-group">
+                                <label>Category</label>
+                                <select @category-change="()=>{ $store.categoryBox.categoryId = $event.detail.category_id}"
+                                    class="select2" name="category" id="category" data-placeholder="Select a State"
+                                    style="width: 100%;">
+
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}"
-                                            @if ($category->id === $book->category_id) selected @endif>{{ $category->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Reader's Level
-                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                                </label>
-                                <select class="form-control select2-us" name="readerlevels_id" required>
-
-                                    @foreach ($readerlvls as $readerlvl)
-                                        <option value="{{ $readerlvl->id }}"
-                                            @if ($readerlvl->id === $book->readerlevels_id) selected @endif>
-                                            {{ $readerlvl->name }}
+                                            @if ($therapist->category_id == $category->id) selected @endif>
+                                            {{ $category->name }}
                                         </option>
                                     @endforeach
 
                                 </select>
-
                             </div>
 
-                            <div class="col-sm-6" bis_skin_checked="1">
-                                <label>Is this book issuable ?
-                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
-                                </label>
-                                <div class="form-group clearfix" bis_skin_checked="1">
-                                    <div class="icheck-success d-inline" bis_skin_checked="1">
-                                        <input type="radio" name="issuable" id="radioSuccess1" value="1"
-                                            @if ($book->issuable === 1) checked @endif>
-                                        <label for="radioSuccess1">
-                                            Yes
-                                        </label>
+                            <div>
+                                <template x-if="$store.categoryBox.category_id">
+                                    <div class="form-group">
+                                        <label>Sub Category</label>
+                                        <select class="select2" name="subCategory" data-placeholder="Select a State"
+                                            style="width: 100%;">
+                                            <template x-for="subcategory in $store.categoryBox.subCategories">
+                                                <option x-text="subcategory.name" x-model="subcategory.id"></option>
+                                            </template>
+                                        </select>
                                     </div>
-                                    <div class="icheck-success d-inline" bis_skin_checked="1">
-                                        <input type="radio" name="issuable" id="radioSuccess2" value="0"
-                                            @if ($book->issuable === 0) checked @endif>
-                                        <label for="radioSuccess2"> No
+                                </template>
+                            </div> --}}
+
+
+                            <div class="form-group" bis_skin_checked="1">
+                                <label for="address">Address
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <input type="text" value="{{ $therapist->address }}" class="form-control" id="address"
+                                    placeholder="Address" name="address">
+                            </div>
+
+                            <div class="form-group" bis_skin_checked="1">
+                                <label for="phone_number">Phone Number
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <input type="number" value="{{ $therapist->phone }}" class="form-control" id="phone_number"
+                                    placeholder="Phone Number" name="phone_number">
+                            </div>
+
+                            <div class="form-group" bis_skin_checked="1">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" value="{{ date('Y-d-m', strtotime($therapist->dob)) }}"
+                                    class="form-control" id="dob" placeholder="Date of Birth" name="dob">
+                            </div>
+
+                            <div class="form-group" bis_skin_checked="1">
+                                <label for="price">NID
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <input type="number" value="{{ $therapist->nid }}" class="form-control" id="nid"
+                                    placeholder="NID" name="nid">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group" bis_skin_checked="1">
+                                        <label for="profilePicture" class="form-label">
+                                            Profile Picture
+                                            <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
                                         </label>
+                                        <input class="custom-file" type="file" id="profilePicture" name="img" />
                                     </div>
                                 </div>
+                                <div class="col-md-6 d-flex justify-content-center align-items-center w-100">
+                                    <img alt="event" class="img-fluid rounded"
+                                        src="{{ asset('images') }}/therapist/{{ $therapist->img }}">
+                                </div>
                             </div>
+
+                            <div class="form-group" bis_skin_checked="1">
+                                <label for="about">About
+                                    <span style="font-weight: 800; color: red; font-size: 1.2em">*</span>
+                                </label>
+                                <textarea placeholder="Write Course about" id="mytinymceeditor" name="about" required>
+                                    {{ $therapist->about }}
+                                </textarea>
+                            </div>
+
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Update</button>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
             </div>
 
@@ -149,27 +143,99 @@
 
     </div>
 @endsection
+
 @section('script')
+    <script>
+        $(function() {
+            // Initialize Sub Category Elements Change
+            $('#category').select2().on('select2:select', function(e) {
+                e.target.dispatchEvent(
+                    new CustomEvent('category-change', {
+                        "detail": {
+                            category_id: e.params.data.id
+                        }
+                    })
+                );
+            });
+
+        })
+
+        document.addEventListener('alpine:init', () => {
+
+            Alpine.store('categoryBox', {
+                subCategories: {},
+                category_id: null,
+
+                set categoryId(id) {
+                    this.category_id = id;
+                    this.update()
+
+                },
+
+                get categoryId() {
+                    return this.category_id
+                },
+
+                update() {
+
+                    let route = "/admin/sub-category/" + this.category_id;
+                    let token = "{{ csrf_token() }}";
+
+                    $.ajax({
+                        url: route,
+                        type: 'GET',
+
+                        success: (response) => {
+                            console.log(response.subCategories);
+                            $('.select2').select2()
+                            this.subCategories = response.subCategories
+                        },
+                        error: function(xhr) {
+                            console.log(xhr)
+                        }
+                    });
+
+                }
+            });
+        })
+    </script>
+
+
     <script>
         var disabledResults = $(".select2-us");
         disabledResults.select2();
     </script>
 
-    @if (Session::has('book_update'))
+    @if (Session::has('therapist_edited'))
         <script>
             toastr.options = {
                 "progressBar": true,
             }
-            toastr.success("{{ Session::get('book_update') }}", {
+            toastr.success("{{ Session::get('therapist_edited') }}", {
                 timeout: 3000
             });
         </script>
     @endif
-@endsection
 
-{{-- @push('js')
+
     <script>
-        var disabledResults = $(".select2-us");
-        disabledResults.select2();
+        $(function() {
+            $(document).ready(function() {
+                $('.js-example-basic-multiple').select2();
+            });
+
+            // Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+        })
     </script>
-@endpush --}}
+    <script>
+        $('#timepicker').datetimepicker({
+            format: 'LT'
+        });
+    </script>
+@endsection

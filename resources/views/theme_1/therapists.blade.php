@@ -24,11 +24,18 @@
                                 </span>
                             </strong>
                             <span
-                                class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">Cardiology</span>
+                                class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">{{ $therapist->qualification }}</span>
                             <p class="pt-2"> {{ $therapist->designation }}</p>
+                            <div>
+                                <a href="{{ route('appointment.create', $therapist->id) }}"
+                                    class="btn btn-primary bg-hover-light  text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-2  text-2">
+                                    Make An Appointment
+                                </a>
+                            </div>
                             <a href="{{ route('viewTherapist', $therapist->id) }}"
                                 class="btn btn-outline btn-light bg-hover-light text-dark text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 text-2">View
                                 More +</a>
+
                         </div>
                     </div>
                 </div>

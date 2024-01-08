@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class TherapistController extends Controller
 {
@@ -73,17 +74,45 @@ class TherapistController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Therapist $therapist)
+    public function edit(Therapist $dashboard_therapist)
     {
-        dd($therapist);
+        $therapist = $dashboard_therapist;
+        $categories = Category::get();
+
+        return view('dashboard.therapists.edit', compact('therapist', 'categories'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Therapist $therapist)
+    public function update(Request $request, Therapist $dashboard_therapist)
     {
-        //
+
+
+        if ($request->img) {
+            if (File::exists(public_path('images/therapist/' . $dashboard_therapist->img))) {
+                File::delete(public_path('images/therapist/' . $dashboard_therapist->img));
+            };
+
+            $image_name = $this->uploadImage($request->img, 'therapist');
+            $dashboard_therapist->img = $image_name;
+            $dashboard_therapist->save();
+        }
+
+
+        $dashboard_therapist->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'address' => $request->address,
+            'phone_number' => $request->phone_number,
+            'dob' => $request->dob,
+            'nid' => $request->nid,
+            'designation' => $request->designation,
+            'qualification' => $request->qualification,
+            'about' => $request->about,
+        ]);
+
+        return back()->with('therapist_edited', 'Therapist Edited Successfully');
     }
 
     /**

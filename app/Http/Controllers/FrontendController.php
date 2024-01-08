@@ -76,13 +76,13 @@ class FrontendController extends Controller
 
     public function entDoctors()
     {
-        $therapists = Therapist::with('schedules')->where('sub_category_id', 2)->orderBy('id', 'DESC')->get();
-        return view('theme_1.therapists', compact('therapists'));
+        $therapists = Therapist::with('schedules')->where('sub_category_id', 2)->orderBy('id', 'ASC')->get();
+        return view('theme_1.mmient', compact('therapists'));
     }
 
     public function ourDoctors()
     {
-        $therapists = Therapist::with('schedules')->where('category_id', 2)->get();
+        $therapists = Therapist::with('schedules')->where('category_id', 2)->orderBy('id', 'ASC')->get();
         return view('theme_1.therapists', compact('therapists'));
     }
     public function ourTherapists()

@@ -49,6 +49,12 @@ class FrontendController extends Controller
     {
         return view('theme_1.daycare');
     }
+
+    public function careGiving()
+    {
+        return view('theme_1.caregiving');
+    }
+
     public function earnLeave()
     {
         return view('theme_1.earnAndLive');
@@ -146,15 +152,16 @@ class FrontendController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required | email',
+            'phone' => 'required | phone',
             'message' => 'required | string',
         ]);
         $mailData = [
             'name' => $request->name,
             'email' => $request->email,
+            'phone' => $request->phone,
             'message' => $request->message,
         ];
-        \Mail::to('brighthillacademyinfo@gmail.com')->send(new ContactUsmail($mailData));
-
+        \Mail::to('raadislam09@gmail.com')->send(new ContactUsmail($mailData));
 
         return back()->with('message', 'Message Send Successfully');
     }

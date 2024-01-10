@@ -73,6 +73,7 @@ Route::get('/pranic-therapy', [FrontendController::class, 'pranicTherapy'])->nam
 Route::get('/school-of-minds', [FrontendController::class, 'som'])->name('som');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
+Route::get('/care-giving', [FrontendController::class, 'careGiving'])->name('careGiving');
 Route::get('/reasearch-support', [FrontendController::class, 'researchSupport'])->name('researchSupport');
 
 

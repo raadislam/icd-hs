@@ -219,7 +219,8 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link" href="#">
+                                                <a class="nav-link @if (request()->is('care-giving')) active @endif"
+                                                    href="{{ route('careGiving') }}">
                                                     Care Giving
                                                 </a>
                                             </li>

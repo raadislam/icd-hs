@@ -4,66 +4,73 @@
 @endsection
 
 @section('content')
-    <section class="position-relative">
-        <div id="sticky-sub-header" class="w-100 border-top-light h-50px">
-            <div class="container d-flex align-items-center gap-4 bg-light h-100">
-                <a href="#schoolHours" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        School Hours
-                    </span>
-                </a>
 
-                <a href="#curriculum" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Curriculum
-                    </span>
-                </a>
+<section class="position-relative bg-color-grey">
+    <div id="sticky-sub-header" class="w-100 border-top-light h-50px bg-color-grey">
+        <div class="container d-flex align-items-center gap-4  h-100 bg-color-grey">
+            <a href="#" class="btn btn-primary btn-with-arrow">
+                School Of Mind
+                <span>
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
 
-                <a href="#aim" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Our Aim
-                    </span>
-                </a>
+            <a href="#schoolHours" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    School Hours
+                </span>
+            </a>
 
-                <a href="#encouragedValue" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Encouraged Value
-                    </span>
-                </a>
+            <a href="#curriculum" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Curriculum
+                </span>
+            </a>
 
-                <a href="#commitment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Commitment
-                    </span>
-                </a>
+            <a href="#aim" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Our Aim
+                </span>
+            </a>
 
-                <a href="#campus" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Campus
-                    </span>
-                </a>
+            <a href="#encouragedValue" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Encouraged Value
+                </span>
+            </a>
 
-                <a href="#employment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Employment Oppurtunity
-                    </span>
-                </a>
+            <a href="#commitment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Commitment
+                </span>
+            </a>
 
-                <a href="#services" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Services
-                    </span>
-                </a>
+            <a href="#campus" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Campus
+                </span>
+            </a>
 
-                <a href="#admission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Admission
-                    </span>
-                </a>
+            <a href="#employment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Employment Oppurtunity
+                </span>
+            </a>
 
-            </div>
+            <a href="#services" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Services
+                </span>
+            </a>
+
+            <a href="#admission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Admission
+                </span>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
     <div class="container py-4">
         <div class="row">

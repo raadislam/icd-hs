@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactUsmail;
+use App\Mail\GreetingsMail;
 use App\Models\Event;
 use App\Models\ShortCourse;
 use App\Models\Therapist;
@@ -34,6 +35,10 @@ class FrontendController extends Controller
         return view('theme_1.programofStudy');
     }
 
+    public function comingSoon()
+    {
+        return view('theme_1.comingsoon');
+    }
 
     public function pranicTherapy()
     {
@@ -152,16 +157,19 @@ class FrontendController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required | email',
-            'phone' => 'required | phone',
+            'phone' => 'required | string',
             'message' => 'required | string',
         ]);
+
         $mailData = [
             'name' => $request->name,
             'email' => $request->email,
-            'phone' => $request->phone,
             'message' => $request->message,
+            'phone' => $request->phone,
+            'subject' => $request->subject,
         ];
         \Mail::to('raadislam09@gmail.com')->send(new ContactUsmail($mailData));
+        \Mail::to($request->email)->send(new GreetingsMail($mailData));
 
         return back()->with('message', 'Message Send Successfully');
     }

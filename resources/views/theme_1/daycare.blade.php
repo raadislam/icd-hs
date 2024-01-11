@@ -5,32 +5,38 @@
 @section('meta')
 @endsection
 @section('content')
-    <section class="position-relative">
-        <div id="sticky-sub-header" class="w-100 border-top-light h-50px">
-            <div class="container d-flex align-items-center gap-4 bg-light h-100">
-                <a href="#mission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Mission
-                    </span>
-                </a>
+<section class="position-relative bg-color-grey">
+    <div id="sticky-sub-header" class="w-100 border-top-light h-50px bg-color-grey">
+        <div class="container d-flex align-items-center gap-4  h-100 bg-color-grey">
+            <a href="#" class="btn btn-primary btn-with-arrow">
+                Day Care
+                <span>
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
 
-                <a href="#vision" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Vision
-                    </span>
-                </a>
+            <a href="#mission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Mission
+                </span>
+            </a>
 
-                <a href="#selectionCriteria" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
-                        Selection Criteria
-                    </span>
-                </a>
+            <a href="#vision" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Vision
+                </span>
+            </a>
 
-            </div>
+            <a href="#selectionCriteria" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <span class="text-2-5 text-primary font-weight-semi-bold">
+                    Selection Criteria
+                </span>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <div class="container py-4">
+   <div class="container py-4">
         <div class="row">
             <div class="col">
                 <div class="blog-posts single-post">

@@ -74,6 +74,7 @@ Route::get('/school-of-minds', [FrontendController::class, 'som'])->name('som');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
 Route::get('/care-giving', [FrontendController::class, 'careGiving'])->name('careGiving');
+Route::get('/coming-soon', [FrontendController::class, 'comingSoon'])->name('comingSoon');
 Route::get('/reasearch-support', [FrontendController::class, 'researchSupport'])->name('researchSupport');
 
 

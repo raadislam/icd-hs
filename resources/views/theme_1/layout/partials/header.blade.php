@@ -19,13 +19,13 @@
                         </ul>
 
                         <div class="header-logo mb-0 mobile-display-show" style="height: 46px;">
-                            <a href="index.html">
+                            <a href="/">
                                 <img alt="ICD-HS" height="46"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png">
                             </a>
                         </div>
                         <div class="mb-0 mobile-display-hide">
-                            <a href="index.html">
+                            <a href="/">
                                 <img alt="ICD-HS" height="70"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
                             </a>
@@ -44,13 +44,13 @@
                                             <li>
                                                 <a class="dropdown-item font-weight-normal"
                                                     href="{{ route('ourDoctors') }}">
-                                                    For Doctors
+                                                    For Doctor
                                                 </a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item font-weight-normal"
-                                                    href="{{ route('services') }}">
-                                                    For Therapies
+                                                    href="{{ route('ourTherapists') }}">
+                                                    For Therapist
                                                 </a>
                                             </li>
                                         </ul>
@@ -232,7 +232,7 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link" href="#">
+                                                <a class="nav-link" href="{{route('comingSoon')}}">
                                                     Diagonistic Center
                                                 </a>
                                             </li>

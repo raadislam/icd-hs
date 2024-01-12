@@ -140,9 +140,9 @@
                         width="596">
 
                         <!-- Your logo is here -->
-                        <img style="width: 180px; max-width: 180px; height: 85px; max-height: 85px; text-align: center; color: #ffffff;"
-                            alt="Logo" src="https://icd-hs.com/file/img/demos/medical-2/logos/logo.png" align="center"
-                            width="auto" height="85">
+                        <img style="width: 550px; max-width: 550px; height: 85px; max-height: 85px; text-align: center; color: #ffffff;"
+                            alt="Logo" src="https://icd-hs.com/file/img/demos/medical-2/logos/logo.png"
+                            align="center" width="auto" height="85">
 
                     </td>
                 </tr>
@@ -152,8 +152,8 @@
 
         <!-- Hero image -->
         <img style="width: 600px; max-width: 600px; height: 350px; max-height: 350px; text-align: center;"
-            alt="Hero image" src="https://icd-hs.com/file/img/default/som.jpg"
-            align="center" width="600" height="350">
+            alt="Hero image" src="https://icd-hs.com/file/img/default/som.jpg" align="center" width="600"
+            height="350">
         <!-- Hero image -->
 
         <!-- Start single column section -->
@@ -186,13 +186,14 @@
                         width="596">
 
                         <!-- Your inverted logo is here -->
-                        <img style="width: 180px; max-width: 180px; height: 85px; max-height: 85px; text-align: center; color: #ffffff;"
-                            alt="Logo" src="https://icd-hs.com/file/img/demos/medical-2/logos/logo.png" align="center"
-                            width="180" height="85">
+                        <img style="width: 550px; max-width: 550px; height: 85px; max-height: 85px; text-align: center; color: #ffffff;"
+                            alt="Logo" src="https://icd-hs.com/file/img/demos/medical-2/logos/logo.png"
+                            align="center" width="180" height="85">
 
                         <p
                             style="font-size: 13px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 400; text-decoration: none; color: #ffffff;">
-                            123 89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj DOHS) Narayanganj-1400, Bangladesh.
+                            123 89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed
+                            N.ganj DOHS) Narayanganj-1400, Bangladesh.
                         </p>
 
                         <p

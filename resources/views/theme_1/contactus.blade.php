@@ -64,15 +64,16 @@
                         @csrf
 
                         @if ($errors->any())
-                            <div class="contact-form-error alert alert-danger d-none mt-4">
-                                <strong>Error!</strong> @include('alerts.alert').
-                                <span class="mail-error-message text-1 d-block"></span>
+                            <div class="card">
+                                <div class="card-body">
+                                    @include('alerts.alert')
+                                </div>
                             </div>
                         @endif
 
                         @if (session()->has('message'))
-                            <div class="contact-form-success alert alert-success d-none mt-4">
-                                <strong>Success!</strong> {{ session()->get('message') }}
+                            <div class="alert alert-success">
+                                {{ session()->get('message') }}
                             </div>
                         @endif
 
@@ -86,7 +87,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group col mb-3">
-                                    <input type="email" value="" data-msg-required="Please enter your email address."
+                                    <input type="email" value=""
+                                        data-msg-required="Please enter your email address."
                                         data-msg-email="Please enter a valid email address." maxlength="100"
                                         class="form-control border-radius-0" name="email" id="email" required
                                         placeholder="E-mail *" required>

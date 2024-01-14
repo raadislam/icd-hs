@@ -4,9 +4,9 @@
 @endsection
 
 @section('content')
-    <section class="position-relative" style="background-color: #82aba2">
-        <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #82aba2">
-            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #82aba2">
+    <section class="position-relative" style="background-color: #7ca2c5">
+        <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #7ca2c5">
+            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #7ca2c5">
                 <a href="#" class="btn btn-secondary btn-with-arrow">
                     Care Giving
                     <span>
@@ -71,7 +71,7 @@
 
             <div class="col-lg-3 position-relative">
                 <aside class="sidebar" id="sidebar" data-plugin-sticky
-                    data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 210}}">
+                    data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 
                     <h4 class="pt-2">Get In Touch</h4>
                     <p>

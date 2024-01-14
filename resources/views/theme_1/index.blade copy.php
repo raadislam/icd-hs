@@ -7,15 +7,14 @@
 
 @section('content')
     <section class="section section-funnel border-0 m-0 p-0">
-        <div class="owl-carousel-wrapper" style="height: calc(100vh - 166px);">
+        <div class="owl-carousel-wrapper" style="height: 991px;">
             <div class="owl-carousel dots-inside dots-horizontal-center custom-dots-style-1 show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
-                data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true, 'nav': false}, '479': {'items': 1, 'dots': true}, '768': {'items': 1, 'dots': true}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': true, 'dotsVerticalOffset': '-50px', 'nav': false, 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 7000, 'autoplayHoverPause': true, 'rewind': true}">
-
+                data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true, 'nav': false}, '479': {'items': 1, 'dots': true}, '768': {'items': 1, 'dots': true}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': true, 'dotsVerticalOffset': '-250px', 'nav': false, 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 7000, 'autoplayHoverPause': true, 'rewind': true}">
 
 
                 <!-- Carousel Slide 1 -->
                 <div class="position-relative overflow-hidden pb-5"
-                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: calc(100vh - 166px);">
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
@@ -38,7 +37,7 @@
                 </div>
                 <!-- Carousel Slide 2 -->
                 <div class="position-relative overflow-hidden pb-5"
-                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: calc(100vh - 166px);">
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
@@ -65,7 +64,7 @@
                 </div>
 
                 <div class="position-relative overflow-hidden pb-5"
-                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: calc(100vh - 166px);">
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
@@ -93,7 +92,7 @@
                 </div>
 
                 <div class="position-relative overflow-hidden pb-5"
-                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: calc(100vh - 166px);">
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
@@ -121,7 +120,7 @@
                 </div>
 
                 <div class="position-relative overflow-hidden pb-5"
-                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: calc(100vh - 166px);">
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
@@ -152,7 +151,7 @@
                 </div>
 
                 <div class="position-relative overflow-hidden pb-5"
-                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: calc(100vh - 166px);">
+                    data-dynamic-height="['991px','991px','991px','650px','650px']" style="height: 991px;">
                     <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                         data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s"
                         data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
@@ -182,95 +181,9 @@
 
     </section>
 
-    {{-- <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
-        <div class="container my-lg-3 py-lg-2">
-            <div class="row">
-                <div class="col">
-                    <h3 class="text-color-quaternary mb-5 d-block text-center font-weight-bold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Notices
-                    </h3>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="recent-posts">
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-auto pe-0">
-                                    <div class="post-date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col ps-1">
-                                    <h4 class="line-height-3"><a href="blog-post.html" class="text-decoration-none">Lorem
-                                            ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        aliquam nisi ultricies nisi luctus, sed fermentum.</p>
-                                    <a href="blog-post.html"
-                                        class="read-more text-color-dark font-weight-bold text-2">read more <i
-                                            class="fas fa-chevron-right text-1 ms-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="recent-posts">
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-auto pe-0">
-                                    <div class="post-date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col ps-1">
-                                    <h4 class="line-height-3"><a href="blog-post.html" class="text-decoration-none">Lorem
-                                            ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        aliquam nisi ultricies nisi luctus, sed fermentum.</p>
-                                    <a href="blog-post.html"
-                                        class="read-more text-color-dark font-weight-bold text-2">read more <i
-                                            class="fas fa-chevron-right text-1 ms-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="recent-posts">
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-auto pe-0">
-                                    <div class="post-date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col ps-1">
-                                    <h4 class="line-height-3"><a href="blog-post.html" class="text-decoration-none">Lorem
-                                            ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        aliquam nisi ultricies nisi luctus, sed fermentum.</p>
-                                    <a href="blog-post.html"
-                                        class="read-more text-color-dark font-weight-bold text-2">read more <i
-                                            class="fas fa-chevron-right text-1 ms-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> --}}
-
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
         <div class="container my-lg-3 py-lg-2">
-            {{-- <div class="row">
+            <div class="row">
                 <div class="col">
                     <p class="text-uppercase mb-0 d-block text-center text-uppercase appear-animation"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300"> SERVICES</p>
@@ -279,7 +192,7 @@
                     </h3>
 
                 </div>
-            </div> --}}
+            </div>
             <div class="row align-items-center justify-content-center">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
@@ -309,7 +222,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="section section-default section-no-border my-0">
         <div class="container">

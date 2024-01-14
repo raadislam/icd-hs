@@ -5,9 +5,9 @@
 @section('meta')
 @endsection
 @section('content')
-<section class="position-relative" style="background-color: #82aba2">
-    <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #82aba2">
-        <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #82aba2">
+<section class="position-relative" style="background-color: #7ca2c5">
+    <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #7ca2c5">
+        <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #7ca2c5">
             <a href="#" class="btn btn-secondary btn-with-arrow">
                 Day Care
                 <span>

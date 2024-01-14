@@ -1,22 +1,39 @@
 <header id="header"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-86px', 'stickyChangeLogo': true}"
+    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-104px', 'stickyChangeLogo': true}"
     style="height: 155px;">
     <div class="header-body border-0 box-shadow-none">
         <div class="header-container container">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row justify-content-between w-100 h-100">
+                        <div class="my-3 mobile-display-hide">
 
-                        <ul class="nav nav-pills mobile-display-hide">
-                            <li class="nav-item py-2 d-none d-xl-inline-flex">
-                                <span
-                                    class="header-top-phone py-2 d-flex align-items-center text-color-primary font-weight-semibold text-uppercase">
-                                    <i class="icon-phone icons text-5 me-2"></i> <a href="tel:+8801972524253">
-                                        (+880) 1972524253
-                                    </a>
-                                </span>
-                            </li>
-                        </ul>
+                            <ul class="nav pb-2 nav-pills mobile-display-hide">
+                                <li class="nav-item d-none d-xl-inline-flex">
+                                    <span
+                                        class="header-top-phone d-flex align-items-center text-color-primary font-weight-semibold text-uppercase">
+                                        <i class="icon-phone icons text-5 me-2"></i> <a href="tel:+8801972524253">
+                                            (+880) 1972524253
+                                        </a>
+                                    </span>
+                                </li>
+
+                            </ul>
+                            <ul class="d-flex justify-content-around align-items-center h-100 p-0 mobile-display-hide">
+                                <li class="list-unstyled">
+                                    <a href="#"><i
+                                            class="fab fa-instagram text-color-quaternary text-hover-primary"></i></a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a target="_blank" href="https://www.facebook.com/ICDHS"><i
+                                            class="fab fa-facebook-f text-color-quaternary text-hover-primary"></i></a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#"><i
+                                            class="fab fa-twitter text-color-quaternary text-hover-primary"></i></a>
+                                </li>
+                            </ul>
+                        </div>
 
                         <div class="header-logo py-2 mobile-display-show" style="height: 46px;">
                             <a href="/">
@@ -64,7 +81,7 @@
             </div>
         </div>
         <div class="header-nav-bar z-index-0" style="background-color: #092B4A">
-            <div class="container" style="max-width: 1300px !important;" >
+            <div class="container" style="max-width: 1300px !important;">
                 <div class="header-row">
                     <div class="header-column">
                         <div class="header-row align-items-center justify-content-end">
@@ -81,8 +98,8 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle text-white " style="padding: 0 0.5em 0 0.5em;"
-                                                    class="dropdown-toggle">
+                                                <a class="nav-link dropdown-toggle text-white "
+                                                    style="padding: 0 0.5em 0 0.5em;" class="dropdown-toggle">
                                                     About
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -130,7 +147,8 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle text-white" style="padding: 0 0.5em 0 0.5em;">
+                                                <a class="nav-link dropdown-toggle text-white"
+                                                    style="padding: 0 0.5em 0 0.5em;">
                                                     Study Center
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -163,7 +181,8 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary mobile-display-show">
-                                                <a class="nav-link dropdown-toggle text-white" style="padding: 0 0.5em 0 0.5em;">
+                                                <a class="nav-link dropdown-toggle text-white"
+                                                    style="padding: 0 0.5em 0 0.5em;">
                                                     Make Appointment
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -183,7 +202,8 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle text-white" style="padding: 0 0.5em 0 0.5em;">
+                                                <a class="nav-link dropdown-toggle text-white"
+                                                    style="padding: 0 0.5em 0 0.5em;">
                                                     Services
                                                 </a>
                                                 <ul class="dropdown-menu">

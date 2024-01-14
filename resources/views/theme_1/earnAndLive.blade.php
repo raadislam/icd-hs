@@ -1,6 +1,6 @@
 @extends('theme_1.layout.layout')
 @section('title')
-    About us
+    Earn & Live
 @endsection
 @section('meta')
 @endsection
@@ -51,9 +51,9 @@
                     <div class="card border-0 border-radius-0 box-shadow-1 appear-animation"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
                         <div class="card-body p-3 z-index-1">
-                            <a href="{{ asset('file') }}/img/demos/medical-2/gallery/gallery-1.jpg">
-                                <img class="card-img-top border-radius-0"
-                                    src="{{ asset('file') }}/img/demos/medical-2/gallery/gallery-1.jpg" alt="Card Image">
+                            <a href="{{ asset('images') }}/default/earnliveLFull.jpg">
+                                <img class="card-img-top border-radius-0" src="{{ asset('images') }}/default/earnliveL.jpg"
+                                    alt="Card Image">
                             </a>
                         </div>
                     </div>
@@ -62,9 +62,9 @@
                     <div class="card border-0 border-radius-0 box-shadow-1 appear-animation"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
                         <div class="card-body p-3 z-index-1">
-                            <a href="{{ asset('file') }}/img/demos/medical-2/gallery/gallery-2.jpg">
-                                <img class="card-img-top border-radius-0"
-                                    src="{{ asset('file') }}/img/demos/medical-2/gallery/gallery-2.jpg" alt="Card Image">
+                            <a href="{{ asset('images') }}/default/earnliveCFull.jpg">
+                                <img class="card-img-top border-radius-0" src="{{ asset('images') }}/default/earnliveC.jpg"
+                                    alt="Card Image">
                             </a>
                         </div>
                     </div>
@@ -73,9 +73,9 @@
                     <div class="card border-0 border-radius-0 box-shadow-1 appear-animation"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="card-body p-3 z-index-1">
-                            <a href="{{ asset('file') }}/img/demos/medical-2/gallery/gallery-3.jpg">
-                                <img class="card-img-top border-radius-0"
-                                    src="{{ asset('file') }}/img/demos/medical-2/gallery/gallery-3.jpg" alt="Card Image">
+                            <a href="{{ asset('images') }}/default/earnliveRFull.jpg">
+                                <img class="card-img-top border-radius-0" src="{{ asset('images') }}/default/earnliveR.jpg"
+                                    alt="Card Image">
                             </a>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
                         Wanna know someting about? Just ask
                     </h3>
-                    <a href="demo-medical-2-contact-us.html"
+                    <a href="{{ route('contactus') }}"
                         class="btn btn-outline btn-light bg-hover-light text-hover-dark text-color-light border-color-light text-uppercase rounded-0 px-5 py-3 mb-2 appear-animation"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
                         Contact Us

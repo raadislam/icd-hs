@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <ul class="social-icons">
-                    <li class="social-icons-instagram">
+                    {{-- <li class="social-icons-instagram">
                         <a href="http://www.instagram.com/" target="_blank" title="Instagram">
                             <i class="fab fa-instagram text-4 font-weight-semibold"></i>
                         </a>
@@ -49,9 +49,9 @@
                         <a href="http://www.twitter.com/" target="_blank" title="Twitter">
                             <i class="fab fa-twitter text-4 font-weight-semibold"></i>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="social-icons-facebook">
-                        <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                        <a href="https://www.facebook.com/ICDHS" target="_blank" title="Facebook">
                             <i class="fab fa-facebook-f text-4 font-weight-semibold"></i>
                         </a>
                     </li>

@@ -4,9 +4,9 @@
 @endsection
 
 @section('content')
-    <section class="position-relative" style="background-color: #83D1C0">
-        <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #83D1C0">
-            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #83D1C0">
+    <section class="position-relative" style="background-color: #82aba2">
+        <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #82aba2">
+            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #82aba2">
                 <a href="#" class="btn btn-secondary btn-with-arrow">
                     MMI ENT Center
                     <span>

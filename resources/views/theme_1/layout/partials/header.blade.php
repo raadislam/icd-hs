@@ -1,9 +1,9 @@
 <header id="header"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-70px', 'stickyChangeLogo': true}"
+    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-86px', 'stickyChangeLogo': true}"
     style="height: 155px;">
     <div class="header-body border-0 box-shadow-none">
         <div class="header-container container">
-            <div class="header-row py-2">
+            <div class="header-row">
                 <div class="header-column">
                     <div class="header-row justify-content-between w-100 h-100">
 
@@ -18,13 +18,13 @@
                             </li>
                         </ul>
 
-                        <div class="header-logo mb-0 mobile-display-show" style="height: 46px;">
+                        <div class="header-logo py-2 mobile-display-show" style="height: 46px;">
                             <a href="/">
                                 <img alt="ICD-HS" height="46"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png">
                             </a>
                         </div>
-                        <div class="mb-0 mobile-display-hide">
+                        <div class="py-2 mobile-display-hide">
                             <a href="/">
                                 <img alt="ICD-HS" height="70"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
@@ -63,25 +63,25 @@
                 </div>
             </div>
         </div>
-        <div class="header-nav-bar z-index-0">
-            <div class="container" style="max-width: 1300px !important;">
+        <div class="header-nav-bar z-index-0" style="background-color: #092B4A">
+            <div class="container" style="max-width: 1300px !important;" >
                 <div class="header-row">
                     <div class="header-column">
                         <div class="header-row align-items-center justify-content-end">
-                            <div class="header-nav header-nav-links justify-content-start mb-3 w-100">
+                            <div class="header-nav header-nav-links justify-content-start w-100">
                                 <div
                                     class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1 w-100">
                                     <nav class="collapse w-100">
-                                        <ul class="nav nav-pills d-flex justify-content-between w-100" id="mainNav">
+                                        <ul class="nav nav-pills d-flex justify-content-between w-100 " id="mainNav">
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link  @if (request()->is('/')) active @endif"
+                                                <a class="nav-link text-white  @if (request()->is('/')) active @endif"
                                                     href="/" style="padding: 0 0.5em 0 0.5em;">
                                                     Home
                                                 </a>
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle" style="padding: 0 0.5em 0 0.5em;"
+                                                <a class="nav-link dropdown-toggle text-white " style="padding: 0 0.5em 0 0.5em;"
                                                     class="dropdown-toggle">
                                                     About
                                                 </a>
@@ -130,7 +130,7 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle" style="padding: 0 0.5em 0 0.5em;">
+                                                <a class="nav-link dropdown-toggle text-white" style="padding: 0 0.5em 0 0.5em;">
                                                     Study Center
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -156,14 +156,14 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link" style="padding: 0 0.5em 0 0.5em;"
+                                                <a class="nav-link text-white" style="padding: 0 0.5em 0 0.5em;"
                                                     href="{{ route('daycare') }}">
                                                     Day Care
                                                 </a>
                                             </li>
 
                                             <li class="dropdown dropdown-secondary mobile-display-show">
-                                                <a class="nav-link dropdown-toggle" style="padding: 0 0.5em 0 0.5em;">
+                                                <a class="nav-link dropdown-toggle text-white" style="padding: 0 0.5em 0 0.5em;">
                                                     Make Appointment
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -183,7 +183,7 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle" style="padding: 0 0.5em 0 0.5em;">
+                                                <a class="nav-link dropdown-toggle text-white" style="padding: 0 0.5em 0 0.5em;">
                                                     Services
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -209,14 +209,14 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link" style="padding: 0 0.5em 0 0.5em;"
+                                                <a class="nav-link text-white" style="padding: 0 0.5em 0 0.5em;"
                                                     href="{{ route('som') }}">
                                                     School of Minds
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link" style="padding: 0 0.5em 0 0.5em;"
+                                                <a class="nav-link text-white" style="padding: 0 0.5em 0 0.5em;"
                                                     href="{{ route('speechTherapist') }}">
                                                     Speech Therapy
                                                 </a>
@@ -224,34 +224,34 @@
 
                                             <li class="dropdown-secondary">
                                                 <a style="padding: 0 0.5em 0 0.5em;"
-                                                    class="nav-link @if (request()->is('care-giving')) active @endif"
+                                                    class="nav-link text-white @if (request()->is('care-giving')) active @endif"
                                                     href="{{ route('careGiving') }}">
                                                     Care Giving
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link"
+                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
                                                     href="{{ route('entDoctors') }}">
                                                     MMI ENT Center
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link"
+                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
                                                     href="{{ route('comingSoon') }}">
                                                     Diagonistic Center
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link"
+                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
                                                     href="{{ route('earnLeave') }}">
                                                     Earn & Live
                                                 </a>
                                             </li>
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link"
+                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
                                                     href="{{ route('pranicTherapy') }}">
                                                     Pranic Therapy
                                                 </a>

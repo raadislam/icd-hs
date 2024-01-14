@@ -5,10 +5,10 @@
 
 @section('content')
 
-<section class="position-relative bg-color-grey">
-    <div id="sticky-sub-header" class="w-100 border-top-light h-50px bg-color-grey">
-        <div class="container d-flex align-items-center gap-4  h-100 bg-color-grey">
-            <a href="#" class="btn btn-primary btn-with-arrow">
+<section class="position-relative" style="background-color: #83D1C0">
+    <div id="sticky-sub-header" class="w-100  h-50px" style="background-color: #83D1C0">
+        <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #83D1C0">
+            <a href="#" class="btn btn-secondary btn-with-arrow">
                 School Of Mind
                 <span>
                     <i class="fas fa-chevron-right"></i>
@@ -16,55 +16,55 @@
             </a>
 
             <a href="#schoolHours" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     School Hours
                 </span>
             </a>
 
             <a href="#curriculum" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Curriculum
                 </span>
             </a>
 
             <a href="#aim" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Our Aim
                 </span>
             </a>
 
             <a href="#encouragedValue" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Encouraged Value
                 </span>
             </a>
 
             <a href="#commitment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Commitment
                 </span>
             </a>
 
             <a href="#campus" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Campus
                 </span>
             </a>
 
             <a href="#employment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Employment Oppurtunity
                 </span>
             </a>
 
             <a href="#services" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Services
                 </span>
             </a>
 
             <a href="#admission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Admission
                 </span>
             </a>
@@ -234,7 +234,7 @@
         .sticky {
             position: fixed;
             z-index: 100;
-            top: 93px;
+            top: 60px;
             left: 0;
             width: 100%
         }

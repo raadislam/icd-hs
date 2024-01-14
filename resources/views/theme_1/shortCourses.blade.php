@@ -53,7 +53,7 @@
                         <h4 class="pt-2">Get In Touch</h4>
                         <p>
                             <strong class="text-primary">Corporate Address:</strong><br>
-                            123 89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj
+                            89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj
                             DOHS)
                             Narayanganj-1400, Bangladrsh.
                         </p>

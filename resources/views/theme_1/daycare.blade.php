@@ -5,10 +5,10 @@
 @section('meta')
 @endsection
 @section('content')
-<section class="position-relative bg-color-grey">
-    <div id="sticky-sub-header" class="w-100 border-top-light h-50px bg-color-grey">
-        <div class="container d-flex align-items-center gap-4  h-100 bg-color-grey">
-            <a href="#" class="btn btn-primary btn-with-arrow">
+<section class="position-relative" style="background-color: #83D1C0">
+    <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #83D1C0">
+        <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #83D1C0">
+            <a href="#" class="btn btn-secondary btn-with-arrow">
                 Day Care
                 <span>
                     <i class="fas fa-chevron-right"></i>
@@ -16,19 +16,19 @@
             </a>
 
             <a href="#mission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Mission
                 </span>
             </a>
 
             <a href="#vision" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Vision
                 </span>
             </a>
 
             <a href="#selectionCriteria" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-primary font-weight-semi-bold">
+                <span class="text-2-5 text-secondary font-weight-semi-bold">
                     Selection Criteria
                 </span>
             </a>
@@ -141,7 +141,7 @@
         .sticky {
             position: fixed;
             z-index: 100;
-            top: 93px;
+            top: 61px;
             left: 0;
             width: 100%
         }

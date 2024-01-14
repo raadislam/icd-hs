@@ -11,9 +11,9 @@
                         <span
                             class="text-color-default font-weight-bold text-uppercase title-custom-info-block title-custom-info-block-address">Address</span>
                         <span
-                            class="font-weight-normal text-color-light text-custom-info-block p-relative bottom-6 text-custom-info-block-address">123
-                            89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed
-                            N.ganj DOHS) Narayanganj-1400, Bangladrsh.
+                            class="font-weight-normal text-color-light text-custom-info-block p-relative bottom-6 text-custom-info-block-address">
+                            89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari,<br> (West Side of Proposed
+                            N.ganj DOHS) <br> Narayanganj-1400, Bangladrsh.
                         </span>
                     </div>
                     <div class="custom-info-block custom-info-block-phone">

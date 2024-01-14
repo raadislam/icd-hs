@@ -4,10 +4,10 @@
 @endsection
 
 @section('content')
-    <section class="position-relative bg-color-grey">
-        <div id="sticky-sub-header" class="w-100 border-top-light h-50px bg-color-grey">
-            <div class="container d-flex align-items-center gap-4  h-100 bg-color-grey">
-                <a href="#" class="btn btn-primary btn-with-arrow">
+    <section class="position-relative" style="background-color: #83D1C0">
+        <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #83D1C0">
+            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #83D1C0">
+                <a href="#" class="btn btn-secondary btn-with-arrow">
                     Care Giving
                     <span>
                         <i class="fas fa-chevron-right"></i>
@@ -15,7 +15,7 @@
                 </a>
 
                 <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                    <span class="text-2-5 text-primary font-weight-semi-bold">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
                         Introduction
                     </span>
                 </a>
@@ -76,7 +76,7 @@
                     <h4 class="pt-2">Get In Touch</h4>
                     <p>
                         <strong class="text-primary">Corporate Address:</strong><br>
-                        123 89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj DOHS)
+                        89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj DOHS)
                         Narayanganj-1400, Bangladrsh.
                     </p>
                     <div class="nav-item pb-3 d-none d-xl-inline-flex">
@@ -100,7 +100,7 @@
         .sticky {
             position: fixed;
             z-index: 100;
-            top: 93px;
+            top: 60px;
             left: 0;
             width: 100%
         }

@@ -4,6 +4,6 @@
     tinymce.init({
         selector: 'textarea#mytinymceeditor', // Replace this CSS selector to match the placeholder element for TinyMCE
         plugins: 'code table lists',
-        toolbar: 'undo redo spellcheckdialog  | blocks fontfamily fontsize | bold italic underline forecolor backcolor | link image | align lineheight checklist bullist numlist | indent outdent | removeformat typography'
+        toolbar: 'undo redo  | blocks fontfamily fontsize | bold italic underline forecolor backcolor | link image | align lineheight checklist bullist numlist'
     });
 </script>

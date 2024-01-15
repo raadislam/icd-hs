@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactUsmail;
 use App\Mail\GreetingsMail;
 use App\Models\Event;
+use App\Models\Noticeboard;
 use App\Models\ShortCourse;
 use App\Models\Therapist;
 use App\Models\Therapy;
@@ -15,9 +16,10 @@ class FrontendController extends Controller
 {
     public function index()
     {
+        $notices = Noticeboard::get();
         $shortCourses = ShortCourse::limit(4)->get();
         $services = Therapy::limit(6)->get();
-        return view('theme_1.index', compact('shortCourses', 'services'));
+        return view('theme_1.index', compact('shortCourses', 'services', 'notices'));
     }
 
     public function researchSupport()

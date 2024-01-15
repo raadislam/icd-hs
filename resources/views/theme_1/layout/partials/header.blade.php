@@ -8,7 +8,7 @@
                     <div class="header-row justify-content-between w-100 h-100">
                         <div class="my-3 mobile-display-hide">
 
-                            <ul class="nav pb-2 nav-pills mobile-display-hide">
+                            <ul class="nav pb-2 nav-pills ">
                                 <li class="nav-item d-none d-xl-inline-flex">
                                     <span
                                         class="header-top-phone d-flex align-items-center text-color-primary font-weight-semibold text-uppercase">
@@ -19,7 +19,7 @@
                                 </li>
 
                             </ul>
-                            <ul class="d-flex justify-content-around align-items-center h-100 p-0 mobile-display-hide">
+                            <ul class="d-flex justify-content-around align-items-center h-100 p-0 ">
                                 <li class="list-unstyled">
                                     <a href="#"><i
                                             class="fab fa-instagram text-color-quaternary text-hover-primary"></i></a>
@@ -91,14 +91,14 @@
                                     <nav class="collapse w-100">
                                         <ul class="nav nav-pills d-flex justify-content-between w-100 " id="mainNav">
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link text-white  @if (request()->is('/')) active @endif"
+                                                <a class="nav-link text-white mobile-text-color @if (request()->is('/')) active @endif"
                                                     href="/" style="padding: 0 0.5em 0 0.5em;">
                                                     Home
                                                 </a>
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle text-white "
+                                                <a class="nav-link dropdown-toggle text-white mobile-text-color"
                                                     style="padding: 0 0.5em 0 0.5em;" class="dropdown-toggle">
                                                     About
                                                 </a>
@@ -147,7 +147,7 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle text-white"
+                                                <a class="nav-link dropdown-toggle mobile-text-color text-white"
                                                     style="padding: 0 0.5em 0 0.5em;">
                                                     Study Center
                                                 </a>
@@ -174,14 +174,14 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link text-white" style="padding: 0 0.5em 0 0.5em;"
-                                                    href="{{ route('daycare') }}">
+                                                <a class="nav-link text-white mobile-text-color"
+                                                    style="padding: 0 0.5em 0 0.5em;" href="{{ route('daycare') }}">
                                                     Day Care
                                                 </a>
                                             </li>
 
                                             <li class="dropdown dropdown-secondary mobile-display-show">
-                                                <a class="nav-link dropdown-toggle text-white"
+                                                <a class="nav-link dropdown-toggle mobile-text-color text-white"
                                                     style="padding: 0 0.5em 0 0.5em;">
                                                     Make Appointment
                                                 </a>
@@ -202,7 +202,7 @@
                                             </li>
 
                                             <li class="dropdown dropdown-secondary">
-                                                <a class="nav-link dropdown-toggle text-white"
+                                                <a class="nav-link dropdown-toggle text-white mobile-text-color"
                                                     style="padding: 0 0.5em 0 0.5em;">
                                                     Services
                                                 </a>
@@ -229,14 +229,15 @@
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link text-white" style="padding: 0 0.5em 0 0.5em;"
-                                                    href="{{ route('som') }}">
+                                                <a class="nav-link text-white mobile-text-color"
+                                                    style="padding: 0 0.5em 0 0.5em;" href="{{ route('som') }}">
                                                     School of Minds
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a class="nav-link text-white" style="padding: 0 0.5em 0 0.5em;"
+                                                <a class="nav-link text-white mobile-text-color"
+                                                    style="padding: 0 0.5em 0 0.5em;"
                                                     href="{{ route('speechTherapist') }}">
                                                     Speech Therapy
                                                 </a>
@@ -244,34 +245,38 @@
 
                                             <li class="dropdown-secondary">
                                                 <a style="padding: 0 0.5em 0 0.5em;"
-                                                    class="nav-link text-white @if (request()->is('care-giving')) active @endif"
+                                                    class="nav-link text-white mobile-text-color @if (request()->is('care-giving')) active @endif"
                                                     href="{{ route('careGiving') }}">
                                                     Care Giving
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
+                                                <a style="padding: 0 0.5em 0 0.5em;"
+                                                    class="nav-link text-white mobile-text-color"
                                                     href="{{ route('entDoctors') }}">
                                                     MMI ENT Center
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
+                                                <a style="padding: 0 0.5em 0 0.5em;"
+                                                    class="nav-link text-white mobile-text-color"
                                                     href="{{ route('comingSoon') }}">
                                                     Diagonistic Center
                                                 </a>
                                             </li>
 
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
+                                                <a style="padding: 0 0.5em 0 0.5em;"
+                                                    class="nav-link text-white mobile-text-color"
                                                     href="{{ route('earnLeave') }}">
                                                     Earn & Live
                                                 </a>
                                             </li>
                                             <li class="dropdown-secondary">
-                                                <a style="padding: 0 0.5em 0 0.5em;" class="nav-link text-white"
+                                                <a style="padding: 0 0.5em 0 0.5em;"
+                                                    class="nav-link text-white mobile-text-color"
                                                     href="{{ route('pranicTherapy') }}">
                                                     Pranic Therapy
                                                 </a>

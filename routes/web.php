@@ -4,6 +4,7 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CourseScheduleController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\InstructorController;
+use App\Http\Controllers\NoticeboardController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ShortCourseController;
 use App\Http\Controllers\SubCategoryController;
@@ -40,6 +41,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::group(['prefix' => 'admin'], function () {
 
+        Route::resource('noticeboard', NoticeboardController::class);
+        
         Route::get('/sub-category/{category}', [SubCategoryController::class, 'show'])->name('showSubCategory');
     });
 

@@ -6,7 +6,10 @@
         display: none;
     }
     .mobile-display-show {
-        display: flex;
+        display: block;
+    }
+    .mobile-text-color {
+        color: #3467ef !important;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -14,6 +17,6 @@
         display: none;
     }
     .mobile-display-hide {
-        display: flex;
+        display: block;
     }
 }

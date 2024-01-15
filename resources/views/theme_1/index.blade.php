@@ -182,91 +182,32 @@
 
     </section>
 
-    {{-- <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
+    <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
         <div class="container my-lg-3 py-lg-2">
-            <div class="row">
-                <div class="col">
-                    <h3 class="text-color-quaternary mb-5 d-block text-center font-weight-bold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Notices
-                    </h3>
-                </div>
+            <h2 class="mb-0 font-weight-bold appear-animation" data-appear-animation="blurIn"
+                data-appear-animation-delay="100">Noticeboard</h2>
+            <div class="divider divider-primary divider-small mt-2 mb-4 appear-animation" data-appear-animation="fadeIn"
+                data-appear-animation-delay="200">
+                <hr class="my-0 me-auto">
             </div>
 
             <div class="row">
+                @foreach ($notices as $notice)
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <article class="post post-medium">
+                            <div class="post-content">
+                                <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
+                                        class="text-decoration-none">{{ $notice->title }}</a></h4>
+                                <p>{!! $notice->description !!}</p>
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="recent-posts">
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-auto pe-0">
-                                    <div class="post-date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col ps-1">
-                                    <h4 class="line-height-3"><a href="blog-post.html" class="text-decoration-none">Lorem
-                                            ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        aliquam nisi ultricies nisi luctus, sed fermentum.</p>
-                                    <a href="blog-post.html"
-                                        class="read-more text-color-dark font-weight-bold text-2">read more <i
-                                            class="fas fa-chevron-right text-1 ms-1"></i></a>
-                                </div>
                             </div>
                         </article>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="recent-posts">
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-auto pe-0">
-                                    <div class="post-date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col ps-1">
-                                    <h4 class="line-height-3"><a href="blog-post.html" class="text-decoration-none">Lorem
-                                            ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        aliquam nisi ultricies nisi luctus, sed fermentum.</p>
-                                    <a href="blog-post.html"
-                                        class="read-more text-color-dark font-weight-bold text-2">read more <i
-                                            class="fas fa-chevron-right text-1 ms-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="recent-posts">
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-auto pe-0">
-                                    <div class="post-date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col ps-1">
-                                    <h4 class="line-height-3"><a href="blog-post.html" class="text-decoration-none">Lorem
-                                            ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        aliquam nisi ultricies nisi luctus, sed fermentum.</p>
-                                    <a href="blog-post.html"
-                                        class="read-more text-color-dark font-weight-bold text-2">read more <i
-                                            class="fas fa-chevron-right text-1 ms-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
         </div>
-    </section> --}}
+    </section>
 
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
         <div class="container my-lg-3 py-lg-2">
@@ -452,36 +393,7 @@
         </div>
     </section>
 
-    {{-- <section class="more-about lazyload" data-bg-src="{{ asset('file') }}/img/demos/medical-2/bg/about.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-lg-6 p-relative overflow-hidden col-cuttin-more-about"></div>
-                <div class="col-xs-12 col-lg-6 p-relative py-5 bg-color-light z-index-1 ps-lg-5 ps-xl-0">
-                    <p class="text-uppercase mb-0 appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="100">About Us</p>
-                    <h3 class="text-color-quaternary font-weight-bold text-capitalize mb-2 appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">More&nbsp;About &nbsp;
-                        ICD-HS
-                    </h3>
 
-                    <p class="mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-                        data-appear-animation-delay="400">
-                        Mukijoddha Farida Akter Institute of Communication Disorders and Health Sciences(ICD-HS) is an
-                        organization providing education and health services in the field of health sciences which includes
-                        care giving, nursing, therapeutic services, speech therapy, day care, telemedicine, inclusive
-                        school, ENT consultation and clinical services , most importantly creating employment opportunities
-                        for the people with disabilities. We have experienced team and international consultant to exchange
-                        contemporary practices, ideas and knowledge.
-                        <br />
-                        <br />
-                        Our aim is to provide quality education to create skilled health professionals thus providing health
-                        & clinical services to the people and to create employment opportunity (Non-Profit) to the person
-                        with disabilities is the core area of our activities.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <section class="section section-default bg-color-white section-no-border my-0">
         <div class="container pt-3 pb-4">

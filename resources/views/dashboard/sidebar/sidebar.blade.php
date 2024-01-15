@@ -202,6 +202,50 @@
 
                     </ul>
                 </li>
+
+                <li
+                    class="nav-item
+                        @if (request()->is('admin/noticeboard/*')) menu-open
+                        @elseif (request()->is('admin/noticeboard')) menu-open @endif
+                    ">
+                    <a href="#" class="nav-link nav-item-custom"
+                        style="display: flex; align-items: center; gap: 1em">
+
+                        <ion-icon class="text-custom" style="font-size: 1.45em" name="Calendar-outline"></ion-icon>
+
+                        <p class="text-custom">
+                            Noticeboard
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview" style="background-color: #eaecf3 !important; border-radius: 0.2em">
+                        <li class="nav-item" style="position: relative">
+                            <a href="{{ route('noticeboard.index') }}"
+                                class="nav-link
+                                        @if (request()->is('admin/noticeboard')) custom-active-class
+                                        @elseif(request()->is('admin/noticeboard/*')) custom-active-class @endif"
+                                style="color: #21263c; border-radius: 0.2em">
+
+                                <p style="margin-left: 1.7em">
+                                    All Notices
+                                </p>
+
+                            </a>
+                            <a href="{{ route('noticeboard.create') }}"
+                                class="
+                                        @if (request()->is('admin/noticeboard/*')) custom-active-class
+                                        @elseif (request()->is('admin/noticeboard')) custom-active-class @endif
+                                    "
+                                style="position: absolute; top: 25%; right: 5%;">
+
+                                <i class="fas fa-plus-circle"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

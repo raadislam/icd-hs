@@ -63,11 +63,22 @@
                 <aside class="sidebar" id="sidebar" data-plugin-sticky
                     data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 
-                    <h4 class="pt-2">Sticky Content</h4>
-                    <p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in,
-                        auctor fringilla libero.</p>
+                    <h4 class="pt-2">Get In Touch</h4>
+                    <p>
+                        <strong class="text-primary">Corporate Address:</strong><br>
+                        89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj DOHS)
+                        Narayanganj-1400, Bangladrsh.
+                    </p>
+                    <div class="nav-item pb-3 d-none d-xl-inline-flex">
+                        <span
+                            class="header-top-phone d-flex align-items-center text-color-primary font-weight-semibold text-uppercase">
+                            <i class="icon-phone icons text-5 me-2"></i> <a href="tel:+8801972524253">
+                                (+880) 1972524253
+                            </a>
+                        </span>
+                    </div>
 
-                    <a class="btn btn-modern btn-primary mb-4" href="contact-us.html">Contact Us Now!</a>
+                    <a class="btn btn-modern btn-primary mb-4" href="{{ route('contactus') }}">Contact Us Now!</a>
 
                 </aside>
             </div>

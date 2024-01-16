@@ -185,15 +185,16 @@
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
         <div class="container my-lg-3 py-lg-2">
             <h2 class="mb-0 font-weight-bold appear-animation" data-appear-animation="blurIn"
-                data-appear-animation-delay="100">Noticeboard</h2>
+                data-appear-animation-delay="100">Activities</h2>
             <div class="divider divider-primary divider-small mt-2 mb-4 appear-animation" data-appear-animation="fadeIn"
                 data-appear-animation-delay="200">
                 <hr class="my-0 me-auto">
             </div>
 
-            <div class="row">
+            <div class=" owl-carousel owl-theme nav-bottom rounded-nav numbered-dots ps-1 pe-1"
+                data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'loop': false, 'autoHeight': true, 'margin': 10}">
                 @foreach ($notices as $notice)
-                    <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class=" mb-4 mx-3 mb-lg-0">
                         <article class="post post-medium">
                             <div class="post-content">
                                 <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
@@ -204,23 +205,13 @@
                         </article>
                     </div>
                 @endforeach
-
             </div>
         </div>
     </section>
 
     <section class="insurance-providers pt-5 pb-lg-5 bg-color-white z-index-3">
         <div class="container my-lg-3 py-lg-2">
-            {{-- <div class="row">
-                <div class="col">
-                    <p class="text-uppercase mb-0 d-block text-center text-uppercase appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300"> SERVICES</p>
-                    <h3 class="text-color-quaternary mb-5 d-block text-center font-weight-bold text-capitalize appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Our Special Services
-                    </h3>
 
-                </div>
-            </div> --}}
             <div class="row align-items-center justify-content-center">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0 appear-animation"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">

@@ -5,38 +5,40 @@
 @section('meta')
 @endsection
 @section('content')
-<section class="position-relative" style="background-color: #7ca2c5">
-    <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #7ca2c5">
-        <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #7ca2c5">
-            <a href="#" class="btn btn-secondary btn-with-arrow">
-                Day Care
-                <span>
-                    <i class="fas fa-chevron-right"></i>
-                </span>
-            </a>
+    <section class="position-relative" style="background-color: #7ca2c5">
+        <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #7ca2c5">
+            <div class="container d-flex align-items-center gap-4 hide-scroll h-100"
+                style="background-color: #7ca2c5; overflow-x: scroll;">
+                <a href="#" class="btn btn-secondary btn-with-arrow" style="white-space: nowrap;">
+                    Day Care
+                    <span>
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
 
-            <a href="#mission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Mission
-                </span>
-            </a>
+                <a href="#mission" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Mission
+                    </span>
+                </a>
 
-            <a href="#vision" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Vision
-                </span>
-            </a>
+                <a href="#vision" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Vision
+                    </span>
+                </a>
 
-            <a href="#selectionCriteria" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Selection Criteria
-                </span>
-            </a>
+                <a href="#selectionCriteria" data-hash data-hash-offset="0" data-hash-offset-lg="155"
+                    style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Selection Criteria
+                    </span>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-   <div class="container py-4">
+    <div class="container py-4">
         <div class="row">
             <div class="col">
                 <div class="blog-posts single-post">
@@ -144,6 +146,27 @@
             top: 61px;
             left: 0;
             width: 100%
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sticky {
+                position: fixed;
+                z-index: 100;
+                top: 0px;
+                left: 0;
+                width: 100%
+            }
+        }
+
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge add Firefox */
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            /* Firefox */
         }
     </style>
 @endpush

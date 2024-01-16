@@ -57,12 +57,14 @@
                         <div class="card border-0 border-radius-0 box-shadow-1 mb-4">
                             <div class="card-body p-3 z-index-1 text-center">
 
-                                <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
+                                <div href="{{ route('viewTherapist', ['therapist' => 9]) }}"
+                                    class="d-block text-center bg-color-grey">
                                     <img alt="Doctor" class="img-fluid rounded"
-                                        src="{{ asset('images') }}/therapist/{{ $therapist->img }}"> </a>
+                                        src="{{ asset('images') }}/therapist/{{ $therapist->img }}">
+                                </div>
 
                                 <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
-                                    <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
+                                    <a href="{{ route('viewTherapist', ['therapist' => 9]) }}" class="text-dark">
                                         {{ $therapist->name }}
                                     </a>
                                 </strong>

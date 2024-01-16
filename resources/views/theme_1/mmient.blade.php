@@ -6,33 +6,34 @@
 @section('content')
     <section class="position-relative" style="background-color: #7ca2c5">
         <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #7ca2c5">
-            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #7ca2c5">
-                <a href="#" class="btn btn-secondary btn-with-arrow">
+            <div class=" hide-scroll container d-flex align-items-center gap-4  h-100"
+                style="background-color: #7ca2c5; overflow-x: scroll; ">
+                <a href="#" class="btn btn-secondary btn-with-arrow" style="white-space: nowrap;">
                     MMI ENT Center
                     <span>
                         <i class="fas fa-chevron-right"></i>
                     </span>
                 </a>
 
-                <a href="#specialist" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <a href="#specialist" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
                     <span class="text-2-5 text-secondary font-weight-semi-bold">
                         ENT Specialists
                     </span>
                 </a>
 
-                <a href="#nose" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <a href="#nose" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
                     <span class="text-2-5 text-secondary font-weight-semi-bold">
                         Treatment of Nose Diseases
                     </span>
                 </a>
 
-                <a href="#ear" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <a href="#ear" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
                     <span class="text-2-5 text-secondary font-weight-semi-bold">
                         Treatment of Ear Diseases
                     </span>
                 </a>
 
-                <a href="#throat" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <a href="#throat" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
                     <span class="text-2-5 text-secondary font-weight-semi-bold">
                         Treatment of Throat Diseases
                     </span>
@@ -223,6 +224,27 @@
             top: 61px;
             left: 0;
             width: 100%
+        }
+
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge add Firefox */
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sticky {
+                position: fixed;
+                z-index: 100;
+                top: 0px;
+                left: 0;
+                width: 100%
+            }
         }
     </style>
 @endpush

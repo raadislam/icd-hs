@@ -4,73 +4,75 @@
 @endsection
 
 @section('content')
+    <section class="position-relative" style="background-color: #7ca2c5">
+        <div id="sticky-sub-header" class="w-100  h-50px" style="background-color: #7ca2c5">
+            <div class="container d-flex align-items-center gap-4 hide-scroll h-100"
+                style="background-color: #7ca2c5; overflow-x: scroll;">
+                <a href="#" class="btn btn-secondary btn-with-arrow" style="white-space: nowrap;">
+                    School Of Mind
+                    <span>
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
 
-<section class="position-relative" style="background-color: #7ca2c5">
-    <div id="sticky-sub-header" class="w-100  h-50px" style="background-color: #7ca2c5">
-        <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #7ca2c5">
-            <a href="#" class="btn btn-secondary btn-with-arrow">
-                School Of Mind
-                <span>
-                    <i class="fas fa-chevron-right"></i>
-                </span>
-            </a>
+                <a href="#schoolHours" data-hash data-hash-offset="0" data-hash-offset-lg="155"
+                    style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        School Hours
+                    </span>
+                </a>
 
-            <a href="#schoolHours" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    School Hours
-                </span>
-            </a>
+                <a href="#curriculum" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Curriculum
+                    </span>
+                </a>
 
-            <a href="#curriculum" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Curriculum
-                </span>
-            </a>
+                <a href="#aim" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Our Aim
+                    </span>
+                </a>
 
-            <a href="#aim" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Our Aim
-                </span>
-            </a>
+                <a href="#encouragedValue" data-hash data-hash-offset="0" data-hash-offset-lg="155"
+                    style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Encouraged Value
+                    </span>
+                </a>
 
-            <a href="#encouragedValue" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Encouraged Value
-                </span>
-            </a>
+                <a href="#commitment" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Commitment
+                    </span>
+                </a>
 
-            <a href="#commitment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Commitment
-                </span>
-            </a>
+                <a href="#campus" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Campus
+                    </span>
+                </a>
 
-            <a href="#campus" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Campus
-                </span>
-            </a>
+                <a href="#employment" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Employment Oppurtunity
+                    </span>
+                </a>
 
-            <a href="#employment" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Employment Oppurtunity
-                </span>
-            </a>
+                <a href="#services" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Services
+                    </span>
+                </a>
 
-            <a href="#services" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Services
-                </span>
-            </a>
-
-            <a href="#admission" data-hash data-hash-offset="0" data-hash-offset-lg="155">
-                <span class="text-2-5 text-secondary font-weight-semi-bold">
-                    Admission
-                </span>
-            </a>
+                <a href="#admission" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Admission
+                    </span>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <div class="container py-4">
         <div class="row">
@@ -237,6 +239,27 @@
             top: 60px;
             left: 0;
             width: 100%
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sticky {
+                position: fixed;
+                z-index: 100;
+                top: 0px;
+                left: 0;
+                width: 100%
+            }
+        }
+
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge add Firefox */
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            /* Firefox */
         }
     </style>
 @endpush

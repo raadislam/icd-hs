@@ -31,6 +31,10 @@
                                     <a href="#"><i
                                             class="fab fa-twitter text-color-quaternary text-hover-primary"></i></a>
                                 </li>
+                                <li class="list-unstyled">
+                                    <a href="#"><i
+                                            class="fab fa-linkedin-in text-color-quaternary text-hover-primary"></i></a>
+                                </li>
                             </ul>
                         </div>
 

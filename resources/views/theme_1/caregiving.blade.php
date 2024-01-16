@@ -6,15 +6,16 @@
 @section('content')
     <section class="position-relative" style="background-color: #7ca2c5">
         <div id="sticky-sub-header" class="w-100 border-top-light h-50px" style="background-color: #7ca2c5">
-            <div class="container d-flex align-items-center gap-4  h-100" style="background-color: #7ca2c5">
-                <a href="#" class="btn btn-secondary btn-with-arrow">
+            <div class="container d-flex align-items-center gap-4 hide-scroll h-100"
+                style="background-color: #7ca2c5; overflow-x: scroll;">
+                <a href="#" class="btn btn-secondary btn-with-arrow" style="white-space: nowrap;">
                     Care Giving
                     <span>
                         <i class="fas fa-chevron-right"></i>
                     </span>
                 </a>
 
-                <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="155">
+                <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
                     <span class="text-2-5 text-secondary font-weight-semi-bold">
                         Introduction
                     </span>
@@ -103,6 +104,16 @@
             top: 60px;
             left: 0;
             width: 100%
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sticky {
+                position: fixed;
+                z-index: 100;
+                top: 0px;
+                left: 0;
+                width: 100%
+            }
         }
     </style>
 @endpush

@@ -3,7 +3,7 @@
 <script>
     tinymce.init({
         selector: 'textarea#mytinymceeditor', // Replace this CSS selector to match the placeholder element for TinyMCE
-        plugins: 'code table lists',
+        plugins: 'code table lists link',
         toolbar: 'undo redo  | blocks fontfamily fontsize | bold italic underline forecolor backcolor | link image | align lineheight checklist bullist numlist'
     });
 </script>

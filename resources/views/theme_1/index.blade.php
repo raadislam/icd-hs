@@ -193,12 +193,12 @@
 
             <div class="row">
                 @foreach ($notices as $notice)
-                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="col-lg-3 mb-4 mb-lg-0">
                         <article class="post post-medium">
                             <div class="post-content">
                                 <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
                                         class="text-decoration-none">{{ $notice->title }}</a></h4>
-                                <p>{!! $notice->description !!}</p>
+                                <div class="text-justify">{!! $notice->description !!}</div>
 
                             </div>
                         </article>

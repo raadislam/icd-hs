@@ -7,7 +7,6 @@
                 <div class="header-column">
                     <div class="header-row justify-content-between w-100 h-100">
                         <div class="my-3 mobile-display-hide">
-
                             <ul class="nav pb-2 nav-pills ">
                                 <li class="nav-item d-none d-xl-inline-flex">
                                     <span

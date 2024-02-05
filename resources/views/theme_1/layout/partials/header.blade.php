@@ -234,7 +234,7 @@
                                             <li class="dropdown-secondary">
                                                 <a class="nav-link text-white mobile-text-color"
                                                     style="padding: 0 0.5em 0 0.5em;" href="{{ route('som') }}">
-                                                    School of Minds
+                                                    School of Unique Learners (SOUL)
                                                 </a>
                                             </li>
 

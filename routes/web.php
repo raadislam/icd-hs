@@ -42,7 +42,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['prefix' => 'admin'], function () {
 
         Route::resource('noticeboard', NoticeboardController::class);
-        
+
         Route::get('/sub-category/{category}', [SubCategoryController::class, 'show'])->name('showSubCategory');
     });
 
@@ -73,7 +73,7 @@ Route::get('/our-team', [FrontendController::class, 'ourTeam'])->name('ourTeam')
 Route::get('/view/therapy/{therapy}', [FrontendController::class, 'viewTherapy'])->name('viewTherapy');
 Route::get('/therapist/{therapist}', [FrontendController::class, 'viewTherapist'])->name('viewTherapist');
 Route::get('/pranic-therapy', [FrontendController::class, 'pranicTherapy'])->name('pranicTherapy');
-Route::get('/school-of-minds', [FrontendController::class, 'som'])->name('som');
+Route::get('/school-of-unique-learners', [FrontendController::class, 'som'])->name('som');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
 Route::get('/care-giving', [FrontendController::class, 'careGiving'])->name('careGiving');

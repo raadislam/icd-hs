@@ -82,7 +82,7 @@
                         </ul>
                         <ul class="ps-4">
                             <li>
-                                <a href="#">School of Minds</a>
+                                <a href="#">School of Unique Learners (SOUL)</a>
                             </li>
                             <li>
                                 <a href="#">Speech Therapy</a>

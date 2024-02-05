@@ -1,6 +1,6 @@
 @extends('theme_1.layout.layout')
 @section('title')
-    Speech Therapy
+School Of Unique Learners
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
             <div class="container d-flex align-items-center gap-4 hide-scroll h-100"
                 style="background-color: #7ca2c5; overflow-x: scroll;">
                 <a href="#" class="btn btn-secondary btn-with-arrow" style="white-space: nowrap;">
-                    School Of Mind
+                   SOUL
                     <span>
                         <i class="fas fa-chevron-right"></i>
                     </span>
@@ -88,12 +88,12 @@
                         <div class="post-content ms-0">
                             <section id="intro">
                                 <h2 class="font-weight-bold text-primary my-3">
-                                    School of Minds (SOM)
+                                    School of Unique Learners (SOUL)
                                 </h2>
 
 
                                 <p class='bottom-6 text-dark quote-read-short' style='text-align: justify;'>
-                                    School of Minds is a school for students with special educational needs. We provide
+                                    School of Unique Learners (SOUL) is a school for students with special educational needs. We provide
                                     supports for the students with their learning disabilities between the ages of 5 and 17
                                     in Narayanganj, Bangladesh. A team of experience teachers have been working to provide
                                     one to one and group supports to improve the cognitive and physical development of the

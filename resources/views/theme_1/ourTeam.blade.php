@@ -1,10 +1,6 @@
 @extends('theme_1.layout.layout')
 @section('title')
-Our Therapists
-@endsection
-@section('meta')
-@endsection
-@section('style')
+Our Team
 @endsection
 @section('content')
 <div class="container py-5">
@@ -15,15 +11,41 @@ Our Therapists
             <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
                 <div class="card-body p-3 z-index-1 text-center">
                     <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
+                        <img alt="Doctor" class="img-fluid rounded" src="{{ asset('file') }}/img/demos/law-firm/team/hakim-arif.jpg">
+                    </a>
+                    <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
+                        <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
+                            Professor Dr Hakim Arif
+                        </a>
+                    </strong>
+                    <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
+                        Adviser (ICD-HS)
+                    </span>
+                    <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                        Dhaka, Bangladesh
+                    </p>
+                    <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                        Director General
+                    </p>
+                    <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                        International Mother Language Institute
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-2">
+            <div class="card border-0 mb-4 border-radius-0 box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                <div class="card-body p-3 z-index-1 text-center">
+                    <a href="demo-medical-2-our-doctors-detail.html" class="d-block text-center bg-color-grey">
                         <img alt="Doctor" class="img-fluid rounded" src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
                     </a>
                     <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
                         <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
-                            Mutkijoddha Farida Akter
+                            Mutkijoddha Farida Akter 
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                        Adviser
+                        Adviser (ICD-HS)
                     </span>
                     <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                         Dhaka, Bangladesh
@@ -46,7 +68,7 @@ Our Therapists
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">Founder
-                        and Director</span>
+                        and Director (ICD-HS)</span>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
                         Dhaka, Bangladesh
                     </span>
@@ -65,11 +87,11 @@ Our Therapists
                     </a>
                     <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
                         <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
-                            Monzur Ali
+                            Monzur Ali 
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                        Founder and Director
+                        Founder and Director (ICD-HS)
                     </span>
 
                     <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
@@ -94,7 +116,7 @@ Our Therapists
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                        International Co-Ordinator
+                        International Co-Ordinator (ICD-HS)
                     </span>
                     <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                         Tottenham, United Kingdom
@@ -103,7 +125,7 @@ Our Therapists
                         najmulh@eccollege.org.uk
                     </p>
                     <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                        najmulh@olceurope.com
+                        nhasan@olceurope.com
                     </p>
                 </div>
             </div>
@@ -121,7 +143,7 @@ Our Therapists
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                        Adviser
+                        Adviser (ICD-HS)
                     </span>
                     <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                         Kolkata, India
@@ -146,7 +168,7 @@ Our Therapists
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                        Founder and Director (ENT)</span>
+                        Founder and Director (MMI ENT Center)</span>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
                         Dhaka, Bangladesh
                     </span>
@@ -165,11 +187,11 @@ Our Therapists
                     </a>
                     <strong class="font-weight-bold text-dark d-block text-5 mt-4 mb-0">
                         <a href="demo-medical-2-our-doctors-detail.html" class="text-dark">
-                            Tanima Rahman
+                            Tanima Rahman (ICD-HS)
                         </a>
                     </strong>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
-                        COUNSELLOR, THERAPIST AND PRANIC APPLICATION PRACTITIONER
+                        COUNSELLOR, THERAPIST AND PRANIC APPLICATION PRACTITIONER (ICD-HS)
                     </span>
                     <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
                         Auckland, New Zealand

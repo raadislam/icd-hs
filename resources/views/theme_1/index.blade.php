@@ -644,6 +644,47 @@
                         <div class="text-center">
                             <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/hakim-arif.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Professor Dr Hakim Arif
+                                </strong>
+
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Adviser (ICD-HS)
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Dhaka, Bangladesh
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    Director General
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    International Mother Language Institute
+                                </p>
+
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
                                     Mutkijoddha Farida Akter
@@ -653,7 +694,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser
+                                    Adviser (ICD-HS)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Dhaka, Bangladesh
@@ -688,7 +729,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Founder and Director
+                                    Founder and Director (ICD-HS)
                                 </p>
                                 <span
                                     class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
@@ -727,7 +768,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/canada.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Founder and Director
+                                    Founder and Director (ICD-HS)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Toronto, Canada
@@ -758,7 +799,7 @@
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/team-3.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    MD. Najmul Hasan
+                                    MD. Najmul Hasan 
                                 </strong>
 
                                 <img width="50" height="50"
@@ -766,7 +807,7 @@
                                     alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    International Co-Ordinator
+                                    International Co-Ordinator (ICD-HS)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Tottenham, United Kingdom
@@ -799,14 +840,14 @@
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/pratik.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    Pratik Tarafdar
+                                    Pratik Tarafdar 
                                 </strong>
 
                                 <img width="50" height="50"
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/india.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser
+                                    Adviser (ICD-HS)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Kalkata, India

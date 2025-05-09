@@ -55,5 +55,8 @@
     "optimize": "../../scripts/module/optimize",
     "update": "ncu -u"
   },
-  "version": "1.0.0-alpha.5"
+  "version": "1.0.0-alpha.5",
+  "dependencies": {
+    "@icon/linea-software": "file:"
+  }
 }

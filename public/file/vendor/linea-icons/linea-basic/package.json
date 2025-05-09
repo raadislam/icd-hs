@@ -55,5 +55,8 @@
     "optimize": "../../scripts/module/optimize",
     "update": "ncu -u"
   },
-  "version": "1.0.0-alpha.4"
+  "version": "1.0.0-alpha.4",
+  "dependencies": {
+    "@icon/linea-basic": "file:"
+  }
 }

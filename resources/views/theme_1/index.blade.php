@@ -499,139 +499,6 @@
         </div>
     </section>
 
-    {{-- <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 bg-primary order-2 order-lg-1 p-0"
-                style="background: url({{ asset('file') }}/img/demos/law-firm/backgrounds/background-1.jpg); background-size: cover; background-position: center;">
-                <div class="h-100 m-0">
-                    <div class="row m-0">
-                        <div class="col-half-section col-half-section-right text-color-light py-5 ms-auto">
-                            <div class="p-3">
-                                <div class="appear-animation" data-appear-animation="fadeInRightShorter"
-                                    data-appear-animation-delay="200">
-                                    <h2 class="mb-0 font-weight-bold text-light">Testimonials</h2>
-                                    <div class="divider divider-dark divider-small mt-2 mb-4">
-                                        <hr class="my-0 me-auto">
-                                    </div>
-
-                                    <div class="owl-carousel owl-theme dots-align-left dots-light dots-modern custom-dots-modern-1 dots-modern-lg pt-3"
-                                        data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'autoHeight': true}">
-                                        <div>
-                                            <div
-                                                class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-light testimonial-remove-right-quote mb-0">
-                                                <blockquote class="opacity-7 pb-3">
-                                                    <p
-                                                        class="text-start text-color-light custom-font-secondary text-3 line-height-10 fst-italic pb-0 mb-0">
-                                                        Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast
-                                                        ehicula leo, vel efficitur felis ultrices non cras a elit sit amet
-                                                        leo acun volutpat.</p>
-                                                </blockquote>
-                                                <div class="testimonial-author text-start ps-5 ms-3">
-                                                    <strong class="text-color-light">Anne Doe Smith</strong>
-                                                    <p class="text-color-light mb-0 text-start">Porto Client</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div
-                                                class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-light testimonial-remove-right-quote mb-0">
-                                                <blockquote class="opacity-7 pb-3">
-                                                    <p
-                                                        class="text-start text-color-light custom-font-secondary text-3 line-height-10 fst-italic pb-0 mb-0">
-                                                        Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast
-                                                        ehicula leo, vel efficitur felis ultrices non cras a elit sit amet
-                                                        leo acun volutpat.</p>
-                                                </blockquote>
-                                                <div class="testimonial-author text-start ps-5 ms-3">
-                                                    <strong class="text-color-light">Anne Doe Smith</strong>
-                                                    <p class="text-color-light mb-0 text-start">Porto Client</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div
-                                                class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-light testimonial-remove-right-quote mb-0">
-                                                <blockquote class="opacity-7 pb-3">
-                                                    <p
-                                                        class="text-start text-color-light custom-font-secondary text-3 line-height-10 fst-italic pb-0 mb-0">
-                                                        Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast
-                                                        ehicula leo, vel efficitur felis ultrices non cras a elit sit amet
-                                                        leo acun volutpat.</p>
-                                                </blockquote>
-                                                <div class="testimonial-author text-start ps-5 ms-3">
-                                                    <strong class="text-color-light">Anne Doe Smith</strong>
-                                                    <p class="text-color-light mb-0 text-start">Porto Client</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 p-0 bg-color-quaternary">
-                <section class="parallax section section-parallax custom-parallax-bg-pos-left custom-sec-left h-100 m-0"
-                    data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}"
-                    data-image-src="{{ asset('file') }}/img/demos/law-firm/backgrounds/background-2.jpg"
-                    style="min-height: 450px;">
-                    <div class="h-100 m-0">
-                        <div class="row m-0">
-                            <div class="col-half-section col-half-section-left">
-                                <div class="p-3 p-relative zindex-1">
-                                    <div class="appear-animation" data-appear-animation="fadeInLeftShorter"
-                                        data-appear-animation-delay="400">
-                                        <h2 class="mb-0 font-weight-bold text-dark">Our History</h2>
-                                        <div class="divider divider-primary divider-small mt-2 mb-4">
-                                            <hr class="my-0 me-auto">
-                                        </div>
-
-                                        <div class="owl-carousel owl-theme dots-align-left dots-dark dots-modern dots-modern-lg pt-3"
-                                            data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'autoHeight': true}">
-                                            <div>
-                                                <p class="text-dark font-weight-bold text-4 mb-2 pb-2">- 1985, Opening</p>
-                                                <p>Duis sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi acc
-                                                    umsan ipsum velit. Duis sed odio sit amet nibh vulputate cur sus a sit
-                                                    amet mauris morbi.</p>
-                                                <p>Sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi.</p>
-                                            </div>
-                                            <div>
-                                                <p class="text-dark font-weight-bold text-4 mb-2 pb-2">- 1988, Law Firm
-                                                    Fact</p>
-                                                <p>Odio sit amet nibh vulputate cur sus a sit amet mauris morbi acc umsan
-                                                    ipsum velit. Duis sed odio sit amet nibh vulputate cur sus a sit amet
-                                                    mauris morbi.</p>
-                                                <p>Sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi.</p>
-                                            </div>
-                                            <div>
-                                                <p class="text-dark font-weight-bold text-4 mb-2 pb-2">- 2001, Law Firm
-                                                    Fact</p>
-                                                <p>Sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi acc
-                                                    umsan ipsum velit. Duis sed odio sit amet nibh vulputate cur sus a sit
-                                                    amet mauris morbi.</p>
-                                                <p>Sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi.</p>
-                                            </div>
-                                            <div>
-                                                <p class="text-dark font-weight-bold text-4 mb-2 pb-2">- 2006, Law Firm
-                                                    Fact</p>
-                                                <p>Duis sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi acc
-                                                    umsan ipsum velit. Duis sed odio sit amet nibh vulputate cur sus a sit
-                                                    amet mauris morbi.</p>
-                                                <p>Sed odio sit amet nibh vulputate cur sus a sit amet mauris morbi.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-            </div>
-        </div>
-    </div> --}}
-
     <section class="meet-doctors mb-5">
         <div class="container">
             <div class="row">
@@ -642,7 +509,46 @@
                         data-plugin-options="{'items': 5, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
 
                         <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                            <a class="text-decoration-none">
+                                <img alt="Doctor" class="img-fluid rounded"
+                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
+                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
+                                    Mutkijoddha Farida Akter
+                                </strong>
+
+                                <img width="50" height="50"
+                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
+                                <p class="text-2 text-primary"
+                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Adviser (ICD-HS)
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
+                                    Dhaka, Bangladesh
+                                </p>
+                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
+                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
+                                </p>
+
+                            </a>
+                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
+                                <li class="social-icons-facebook">
+                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter">
+                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin">
+                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="text-center">
+                            <a class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/hakim-arif.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
@@ -683,44 +589,7 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
-                                <img alt="Doctor" class="img-fluid rounded"
-                                    src="{{ asset('file') }}/img/demos/law-firm/team/team-5.jpg">
-                                <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    Mutkijoddha Farida Akter
-                                </strong>
-
-                                <img width="50" height="50"
-                                    src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
-                                <p class="text-2 text-primary"
-                                    style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser (ICD-HS)
-                                </p>
-                                <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Dhaka, Bangladesh
-                                </p>
-                                <p class="text-2" style="padding: 0 !important; margin: 0 !important">
-                                    রোকেয়া পদক প্রাপ্ত নারী কমান্ডার, sector-2, 1971
-                                </p>
-
-                            </a>
-                            <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium mb-0">
-                                <li class="social-icons-facebook">
-                                    <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="social-icons-twitter">
-                                    <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                            class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="social-icons-linkedin">
-                                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                            <a class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/team-6.png">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">Mohammad Salim
@@ -757,7 +626,7 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                            <a class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/manjur_ali.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
@@ -795,11 +664,11 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                            <a class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/team-3.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    MD. Najmul Hasan 
+                                    MD. Najmul Hasan
                                 </strong>
 
                                 <img width="50" height="50"
@@ -836,11 +705,11 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="demo-medical-2-our-doctors-detail.html" class="text-decoration-none">
+                            <a class="text-decoration-none">
                                 <img alt="Doctor" class="img-fluid rounded"
                                     src="{{ asset('file') }}/img/demos/law-firm/team/pratik.jpg">
                                 <strong class="font-weight-bold text-dark d-block text-4 mt-3 mb-0">
-                                    Pratik Tarafdar 
+                                    Pratik Tarafdar
                                 </strong>
 
                                 <img width="50" height="50"

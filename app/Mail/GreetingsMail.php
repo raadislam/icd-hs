@@ -28,7 +28,7 @@ class GreetingsMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'ICD-HS',
+            subject: 'ICDTR',
         );
     }
 

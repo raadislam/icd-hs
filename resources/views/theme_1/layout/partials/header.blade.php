@@ -1,12 +1,12 @@
 <header id="header"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-104px', 'stickyChangeLogo': true}"
+    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-86px', 'stickyChangeLogo': true}"
     style="height: 155px;">
     <div class="header-body border-0 box-shadow-none">
         <div class="header-container container">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row justify-content-between w-100 h-100">
-                        <div class="my-3 mobile-display-hide">
+                        {{-- <div class="my-3 mobile-display-hide">
                             <ul class="nav pb-2 nav-pills ">
                                 <li class="nav-item d-none d-xl-inline-flex">
                                     <span
@@ -36,17 +36,17 @@
                                             class="fab fa-linkedin-in text-color-quaternary text-hover-primary"></i></a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> --}}
 
                         <div class="header-logo py-2 mobile-display-show" style="height: 46px;">
                             <a href="/">
-                                <img alt="ICD-HS" height="46"
+                                <img alt="ICDTR" height="46"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png">
                             </a>
                         </div>
                         <div class="py-2 mobile-display-hide">
                             <a href="/">
-                                <img alt="ICD-HS" height="70"
+                                <img alt="ICDTR" height="70"
                                     src="{{ asset('file') }}/img/demos/medical-2/logos/logo.png">
                             </a>
                         </div>

@@ -34,7 +34,7 @@
                         </ul> --}}
 
                         <div style="margin-top: 2em" bis_skin_checked="1">
-                            <a href="http://icd-hs.test/apply/short-course/7"
+                            <a href="http://ICDTR.test/apply/short-course/7"
                                 class="btn btn-secondary btn-modern font-weight-semibold text-3 btn-py-2 px-5 ">
                                 Apply Now
                             </a>
@@ -75,7 +75,7 @@
                             Instructor
                         </span>
 
-                        {{-- <a href="http://icd-hs.test/make-appointment/4"
+                        {{-- <a href="http://ICDTR.test/make-appointment/4"
                             class="btn btn-outline btn-light bg-hover-light text-dark text-hover-primary border-color-grey border-color-active-primary border-color-hover-primary text-uppercase rounded-0 px-4 py-2 mb-4 mt-3 text-2">
                             Make An Appointment
                         </a> --}}

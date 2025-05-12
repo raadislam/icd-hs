@@ -30,7 +30,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col">
-                    <p> Mukijoddha Farida Akter Institute of Communication Disorders and Health Sciences(ICD-HS) is an
+                    <p> Mukijoddha Farida Akter Institute of Communication Disorders and Health Sciences(ICDTR) is an
                         organization providing education and health services in the field of health sciences which includes
                         care giving, nursing, therapeutic services, speech therapy, day care, telemedicine, inclusive
                         school, ENT consultation and clinical services , most importantly creating employment opportunities

@@ -2,12 +2,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>ICD-HS | Muktijoddha Farida Akter Institute of Communication Disorder and Health Science</title>
+    <title>ICDTR | Muktijoddha Farida Akter Institute of Communication Disorder and Health Science</title>
 
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description"
-        content="ICD-HS | Muktijoddha Farida Akter Institute of Communication Disorder and Health Science">
-    <meta name="author" content="icd-hs.com">
+        content="ICDTR | Muktijoddha Farida Akter Institute of Communication Disorder and Health Science">
+    <meta name="author" content="ICDTR.com">
 
 
     <!-- Mobile Metas -->

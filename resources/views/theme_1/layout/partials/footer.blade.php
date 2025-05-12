@@ -1,8 +1,8 @@
 <footer id="footer" class="m-0 bg-color-quaternary">
     <div class="container">
         <div class="row py-5">
-            <div class="col-sm-12 pb-4 pb-lg-0 col-lg-2 mb-2 d-flex align-items-center">
-                <img src="{{ asset('file') }}/img/demos/medical-2/logos/logo-footer.png" alt="Logo Footer">
+            <div class="col-sm-12 pb-4 pb-lg-0 col-lg-2 mb-2 d-flex align-items-center justify-content-center">
+                <img width="180px" src="{{ asset('file') }}/img/demos/medical-2/logos/logo-footer.png" alt="Logo Footer">
             </div>
             <div class="col-sm-6 col-lg-3 footer-column footer-column-get-in-touch">
                 <h4 class="mb-4 text-uppercase">Get in Touch</h4>
@@ -28,7 +28,7 @@
                             class="text-color-default font-weight-bold text-uppercase title-custom-info-block title-custom-info-block-email">Email</span>
                         <span
                             class="font-weight-normal text-color-light text-custom-info-block p-relative bottom-6 text-custom-info-block-email"><a
-                                class="text-color-light" href="mailto:info@icd-hs.com">info@icd-hs.com</a></span>
+                                class="text-color-light" href="mailto:info@ICDTR.com">info@ICDTR.com</a></span>
                     </div>
                     <div class="custom-info-block custom-info-block-working-days">
                         <span
@@ -112,7 +112,7 @@
     <div class="footer-copyright pt-3 pb-3 container bg-color-quaternary">
         <div class="row">
             <div class="col-lg-12 text-center m-0 pb-4">
-                <p class="text-color-default">ICD-HS. © 2023. All Rights Reserved</p>
+                <p class="text-color-default">ICDTR. © 2023. All Rights Reserved</p>
             </div>
         </div>
     </div>

@@ -60,9 +60,9 @@
 
                                     Many Parents are not able to take care of them at home during working hours. With a view
                                     to
-                                    supporting these parents ICD-HS has established a Daycare Center. These policy
+                                    supporting these parents ICDTR has established a Daycare Center. These policy
                                     guidelines
-                                    will help function the ICD-HS Daycare in a professional manner.
+                                    will help function the ICDTR Daycare in a professional manner.
                                     <br>
                                     <br>
                             </section>
@@ -88,7 +88,7 @@
                                 </strong>
                                 <br>
                                 Children from the age of minimum 3 months up to the age of maximum10 are eligible to avail
-                                the services of the ICD-HS Daycare.
+                                the services of the ICDTR Daycare.
                                 <br>
                                 <br>
                             </section>
@@ -113,7 +113,7 @@
                                     <li>Necessary instant medical support.</li>
                                 </ol>
                                 <strong>
-                                    ICD-HS will provide the following services:
+                                    ICDTR will provide the following services:
                                 </strong>
                                 <br>
                                 <br>

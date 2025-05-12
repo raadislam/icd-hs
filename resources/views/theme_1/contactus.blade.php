@@ -41,8 +41,8 @@
                             <h4
                                 class="alternative-font-4 text-color-dark font-weight-bold line-height-3 text-3-5 mt-4 mb-0">
                                 Email</h4>
-                            <a href="mailto:info@icd-hs.com"
-                                class="text-decoration-none text-color-default text-color-hover-primary">info@icd-hs.com</a>
+                            <a href="mailto:info@ICDTR.com"
+                                class="text-decoration-none text-color-default text-color-hover-primary">info@ICDTR.com</a>
                         </div>
                         <div class="col-lg-6 appear-animation" data-appear-animation="fadeInUpShorter"
                             data-appear-animation-delay="1400">

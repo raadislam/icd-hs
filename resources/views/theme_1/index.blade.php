@@ -398,7 +398,7 @@
                     </div>
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
                         <p class="text-3-5"> Mukijoddha Farida Akter Institute of Communication Disorders and Health
-                            Sciences(ICD-HS) is an
+                            Sciences(ICDTR) is an
                             organization providing education and health services in the field of health sciences which
                             includes
                             care giving, nursing, therapeutic services, speech therapy, day care, telemedicine, inclusive
@@ -520,7 +520,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser (ICD-HS)
+                                    Adviser (ICDTR)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Dhaka, Bangladesh
@@ -559,7 +559,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser (ICD-HS)
+                                    Adviser (ICDTR)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Dhaka, Bangladesh
@@ -598,7 +598,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/bangladesh.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Founder and Director (ICD-HS)
+                                    Founder and Director (ICDTR)
                                 </p>
                                 <span
                                     class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">
@@ -637,7 +637,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/canada.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Founder and Director (ICD-HS)
+                                    Founder and Director (ICDTR)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Toronto, Canada
@@ -676,7 +676,7 @@
                                     alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    International Co-Ordinator (ICD-HS)
+                                    International Co-Ordinator (ICDTR)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Tottenham, United Kingdom
@@ -716,7 +716,7 @@
                                     src="{{ asset('file') }}/img/demos/law-firm/icons/india.svg" alt="" />
                                 <p class="text-2 text-primary"
                                     style="padding: 0 !important; margin: 0 !important; font-weight: 700">
-                                    Adviser (ICD-HS)
+                                    Adviser (ICDTR)
                                 </p>
                                 <p class="text-2" style="padding: 0 !important; margin: 0 !important; font-weight: 700">
                                     Kalkata, India

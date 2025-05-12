@@ -14,8 +14,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <x-head.tinymce-config />
-    
-    <title>ICD-HS</title>
+
+    <title>ICDTR</title>
 
 
 </head>

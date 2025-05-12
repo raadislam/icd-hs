@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="/"
         style="width: 100% !important;color: #000 !important;display: flex;justify-content: center; padding: 1em; background-color: white">
-        <img width="100%" src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png" alt="ICD-HS"
+        <img width="100%" src="{{ asset('file') }}/img/demos/medical-2/logos/mobile-logo.png" alt="ICDTR"
             class="brand-image" style="opacity: .8">
     </a>
 

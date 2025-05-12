@@ -141,7 +141,7 @@
 
                         <!-- Your logo is here -->
                         <img style="width: 550px; max-width: 550px; height: 85px; max-height: 85px; text-align: center; color: #ffffff;"
-                            alt="Logo" src="https://icd-hs.com/file/img/demos/medical-2/logos/logo.png"
+                            alt="Logo" src="https://ICDTR.com/file/img/demos/medical-2/logos/logo.png"
                             align="center" width="auto" height="85">
 
                     </td>
@@ -152,7 +152,7 @@
 
         <!-- Hero image -->
         <img style="width: 600px; max-width: 600px; height: 350px; max-height: 350px; text-align: center;"
-            alt="Hero image" src="https://icd-hs.com/file/img/default/som.jpg" align="center" width="600"
+            alt="Hero image" src="https://ICDTR.com/file/img/default/som.jpg" align="center" width="600"
             height="350">
         <!-- Hero image -->
 
@@ -187,7 +187,7 @@
 
                         <!-- Your inverted logo is here -->
                         <img style="width: 550px; max-width: 550px; height: 85px; max-height: 85px; text-align: center; color: #ffffff;"
-                            alt="Logo" src="https://icd-hs.com/file/img/demos/medical-2/logos/logo.png"
+                            alt="Logo" src="https://ICDTR.com/file/img/demos/medical-2/logos/logo.png"
                             align="center" width="180" height="85">
 
                         <p
@@ -199,8 +199,8 @@
                         <p
                             style="margin-bottom: 0; font-size: 13px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 400; text-decoration: none; color: #ffffff;">
                             <a target="_blank" style="text-decoration: underline; color: #ffffff;"
-                                href="https://www.icd-hs.com">
-                                www.icd-hs.com
+                                href="https://www.ICDTR.com">
+                                www.ICDTR.com
                             </a>
                         </p>
 

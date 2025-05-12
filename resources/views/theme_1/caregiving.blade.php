@@ -20,6 +20,12 @@
                         Introduction
                     </span>
                 </a>
+
+                <a href="#courses" data-hash data-hash-offset="0" data-hash-offset-lg="155" style="white-space: nowrap;">
+                    <span class="text-2-5 text-secondary font-weight-semi-bold">
+                        Offered Courses
+                    </span>
+                </a>
             </div>
         </div>
     </section>
@@ -59,10 +65,163 @@
                                     <li>Bathing and dressing patients.</li>
                                     <li>Mobility.</li>
                                     <li>Personal care.</li>
-                                    <li> Bathing.</li>
+                                    <li>Bathing.</li>
                                     <li>Companionship.</li>
                                 </ol>
                                 <p></p>
+                            </section>
+
+                            <section id="courses">
+                                <h2 class="font-weight-bold text-primary my-3">
+                                    Offered Courses
+                                </h2>
+                                <hr>
+
+                                <h3 class="text-4-5 font-weight-bold">Introduction to Caregiving</h3>
+                                <p class="text-justify">
+                                    <strong>
+                                        Learn about caregiving skills including legal and ethical responsibilities, and
+                                        working as part of a team.
+                                    </strong>
+                                    </br>
+                                    </br>
+                                    This free online Caregiver training course will give you an understanding of the basics
+                                    of caregiving, including legal and ethical responsibilities and working as part of a
+                                    team. Caregivers are highly valued and in-demand professionals who make a big difference
+                                    to the health organizations they work for. This course will give you a full run-through
+                                    of these essential concepts so that you can give your caregiving career a real boost
+                                    today.
+                                </p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-4 align-center">
+                                        <img class="w-100" src="https://oncreditschool.com/file/img/ccgp_cla/logo.png" />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <p>
+                                            COURSE PUBLISHER
+                                            </br>
+                                            <a href="https://oncreditschool.com/" class="link-dark link-underline">
+                                                CCGP Learning Academy, Ontario, Canada
+                                            </a>
+                                            </br>
+                                            Path to career development
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                                        <a href="#" class="mb-1 mt-1 me-1 btn btn-primary">
+                                            GET STARTED NOW <i class="fas fa-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div
+                                    style="
+                                    background-color: #e0f4f9;
+                                    border-radius: 8px;
+                                    color: #2d3941;
+                                    font-size: 14px;
+                                    padding: 25px 40px 23px 24px;
+">
+                                    <h3 style="font-size: 1.2em; line-height: 1.5em; font-weight: bold">
+                                        What You Will Learn In This Free Course
+                                    </h3>
+
+                                    <ul class="list list-icons list-icons-style-3 list-icons-sm text-justify"
+                                        style="column-count: 2;">
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Define the roles and responsibilities of a career.
+                                        </li>
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Describe the various legal issues that carers must be familiar with when
+                                            they work with clients.
+                                        </li>
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Develop the skills necessary to communicate effectively with all members
+                                            of the care service team.
+                                        </li>
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Develop an understanding of how to communicate with individuals with various
+                                            disabilities.
+                                        </li>
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Discuss the correct etiquette when working with a wheelchair-bound client.
+                                        </li>
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Outline the causes and effects of stress and the most efficient ways of
+                                            preventing and managing it.
+                                        </li>
+                                        <li class="pb-3"><i class="fas fa-check"></i>
+                                            Develop the time management and organizational skills necessary to provide
+                                            efficient care for clients.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div
+                                    style="
+                                    background-color: #e6f6eb;
+                                    border-radius: 8px;
+                                    color: #2d3941;
+                                    font-size: 14px;
+                                    padding: 25px 40px 23px 24px;
+                                ">
+
+                                    <h3 style="font-size: 1.2em; line-height: 1.5em; font-weight: bold">
+                                        Complete This CPD Accredited Course & Get Your certificate!
+                                    </h3>
+
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="feature-box">
+                                                <div class="feature-box-icon" style="background-color: #6ecf8b;!important">
+                                                    <i class="fas fa-shield-alt"></i>
+                                                </div>
+                                                <div class="feature-box-info">
+                                                    <h5 class="mb-2">Certify Your Skills</h5>
+                                                    <p class="mb-4">
+                                                        A CPD accredited Alison Diploma/Certificate certifies the skills
+                                                        you’ve learned
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="feature-box">
+                                                <div class="feature-box-icon" style="background-color: #6ecf8b;!important">
+                                                    <i class="fas fa-user-graduate"></i>
+                                                </div>
+                                                <div class="feature-box-info">
+                                                    <h5 class="mb-2">Stand Out From The Crowd</h5>
+                                                    <p class="mb-4">
+                                                        Add your Alison Certification to your resumé and stay ahead of the
+                                                        competition
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="feature-box">
+                                                <div class="feature-box-icon" style="background-color: #6ecf8b;!important">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </div>
+                                                <div class="feature-box-info">
+                                                    <h5 class="mb-2">Advance in Your Career</h5>
+                                                    <p class="mb-4">
+                                                        Share your Alison Certification with potential employers to show off
+                                                        your skills and capabilities
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <img class="w-100"
+                                                src="https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/certificate.png">
+                                        </div>
+                                    </div>
+
+
+                                </div>
                             </section>
                         </div>
                     </article>
@@ -103,7 +262,18 @@
             z-index: 100;
             top: 60px;
             left: 0;
-            width: 100%
+            width: 100%;
+        }
+
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge add Firefox */
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            /* Firefox */
         }
 
         @media only screen and (max-width: 600px) {

@@ -1,6 +1,6 @@
 @extends('theme_1.layout.layout')
 @section('title')
-School Of Unique Learners
+    School Of Unique Learners
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@ School Of Unique Learners
             <div class="container d-flex align-items-center gap-4 hide-scroll h-100"
                 style="background-color: #7ca2c5; overflow-x: scroll;">
                 <a href="#" class="btn btn-secondary btn-with-arrow" style="white-space: nowrap;">
-                   SOUL
+                    SOUL
                     <span>
                         <i class="fas fa-chevron-right"></i>
                     </span>
@@ -93,7 +93,8 @@ School Of Unique Learners
 
 
                                 <p class='bottom-6 text-dark quote-read-short' style='text-align: justify;'>
-                                    School of Unique Learners (SOUL) is a school for students with special educational needs. We provide
+                                    School of Unique Learners (SOUL) is a school for students with special educational
+                                    needs. We provide
                                     supports for the students with their learning disabilities between the ages of 5 and 17
                                     in Narayanganj, Bangladesh. A team of experience teachers have been working to provide
                                     one to one and group supports to improve the cognitive and physical development of the
@@ -197,8 +198,8 @@ School Of Unique Learners
                                 and therapists to work in classes supporting our fabulous learners. If you are passionate
                                 about supporting the success of neuro-diverse children/young people there could be an
                                 opportunity for you to join our team and make a real impact.You are requested to send your
-                                profile to <a href="https://icd-hs.com/">
-                                    info@icd-hs.com
+                                profile to <a href="https://ICDTR.com/">
+                                    info@ICDTR.com
                                 </a>
                                 <br>
                                 <br>

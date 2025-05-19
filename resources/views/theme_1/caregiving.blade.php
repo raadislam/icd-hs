@@ -43,7 +43,7 @@
 
 
                         <div class="post-content ms-0">
-                            <section id="intro">
+                            {{-- <section id="intro">
                                 <h2 class="font-weight-bold text-primary my-3">
                                     Care Giving
                                 </h2>
@@ -69,29 +69,111 @@
                                     <li>Companionship.</li>
                                 </ol>
                                 <p></p>
-                            </section>
+                            </section> --}}
 
                             <section id="courses">
+
+
                                 <h2 class="font-weight-bold text-primary my-3">
                                     Offered Courses
                                 </h2>
                                 <hr>
 
-                                <h3 class="text-4-5 font-weight-bold">Introduction to Caregiving</h3>
-                                <p class="text-justify">
-                                    <strong>
-                                        Learn about caregiving skills including legal and ethical responsibilities, and
-                                        working as part of a team.
-                                    </strong>
-                                    </br>
-                                    </br>
-                                    This free online Caregiver training course will give you an understanding of the basics
-                                    of caregiving, including legal and ethical responsibilities and working as part of a
-                                    team. Caregivers are highly valued and in-demand professionals who make a big difference
-                                    to the health organizations they work for. This course will give you a full run-through
-                                    of these essential concepts so that you can give your caregiving career a real boost
-                                    today.
-                                </p>
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <h1 class="text-4-5 font-weight-bold">
+                                            Introduction to Caregiving
+                                        </h1>
+                                        <p class="text-justify">
+                                            <strong>
+                                                Learn about caregiving skills including legal and ethical responsibilities,
+                                                and
+                                                working as part of a team.
+                                            </strong>
+                                            </br>
+                                            </br>
+                                            This free online Caregiver training course will give you an understanding of the
+                                            basics of caregiving, including legal and ethical responsibilities and working
+                                            as
+                                            part of a team. Caregivers are highly valued and in-demand professionals who
+                                            make a
+                                            big
+                                            difference to the health organizations they work for. This course will give you
+                                            a
+                                            full run-through of these essential concepts so that you can give your
+                                            caregiving
+                                            career a real boost today.
+                                        </p>
+                                    </div>
+                                    {{-- ///// --}}
+
+                                    <div class="col-lg-5">
+                                        <div class="cg-card-wrapper">
+
+                                            <!-- Video Section -->
+                                            <div class="cg-card-video">
+                                                <img src="https://alison.com/blog/wp-content/uploads/2021/04/Header.png"
+                                                    alt="Course Preview">
+                                                <a href="https://www.lipsum.com/" class="cg-play-btn" target="_blank">
+                                                    <i class="fas fa-play"></i>
+                                                </a>
+                                                <div class="cg-free-label">
+                                                    <span>FREE COURSE</span>
+                                                    <div class="cg-badge-category">HEALTHCARE</div>
+                                                </div>
+                                                <div class="cg-brand-logo">Alison</div>
+                                            </div>
+
+                                            <div class="cg-card-content">
+                                                <div class="cg-card-badge">
+                                                    <i class="fas fa-signal"></i> BEGINNER LEVEL
+                                                </div>
+
+                                                <h3 class="cg-card-title">Introduction to Caregiving</h3>
+                                                <p class="cg-card-enrolled">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                    <span class="cg-card-highlight">244,016</span> Learners already enrolled
+                                                </p>
+
+                                                <div class="cg-card-reactions">
+                                                    <span><i class="fas fa-thumbs-up"></i> 1,852</span>
+                                                    <span><i class="fas fa-thumbs-up"></i> 624</span>
+                                                    <span><i class="fas fa-thumbs-down"></i> Not Interested</span>
+                                                </div>
+
+                                                <div class="cg-card-info">
+                                                    <div><i class="far fa-clock"></i> 1.5-3 Avg Hours</div>
+                                                    <div><i class="fas fa-certificate"></i> CPD Accredited</div>
+                                                </div>
+
+                                                <div class="cg-card-price">
+                                                    <h3 class="cg-card-amount"> &nbsp; BDT &nbsp;
+                                                        <span
+                                                            style="
+                                                                text-decoration-line: line-through;
+                                                                font-weight: bold;
+                                                                color: #eb5904;
+                                                                font-size: 1.5em">
+                                                            7,500
+                                                        </span>
+                                                        &nbsp;
+                                                        <span
+                                                            style="
+                                                                font-weight: bold;
+                                                                color: #00b386;
+                                                                font-size: 1.5em">
+                                                            5000
+                                                        </span>
+                                                    </h3>
+                                                </div>
+
+                                                <button class="cg-card-button">Start Learning</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <hr>
                                 <div class="row">
                                     <div class="col-lg-4 align-center">
@@ -123,7 +205,7 @@
                                     color: #2d3941;
                                     font-size: 14px;
                                     padding: 25px 40px 23px 24px;
-">
+                                        ">
                                     <h3 style="font-size: 1.2em; line-height: 1.5em; font-weight: bold">
                                         What You Will Learn In This Free Course
                                     </h3>
@@ -158,6 +240,81 @@
                                         </li>
                                     </ul>
                                 </div>
+
+                                <hr>
+
+                                <div class="cr-review-container">
+                                    <div class="cr-header">
+                                        <h2>Learner Reviews & Feedback</h2>
+                                        <h3>Introduction to Caregiving</h3>
+                                        <div class="cr-meta">
+                                            <span><strong>259</strong> Total Reviews</span>
+                                            <span><i class="fas fa-circle cr-dot"></i></span>
+                                            <span><i class="fas fa-thumbs-up"></i> 1,852</span>
+                                            <span><i class="fas fa-thumbs-up"></i> 624</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="cr-review-list">
+                                        <!-- Review Item 1 -->
+                                        <div class="cr-review-card">
+                                            <div class="cr-review-top">
+                                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User"
+                                                    class="cr-avatar">
+                                                <div class="cr-reviewer-info">
+                                                    <div class="cr-name">
+                                                        <strong>Lemuel O.</strong>
+                                                        <img src="https://flagcdn.com/w40/gh.png" alt="Flag"
+                                                            class="cr-flag">
+                                                        <span class="cr-badge"><i class="fas fa-certificate"></i> Alison
+                                                            Graduate</span>
+                                                    </div>
+                                                    <div class="cr-reaction cr-loved"><i class="fas fa-thumbs-up"></i>
+                                                        Loved This Course</div>
+                                                </div>
+                                            </div>
+                                            <p class="cr-comment">Very Informative.</p>
+                                            <div class="cr-footer">
+                                                <span class="cr-helpful">Was This Review Helpful?</span>
+                                                <span class="cr-help-actions"><i class="fas fa-thumbs-up"></i> <i
+                                                        class="fas fa-flag"></i> Report</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Review Item 2 -->
+                                        <div class="cr-review-card">
+                                            <div class="cr-review-top">
+                                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User"
+                                                    class="cr-avatar">
+                                                <div class="cr-reviewer-info">
+                                                    <div class="cr-name">
+                                                        <strong>Q-P D.</strong>
+                                                        <img src="https://flagcdn.com/w40/us.png" alt="Flag"
+                                                            class="cr-flag">
+                                                        <span class="cr-badge"><i class="fas fa-certificate"></i> Alison
+                                                            Graduate</span>
+                                                    </div>
+                                                    <div class="cr-reaction cr-liked"><i class="fas fa-thumbs-up"></i>
+                                                        Liked This Course</div>
+                                                </div>
+                                            </div>
+                                            <p class="cr-comment">
+                                                All reading course with very basic introductory caregiving information.
+                                                Thanks for the opportunity to learn + featuring this on resumes.
+                                            </p>
+                                            <div class="cr-footer">
+                                                <span class="cr-helpful">Was This Review Helpful?</span>
+                                                <span class="cr-help-actions"><i class="fas fa-thumbs-up"></i> <i
+                                                        class="fas fa-flag"></i> Report</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cr-more-reviews">
+                                            View 257 More Reviews
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <hr>
                                 <div
                                     style="
@@ -175,7 +332,8 @@
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="feature-box">
-                                                <div class="feature-box-icon" style="background-color: #6ecf8b;!important">
+                                                <div class="feature-box-icon"
+                                                    style="background-color: #6ecf8b;!important">
                                                     <i class="fas fa-shield-alt"></i>
                                                 </div>
                                                 <div class="feature-box-info">
@@ -188,7 +346,8 @@
                                             </div>
 
                                             <div class="feature-box">
-                                                <div class="feature-box-icon" style="background-color: #6ecf8b;!important">
+                                                <div class="feature-box-icon"
+                                                    style="background-color: #6ecf8b;!important">
                                                     <i class="fas fa-user-graduate"></i>
                                                 </div>
                                                 <div class="feature-box-info">
@@ -201,7 +360,8 @@
                                             </div>
 
                                             <div class="feature-box">
-                                                <div class="feature-box-icon" style="background-color: #6ecf8b;!important">
+                                                <div class="feature-box-icon"
+                                                    style="background-color: #6ecf8b;!important">
                                                     <i class="fas fa-briefcase"></i>
                                                 </div>
                                                 <div class="feature-box-info">
@@ -237,7 +397,7 @@
                     <p>
                         <strong class="text-primary">Corporate Address:</strong><br>
                         89/17 New Chashara, Muktijoddha Farida Akter Road,Chanmari, (West Side of Proposed N.ganj DOHS)
-                        Narayanganj-1400, Bangladrsh.
+                        Narayanganj-1400, Bangladesh.
                     </p>
                     <div class="nav-item pb-3 d-none d-xl-inline-flex">
                         <span
@@ -299,4 +459,8 @@
             }
         });
     </script>
+@endpush
+
+@push('styles')
+    <link href="{{ asset('file/css/care-giving-course.css') }}" rel="stylesheet">
 @endpush

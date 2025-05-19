@@ -1,7 +1,3 @@
-.logo-ctrl {
-    height: 5.5em;
-}
-
 .cg-card-wrapper {
     background: white;
     width: 100%;
@@ -126,6 +122,20 @@
     border-radius: 6px;
     font-size: 13px;
     margin-bottom: 14px;
+    color: #333;
+}
+.cg-card-price {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f7f7;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.cg-card-amount {
+    font-size: 17px;
+    margin: 4px 0 4px;
+    text-transform: capitalize;
     color: #333;
 }
 
@@ -309,23 +319,4 @@
     cursor: pointer;
     padding-top: 8px;
     border-top: 1px solid #eee;
-}
-@media only screen and (max-width: 600px) {
-    .mobile-display-hide {
-        display: none;
-    }
-    .mobile-display-show {
-        display: block;
-    }
-    .mobile-text-color {
-        color: #3467ef !important;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .mobile-display-show {
-        display: none;
-    }
-    .mobile-display-hide {
-        display: block;
-    }
 }

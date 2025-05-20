@@ -162,12 +162,13 @@
                                                                 font-weight: bold;
                                                                 color: #00b386;
                                                                 font-size: 1.5em">
-                                                            5000
+                                                            5,000
                                                         </span>
                                                     </h3>
                                                 </div>
 
-                                                <button class="cg-card-button">Start Learning</button>
+                                                <a href="{{ route('user-signin') }}" class="cg-card-button">Start
+                                                    Learning</a>
                                             </div>
                                         </div>
                                     </div>

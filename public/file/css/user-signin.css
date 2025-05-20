@@ -1,0 +1,154 @@
+.login-container-unique {
+    display: flex;
+    width: 850px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-left-unique {
+    background: #e9f7ef;
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-image-unique {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-heading-unique {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.login-description-unique {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-help-unique {
+    font-size: 12px;
+}
+
+.login-link-unique {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-right-unique {
+    flex: 1;
+    padding: 30px;
+}
+
+.login-tabs-unique {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.tab-active-unique {
+    font-weight: bold;
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.tab-inactive-unique {
+    color: #777;
+}
+
+.login-social-icons-unique {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-btn-unique {
+    font-size: 20px;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login-or-divider-unique {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-or-divider-unique hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.login-or-divider-unique span {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.login-form-unique {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-input-unique {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-wrapper-unique {
+    position: relative;
+}
+
+.eye-icon-unique {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.login-options-unique {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+}
+
+.forgot-link-unique {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-button-unique {
+    padding: 10px;
+    background: #009966;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signup-redirect-unique,
+.creator-link-unique {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}

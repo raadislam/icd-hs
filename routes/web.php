@@ -79,6 +79,9 @@ Route::get('/daycare', [FrontendController::class, 'daycare'])->name('daycare');
 Route::get('/care-giving', [FrontendController::class, 'careGiving'])->name('careGiving');
 Route::get('/coming-soon', [FrontendController::class, 'comingSoon'])->name('comingSoon');
 Route::get('/reasearch-support', [FrontendController::class, 'researchSupport'])->name('researchSupport');
+Route::get('/sign-in', function () {
+    return view('theme_1.user-signin');
+})->name('user-signin');
 
 
 Route::get('/make-appointment/{therapist}', [AppointmentController::class, 'create'])->name('appointment.create');

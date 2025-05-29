@@ -1,3 +1,11 @@
+.login-main-container-unique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+
 .login-container-unique {
     display: flex;
     width: 850px;

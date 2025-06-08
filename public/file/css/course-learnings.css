@@ -1,0 +1,40 @@
+.learning-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.learning-header {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.learning-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    min-height: 120px;
+    margin-bottom: 30px;
+}
+
+.learning-footer {
+    text-align: right;
+}
+
+.learning-next-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.learning-next-btn:hover {
+    background-color: #0056b3;
+}

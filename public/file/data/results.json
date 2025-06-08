@@ -1,0 +1,19 @@
+{
+    "submitted_at": "2025-06-08 08:05:38",
+    "score": 0,
+    "total": 2,
+    "details": [
+        {
+            "question": "What is the capital of France?",
+            "your_answer": "No Answer",
+            "correct_answer": "Paris",
+            "result": "Wrong"
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "your_answer": "No Answer",
+            "correct_answer": "Mars",
+            "result": "Wrong"
+        }
+    ]
+}

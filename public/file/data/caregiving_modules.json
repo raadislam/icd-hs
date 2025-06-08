@@ -1,0 +1,32 @@
+[
+    {
+        "title": "E-Learning and Digital Cultures",
+        "outcomes": [
+            "Supporting Elderly with Chronic Illnesses",
+            "Disability Awareness and Assistive Devices",
+            "Preventing Abuse and Ensuring Dignity"
+        ],
+        "hours": 8.7,
+        "progress": 75
+    },
+    {
+        "title": "Digital Transformation",
+        "outcomes": [
+            "Understanding Technology Trends",
+            "Building Digital Skills",
+            "Leading Change"
+        ],
+        "hours": 6.5,
+        "progress": 40
+    },
+    {
+        "title": "Caregiver Mental Wellness",
+        "outcomes": [
+            "Stress Management Techniques",
+            "Building Emotional Resilience",
+            "Finding Work-Life Balance"
+        ],
+        "hours": 5.2,
+        "progress": 90
+    }
+]

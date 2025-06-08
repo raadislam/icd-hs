@@ -1,0 +1,125 @@
+.exam-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.exam-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+.exam-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e53935;
+    padding: 10px 20px;
+    border-radius: 8px;
+    min-width: 90px;
+    text-align: center;
+}
+
+.exam-question-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.exam-question {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.exam-option {
+    display: block;
+    margin: 6px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.exam-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.exam-submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.exam-submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.exam-result-summary {
+    margin-top: 40px;
+    padding: 20px;
+    background: #eef6f7;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.exam-result-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.exam-result-score {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.exam-result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exam-result-table th,
+.exam-result-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.exam-score-header {
+    background: #dff0d8;
+    border: 1px solid #d0e9c6;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #3c763d;
+}
+
+@media (max-width: 600px) {
+    .exam-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .exam-submit-btn {
+        width: 100%;
+    }
+}

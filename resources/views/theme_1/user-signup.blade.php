@@ -21,20 +21,31 @@
             <div class="login-right-unique">
                 <div class="login-tabs-unique">
                     <a href="{{ route('user-signup') }}" class="text-decoration-none">
-                        <span class="tab-inactive-unique">
+                        <span class="tab-active-unique">
                             Sign Up
                         </span>
                     </a>
 
                     <a href="{{ route('user-signin') }}" class="text-decoration-none">
-                        <span class="tab-active-unique">Log In</span>
+                        <span class="tab-inactive-unique">Log In</span>
                     </a>
                 </div>
 
+                {{-- <div class="login-social-icons-unique">
+                    <button class="social-btn-unique">📘</button>
+                    <button class="social-btn-unique">🟥</button>
+                    <button class="social-btn-unique">🟡</button>
+                    <button class="social-btn-unique">🔷</button>
+                </div>
+
+                <div class="login-or-divider-unique">
+                    <hr /><span>OR</span>
+                    <hr />
+                </div> --}}
                 <hr>
                 @if ($errors->any())
                     <div class="alert alert-danger">
-                        <ul class="mb-0">
+                        <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
                             @endforeach
@@ -42,15 +53,12 @@
                     </div>
                 @endif
 
-
-                <p class="text-2-3 text-justify">
-                    Your personal data will be used to support your experience throughout this website, to manage access to
-                    your account, and for other purposes described in our <a href="#"
-                        class="text-decoration-none">privacy policy.</a>
-                </p>
-                <hr>
-                <form method="POST" action="{{ route('course-user-signin') }}" class="login-form-unique">
+                <form method="POST" action="{{ route('course-user-registration') }}"class="login-form-unique">
                     @csrf
+
+                    <input type="text" name="name" placeholder="Full Name" class="login-input-unique" required />
+                    <input type="text" name="phone_number" placeholder="Phone Number" class="login-input-unique"
+                        required />
                     <input type="email" name="email" placeholder="Email" class="login-input-unique" required />
                     <div class="password-wrapper-unique">
                         <input type="password" name="password" placeholder="Password" id='password-field'
@@ -59,16 +67,18 @@
                             <i id="eye-icon" class="fas fa-eye"></i>
                         </span>
                     </div>
-                    <div class="login-options-unique">
-                        <label><input type="checkbox" checked /> Keep me logged in</label>
-                        <a href="#" class="forgot-link-unique">Forgot Password?</a>
+
+                    <div class="password-wrapper-unique">
+                        <input type="password" name="password_confirmation" placeholder="Confirm Password"
+                            class="login-input-unique" required />
+
                     </div>
-                    <button type="submit" class="login-button-unique">Log In</button>
+
+                    <button type="submit" class="login-button-unique">Register</button>
                 </form>
 
-                <p class="signup-redirect-unique">Don’t have an account? <a href="{{ route('user-signup') }}">Sign Up</a>
+                <p class="signup-redirect-unique">Do you have an account? <a href="{{ route('user-signin') }}">Log in</a>
                 </p>
-                <p class="creator-link-unique">Are you a course creator? <a href="#">Click Here</a></p>
             </div>
         </div>
     </div>

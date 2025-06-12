@@ -31,10 +31,9 @@
                 <h2 class="text-5-6 course-card-title">TK {{ $price }}</h2>
             </div>
             <div class='col-lg-6'>
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Buy
-                </button>
+                <a href="{{ route('amarpaybuynow', ['course_id' => $id]) }}" class="btn btn-primary">Buy
+                    Now</a>
+
             </div>
         </div>
     </div>

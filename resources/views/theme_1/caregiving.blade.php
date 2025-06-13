@@ -43,37 +43,8 @@
 
 
                         <div class="post-content ms-0">
-                            {{-- <section id="intro">
-                                <h2 class="font-weight-bold text-primary my-3">
-                                    Care Giving
-                                </h2>
-                            </section>
-
-                            <section id="intro">
-                                <p class="text-justify"> We provide support assistance to the persons who are unable to
-                                    fully care themselves due
-                                    to age, disability, illness, dementia, or other circumstances. This support encompasses
-                                    a range of activities, including personal care, medical tasks, and emotional support. We
-                                    also provide training and certification courses with the affiliation from international
-                                    bodies so that our professionals can serve like a family members. We provide care giving
-                                    services at home for 24/7 which includes following supports.
-                                    Administer medication.
-                                </p>
-                                <ol class="list list-ordened">
-                                    <li>Cleaning.</li>
-                                    <li>Preparing meals.</li>
-                                    <li>Bathing and dressing patients.</li>
-                                    <li>Mobility.</li>
-                                    <li>Personal care.</li>
-                                    <li>Bathing.</li>
-                                    <li>Companionship.</li>
-                                </ol>
-                                <p></p>
-                            </section> --}}
 
                             <section id="courses">
-
-
                                 <h2 class="font-weight-bold text-primary my-3">
                                     Offered Courses
                                 </h2>
@@ -81,29 +52,33 @@
 
                                 <div class="row">
                                     <div class="col-lg-7">
-                                        <h1 class="text-4-5 font-weight-bold">
-                                            Introduction to Caregiving
+                                        <h1 class="text-4-5 font-weight-bold" style="margin: 0 0 8px 0">
+                                            {{ $caregiving_course->title }}
                                         </h1>
                                         <p class="text-justify">
                                             <strong>
-                                                Learn about caregiving skills including legal and ethical responsibilities,
-                                                and
-                                                working as part of a team.
+                                                Learn about caregiving skills including legal and ethical
+                                                responsibilities,and working as part of a team.
                                             </strong>
                                             </br>
-                                            </br>
-                                            This free online Caregiver training course will give you an understanding of the
-                                            basics of caregiving, including legal and ethical responsibilities and working
-                                            as
-                                            part of a team. Caregivers are highly valued and in-demand professionals who
-                                            make a
-                                            big
-                                            difference to the health organizations they work for. This course will give you
-                                            a
-                                            full run-through of these essential concepts so that you can give your
-                                            caregiving
-                                            career a real boost today.
+                                            This course will give you a full run-through of these
+                                            essential concepts so that you can
+                                            give your caregiving career a real boost today.
                                         </p>
+                                        <h4>Modules</h4>
+                                        <ul class="list list-icons list-primary list-borders">
+                                            <li><i class="fas fa-check"></i> Introduction to Caregiving (4 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Human Anatomy & Physiology (10 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Common Diseases and Conditions (8 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Vital Signs and Clinical Observation (6 Hours)
+                                            </li>
+                                            <li><i class="fas fa-check"></i> Practical Clinical Skills (10 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Occupational Safety & Health (6 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Nutrition and Food Safety (6 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Communication Skills (8 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Elderly and Special Needs Care (10 Hours)</li>
+                                            <li><i class="fas fa-check"></i> Final Assessment and Review (2 Hours)</li>
+                                        </ul>
                                     </div>
                                     {{-- ///// --}}
 
@@ -112,16 +87,18 @@
 
                                             <!-- Video Section -->
                                             <div class="cg-card-video">
-                                                <img src="https://alison.com/blog/wp-content/uploads/2021/04/Header.png"
+                                                <img src="{{ asset('file/img/courses/thumbnail/') . '/' . $caregiving_course->thumbnail_img }}"
                                                     alt="Course Preview">
                                                 <a href="https://www.lipsum.com/" class="cg-play-btn" target="_blank">
                                                     <i class="fas fa-play"></i>
                                                 </a>
                                                 <div class="cg-free-label">
-                                                    <span>FREE COURSE</span>
-                                                    <div class="cg-badge-category">HEALTHCARE</div>
+                                                    <span> {{ $caregiving_course->status }}</span>
+                                                    <div class="cg-badge-category">
+                                                        {{ $caregiving_course->price !== '0' ? 'Paid Course' : 'Free Course' }}
+                                                    </div>
                                                 </div>
-                                                <div class="cg-brand-logo">Alison</div>
+                                                <div class="cg-brand-logo">{{ $caregiving_course->publisher->name }}</div>
                                             </div>
 
                                             <div class="cg-card-content">
@@ -129,10 +106,10 @@
                                                     <i class="fas fa-signal"></i> BEGINNER LEVEL
                                                 </div>
 
-                                                <h3 class="cg-card-title">Introduction to Caregiving</h3>
+                                                <h3 class="cg-card-title"> {{ $caregiving_course->title }}</h3>
                                                 <p class="cg-card-enrolled">
                                                     <i class="fas fa-graduation-cap"></i>
-                                                    <span class="cg-card-highlight">244,016</span> Learners already enrolled
+                                                    <span class="cg-card-highlight">100 +</span> Learners already enrolled
                                                 </p>
 
                                                 <div class="cg-card-reactions">
@@ -142,8 +119,8 @@
                                                 </div>
 
                                                 <div class="cg-card-info">
-                                                    <div><i class="far fa-clock"></i> 1.5-3 Avg Hours</div>
-                                                    <div><i class="fas fa-certificate"></i> CPD Accredited</div>
+                                                    <div><i class="far fa-clock"></i> 80 Hours</div>
+                                                    <div><i class="fas fa-certificate"></i> Canada Certified Course</div>
                                                 </div>
 
                                                 <div class="cg-card-price">
@@ -167,7 +144,7 @@
                                                     </h3>
                                                 </div>
 
-                                                <a href="{{ route('user-signin') }}" class="cg-card-button">Start
+                                                <a href="{{ route('course') }}" class="cg-card-button">Start
                                                     Learning</a>
                                             </div>
                                         </div>
@@ -177,23 +154,26 @@
 
                                 <hr>
                                 <div class="row">
-                                    <div class="col-lg-4 align-center">
-                                        <img class="w-100" src="https://oncreditschool.com/file/img/ccgp_cla/logo.png" />
+                                    <div class="col-lg-3 align-center">
+                                        <img class="w-50"
+                                            src="{{ asset('file/img/courses/publishers' . '/' . $caregiving_course->publisher->img) }}" />
                                     </div>
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-6">
                                         <p>
                                             COURSE PUBLISHER
                                             </br>
-                                            <a href="https://oncreditschool.com/" class="link-dark link-underline">
-                                                CCGP Learning Academy, Ontario, Canada
+                                            <a href="{{ $caregiving_course->publisher->web_link }}"
+                                                class="link-dark link-underline">
+                                                {{ $caregiving_course->publisher->name }}
                                             </a>
                                             </br>
                                             Path to career development
                                         </p>
                                     </div>
                                     <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                                        <a href="#" class="mb-1 mt-1 me-1 btn btn-primary">
-                                            GET STARTED NOW <i class="fas fa-arrow-right ms-1"></i>
+                                        <a href="{{ $caregiving_course->publisher->web_link }}"
+                                            class="mb-1 mt-1 me-1 btn btn-primary">
+                                            Learn More <i class="fas fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -377,7 +357,7 @@
 
                                         <div class="col-lg-4">
                                             <img class="w-100"
-                                                src="https://cdn01.alison-static.net/public/html/site/img/course-landing-v2/certificate.png">
+                                                src="{{ asset('file/img/courses/certificate/sample-certificate-01.jpg') }}">
                                         </div>
                                     </div>
 

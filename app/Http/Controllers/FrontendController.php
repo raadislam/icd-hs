@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactUsmail;
 use App\Mail\GreetingsMail;
+use App\Models\Course;
 use App\Models\Event;
 use App\Models\Noticeboard;
 use App\Models\ShortCourse;
@@ -59,7 +60,8 @@ class FrontendController extends Controller
 
     public function careGiving()
     {
-        return view('theme_1.caregiving');
+        $caregiving_course = Course::query()->where('id', 2)->first();
+        return view('theme_1.caregiving', compact('caregiving_course'));
     }
 
     public function earnLeave()

@@ -3,16 +3,6 @@
     Course Learnings
 @endsection
 
-@section('content')
-    <div class="learning-wrapper">
-        <div class="learning-header"><span>📘</span> Step <span id="step-number">1</span> / 3</div>
-        <div class="learning-content" id="typing-text">Loading...</div>
-        <div class="learning-footer">
-            <button class="learning-next-btn" id="nextBtn">Next &raquo;</button>
-        </div>
-    </div>
-@endsection
-
 @section('script')
     <script>
         const steps = @json($steps);
@@ -61,4 +51,14 @@
 
 @section('style')
     <link href="{{ asset('file/css/course-learnings.css') }}" rel="stylesheet">
+@endsection
+
+@section('content')
+    <div class="learning-wrapper">
+        <div class="learning-header"><span>📘</span> Step <span id="step-number">1</span> / 3</div>
+        <div class="learning-content" id="typing-text">Loading...</div>
+        <div class="learning-footer">
+            <button class="learning-next-btn" id="nextBtn">Next &raquo;</button>
+        </div>
+    </div>
 @endsection

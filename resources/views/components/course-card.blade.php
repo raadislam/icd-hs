@@ -34,7 +34,7 @@
             <div class='col-lg-6'>
 
                 @if ($hasPaid)
-                    <a style="width: 100%" href="{{ route('course.start', $id) }}"
+                    <a style="width: 100%" href="{{ route('course.modules', ['id' => $id]) }}"
                         class="btn btn-success rounded">Start</a>
                 @else
                     <a style="width: 100%" href="{{ route('amarpaybuynow', ['course_id' => $id]) }}"

@@ -13,6 +13,14 @@ class CourseUser extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $guard = 'course';
+
+    public function payments()
+    {
+        return $this->hasMany(CourseUserPayment::class, 'user_id');
+    }
+
+
     /**
      * The courses this user has paid for.
      */

@@ -30,14 +30,7 @@ Route::group(['middleware' => ['web', 'auth:course']], function () {
         return view('theme_1.course', compact('courses'));
     })->name('course');
 
-    Route::get('/teaching', function () {
-
-        $path = asset('file/data/caregiving_modules.json');
-
-        $json = file_get_contents($path);
-        $modules = json_decode($json, true); // Decode as associative array
-        return view('theme_1.course.courseModule', compact('modules'));
-    })->name('course-teaching');
+    Route::get('/course/{id}/modules', [CourseController::class, 'showModules'])->name('course.modules');
 
 
     Route::get('/learning-care-giving', function () {

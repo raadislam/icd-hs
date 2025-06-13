@@ -1,32 +1,108 @@
-[
-    {
-        "title": "E-Learning and Digital Cultures",
-        "outcomes": [
-            "Supporting Elderly with Chronic Illnesses",
-            "Disability Awareness and Assistive Devices",
-            "Preventing Abuse and Ensuring Dignity"
-        ],
-        "hours": 8.7,
-        "progress": 75
-    },
-    {
-        "title": "Digital Transformation",
-        "outcomes": [
-            "Understanding Technology Trends",
-            "Building Digital Skills",
-            "Leading Change"
-        ],
-        "hours": 6.5,
-        "progress": 40
-    },
-    {
-        "title": "Caregiver Mental Wellness",
-        "outcomes": [
-            "Stress Management Techniques",
-            "Building Emotional Resilience",
-            "Finding Work-Life Balance"
-        ],
-        "hours": 5.2,
-        "progress": 90
-    }
-]
+{
+    "description": "",
+    "total_duration": "80 hours",
+    "modules": [
+        {
+            "title": "Introduction to Caregiving",
+            "outcomes": [
+                "Understanding the Role of a Caregiver",
+                "Types and Duties of Caregivers",
+                "Ethics and Code of Conduct",
+                "Basic Rights of Caregivers"
+            ],
+            "hours": 4,
+            "progress": 0
+        },
+        {
+            "title": "Human Anatomy & Physiology",
+            "outcomes": [
+                "Overview of Body Systems and Functions",
+                "Vital Organs and Anatomical Planes",
+                "Human Growth and Development",
+                "Stages of Life and Common Physical Conditions"
+            ],
+            "hours": 10,
+            "progress": 0
+        },
+        {
+            "title": "Common Diseases and Conditions",
+            "outcomes": [
+                "Communicable vs. Non-communicable Diseases",
+                "Symptoms and Basic Management",
+                "Basic Knowledge of Common Drugs"
+            ],
+            "hours": 10,
+            "progress": 0
+        },
+        {
+            "title": "Vital Signs and Clinical Observation",
+            "outcomes": [
+                "Monitoring Blood Pressure, Pulse, Temperature, and Respiration",
+                "Understanding Normal and Abnormal Values",
+                "Basic Clinical Terminology"
+            ],
+            "hours": 6,
+            "progress": 0
+        },
+        {
+            "title": "Practical Clinical Skills",
+            "outcomes": [
+                "Performing Basic Medical Procedures",
+                "Administering Medications (Various Routes)",
+                "Use of Medical Instruments and Sample Collection",
+                "Wound Identification and Management"
+            ],
+            "hours": 10,
+            "progress": 0
+        },
+        {
+            "title": "Occupational Safety & Health",
+            "outcomes": [
+                "OSH Principles and Legal Framework (Bangladesh Labor Act 2006)",
+                "Personal Protective Equipment (PPE)",
+                "Workplace Hazards and Prevention"
+            ],
+            "hours": 6,
+            "progress": 0
+        },
+        {
+            "title": "Nutrition and Food Safety",
+            "outcomes": [
+                "Macronutrients and Micronutrients",
+                "Special Diet for Elderly and Patients",
+                "Food Exchange and BMI"
+            ],
+            "hours": 6,
+            "progress": 0
+        },
+        {
+            "title": "Communication Skills",
+            "outcomes": [
+                "Types and Modes of Communication",
+                "Effective Communication with Clients and Families",
+                "Barriers and Strategies to Overcome Them"
+            ],
+            "hours": 8,
+            "progress": 0
+        },
+        {
+            "title": "Elderly and Special Needs Care",
+            "outcomes": [
+                "Supporting Elderly with Chronic Illnesses",
+                "Disability Awareness and Assistive Devices",
+                "Preventing Abuse and Ensuring Dignity"
+            ],
+            "hours": 10,
+            "progress": 0
+        },
+        {
+            "title": "Final Assessment and Review",
+            "outcomes": [
+                "MCQ Test and Practical Evaluation",
+                "Course Feedback and Certification"
+            ],
+            "hours": 2,
+            "progress": 0
+        }
+    ]
+}

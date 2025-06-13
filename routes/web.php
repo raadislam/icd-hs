@@ -19,11 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/pay', [AmarPayController::class, 'pay'])->name('amarpaybuynow');
-Route::any('/amarpay/success', [AmarPayController::class, 'success']);
-Route::any('/amarpay/fail', [AmarPayController::class, 'fail']);
-Route::any('/amarpay/cancel', [AmarPayController::class, 'cancel']);
 
+Route::middleware(['web'])->group(function () {
+    Route::any('/amarpay/success', [AmarPayController::class, 'success']);
+    Route::any('/amarpay/fail', [AmarPayController::class, 'fail']);
+    Route::any('/amarpay/cancel', [AmarPayController::class, 'cancel']);
+});
 
 /*
 |--------------------------------------------------------------------------

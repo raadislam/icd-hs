@@ -15,6 +15,8 @@ class Payment extends Model
         'customer_email',
         'customer_phone',
         'response_data',
+        'user_id',       // ✅ new
+        'course_id',     // ✅ new
     ];
 
     protected $casts = [

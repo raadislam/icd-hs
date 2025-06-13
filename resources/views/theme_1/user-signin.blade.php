@@ -32,6 +32,18 @@
                 </div>
 
                 <hr>
+
+                @if (session('success'))
+                    <div class="alert alert-success">{{ session('success') }}</div>
+                @endif
+
+                @if (request('message') === 'payment_failed')
+                    <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+                        <strong>Payment Failed:</strong> Please log in and try again.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul class="mb-0">
@@ -79,6 +91,12 @@
 @endsection
 
 @section('script')
+    <script>
+        history.pushState(null, '', location.href);
+        window.addEventListener('popstate', function() {
+            history.pushState(null, '', location.href);
+        });
+    </script>
     <script>
         $("#eye-icon").click(function() {
             $(this).toggleClass("fa-eye-slash");

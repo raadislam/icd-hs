@@ -6,9 +6,9 @@ use Illuminate\View\Component;
 
 class CourseCard extends Component
 {
-    public $image, $badge, $tag, $title, $instructorImage, $instructor, $role, $students, $rating, $ratingCount, $id, $price;
+    public $image, $badge, $tag, $title, $instructorImage, $instructor, $role, $students, $rating, $ratingCount, $id, $price, $hasPaid;
 
-    public function __construct($image, $badge, $tag, $title, $instructorImage, $instructor, $role, $students, $rating, $ratingCount, $id, $price)
+    public function __construct($image, $badge, $tag, $title, $instructorImage, $instructor, $role, $students, $rating, $ratingCount, $id, $price,  $hasPaid = false)
     {
         $this->id = $id;
         $this->image = $image;
@@ -22,6 +22,7 @@ class CourseCard extends Component
         $this->students = $students;
         $this->rating = $rating;
         $this->ratingCount = $ratingCount;
+        $this->hasPaid = $hasPaid;
     }
 
     public function render()

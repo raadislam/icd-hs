@@ -1,3 +1,4 @@
+@props(['hasPaid' => false])
 <div class="course-card">
     <div class="course-card-image-wrapper">
         <img src="{{ $image }}" alt="Course Image" class="course-card-image">
@@ -31,8 +32,14 @@
                 <h2 class="text-5-6 course-card-title">TK {{ $price }}</h2>
             </div>
             <div class='col-lg-6'>
-                <a href="{{ route('amarpaybuynow', ['course_id' => $id]) }}" class="btn btn-primary">Buy
-                    Now</a>
+
+                @if ($hasPaid)
+                    <a style="width: 100%" href="{{ route('course.start', $id) }}"
+                        class="btn btn-success rounded">Start</a>
+                @else
+                    <a style="width: 100%" href="{{ route('amarpaybuynow', ['course_id' => $id]) }}"
+                        class="btn btn-primary">Buy Now</a>
+                @endif
 
             </div>
         </div>

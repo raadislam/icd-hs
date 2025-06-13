@@ -11,7 +11,7 @@ return [
     'sandbox_verification_url' => 'http://sandbox.aamarpay.com/api/v1/trxcheck/request.php',
     'live_verification_url' => 'https://secure.aamarpay.com/api/v1/trxcheck/request.php',
 
-    'success_url' => env('APP_URL') . '/amarpay/success',
-    'fail_url' => env('APP_URL') . '/amarpay/fail',
-    'cancel_url' => env('APP_URL') . '/amarpay/cancel',
+    'success_url' => 'http://course.icd-hs.test/amarpay/success',
+    'fail_url' => 'http://course.icd-hs.test/amarpay/fail',
+    'cancel_url' => 'http://course.icd-hs.test/amarpay/cancel',
 ];

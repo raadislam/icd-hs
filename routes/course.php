@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AmarPayController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseUserController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\SslCommerzPaymentController;
@@ -11,6 +13,7 @@ Route::get('/signin', function () {
 })->name('user-signin');
 
 Route::get('/signup', function () {
+
     return view('theme_1.user-signup');
 })->name('user-signup');
 
@@ -18,7 +21,10 @@ Route::post('/register-course-user', [CourseUserController::class, 'register'])-
 Route::post('/signin-course-user', [CourseUserController::class, 'signin'])->name('course-user-signin');
 
 
-Route::group(['middleware' => ['auth:course']], function () {
+Route::group(['middleware' => ['web', 'auth:course']], function () {
+
+    Route::get('/pay', [AmarPayController::class, 'pay'])->name('amarpaybuynow');
+
     Route::get('/course', function () {
         $courses = Course::with(['publisher'])->get();
         return view('theme_1.course', compact('courses'));
@@ -57,4 +63,8 @@ Route::group(['middleware' => ['auth:course']], function () {
 
     Route::get('/exam', [ExamController::class, 'startExam'])->name('exam.start');
     Route::post('/exam-submit', [ExamController::class, 'submitExam'])->name('exam.submit');
+
+    Route::get('/course/start/{id}', [CourseController::class, 'start'])
+        ->middleware(['auth:course', 'auth.course_paid'])
+        ->name('course.start');
 });

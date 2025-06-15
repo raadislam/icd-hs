@@ -67,6 +67,7 @@
     align-items: center;
     cursor: pointer;
     transition: background 0.3s;
+    text-decoration: none;
 }
 
 .elearn-start-btn i {
@@ -75,6 +76,13 @@
 
 .elearn-start-btn:hover {
     background-color: #218838;
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.elearn-start-btn:hover i {
+    color: #ffffff; /* ✅ ensure icon doesn't turn blue on hover */
+    text-decoration: none !important;
 }
 
 .elearn-progress-bar {

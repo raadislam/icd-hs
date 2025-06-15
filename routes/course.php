@@ -32,26 +32,6 @@ Route::group(['middleware' => ['web', 'auth:course']], function () {
 
     Route::get('/course/{id}/modules', [CourseController::class, 'showModules'])->name('course.modules');
 
-
-    Route::get('/learning-care-giving', function () {
-        $jsonPath = public_path('file/data/paragraph.json');
-
-        if (!file_exists($jsonPath)) {
-            abort(404, 'Paragraph file not found.');
-        }
-
-        $json = file_get_contents($jsonPath);
-        $parsed = json_decode($json, true);
-
-        if (!is_array($parsed) || !isset($parsed['steps'])) {
-            abort(500, 'Invalid paragraph file structure.');
-        }
-
-        $steps = $parsed['steps'];
-
-        return view('theme_1.course.contents', compact('steps'));
-    })->name('course-contents');
-
     Route::get('/signout-course-user', [CourseUserController::class, 'signout'])->name('course-user-signout');
 
     Route::get('/exam', [ExamController::class, 'startExam'])->name('exam.start');
@@ -61,4 +41,11 @@ Route::group(['middleware' => ['web', 'auth:course']], function () {
         Route::get('/course/start/{id}', [CourseController::class, 'start'])->name('course.start');
         Route::get('/courses/{course}/modules/{module}/content', [CourseController::class, 'showModuleContent'])->name('courses.modules.content');
     });
+    Route::post('/module/progress', function () {
+        \Log::info('DEBUG: Route hit!');
+        return response()->json(['debug' => true]);
+    });
+
+    Route::post('/module/progress', [CourseController::class, 'updateModuleProgress'])
+        ->name('module.progress.update');
 });

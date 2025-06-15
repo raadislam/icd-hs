@@ -34,6 +34,10 @@ class CourseUser extends Authenticatable
             ->withPivot('transaction_id', 'payment_status')
             ->withTimestamps();
     }
+    public function moduleProgress()
+    {
+        return $this->hasMany(CourseUserModuleProgress::class);
+    }
 
     protected $fillable = [
         'name',

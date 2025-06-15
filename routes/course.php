@@ -49,15 +49,16 @@ Route::group(['middleware' => ['web', 'auth:course']], function () {
 
         $steps = $parsed['steps'];
 
-        return view('theme_1.course.learning', compact('steps'));
-    })->name('course-learning');
+        return view('theme_1.course.contents', compact('steps'));
+    })->name('course-contents');
 
     Route::get('/signout-course-user', [CourseUserController::class, 'signout'])->name('course-user-signout');
 
     Route::get('/exam', [ExamController::class, 'startExam'])->name('exam.start');
     Route::post('/exam-submit', [ExamController::class, 'submitExam'])->name('exam.submit');
 
-    Route::get('/course/start/{id}', [CourseController::class, 'start'])
-        ->middleware(['auth:course', 'auth.course_paid'])
-        ->name('course.start');
+    Route::middleware(['auth.course_paid'])->group(function () {
+        Route::get('/course/start/{id}', [CourseController::class, 'start'])->name('course.start');
+        Route::get('/courses/{course}/modules/{module}/content', [CourseController::class, 'showModuleContent'])->name('courses.modules.content');
+    });
 });

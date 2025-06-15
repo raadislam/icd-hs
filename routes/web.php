@@ -37,10 +37,10 @@ Route::middleware(['web'])->group(function () {
 |
 */
 
-Route::group(['middleware' => ['auth']], function () {
+Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/admin', function () {
-        return view('dashboard/main');
-    });
+        return view('dashboard.main');
+    })->name('admin.dashboard');
 
     Route::resource('dashboard-short-course', ShortCourseController::class);
     Route::resource('dashboard-instructors', InstructorController::class);
@@ -66,7 +66,7 @@ Route::group(['middleware' => ['auth']], function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', [FrontendController::class, 'index']);
+Route::get('/', [FrontendController::class, 'index'])->name('home');
 Route::get('/about-us', [FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/earn-leave', [FrontendController::class, 'earnLeave'])->name('earnLeave');
 Route::get('/short-course', [FrontendController::class, 'shortCourse'])->name('shortCourse');

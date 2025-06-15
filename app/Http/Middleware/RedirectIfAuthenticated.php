@@ -2,10 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use App\Providers\RouteServiceProvider;
 use Closure;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class RedirectIfAuthenticated
@@ -13,21 +12,29 @@ class RedirectIfAuthenticated
     /**
      * Handle an incoming request.
      *
+     * @param  \Illuminate\Http\Request   $request
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  string|null  ...$guards
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function handle($request, Closure $next, ...$guards)
+    public function handle(Request $request, Closure $next, ...$guards): Response
     {
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                // ✅ Redirect course users to their dashboard (course page)
+
+                // Redirect based on guard
+                if ($guard === 'web') {
+                    return redirect()->route('admin.dashboard');
+                }
+
                 if ($guard === 'course') {
                     return redirect()->route('course');
                 }
 
-                // fallback for web/admin
-                return redirect('/home');
+                // fallback if unspecified guard
+                return redirect()->route('home');
             }
         }
 

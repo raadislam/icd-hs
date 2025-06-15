@@ -22,9 +22,10 @@
                     <i class="fas fa-lock"></i> Locked
                 </div>
             @else
-                <button class="elearn-start-btn" data-module="{{ $index }}">
+                <a href="{{ route('courses.modules.content', ['course' => $course->id, 'module' => $index]) }}"
+                    class="elearn-start-btn">
                     <i class="fas fa-play"></i> Start
-                </button>
+                </a>
             @endif
         </div>
     </div>

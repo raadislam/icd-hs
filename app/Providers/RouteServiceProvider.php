@@ -36,8 +36,8 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
 
-            Route::domain('course.' . env('APP_URL'))
-                ->middleware('web')
+            Route::domain('course.' . parse_url(config('app.url'), PHP_URL_HOST))
+                ->middleware(['web'])
                 ->group(base_path('routes/course.php'));
         });
     }

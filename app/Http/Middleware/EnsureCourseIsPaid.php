@@ -9,11 +9,17 @@ class EnsureCourseIsPaid
 {
     public function handle(Request $request, Closure $next)
     {
-        $user = auth('course')->user();
-        $courseId = $request->route('id');
+        $courseId = $request->route('course') ?? $request->route('id');
 
-        if (!$user || !$user->paidCourses()->where('course_id', $courseId)->where('payment_status', 'success')->exists()) {
-            return redirect()->route('course')->with('error', 'Please purchase the course to access.');
+        $user = auth('course')->user();
+
+        $hasPaid = $user && $user->payments()
+            ->where('course_id', is_object($courseId) ? $courseId->id : $courseId)
+            ->where('payment_status', 'success')
+            ->exists();
+
+        if (! $hasPaid) {
+            return redirect()->route('user-signin')->with('error', 'Access denied. Please complete payment.');
         }
 
         return $next($request);

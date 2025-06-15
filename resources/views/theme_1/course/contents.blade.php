@@ -1,6 +1,6 @@
 @extends('theme_1.layout.course')
 @section('title')
-    Course Learnings
+    Course Contents
 @endsection
 
 @section('script')
@@ -25,7 +25,7 @@
 
         function showStep(index) {
             if (index < steps.length) {
-                typeText(steps[index], 'typing-text');
+                document.getElementById('typing-text').innerHTML = steps[index];
                 document.getElementById('step-number').innerText = index + 1;
             }
 

@@ -49,7 +49,7 @@ class CourseController extends Controller
 
     public function showModuleContent($course, $module)
     {
-        $course = Course::findOrFail($course);
+        $course = \App\Models\Course::findOrFail($course);
         $data = json_decode($course->description, true);
         $modules = $data['modules'] ?? [];
 
@@ -61,18 +61,31 @@ class CourseController extends Controller
         $steps = $currentModule['contents'] ?? [];
 
         $user = auth('course')->user();
-
-        // Get user's saved progress for this module
         $progress = $user->moduleProgress()
             ->where('course_id', $course->id)
             ->where('module_index', $module)
             ->value('progress') ?? 0;
 
-        // Estimate step index (e.g. 45% of 5 steps = index 2)
-        $lastStep = floor(($progress / 100) * count($steps));
+        $stepCount = count($steps);
+        if ($stepCount < 1) $stepCount = 1;
 
-        return view('theme_1.course.contents', compact('steps', 'course', 'module', 'lastStep'));
+        $lastStep = 0;
+        if ($progress >= 100) {
+            $lastStep = $stepCount - 1;
+        } elseif ($stepCount > 1) {
+            for ($i = 1; $i < $stepCount; $i++) {
+                $boundary = 90 * $i / $stepCount;
+                if ($progress >= $boundary) {
+                    $lastStep = $i;
+                }
+            }
+        }
+
+        $isComplete = $progress >= 90;
+
+        return view('theme_1.course.contents', compact('steps', 'course', 'module', 'lastStep', 'isComplete'));
     }
+
 
 
     public function updateModuleProgress(Request $request)
@@ -90,9 +103,7 @@ class CourseController extends Controller
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
-        Log::info('✅ Progress update request received:', $request->all());
-
-        // Save or update the module progress using the relationship
+        // Find or create the progress row
         $user->moduleProgress()->updateOrCreate(
             [
                 'course_id' => $request->course_id,
@@ -102,8 +113,6 @@ class CourseController extends Controller
                 'progress' => $request->progress,
             ]
         );
-
-        Log::info("✅ Progress updated for CourseUser ID: {$user->id}");
 
         return response()->json(['success' => true]);
     }

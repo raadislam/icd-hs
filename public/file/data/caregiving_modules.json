@@ -16,7 +16,18 @@
                 "<strong>Basic rights of care giver are explained:</strong> <br>1. To take care of myself. This is not an act of selfishness. It will give me the capability of taking <br>better care of my relative. <br>2. To seek help from others even though my relative may object. I recognize the limits of my own <br>endurance and strength. <br>3. To maintain facets of my own life that do not include the person I care for, just as I would if he or <br>she were healthy. I know that I do everything that I reasonably can for this person, and I have the <br>right to do some things just for myself. <br>4. To get angry, be depressed, and express other difficult feelings occasionally. <br>5. To reject any attempts by my relative (either conscious or unconscious) to manipulate me through <br>guilt and/or depression. <br>6. To receive consideration, affection, forgiveness, and acceptance from my loved one for what I <br>do, for as long as I offer these qualities in return. <br>7. To take pride in what I am accomplishing and to applaud the courage it has sometimes taken to <br>meet the needs of my relative. <br>8. To protect my individuality and my right to make a life for myself that will sustain me in the time <br>when my relative no longer needs my full-time help. <br>9. To expect and demand that as new strides are made in finding resources to aid physically and <br>mentally impaired persons in our country, similar strides will be made towards aiding and <br>supporting caregivers. <br><span>&nbsp;</span><br><strong>Standard care giving rules are identified:</strong></li>"
             ],
             "hours": 4,
-            "progress": 0
+            "questions": [
+                {
+                    "question": "What is the capital of France?",
+                    "options": ["Paris", "London", "Rome", "Berlin"],
+                    "answer": "Paris"
+                },
+                {
+                    "question": "Which planet is known as the Red Planet?",
+                    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+                    "answer": "Mars"
+                }
+            ]
         },
         {
             "title": "Human Anatomy & Physiology",
@@ -27,7 +38,7 @@
                 "Stages of Life and Common Physical Conditions"
             ],
             "hours": 10,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Common Diseases and Conditions",
@@ -37,7 +48,7 @@
                 "Basic Knowledge of Common Drugs"
             ],
             "hours": 10,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Vital Signs and Clinical Observation",
@@ -47,7 +58,7 @@
                 "Basic Clinical Terminology"
             ],
             "hours": 6,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Practical Clinical Skills",
@@ -58,7 +69,7 @@
                 "Wound Identification and Management"
             ],
             "hours": 10,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Occupational Safety & Health",
@@ -68,7 +79,7 @@
                 "Workplace Hazards and Prevention"
             ],
             "hours": 6,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Nutrition and Food Safety",
@@ -78,7 +89,7 @@
                 "Food Exchange and BMI"
             ],
             "hours": 6,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Communication Skills",
@@ -88,7 +99,7 @@
                 "Barriers and Strategies to Overcome Them"
             ],
             "hours": 8,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Elderly and Special Needs Care",
@@ -98,7 +109,7 @@
                 "Preventing Abuse and Ensuring Dignity"
             ],
             "hours": 10,
-            "progress": 0
+            "questions": []
         },
         {
             "title": "Final Assessment and Review",
@@ -106,8 +117,24 @@
                 "MCQ Test and Practical Evaluation",
                 "Course Feedback and Certification"
             ],
+            "contents": [
+                "<h1>Module 1: Introduction to Caregiving</h1><ol><li>A caregiver is a person who provides service to others who need extra need. A caregiver is a paid or <br>unpaid member of a person's social network who helps them with activities of daily living. <br><span></span><br><strong>Types of Caregivers</strong> <br>1. Family caregiver <br>2. Professional caregiver <br>3. Independent caregiver<span>&nbsp; </span><br>4. Private Duty caregiver<span>&nbsp; </span><br>5. Informal caregiver <br>6. Volunteer caregiver</li><li><strong>3 major job of a caregiver:</strong> <br>1. Personal care: bathing and grooming, dressing, toileting, and exercise.<span>&nbsp; </span><br>2. Food preparation: preparing meals, shopping. <br>3. Housekeeping, laundry, and other errands. General health care: overseeing medication and <br>prescriptions usage, appointment reminders and administering medicine. <br><span>&nbsp;</span><br><strong>Rights and dignity of clients are ensured:</strong> <br>1. Respect his privacy, physically and emotionally. <br>2. Respect his right to make choices. <br>3. Treat him with dignity.<span>&nbsp; </span><br><span>&nbsp;</span><br>",
+                "<strong>Caregivers Code of Ethics:</strong> <br>1. I will always treat my clients with kindness and respect. <br>2. I will always arrive at the client&rsquo;s home on time, preferably 5 minutes before the start of my <br>scheduled hours. If I might be late, I will immediately call. <br>3. I will follow the Plan of Care each day for my client. <br>4. I will maintain a clean and organized home for my client. <br>5. I will never leave my client unattended. If the relief caregiver is late I will immediately call the <br>Care Manager. <br>6. I will address my client by their last name unless they invite me to use their first name. <br>7. I will honor the client&rsquo;s right to privacy and confidentiality, including their identity, address, and <br>telephone number. <br>8. I will keep my religious beliefs, political choices, or personal issues private and likewise respect <br>my client&rsquo;s beliefs. <br>9. I will call 911 immediately when there is a medical emergency and then call my senior care <br>company office or Care Manager. <br>10. I will not engage in financial transactions nor intimate relationships with a client or family <br>member. <br>11. I will never use alcohol or illegal drugs as a professional caregiver. <br>12. I will only use my personal mobile phone for calls and texts during rest or break periods. <br><span>&nbsp;</span><br>",
+                "<strong>Basic rights of care giver are explained:</strong> <br>1. To take care of myself. This is not an act of selfishness. It will give me the capability of taking <br>better care of my relative. <br>2. To seek help from others even though my relative may object. I recognize the limits of my own <br>endurance and strength. <br>3. To maintain facets of my own life that do not include the person I care for, just as I would if he or <br>she were healthy. I know that I do everything that I reasonably can for this person, and I have the <br>right to do some things just for myself. <br>4. To get angry, be depressed, and express other difficult feelings occasionally. <br>5. To reject any attempts by my relative (either conscious or unconscious) to manipulate me through <br>guilt and/or depression. <br>6. To receive consideration, affection, forgiveness, and acceptance from my loved one for what I <br>do, for as long as I offer these qualities in return. <br>7. To take pride in what I am accomplishing and to applaud the courage it has sometimes taken to <br>meet the needs of my relative. <br>8. To protect my individuality and my right to make a life for myself that will sustain me in the time <br>when my relative no longer needs my full-time help. <br>9. To expect and demand that as new strides are made in finding resources to aid physically and <br>mentally impaired persons in our country, similar strides will be made towards aiding and <br>supporting caregivers. <br><span>&nbsp;</span><br><strong>Standard care giving rules are identified:</strong></li>"
+            ],
             "hours": 2,
-            "progress": 0
+            "questions": [
+                {
+                    "question": "What is the capital of France?",
+                    "options": ["Paris", "London", "Rome", "Berlin"],
+                    "answer": "Paris"
+                },
+                {
+                    "question": "Which planet is known as the Red Planet?",
+                    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+                    "answer": "Mars"
+                }
+            ]
         }
     ]
 }

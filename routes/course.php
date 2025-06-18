@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AmarPayController;
+use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseUserController;
 use App\Http\Controllers\ExamController;
@@ -40,12 +41,15 @@ Route::group(['middleware' => ['web', 'auth:course']], function () {
     Route::middleware(['auth.course_paid'])->group(function () {
         Route::get('/course/start/{id}', [CourseController::class, 'start'])->name('course.start');
         Route::get('/courses/{course}/modules/{module}/content', [CourseController::class, 'showModuleContent'])->name('courses.modules.content');
-    });
-    Route::post('/module/progress', function () {
-        \Log::info('DEBUG: Route hit!');
-        return response()->json(['debug' => true]);
+
+        Route::get('/courses/{course}/modules/{module}/exam', [ExamController::class, 'startExam'])->name('exam.start');
+        Route::post('/courses/{course}/modules/{module}/exam', [ExamController::class, 'submitExam'])->name('exam.submit');
     });
 
     Route::post('/module/progress', [CourseController::class, 'updateModuleProgress'])
         ->name('module.progress.update');
+
+    Route::post('/courses/{course}/certificate-request', [CertificateController::class, 'request'])
+        ->name('certificate.request')
+        ->middleware(['web', 'auth:course', 'auth.course_paid']);
 });

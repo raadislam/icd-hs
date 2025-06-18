@@ -12,39 +12,63 @@ use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
-    public function showModules($id)
+    public function showModules($courseId)
     {
-        $course = Course::with('publisher')->findOrFail($id);
-        $data = json_decode($course->description, true);
-        $rawModules = $data['modules'] ?? [];
-
+        // Get course and module data
+        $course = \App\Models\Course::findOrFail($courseId);
         $user = auth('course')->user();
 
+        $data = json_decode($course->description, true);
+        $rawModules = $data['modules'] ?? [];
+        $moduleCount = count($rawModules);
+
+        // Fetch all progress for this user & course
         $progressData = $user->moduleProgress()
             ->where('course_id', $course->id)
             ->pluck('progress', 'module_index')
             ->toArray();
 
+        // Fetch exam results for grand total
+        $examResults = \App\Models\CourseUserModuleExamResult::where([
+            ['course_user_id', '=', $user->id],
+            ['course_id', '=', $course->id]
+        ])->get();
+        $grandScore = $examResults->sum('score');
+        $grandTotal = $examResults->sum('total');
+
+        // Check if all modules complete
+        $completedModuleCount = 0;
         $modules = [];
-
-        foreach ($rawModules as $index => $module) {
-            $contents = $module['contents'] ?? [];
-            $stepsCount = count($contents);
-            $storedProgress = $progressData[$index] ?? 0;
-            $stepsDone = round(($storedProgress / 100) * $stepsCount);
-
-            $modules[] = [
-                'title' => $module['title'],
-                'outcomes' => $module['outcomes'],
-                'hours' => $module['hours'],
-                'progress' => $storedProgress,
-                'steps_done' => $stepsDone,
-                'total_steps' => $stepsCount,
-            ];
+        foreach ($rawModules as $i => $module) {
+            $progress = $progressData[$i] ?? 0;
+            $modules[] = array_merge($module, [
+                'progress' => $progress,
+                'steps_done' => $progress == 100 ? $module['total_steps'] ?? 0 : 0, // Or compute steps as needed
+                'total_steps' => $module['total_steps'] ?? (isset($module['contents']) ? count($module['contents']) : 0),
+            ]);
+            if ($progress == 100) $completedModuleCount++;
         }
+        $allModulesComplete = ($completedModuleCount === $moduleCount);
 
-        return view('theme_1.course.module', compact('course', 'modules'));
+        // Certificate request status
+        $certReq = \App\Models\CertificateRequest::where('course_user_id', $user->id)
+            ->where('course_id', $course->id)
+            ->latest('id')->first();
+
+        $certificateRequested = $certReq && $certReq->status === 'success';
+        $certificateStatus = $certReq ? $certReq->status : null;
+
+        return view('theme_1.course.module', [
+            'course' => $course,
+            'modules' => $modules,
+            'grandScore' => $grandScore,
+            'grandTotal' => $grandTotal,
+            'allModulesComplete' => $allModulesComplete,
+            'certificateRequested' => $certificateRequested,
+            'certificateStatus' => $certificateStatus,
+        ]);
     }
+
 
 
     public function showModuleContent($course, $module)

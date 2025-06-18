@@ -1,54 +1,48 @@
 @extends('theme_1.layout.course')
+
 @section('title')
-    Course Learnings
+    Exam – {{ $moduleTitle }} | {{ $courseTitle }}
 @endsection
 
-@section('content')
-    <div class="exam-container">
+@section('style')
+    <link href="{{ asset('file/css/exam.css') }}" rel="stylesheet">
+    <style>
+        .exam-meta {
+            font-size: 1.08rem;
+            margin-bottom: 10px;
+            color: #447;
+        }
 
-        <div class="exam-header">
-            <h2 class="exam-title">Final Exam</h2>
-            <div id="exam-timer" class="exam-timer">Time Left: <span id="timer-display"></span></div>
-        </div>
+        .question-block {
+            background: #f7f9fb;
+            border-radius: 12px;
+            margin: 18px 0;
+            padding: 20px;
+        }
 
-        @if (isset($results))
-            <div class="exam-score-header">
-                <h2>Your Score: {{ $score }} / {{ $total }}</h2>
-            </div>
-        @endif
+        .exam-submit-btn {
+            background: #007bff;
+            color: #fff;
+            border-radius: 8px;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.09rem;
+            margin-top: 22px;
+        }
 
-        <form method="POST" action="{{ route('exam.submit') }}" id="exam-form">
-            @csrf
-            @foreach ($questions as $index => $question)
-                <div class="question-block">
-                    <p><strong>{{ $index + 1 }}. {{ $question['question'] }}</strong></p>
-                    @foreach ($question['options'] as $option)
-                        @php
-                            $userAnswer = $userAnswer = request()->input("q$index") ?? null;
-                            $isCorrect = isset($results) && $question['answer'] === $option;
-                        @endphp
+        .exam-submit-btn:hover {
+            background: #0056b3;
+        }
 
-                        <label style="display:block;">
-                            <input type="radio" name="q{{ $index }}" value="{{ $option }}"
-                                {{ isset($results) ? 'disabled' : '' }}
-                                {{ isset($results) && $userAnswer === $option ? 'checked' : '' }}>
-                            {{ $option }}
-
-                            @if (isset($results) && $isCorrect)
-                                <span style="color: green;">(Correct)</span>
-                            @endif
-                        </label>
-                    @endforeach
-                </div>
-            @endforeach
-            @if (!isset($results))
-                <button type="submit" class="exam-submit-btn" id="submit-btn">Finish Exam</button>
-            @endif
-        </form>
-
-    </div>
+        .alert.alert-warning {
+            color: #856404;
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 6px;
+            padding: 16px;
+        }
+    </style>
 @endsection
-
 
 @push('scripts')
     <script>
@@ -90,6 +84,51 @@
     </script>
 @endpush
 
-@section('style')
-    <link href="{{ asset('file/css/exam.css') }}" rel="stylesheet">
+
+@section('content')
+    <div class="exam-container">
+        <div class="exam-header">
+            <h2 class="exam-title">Exam</h2>
+            <div class="exam-meta">
+                <strong>Course:</strong> {{ $courseTitle }}<br>
+                <strong>Module:</strong> {{ $moduleTitle }}
+            </div>
+            <div id="exam-timer" class="exam-timer">
+                <span class="timer-badge">
+                    <i class="fas fa-clock"></i>
+                    <span id="timer-display"></span>
+                </span>
+            </div>
+
+        </div>
+
+        @if (empty($questions))
+            <div class="alert alert-warning mt-4">
+                <strong>No exam questions found for this module.</strong>
+            </div>
+        @else
+            <form method="POST" action="{{ route('exam.submit', ['course' => $courseId, 'module' => $moduleIndex]) }}"
+                id="exam-form">
+                @csrf
+                <input type="hidden" name="course_id" value="{{ $courseId }}">
+                <input type="hidden" name="module_index" value="{{ $moduleIndex }}">
+
+                @foreach ($questions as $index => $question)
+                    <div class="question-block">
+                        <span class="question-badge">
+                            Q{{ $index + 1 }} / {{ count($questions) }}
+                        </span>
+                        <p><strong>{{ $question['question'] }}</strong></p>
+                        @foreach ($question['options'] as $option)
+                            <label style="display:block;">
+                                <input type="radio" name="q{{ $index }}" value="{{ $option }}">
+                                {{ $option }}
+                            </label>
+                        @endforeach
+                    </div>
+                @endforeach
+                <button type="submit" class="exam-submit-btn" id="submit-btn">Finish Exam</button>
+            </form>
+        @endif
+    </div>
 @endsection

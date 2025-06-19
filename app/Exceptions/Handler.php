@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
@@ -26,5 +27,20 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        $guard = $exception->guards()[0] ?? null;
+        switch ($guard) {
+            case 'course':
+                $login = route('user-signin'); // your learner login route
+                break;
+            case 'web':
+            default:
+                $login = route('login'); // your admin login route
+                break;
+        }
+        return redirect()->guest($login);
     }
 }

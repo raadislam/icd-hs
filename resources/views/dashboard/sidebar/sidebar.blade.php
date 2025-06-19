@@ -21,6 +21,15 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('admin.certificateRequests') }}" class="nav-link nav-item-custom">
+                        <ion-icon class="text-custom" style="font-size: 1.2em" name="home-outline"></ion-icon>
+                        <p class="text-custom">
+                            Certificate Requests
+                        </p>
+                    </a>
+                </li>
+
                 <li
                     class="nav-item
                         @if (request()->is('dashboard-short-course/*')) menu-open

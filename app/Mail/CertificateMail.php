@@ -21,7 +21,7 @@ class CertificateMail extends Mailable
     public function build()
     {
         return $this->subject('Your Course Certificate')
-            ->view('emails.certificate')
+            ->view('mails.certificate')
             ->attachData($this->pdf->output(), 'certificate.pdf', [
                 'mime' => 'application/pdf',
             ]);

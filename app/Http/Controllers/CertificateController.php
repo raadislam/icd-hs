@@ -31,4 +31,22 @@ class CertificateController extends Controller
 
         return back()->with('success', 'Certificate request submitted! You will receive it by email soon.');
     }
+
+    public function certificateRequests()
+    {
+        $success = CertificateRequest::where('status', 'success')->with(['courseUser', 'course'])->get();
+        $pendingOrFailed = CertificateRequest::whereIn('status', ['pending', 'failed'])->with(['courseUser', 'course'])->get();
+
+        return view('dashboard.certificate-request', [
+            'successRequests' => $success,
+            'pendingOrFailedRequests' => $pendingOrFailed,
+        ]);
+    }
+
+    public function retry($id)
+    {
+        $certRequest = \App\Models\CertificateRequest::findOrFail($id);
+        dispatch(new \App\Jobs\SendCertificateJob($certRequest));
+        return back()->with('info', 'Retry job dispatched.');
+    }
 }

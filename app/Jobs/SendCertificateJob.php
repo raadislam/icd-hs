@@ -1,7 +1,5 @@
 <?php
 
-// app/Jobs/SendCertificateJob.php
-
 namespace App\Jobs;
 
 use App\Models\CertificateRequest;
@@ -10,9 +8,16 @@ use App\Mail\CertificateMail;
 use Illuminate\Support\Facades\Mail;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Exception;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 
-class SendCertificateJob extends Job
+class SendCertificateJob implements ShouldQueue
 {
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
     protected $certRequest;
 
     public function __construct(CertificateRequest $certRequest)

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AmarPayController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\CourseScheduleController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\InstructorController;
@@ -41,6 +42,16 @@ Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/admin', function () {
         return view('dashboard.main');
     })->name('admin.dashboard');
+
+    Route::get('/certificate-requests', function () {
+        return view('dashboard.certificate-request');
+    })->name('admin.certificateRequests');
+
+    Route::get('/admin/certificate-requests/', [CertificateController::class, 'certificateRequests'])
+        ->name('admin.certificateRequests');
+
+    Route::post('/admin/certificate-requests/{id}/retry', [CertificateController::class, 'retry'])
+        ->name('admin.certificate.retry');
 
     Route::resource('dashboard-short-course', ShortCourseController::class);
     Route::resource('dashboard-instructors', InstructorController::class);

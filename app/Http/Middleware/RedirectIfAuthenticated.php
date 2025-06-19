@@ -17,27 +17,20 @@ class RedirectIfAuthenticated
      * @param  string|null  ...$guards
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function handle(Request $request, Closure $next, ...$guards): Response
+    public function handle($request, Closure $next, ...$guards)
     {
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-
-                // Redirect based on guard
-                if ($guard === 'web') {
-                    return redirect()->route('admin.dashboard');
-                }
-
+                // Route authenticated users to the right place!
                 if ($guard === 'course') {
-                    return redirect()->route('course');
+                    return redirect('/course'); // Or course dashboard
+                } else {
+                    return redirect('/admin'); // Admin dashboard
                 }
-
-                // fallback if unspecified guard
-                return redirect()->route('home');
             }
         }
-
         return $next($request);
     }
 }

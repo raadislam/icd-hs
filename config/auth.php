@@ -34,18 +34,18 @@ return [
     | Supported: "session"
     |
     */
-
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'users', // ← your admins
         ],
-
         'course' => [
             'driver' => 'session',
-            'provider' => 'course_users',
+            'provider' => 'course_users', // ← your learners
         ],
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -63,22 +63,15 @@ return [
     | Supported: "database", "eloquent"
     |
     */
-
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\User::class, // admins
         ],
-
         'course_users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\CourseUser::class,
+            'model' => App\Models\CourseUser::class, // learners
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*

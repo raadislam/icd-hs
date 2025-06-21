@@ -1,5 +1,4 @@
 <?php
-// app/Mail/CertificateMail.php
 
 namespace App\Mail;
 
@@ -11,18 +10,29 @@ class CertificateMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $pdf;
+    public $user;
+    public $course;
+    public $certificatePath;
 
-    public function __construct($pdf)
+    /**
+     * Create a new message instance.
+     */
+    public function __construct($user, $course, $certificatePath)
     {
-        $this->pdf = $pdf;
+        $this->user = $user;
+        $this->course = $course;
+        $this->certificatePath = $certificatePath;
     }
 
+    /**
+     * Build the message.
+     */
     public function build()
     {
         return $this->subject('Your Course Certificate')
-            ->view('mails.certificate')
-            ->attachData($this->pdf->output(), 'certificate.pdf', [
+            ->view('mails.certificate') // Or 'emails.certificate', as you wish
+            ->attach($this->certificatePath, [
+                'as' => 'certificate.pdf',
                 'mime' => 'application/pdf',
             ]);
     }

@@ -27,7 +27,7 @@ class CertificateController extends Controller
         );
 
         // Optionally dispatch job now (or let cron do it)
-        // dispatch(new SendCertificateJob($certRequest));
+        dispatch(new SendCertificateJob($certRequest));
 
         return back()->with('success', 'Certificate request submitted! You will receive it by email soon.');
     }

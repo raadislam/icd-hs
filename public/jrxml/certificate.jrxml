@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificate" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a8e6cd8f-76fd-462e-a471-8bef0a5ccd45">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ICDHS"/>
+	<parameter name="USER_NAME" class="java.util.Collection"/>
+	<parameter name="COURSE_TITLE" class="java.util.Collection"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT cu.name AS learners_name, c.title AS course_title FROM course_users cu, courses c WHERE $X{IN, cu.id, USER_NAME } AND $X{IN, c.id, COURSE_TITLE }
+]]>
+	</queryString>
+	<field name="learners_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="learners_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="course_users"/>
+	</field>
+	<field name="course_title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="title"/>
+		<property name="com.jaspersoft.studio.field.label" value="course_title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="courses"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="-11" y="0" width="842" height="555" uuid="f6ec320b-0b1c-41d1-93af-a65ab0d95e99"/>
+				<imageExpression><![CDATA["E:/ICDTR/jasper/cert-bg.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="150" y="390" width="200" height="60" uuid="f6fcf48a-33d4-47c9-a460-d7ba83e0198c"/>
+				<imageExpression><![CDATA["E:/ICDTR/jasper/signature.png"]]></imageExpression>
+			</image>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="540" y="450" width="80" height="30" uuid="4336d3a1-a24b-4b04-bde4-0798557be1d2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="62" y="60" width="58" height="96" uuid="60d753d1-68c3-49e3-b44f-87164041e0f9"/>
+				<imageExpression><![CDATA["E:/ICDTR/jasper/icdtr-logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="640" y="60" width="95" height="50" uuid="77869463-636e-4dfd-9f53-cc63881b3e04"/>
+				<imageExpression><![CDATA["E:/ICDTR/jasper/ccgp-logo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="140" y="230" width="540" height="30" uuid="828aec53-bbe5-45a7-a57e-054ee3037d31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{learners_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="320" width="540" height="30" uuid="2cb92780-2c67-4345-b96c-8d3f7ece6976"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{course_title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

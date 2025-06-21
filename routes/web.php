@@ -13,10 +13,10 @@ use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\TherapyController;
 use App\Http\Controllers\TherapistScheduleController;
-use App\Models\Therapist;
 use App\Models\TherapistSchedule;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use PHPJasper\PHPJasper;
+
 
 
 

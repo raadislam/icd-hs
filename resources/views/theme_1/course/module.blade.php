@@ -79,6 +79,7 @@
             <span class="score-label">Total Score:</span>
             <span class="score-value">{{ $grandScore }} / {{ $grandTotal }}</span>
         </div>
+
         @if (!$certificateRequested)
             <form action="{{ route('certificate.request', ['course' => $course->id]) }}" method="POST" class="cert-form">
                 @csrf

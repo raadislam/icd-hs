@@ -33,48 +33,45 @@ class SendCertificateJob implements ShouldQueue
 
 
         try {
-            $json = '[
-                {
-                    "name": "USER_NAME",
-                    "type": "collection",
-                    "value": [
-                        "1"
-                    ]
-                },
-                {
-                    "name": "COURSE_TITLE",
-                    "type": "collection",
-                    "value": [
-                        "2"
-                    ]
-                }
-            ]';
+            $data = [
+                [
+                    "name" => "USER_NAME",
+                    "type" => "collection",
+                    "value" => [$user->id]
+                ],
+                [
+                    "name" => "COURSE_TITLE",
+                    "type" => "collection",
+                    "value" => [$course->id]
+                ]
+            ];
 
-            $params = json_decode($json, true); // Now usable as array
+            // Do NOT json_encode here!
+            // $params = json_encode($data, JSON_PRETTY_PRINT);
 
-            $reportParameters = $params;
-            // dd($params);
+            $reportParameters = $data; // Use array directly
+
             $raw_params = "";
-
 
             [$typedParameters, $parameters] = collect($reportParameters)->partition(function ($parameter) {
                 return isset($parameter['type']);
             });
 
-            if (
-                $parameters->count() > 0
-            ) {
+            if ($parameters->count() > 0) {
                 $raw_params .= " -P";
             }
             foreach ($parameters as $parameter) {
-                $raw_params .= " " . $parameter['name'] . "=" . $parameter['value'];
+                // Handle array values
+                $value = is_array($parameter['value']) ? implode(",", $parameter['value']) : $parameter['value'];
+                $raw_params .= " " . $parameter['name'] . "=" . $value;
             }
 
             if ($typedParameters->count() > 0) {
                 $raw_params .= " -TP";
             }
-            foreach ($typedParameters as  $parameter) {
-                $raw_params .= " " . $parameter['type'] . ":" . $parameter['name'] . "=[" . implode(",", $parameter['value']) . "]";
+            foreach ($typedParameters as $parameter) {
+                $value = is_array($parameter['value']) ? implode(",", $parameter['value']) : $parameter['value'];
+                $raw_params .= " " . $parameter['type'] . ":" . $parameter['name'] . "=[" . $value . "]";
             }
 
             try {
@@ -102,7 +99,6 @@ class SendCertificateJob implements ShouldQueue
                     $output,
                     $options
                 );
-
                 $processed->execute();
             } catch (Exception $e) {
                 // error handling
